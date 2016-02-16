@@ -1,0 +1,48 @@
+<h1>ENCUENTRO REGIONAL DE LAS AMÉRICAS DE LA ALIANZA PARA EL GOBIERNO ABIERTO</h1>
+<h2>31.05 al 02.06 DE 2016 MONTEVIDEO URUGUAY</h2>
+
+<form action="/enviar" method="post">
+  <p>
+    <label for="nombre">Nombre</label>
+    <input type='text' name="name" id="name">
+  </p>
+  <p>
+    <label for="organizacion">Organización</label>
+    <input type='text' name="organization" id="organization">
+  </p>
+  <p>
+    <label for="sector">Sector</label>
+    <input type='text' name="sector" id="sector">
+  </p>
+  <p>
+    <label for="pais">País</label>
+    <input type='text' name="country" id="country">
+  </p>
+  <p>
+    <label for="comments">Comentarios</label>
+    <textarea name="comments" id="comments"></textarea>
+  </p>
+  <p>
+    Temas de mi interés:
+    <ul>
+      <li>
+        <label>
+          <input type="checkbox" id="innovacion_sector_publico" value="innovacion_sector_publico">
+          Innovación en el sector público
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" id="plata_emprendedor" value="plata_emprendedor">
+          Hacer plata con mi startup porque soy un emprendedor
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" id="facilitador" value="facilitador">
+          Deseo ser facilitador
+        </label>
+      </li>
+    </ul>
+  <button type="submit">Enviar</button>
+</form>

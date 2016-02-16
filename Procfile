@@ -1,0 +1,1 @@
+web: bundle exec ruby ogp.rb -p $PORT
