@@ -1,48 +1,65 @@
-<h1>ENCUENTRO REGIONAL DE LAS AMÉRICAS DE LA ALIANZA PARA EL GOBIERNO ABIERTO</h1>
-<h2>31.05 al 02.06 DE 2016 MONTEVIDEO URUGUAY</h2>
-
-<form action="/enviar" method="post">
-  <p>
-    <label for="nombre">Nombre</label>
-    <input type='text' name="name" id="name">
+<form action='/enviar' method='post' name='form'>
+  <p id="name_wrap">
+    <label for='nombre'>Nombre</label>
+    <input type='text' name='name' id='name'>
+  </p>
+  <p id="organization_wrap">
+    <label for='organizacion'>Organización</label>
+    <input type='text' name='organization' id='organization'>
   </p>
   <p>
-    <label for="organizacion">Organización</label>
-    <input type='text' name="organization" id="organization">
+    <label for='sector'>Sector</label>
+    <select name='sector' id='sector'>
+      <option value='Gobierno'>Gobierno</option>
+      <option value='Sociedad Civil'>Sociedad Civil</option>
+      <option value='Academia'>Academia</option>
+      <option value='Fundación/Donante'>Fundación/Donante</option>
+      <option value='Think Tank'>Think Tank</option>
+      <option value='Multilateral'>Multilateral</option>
+      <option value='Sector Privado'>Sector Privado</option>
+    </select>
   </p>
   <p>
-    <label for="sector">Sector</label>
-    <input type='text' name="sector" id="sector">
+    <label for='pais'>País</label>
+    <select name='country' id='country'>
+      <% FormData.countries.each do |country| %>
+        <option value='<%= country %>' name='country'><%= country %></option>
+      <% end %>
+    </select>
+  </p>
+  <p id='email_wrap'>
+    <label for='email'>Correo electrónico</label>
+    <input type='email' name='email' id='email'>
   </p>
   <p>
-    <label for="pais">País</label>
-    <input type='text' name="country" id="country">
+    <input type="checkbox" id="unconference" name="unconference">
+    <label for="unconference">Deseo participar de la desconferencia en el Día de la Sociedad Civil</label>
   </p>
   <p>
-    <label for="comments">Comentarios</label>
-    <textarea name="comments" id="comments"></textarea>
+    <label for="unconference_give">¿Qué te gustaría aportar a la desconferencia?</label>
+    <textarea id="unconference_give" name="unconference_give" maxlength="300"></textarea>
+  </p>
+  <p id="interests_wrap">
+    <label for="interests">Temas de mi interés** (seleccionar hasta 3):</label>
+    <select name="interests" id="interests" multiple="true">
+      <% FormData.interests.each do |interest| %>
+        <option value="<%= interest %>"><%= interest%></option>
+      <% end %>
+    </select>
   </p>
   <p>
-    Temas de mi interés:
-    <ul>
-      <li>
-        <label>
-          <input type="checkbox" value="innovacion_sector_publico" name="intereses[]">
-          Innovación en el sector público
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="checkbox" value="plata_emprendedor" name="intereses[]">
-          Hacer plata con mi startup porque soy un emprendedor
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="checkbox" id="facilitador" value="facilitador" name="intereses[]">
-          Deseo ser facilitador
-        </label>
-      </li>
-    </ul>
-  <button type="submit">Enviar</button>
+    <label for="conference_give">¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste?</label>
+    <textarea maxlength="500" id="conference_give" name="conference_give"></textarea>
+  </p>
+  <p id='email_organization_wrap'>
+    <input type='checkbox' value='email_organization' name='email_organization' id='email_organization'>
+    <label for='email_organization'>Acepto recibir correos de la organización relacionados con el evento*</label>
+  </p>
+  <p id='register_image_wrap'>
+    <input type='checkbox' value='register_image' name='register_image' id='register_image'>
+    <label for='register_image'>Acepto que mi imagen aparezca en el registro fotográfico y de video del evento*</label>
+  </p>
+  <button type='submit'>Enviar</button>
 </form>
+<script src='/js/validate.min.js'></script>
+<script src='/js/form.js'></script>

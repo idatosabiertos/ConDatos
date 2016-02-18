@@ -14,6 +14,7 @@ namespace :db do
       String :sector
       String :country
       String :comments
+      String :email
     end
   end
 end

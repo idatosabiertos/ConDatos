@@ -3,20 +3,28 @@ require 'sinatra'
 require 'sequel'
 require 'csv'
 require_relative 'models/init.rb'
+require_relative 'lib/form_data.rb'
 
 get '/' do
   erb :index
 end
 
 post '/enviar' do
-  Survey.create(
+  survey = Survey.new(
     name: params[:name],
     organization: params[:organization],
     sector: params[:sector],
     country: params[:country],
-    comments: params[:comments]
+    comments: params[:comments],
+    email: params[:email]
   )
-  erb :thanks
+  if survey.valid?
+    survey.save
+    erb :thanks
+  else
+    # TODO - Show backend errors on frontend
+    redirect to('/')
+  end
 end
 
 get '/resultados' do
