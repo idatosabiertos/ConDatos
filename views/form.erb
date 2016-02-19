@@ -1,0 +1,189 @@
+<section id="form" class="container content-section text-center">
+  <div class="triangle-topright"></div>
+  <div class="triangle-topleft blue" style="left:-120px;top:500px"></div>
+  <div class="cilinder"></div>
+  <div class="lines"></div>
+  <div class="triangle-topleft"></div>
+  <form action='/enviar' method='post' name='form' id="form">
+    <div class="block">
+      <h3>Tus datos</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type='text' name='name' id='name' class="form-control" placeholder="Nombre">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type='text' name='organization' id='organization' class="form-control" placeholder="Organización">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type='email' name='email' id='email' placeholder="Correo Electrónico" class="form-control">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <div class="select-style">
+              <select name='sector' id='sector'>
+                <option value='Gobierno'>Gobierno</option>
+                <option value='Sociedad Civil'>Sociedad Civil</option>
+                <option value='Academia'>Academia</option>
+                <option value='Fundación/Donante'>Fundación/Donante</option>
+                <option value='Think Tank'>Think Tank</option>
+                <option value='Multilateral'>Multilateral</option>
+                <option value='Sector Privado'>Sector Privado</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <div class="select-style">
+              <select name='country' id='country'>
+                <% FormData.countries.each do |country| %>
+                  <option value='<%= country %>' name='country'><%= country %></option>
+                <% end %>
+              </select>
+            </div>
+          </div>
+        </div>
+        <small>Campos obligatorios *</small>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Día de la Sociedad Civil</h3>
+      <div class="form-group">
+
+        <p>El 31/5 se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles.</p>
+
+        <label for="unconference">Deseo participar de la desconferencia en el Día de la Sociedad Civil</label>
+        <section class="checkbox">
+          <input type="checkbox" id="unconference" name="unconference" class="check">
+        </section>
+      </div>
+
+      <div class="form-group">
+        <h4>¿Qué te gustaría aportar a la desconferencia?<span>(300 caracteres)</span></h4>
+        <textarea id="unconference_give" name="unconference_give" maxlength="300"></textarea>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="form-group">
+        <h3>Encuentro Regional de las Américas</h3>
+        <p>Los días 1 y 2/6 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.</p>
+
+        <label>
+          Deseo participar de la conferencia del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016
+        </label>
+        <input type="checkbox" class="check">
+        <section class="checkbox">
+          <span class="highlight"></span>
+        </section>
+      </div>
+
+      <div class="form-group">
+        <h4>Temas de mi interés <span>(Seleccionar hasta 3)</span></h4>
+
+        <div class="row">
+          <div class="col-md-6">
+            <% FormData.interests.take(22).each do |interest| %>
+              <div class="item-checkbox">
+                <label>
+                  <%= interest %>
+                </label>
+                <input type="checkbox" class="check" value="<%= interest %>">
+                <section class="checkbox">
+                  <span class="highlight"></span>
+                </section>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="col-md-6">
+            <% FormData.interests[22..43].each do |interest| %>
+              <div class="item-checkbox">
+                <label>
+                  <%= interest %>
+                </label>
+                <input type="checkbox" class="check" value="<%= interest %>">
+                <section class="checkbox">
+                  <span class="highlight"></span>
+                </section>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h4>¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste?</h4>
+        <textarea maxlength="500" id="conference_give" name="conference_give"></textarea>
+        <div class="item-checkbox">
+          <label>
+            Deseo postularme como ponente o facilitador para sesiones sobre temas de mi interés
+
+          </label>
+          <input type="checkbox" class="check">
+          <section class="checkbox">
+            <span class="highlight"></span>
+          </section>
+        </div>
+      </div>
+
+      <div class="row">
+        <h4>Enlace a perfil de LinkedIn o CV:</h4>
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="name" class="form-control" id="exampleInputCV" placeholder="Link aqui">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-6">
+            <small>**Los temas propuestos serán compartidos para que otros asistentes puedan elegirlos, agradecemos no generar duplicados u opciones muy similares. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en </small>
+          </div>
+          <div class="col-md-6">
+            <small>
+              la región, desde la óptica particular del desarrollo humano.
+              ***Recomendamos leer el documento especificando el proceso y criterios de selección antes de postularse. Experiencia, proyectos vinculados, historias, experiencias y aprendizajes valiosos para compartir serán tomados en cuenta.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="form-group">
+        <h3>Términos y condiciones</h3>
+        <p>La organización no compartirá los datos proporcionados con nadie, ni enviará mensajes de correo no relacionados a la organización del evento. El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.</p>
+        <label for="email_organization">
+          Acepto recibir correos de la organización relacionados con el evento
+        </label>
+        <input type='checkbox' value='email_organization' name='email_organization' id='email_organization' class="check">
+        <section class="checkbox">
+          <span class="highlight"></span>
+        </section>
+
+        <label for='register_image'>Acepto que mi imagen aparezca en el registro fotográfico y de video del evento*</label>
+        <input type='checkbox' value='register_image' name='register_image' id='register_image' class="check">
+        <section class="checkbox">
+          <span class="highlight"></span>
+        </section>
+      </div>
+
+      <div class="block">
+        <button type="submit" class="btn">Finalizar</button>
+      </div>
+  </form>
+  <script src='/js/validate.min.js'></script>
+  <script src='/js/form.js'></script>
+</section>
