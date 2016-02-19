@@ -1,3 +1,64 @@
-<h1>ENCUENTRO REGIONAL DE LAS AMÉRICAS DE LA ALIANZA PARA EL GOBIERNO ABIERTO</h1>
-<h2>31.05 al 02.06 DE 2016 MONTEVIDEO URUGUAY</h2>
-<%= yield %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+         <![endif]-->
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Intro Header -->
+    <header class="intro  text-center">
+      <div class="container">
+        <a id="logo" href="#">Open Goverment Partnership</a>
+        <ul>
+          <li><a id="agesic" href="#">Agesic</a></li>
+          <li><a id="presidencia" href="#">Presidencia</a></li>
+          <li><a id="rga" href="#">Red de gobierno abierto uruguay</a></li>
+        </ul>
+        <div class="txt">
+          <h1>ENCUENTRO REGIONAL<br>
+            DE LAS AMÉRICAS DE<br>
+            LA ALIANZA PARA EL<br>
+            GOBIERNO ABIERTO
+          </h1>
+          <h2>31.05 al 02.06<br>
+            DE 2016<br>
+            MONTEVIDEO<br>
+            URUGUAY
+          </h2>
+        </div>
+        <a href="#form" class="btn  page-scroll">Registrase</a>
+        <a id="arrow" href="#about" class="page-scroll"><img class="tiny" src="img/arrow.svg" alt=""></a>
+      </div>
+    </header>
+    <%= yield %>
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <ul>
+          <li><i class="fa fa-globe"></i><a href="#">
+            agesic.gub.uy/gobiernodigital</a></li>
+          <li><i class="fa fa-facebook"></i>
+            <a href="#">/agesic.uy</a></li>
+          <li><i class="fa fa-twitter"></i><a href="#">@agesic</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

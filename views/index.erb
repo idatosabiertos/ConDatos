@@ -1,65 +1,105 @@
-<form action='/enviar' method='post' name='form'>
-  <p id="name_wrap">
-    <label for='nombre'>Nombre</label>
-    <input type='text' name='name' id='name'>
-  </p>
-  <p id="organization_wrap">
-    <label for='organizacion'>Organización</label>
-    <input type='text' name='organization' id='organization'>
-  </p>
-  <p>
-    <label for='sector'>Sector</label>
-    <select name='sector' id='sector'>
-      <option value='Gobierno'>Gobierno</option>
-      <option value='Sociedad Civil'>Sociedad Civil</option>
-      <option value='Academia'>Academia</option>
-      <option value='Fundación/Donante'>Fundación/Donante</option>
-      <option value='Think Tank'>Think Tank</option>
-      <option value='Multilateral'>Multilateral</option>
-      <option value='Sector Privado'>Sector Privado</option>
-    </select>
-  </p>
-  <p>
-    <label for='pais'>País</label>
-    <select name='country' id='country'>
-      <% FormData.countries.each do |country| %>
-        <option value='<%= country %>' name='country'><%= country %></option>
-      <% end %>
-    </select>
-  </p>
-  <p id='email_wrap'>
-    <label for='email'>Correo electrónico</label>
-    <input type='email' name='email' id='email'>
-  </p>
-  <p>
-    <input type="checkbox" id="unconference" name="unconference">
-    <label for="unconference">Deseo participar de la desconferencia en el Día de la Sociedad Civil</label>
-  </p>
-  <p>
-    <label for="unconference_give">¿Qué te gustaría aportar a la desconferencia?</label>
-    <textarea id="unconference_give" name="unconference_give" maxlength="300"></textarea>
-  </p>
-  <p id="interests_wrap">
-    <label for="interests">Temas de mi interés** (seleccionar hasta 3):</label>
-    <select name="interests" id="interests" multiple="true">
-      <% FormData.interests.each do |interest| %>
-        <option value="<%= interest %>"><%= interest%></option>
-      <% end %>
-    </select>
-  </p>
-  <p>
-    <label for="conference_give">¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste?</label>
-    <textarea maxlength="500" id="conference_give" name="conference_give"></textarea>
-  </p>
-  <p id='email_organization_wrap'>
-    <input type='checkbox' value='email_organization' name='email_organization' id='email_organization'>
-    <label for='email_organization'>Acepto recibir correos de la organización relacionados con el evento*</label>
-  </p>
-  <p id='register_image_wrap'>
-    <input type='checkbox' value='register_image' name='register_image' id='register_image'>
-    <label for='register_image'>Acepto que mi imagen aparezca en el registro fotográfico y de video del evento*</label>
-  </p>
-  <button type='submit'>Enviar</button>
-</form>
-<script src='/js/validate.min.js'></script>
-<script src='/js/form.js'></script>
+<section id="about" class="container content-section text-center">
+  <div class="triangle-topright"></div>
+  <div class="triangle-topleft"></div>
+  <div class="triangle-topleft blue" style="left:-120px;top:500px"></div>
+  <div class="cilinder"></div>
+  <div class="lines"></div>
+  <div class="row">
+    <div class="col-md-6">
+      <p>
+        El Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016 se llevará a cabo en la ciudad de Montevideo y se esperan alrededor de 500 participantes de gobierno, sociedad civil, medios y empresas.</p>
+      <p>En esta edición y en línea con los principios de cooperación y participación que impulsan a la AGA, buscamos de los participantes del evento aportes para el armado de una agenda temática que refleje los intereses y prioridades de la comunidad de Gobierno Abierto regional. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano.</p>
+    </div>
+    <div class="col-md-6">
+      <p>Para ésto, en lugar de un llamado a ponencias tradicional, invitamos a todos los interesados en asistir a completar el siguiente formulario, seleccionar sus temas de interés y/o agregar los que les resulten relevantes, así como postularse explicitando sus posibles aportes en hasta tres temas.</p>
+      <p>Buscamos crear una agenda más dinámica y colaborativa, experimentando con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicita posibles aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.</p>
+    </div>
+  </div>
+  <div class="btns">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="btn">Proceso de selección</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="btn">Criterios de selección</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="btn">Becarios</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="form" class="container content-section text-center">
+  <div class="triangle-topright"></div>
+  <div class="triangle-topleft blue" style="left:-120px;top:500px"></div>
+  <div class="cilinder"></div>
+  <div class="lines"></div>
+  <div class="triangle-topleft"></div>
+  <form action='/enviar' method='post' name='form' id="form">
+    <p id="name_wrap">
+      <label for='nombre'>Nombre</label>
+      <input type='text' name='name' id='name'>
+    </p>
+    <p id="organization_wrap">
+      <label for='organizacion'>Organización</label>
+      <input type='text' name='organization' id='organization'>
+    </p>
+    <p>
+      <label for='sector'>Sector</label>
+      <select name='sector' id='sector'>
+        <option value='Gobierno'>Gobierno</option>
+        <option value='Sociedad Civil'>Sociedad Civil</option>
+        <option value='Academia'>Academia</option>
+        <option value='Fundación/Donante'>Fundación/Donante</option>
+        <option value='Think Tank'>Think Tank</option>
+        <option value='Multilateral'>Multilateral</option>
+        <option value='Sector Privado'>Sector Privado</option>
+      </select>
+    </p>
+    <p>
+      <label for='pais'>País</label>
+      <select name='country' id='country'>
+        <% FormData.countries.each do |country| %>
+          <option value='<%= country %>' name='country'><%= country %></option>
+        <% end %>
+      </select>
+    </p>
+    <p id='email_wrap'>
+      <label for='email'>Correo electrónico</label>
+      <input type='email' name='email' id='email'>
+    </p>
+    <p>
+      <input type="checkbox" id="unconference" name="unconference">
+      <label for="unconference">Deseo participar de la desconferencia en el Día de la Sociedad Civil</label>
+    </p>
+    <p>
+      <label for="unconference_give">¿Qué te gustaría aportar a la desconferencia?</label>
+      <textarea id="unconference_give" name="unconference_give" maxlength="300"></textarea>
+    </p>
+    <p id="interests_wrap">
+      <label for="interests">Temas de mi interés** (seleccionar hasta 3):</label>
+      <select name="interests" id="interests" multiple="true">
+        <% FormData.interests.each do |interest| %>
+          <option value="<%= interest %>"><%= interest%></option>
+        <% end %>
+      </select>
+    </p>
+    <p>
+      <label for="conference_give">¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste?</label>
+      <textarea maxlength="500" id="conference_give" name="conference_give"></textarea>
+    </p>
+    <p id='email_organization_wrap'>
+      <input type='checkbox' value='email_organization' name='email_organization' id='email_organization'>
+      <label for='email_organization'>Acepto recibir correos de la organización relacionados con el evento*</label>
+    </p>
+    <p id='register_image_wrap'>
+      <input type='checkbox' value='register_image' name='register_image' id='register_image'>
+      <label for='register_image'>Acepto que mi imagen aparezca en el registro fotográfico y de video del evento*</label>
+    </p>
+    <button type='submit'>Finalizar</button>
+  </form>
+  <script src='/js/validate.min.js'></script>
+  <script src='/js/form.js'></script>
+</section>
