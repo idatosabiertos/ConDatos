@@ -19,8 +19,8 @@ var validator = new FormValidator('form', [{
 }], function(errors, event) {
   if (errors.length > 0) {
     errors.forEach(function(error){
-      field = document.getElementById(error.id + "_wrap");
-      field.style.backgroundColor = "#ffaaaa";
+      field = document.getElementById(error.id);
+      field.className += ' error';
     });
   }
 });

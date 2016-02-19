@@ -15,8 +15,14 @@ post '/enviar' do
     organization: params[:organization],
     sector: params[:sector],
     country: params[:country],
-    comments: params[:comments],
-    email: params[:email]
+    email: params[:email],
+    unconference: params[:unconference] == 'on' ? 'Sí' : 'No',
+    unconference_comments: params[:unconference_comments],
+    regional: params[:regional] == 'on' ? 'Sí' : 'No',
+    interests: params[:interests],
+    conference_comments: params[:conference_comments],
+    enabler: params[:enabler] == 'on' ? 'Sí' : 'No',
+    link: params[:link]
   )
   if survey.valid?
     survey.save
@@ -35,7 +41,7 @@ get '/resultados' do
   )
   content_type 'application/csv'
   attachment 'resultados_ogp.csv'
-  csv = "Nombre;Organización;Sector;País;Comentarios\n"
+  csv = "Nombre;Organización;Sector;País;Email;Inscripción Desconferencia;Aportar a desconferencia;Inscripción encuentro Regional;Aportar conferencia temas;Temas de interés;Postulante facilitador;Enlace CV o Linkedin\n"
   Survey.each do |survey|
     csv << survey.to_csv(except: :id)
   end

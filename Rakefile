@@ -13,8 +13,14 @@ namespace :db do
       String :organization
       String :sector
       String :country
-      String :comments
       String :email
+      String :unconference
+      String :unconference_comments
+      String :regional
+      String :conference_comments
+      String :interests
+      String :enabler
+      String :link
     end
   end
 end
