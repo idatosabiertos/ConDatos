@@ -269,7 +269,7 @@ a#logo { background: url(../img/logo.jpg) no-repeat; height: 158px; width: 158px
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
