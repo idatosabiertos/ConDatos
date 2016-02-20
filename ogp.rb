@@ -2,8 +2,11 @@
 require 'sinatra'
 require 'sequel'
 require 'csv'
+require 'dotenv'
 require_relative 'models/init.rb'
 require_relative 'lib/form_data.rb'
+
+Dotenv.load
 
 get '/' do
   erb :index
@@ -34,6 +37,7 @@ post '/enviar' do
 end
 
 get '/resultados' do
+  protected!
   Sequel::Plugins::CsvSerializer.configure(
     Survey,
     col_sep: ';',
@@ -46,4 +50,17 @@ get '/resultados' do
     csv << survey.to_csv(except: :id)
   end
   csv
+end
+
+helpers do
+  def protected!
+    return if authorized?
+    headers['WWW-Authenticate'] = 'Basic realm="Restricted Area"'
+    halt 401, "No está autorizado\n"
+  end
+
+  def authorized?
+    @auth ||= Rack::Auth::Basic::Request.new(request.env)
+    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [ENV['RESULTADOS_USER'], ENV['PASSWORD']]
+  end
 end

@@ -21,14 +21,7 @@ var validator = new FormValidator('form', [{
     errors.forEach(function(error){
       field = document.getElementById(error.id);
       field.className += ' error';
+      field.scrollIntoView();
     });
-  }
-});
-
-var interests = document.getElementById('interests');
-interests.addEventListener('change', function(event){
-  var selected = this.querySelectorAll("option:checked");
-  if (selected.length > 3){
-    selected[0].selected = false;
   }
 });
