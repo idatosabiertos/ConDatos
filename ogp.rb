@@ -36,6 +36,18 @@ post '/enviar' do
   end
 end
 
+get '/proceso' do
+  erb :proceso
+end
+
+get '/criterios' do
+  erb :criterios
+end
+
+get '/becarios' do
+  erb :becarios
+end
+
 get '/resultados' do
   protected!
   Sequel::Plugins::CsvSerializer.configure(
