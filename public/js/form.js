@@ -25,3 +25,14 @@ var validator = new FormValidator('form', [{
     });
   }
 });
+
+var interests = document.getElementsByName("interests[]");
+
+for(var i = 0; i < interests.length; ++i){
+  interests[i].addEventListener('click', function(event){
+    var selected = document.getElementById('interests_group').querySelectorAll("input[name=interests\\[\\]]:checked");
+    if (selected.length > 3){
+      selected[0].checked = false;
+    }
+  });
+}

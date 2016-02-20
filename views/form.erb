@@ -92,7 +92,7 @@
       <div class="form-group">
         <h4>Temas de mi interés <span>(Seleccionar hasta 3)</span></h4>
 
-        <div class="row">
+        <div class="row" id="interests_group">
           <div class="col-md-6">
             <% FormData.interests.take(22).each do |interest| %>
               <div class="item-checkbox">
@@ -141,7 +141,7 @@
         <h4>Enlace a perfil de LinkedIn o CV:</h4>
         <div class="col-md-12">
           <div class="form-group">
-            <input type="text" class="form-control" id="link" placeholder="Link aqui" name="link">
+            <input type="text" class="form-control" id="link" placeholder="Link aquí" name="link">
           </div>
         </div>
       </div>
