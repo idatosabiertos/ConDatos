@@ -630,3 +630,7 @@ input:checked + section > span {
     
 }
 .fixed-error p {font-size: 14px; margin: 0}
+#form .form-group input{
+    padding: 10px 20px !important;
+    height: 66px;
+}
