@@ -29,6 +29,8 @@
           <div class="form-group">
             <div class="select-style">
               <select name='sector' id='sector'>
+                <option>Sector*</option>
+                <option>--------</option>
                 <option value='Gobierno'>Gobierno</option>
                 <option value='Sociedad Civil'>Sociedad Civil</option>
                 <option value='Academia'>Academia</option>
@@ -45,6 +47,8 @@
           <div class="form-group">
             <div class="select-style">
               <select name='country' id='country'>
+                <option>País*</option>
+                <option>--------</option>
                 <% FormData.countries.each do |country| %>
                   <option value='<%= country %>' name='country'><%= country %></option>
                 <% end %>

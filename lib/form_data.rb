@@ -5,7 +5,7 @@ module FormData
       'Argentina', 'Brasil', 'Canada', 'Chile', 'Colombia', 'Costa
       Rica', 'El Salvador', 'Guatemala', 'Honduras', 'Mexico',
       'Panama', 'Paraguay', 'Peru', 'República Dominicana', 'Trinidad
-      y Tobago', 'United States', 'Uruguay', 'Afghanistan', 'Åland
+      y Tobago', 'United States', 'Uruguay', '--------', 'Afghanistan', 'Åland
       Islands', 'Albania', 'Algeria', 'American Samoa', 'Andorra',
       'Angola', 'Anguilla', 'Antarctica', 'Antigua and Barbuda',
       'Armenia', 'Aruba', 'Australia', 'Austria', 'Azerbaijan',
