@@ -5,3 +5,8 @@ gem 'sinatra'
 gem 'sequel'
 gem 'pg'
 gem 'dotenv'
+gem 'sinatra-asset-pipeline'
+
+group :test, :development do
+  gem 'shotgun'
+end
