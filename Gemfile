@@ -8,5 +8,6 @@ gem 'dotenv'
 gem 'sinatra-asset-pipeline'
 
 group :test, :development do
+  gem 'byebug'
   gem 'shotgun'
 end

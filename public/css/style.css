@@ -658,3 +658,11 @@ input:checked + section > span {
 ul.org_logos li{
     list-style: none;
 }
+
+#form .form-group input.other_interests{
+    height: 24px;
+    font-size: 16px;
+    padding: 0px 10px !important;
+    border: 0;
+    width: 90%;
+}

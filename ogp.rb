@@ -13,6 +13,12 @@ get '/' do
 end
 
 post '/enviar' do
+  #"interests"=>["Acceso a la Información pública", "Desarrollo\r\n    económico", "other"], "other_interests"=>"Nintendo 64"
+  if params[:interests].include?('other') && params[:other_interests]
+    params[:interests].delete('other')
+    params[:interests] << params[:other_interests]
+  end
+
   survey = Survey.new(
     name: params[:name],
     organization: params[:organization],

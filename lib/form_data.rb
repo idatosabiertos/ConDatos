@@ -87,8 +87,7 @@ p    recursos naturales', 'Energía', 'Industrias extractivas',
     acceso a la justicia', 'Participación ciudadana', 'Integridad y
     anti-corrupción', 'Elecciones transparentes', 'Laboratorios de
     innovación', 'Acceso a la Información pública', 'Desarrollo
-    económico', 'Tecnología cívica y tecnología para el desarrollo',
-      'Otro (especificar)'
+    económico', 'Tecnología cívica y tecnología para el desarrollo'
     ]
   end
 end
