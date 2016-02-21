@@ -30,7 +30,7 @@ p {
     font-size: 18px;
     line-height: 1.5;
 }
-textarea:focus {}
+textarea:focus { outline: none}
 
 @media(min-width:768px) {
     p {
@@ -254,11 +254,18 @@ a#logo { background: url(../img/logo.jpg) no-repeat; height: 158px; width: 158px
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
-
-
 }
 
-
+@media(max-width: 1440px){
+    .intro::before {
+        width: 30%;
+        background-size: 100%;
+    }
+    .intro::after{
+        width: 30%;
+        background-size: 100%;
+    }
+}
 
 
 .content-section {
@@ -444,6 +451,7 @@ footer::before,footer::after {display: none;}
     text-transform: none;
     font-weight: bold;
     margin: 50px 0 40px 0;
+    text-align: left;
 }
 #form h4 span {font-size: 14px; font-style: italic;} 
 footer {
@@ -478,10 +486,10 @@ footer::after {
 footer p {
     margin: 0;
 }
-footer ul li  { display: inline-block; color: #2B3990;margin: 0px}
+footer ul li  { display: inline-block; color: #2B3990;margin: 0 20px}
 
 footer ul li a:hover { text-decoration: underline;}
-footer ul li a {font-size: 16px;color: #2B3990;font-weight:bold; padding-left: 10px }
+footer ul li a {font-size: 16px;color: #2B3990;font-weight:bold; padding-left: 5px }
 
 ::-moz-selection {
     text-shadow: none;
@@ -571,9 +579,9 @@ input:checked + section > span {
 .custom-file-input::before {
         content: 'Subir';
     display: inline-block;
-    background: #2B3990;
+    background: #2B3990 url(../img/upload.png) no-repeat;
     border-radius: 0;
-    padding: 21px 10px;
+    padding: 21px 30px;
     outline: none;
     color: #fff;
     white-space: nowrap;
@@ -630,7 +638,14 @@ input:checked + section > span {
     
 }
 .fixed-error p {font-size: 14px; margin: 0}
-#form .form-group input{
-    padding: 10px 20px !important;
-    height: 66px;
+
+#sucess { text-align: center;font-weight: normal;} 
+#sucess h4 { text-align: center;font-size: 35px;font-weight: lighter;}
+#sucess h5 { color: #F9ED32;text-transform: none;font-size: 25px;font-weight: lighter;font-family: "Roboto"}
+#sucess p {font-size: 18px; line-height: 28px;font-family: "Roboto"; width: 70%;text-align: center; margin:20px auto}
+#sucess a {
+     font-size: 16px;
+    color: #F9ED32;
+    font-weight: bold;
+    padding-left: 5px;
 }
