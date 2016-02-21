@@ -14,7 +14,7 @@ end
 
 post '/enviar' do
   #"interests"=>["Acceso a la Información pública", "Desarrollo\r\n    económico", "other"], "other_interests"=>"Nintendo 64"
-  if params[:interests].include?('other') && params[:other_interests]
+  if params[:interests] && params[:interests].include?('other') && params[:other_interests]
     params[:interests].delete('other')
     params[:interests] << params[:other_interests]
   end
