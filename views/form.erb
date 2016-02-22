@@ -139,7 +139,7 @@
             <% end %>
             <div class="item-checkbox">
               <label for="other">
-                Otro (especificar)
+                <%= t.form.other %>
               </label>
               <input type="checkbox" class="check" value="other" id="other"  name="interests[]">
               <section class="checkbox">
@@ -152,11 +152,11 @@
       </div>
 
       <div class="form-group">
-        <h4>¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste?</h4>
+        <h4><%= t.form.what %></h4>
         <textarea maxlength="500" id="conference_comments" name="conference_comments"></textarea>
         <div class="item-checkbox">
           <label for="enabler">
-            Deseo postularme como ponente o facilitador para sesiones sobre temas de mi interés***
+            <%= t.form.vote_me %>
           </label>
           <input type="checkbox" class="check" id="enabler" name="enabler">
           <section class="checkbox">
@@ -166,10 +166,10 @@
       </div>
 
       <div class="row">
-        <h4>Enlace a perfil de LinkedIn o CV:</h4>
+        <h4><%= t.form.linkedin %></h4>
         <div class="col-md-12">
           <div class="form-group">
-            <input type="text" class="form-control" id="link" placeholder="Enlace aquí" name="link">
+            <input type="text" class="form-control" id="link" placeholder="<%= t.form.link_here %>" name="link">
           </div>
         </div>
       </div>
@@ -177,12 +177,10 @@
       <div class="form-group">
         <div class="row">
           <div class="col-md-6">
-            <small>** Los temas propuestos serán compartidos para que otros asistentes puedan elegirlos, agradecemos no generar duplicados u opciones muy similares. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano.</small>
+            <small><%= t.form.topics %></small>
           </div>
           <div class="col-md-6">
-            <small>
-              *** Recomendamos leer el documento especificando el proceso y criterios de selección antes de postularse. Experiencia, proyectos vinculados, historias, experiencias y aprendizajes valiosos para compartir serán tomados en cuenta.
-            </small>
+            <small><%= t.form.books_are_good %></small>
           </div>
         </div>
       </div>
@@ -212,26 +210,26 @@
 
     <div class="block">
       <div class="form-group">
-        <h3>Términos y condiciones</h3>
-        <p>La organización no compartirá los datos proporcionados con nadie, ni enviará mensajes de correo no relacionados a la organización del evento. El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.</p>
+        <h3><%= t.form.termos %></h3>
+        <p><%= t.form.termos_content %></p>
         <label for="email_organization">
-          Acepto recibir correos de la organización relacionados con el evento*
+          <%= t.form.email_organization %>
         </label>
         <input type='checkbox' value='email_organization' name='email_organization' id='email_organization' class="check">
         <section class="checkbox">
           <span class="highlight"></span>
         </section>
 
-        <label for='register_image'>Acepto que mi imagen aparezca en el registro fotográfico y de video del evento*</label>
+        <label for='register_image'><%= t.form.register_image %></label>
         <input type='checkbox' value='register_image' name='register_image' id='register_image' class="check">
         <section class="checkbox">
           <span class="highlight"></span>
         </section>
-        <small>* Campos obligatorios</small>
+        <small><%= t.form.mandatory %></small>
       </div>
 
       <div class="block">
-        <button type="submit" class="btn">Finalizar</button>
+        <button type="submit" class="btn"><%= t.form.finish_her %></button>
       </div>
   </form>
   <script src='/js/validate.min.js'></script>

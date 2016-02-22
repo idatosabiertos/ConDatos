@@ -11,4 +11,5 @@ gem 'sinatra-r18n'
 group :test, :development do
   gem 'byebug'
   gem 'shotgun'
+  gem 'yaml-lint'
 end

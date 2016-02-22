@@ -13,6 +13,13 @@ layout:
   register: Registrarse
   goback: Volver al inicio
 
+index:
+  content1: El Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016 se llevará a cabo en la ciudad de Montevideo y se esperan alrededor de 500 participantes de gobierno, sociedad civil, medios y empresas.
+  content2: En esta edición y en línea con los principios de cooperación y participación que impulsan a la AGA, buscamos de los participantes del evento aportes para el armado de una agenda temática que refleje los intereses y prioridades de la comunidad de Gobierno Abierto regional. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano.
+  content3: Para ésto, en lugar de un llamado a ponencias tradicional, invitamos a todos los interesados en asistir a completar el siguiente formulario, seleccionar sus temas de interés y/o agregar los que les resulten relevantes, así como postularse explicitando sus posibles aportes en hasta tres temas.
+  content4: Buscamos crear una agenda más dinámica y colaborativa, experimentando con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicita posibles aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
+  fellows: Becarios
+
 form:
   data: Tus datos
   name: Nombre
@@ -36,7 +43,22 @@ form:
   encounter_third_kind_info: Los días 1 y 2/6 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.
   join_encounter: Deseo participar de la conferencia del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016
   stuff_interested: Temas de mi interés** <span>(seleccionar hasta 3)</span>
-
+  fellows_title: Solicitud de Becas
+  fellows_content: Las becas se otorgarán a personas u organizaciones que no cuenten con medios propios para asistir al evento. Tendrán prioridad para el apoyo en viajes y hospedaje aquellas personas que hayan sido seleccionadas para roles de ponentes o facilitadores y no cuenten con los medios para acceder al evento por cuenta propia. Para el resto de las personas seleccionadas se aplicarán los mismos principios detallados para la selección de ponentes y facilitadores.
+  fellows_transport: Deseo postularme para recibir apoyo para el transporte
+  fellows_hosting: Deseo postularme para recibir apoyo para el hospedaje
+  other: Otro (especificar)
+  what: ¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste?
+  vote_me: Deseo postularme como ponente o facilitador para sesiones sobre temas de mi interés***
+  linkedin: "Enlace a perfil de LinkedIn o CV:"
+  link_here: Enlace aquí
+  topics: "** Los temas propuestos serán compartidos para que otros asistentes puedan elegirlos, agradecemos no generar duplicados u opciones muy similares. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano."
+  books_are_good: "*** Recomendamos leer el documento especificando el proceso y criterios de selección antes de postularse. Experiencia, proyectos vinculados, historias, experiencias y aprendizajes valiosos para compartir serán tomados en cuenta."
+  termos: Términos y condiciones
+  termos_content: La organización no compartirá los datos proporcionados con nadie, ni enviará mensajes de correo no relacionados a la organización del evento. El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.
+  email_organization: "Acepto recibir correos de la organización relacionados con el evento*"
+  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento*"
+  finish_her: Finalizar
 
 criteria:
   title: Criterios de selección
@@ -65,7 +87,7 @@ fellows:
   content16: "<li>CSOs leading the eligibility advocacy efforts</li>"
   content17: "<b>Priority 6:</b> Civil society from an OGP member country that have interest in engaging with the national OGP process. The Support Unit will prioritize:"
   content18: "<li>CSOs with a solid track record on open government / topics intersecting with open government</li><li>CSOs national core team / government would like to bring into the process</li>"
-  
+
 selection_process:
   title: Proceso de Selección
   content1: Está en manos del Comité Organizador, conformado por representantes del gobierno de Uruguay (AGESIC), de la sociedad civil (Red de Gobierno Abierto) y la Unidad de Apoyo de AGA, que contará con un Comité Académico conformado especialmente para la ocasión, con apoyo de la academia.
@@ -73,3 +95,8 @@ selection_process:
   content3: "Cerrado llamado a ponentes, temas de interés y solicitud de becas, el Comité académico se abocará a la tarea del armado de sesiones en la agenda <strong>de acuerdo a los temas más propuestos y los temas prioritarios para OGP</strong>, así como los <strong>grupos de ponentes, liderados cada uno por un facilitador que desarrollarán esas sesiones</strong>."
   content4: "Los ponentes y facilitadores seleccionados serán contactados por correo electrónico antes del 22 de abril y contarán con tres días hábiles para confirmar su participación, incluyendo aquellos que requiriesen asistencia para transporte y hospedaje. Quienes acepten recibirán detalles adicionales sobre el armado de sesiones, incluyendo puntos de contacto para asuntos de contenido y logística. El resultado de la selección será publicado en el sitio (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) una vez confirmada la totalidad de los ponentes y facilitadores. A través de ésta, el público podrá hacer llegar sugerencias sobre el tema o la sesión al facilitador, ampliando al máximo la posibilidad de participación de los asistentes en la agenda."
   content5: El facilitador de cada sesión responde por el armado de la misma ante el comité académico y tiene la responsabilidad de hacer llegar una propuesta co-creada con el resto de los ponentes al comité antes del 20 de mayo. El comité académico sugerirá a los facilitadores una serie de formatos posibles para las sesiones, sin perjuicio de que éstos propongan otras. Se insistirá especialmente en que las sesiones fomenten el diálogo más que la exposición, el intercambio de ideas entre ponentes y con el público, así como la participación externa por medio de preguntas, formatos interactivos o uso de herramientas en línea.
+
+thanks:
+  title: "Muchas gracias por completar el formulario"
+  content: "Los datos fueron enviados correctamente. Las novedades del evento estarán disponibles en este sitio web (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) e informaremos de fechas clave a través de correo electrónico."
+  goodbye: "¡Nos vemos en Montevideo!"
