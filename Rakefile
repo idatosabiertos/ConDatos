@@ -21,6 +21,8 @@ namespace :db do
       String :interests
       String :enabler
       String :link
+      String :needs_transport
+      String :needs_hosting
     end
   end
 end

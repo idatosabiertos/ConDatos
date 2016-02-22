@@ -11,7 +11,11 @@ Dotenv.load
 R18n::I18n.default = 'es'
 
 before do
-  session[:locale] = params[:locale] if params[:locale]
+  session[:locale] = if params[:locale]
+                       params[:locale]
+                     else
+                       'es'
+                     end
 end
 
 get '/' do
@@ -24,7 +28,6 @@ post '/enviar' do
     params[:interests].delete('other')
     params[:interests] << params[:other_interests]
   end
-
   survey = Survey.new(
     name: params[:name],
     organization: params[:organization],
@@ -37,7 +40,9 @@ post '/enviar' do
     interests: params[:interests],
     conference_comments: params[:conference_comments],
     enabler: params[:enabler] == 'on' ? 'Sí' : 'No',
-    link: params[:link]
+    link: params[:link],
+    needs_transport: params[:fellows_transport] == 'on' ? 'Sí' : 'No',
+    needs_hosting: params[:fellows_hosting]  == 'on' ? 'Sí' : 'No'
   )
   if survey.valid?
     survey.save
@@ -69,7 +74,7 @@ get '/resultados' do
   )
   content_type 'application/csv'
   attachment 'resultados_ogp.csv'
-  csv = "Nombre;Organización;Sector;País;Email;Inscripción Desconferencia;Aportar a desconferencia;Inscripción encuentro Regional;Aportar conferencia temas;Temas de interés;Postulante facilitador;Enlace CV o Linkedin\n"
+  csv = "Nombre;Organización;Sector;País;Email;Inscripción Desconferencia;Aportar a desconferencia;Inscripción encuentro Regional;Aportar conferencia temas;Temas de interés;Postulante facilitador;Enlace CV o Linkedin;Necesita transporte;Necesita alojamiento\n"
   Survey.each do |survey|
     csv << survey.to_csv(except: :id)
   end
@@ -86,5 +91,14 @@ helpers do
   def authorized?
     @auth ||= Rack::Auth::Basic::Request.new(request.env)
     @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [ENV['RESULTADOS_USER'], ENV['PASSWORD']]
+  end
+
+  def home_url
+    "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}"
+  end
+
+  def clean_current_url
+    regex = /\?.+/
+    request.url.gsub(regex, '')
   end
 end

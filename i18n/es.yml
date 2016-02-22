@@ -36,7 +36,10 @@ form:
   encounter_third_kind_info: Los días 1 y 2/6 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.
   join_encounter: Deseo participar de la conferencia del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016
   stuff_interested: Temas de mi interés** <span>(seleccionar hasta 3)</span>
-
+  fellows_title: Solicitud de Becas
+  fellows_content: Las becas se otorgarán a personas u organizaciones que no cuenten con medios propios para asistir al evento. Tendrán prioridad para el apoyo en viajes y hospedaje aquellas personas que hayan sido seleccionadas para roles de ponentes o facilitadores y no cuenten con los medios para acceder al evento por cuenta propia. Para el resto de las personas seleccionadas se aplicarán los mismos principios detallados para la selección de ponentes y facilitadores.
+  fellows_transport: Deseo postularme para recibir apoyo para el transporte
+  fellows_hosting: Deseo postularme para recibir apoyo para el hospedaje
 
 criteria:
   title: Criterios de selección

@@ -190,6 +190,28 @@
 
     <div class="block">
       <div class="form-group">
+        <h3><%= t.form.fellows_title %></h3>
+        <p><%= t.form.fellows_content %></p>
+        <label for="fellows_transport">
+          <%= t.form.fellows_transport %>
+        </label>
+        <input type='checkbox' name='fellows_transport' id='fellows_transport' class="check">
+        <section class="checkbox">
+          <span class="highlight"></span>
+        </section>
+
+        <label for="fellows_hosting">
+          <%= t.form.fellows_hosting %>
+        </label>
+        <input type='checkbox' name='fellows_hosting' id='fellows_hosting' class="check">
+        <section class="checkbox">
+          <span class="highlight"></span>
+        </section>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="form-group">
         <h3>Términos y condiciones</h3>
         <p>La organización no compartirá los datos proporcionados con nadie, ni enviará mensajes de correo no relacionados a la organización del evento. El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.</p>
         <label for="email_organization">

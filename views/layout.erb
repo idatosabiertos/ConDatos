@@ -25,7 +25,7 @@
     <meta property="og:description" content="<%= t.layout.description %>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<%= request.url %>" />
-    <meta property="og:image" content="<%= "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}" %>/img/og.png" />
+    <meta property="og:image" content="<%= home_url %>/img/og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -33,7 +33,7 @@
     <meta name="twitter:site" content="@agesic" />
     <meta name="twitter:title" content="<%= t.layout.title %>" />
     <meta name="twitter:description" content="<%= t.layout.description %>" />
-    <meta name="twitter:image"  content="<%= "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}" %>/img/og.png" />
+    <meta name="twitter:image"  content="<%= home_url %>/img/og.png" />
 
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -61,7 +61,10 @@
             <%= t.layout.date4 %>
           </h2>
         </div>
-        <a href="#" class="btn"><%= t.layout.language %></a>
+        <% locale = (session[:locale] == 'es') ? 'en' : 'es' %>
+        <a href="<%= "#{clean_current_url}?locale=#{locale}" %>" class="btn">
+          <%= t.layout.language %>
+        </a>
         <br>
         <a href="/#form" class="btn  page-scroll"><%= t.layout.register %></a>
         <a id="arrow" href="/#form" class="page-scroll">
