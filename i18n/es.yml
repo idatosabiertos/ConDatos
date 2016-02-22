@@ -45,8 +45,26 @@ criteria:
   content2: Los roles de facilitación se ofrecerán a personas que se hayan ofrecido a asumir tal responsabilidad, condición que también será tenida en cuenta al momento de la selección. Cualquiera de los grupos formados por sesión puede optar por compartir el rol o cambiar a al persona designada como facilitador mediante consenso.
 
 fellows:
-  title: Becarios
-  content: Tendrán prioridad para el apoyo en viajes y hospedaje aquellas personas que hayan sido seleccionadas para roles de ponentes o facilitadores y no cuenten con los medios para acceder al evento por cuenta propia. Para el resto de las personas seleccionadas se aplicarán los mismos principios detallados para la selección de ponentes y facilitadores.
+  title: Funding of civil society actors
+  content1: The Articles of Governance say the following about Civil Society Participation in the Regional Meeting: The Support Unit is to fund the travel of a certain number of local civil society representatives from OGP participating countries, contingent on available resources. All steps of the process to select local civil society representatives from OGP participating countries will be made public on the OGP website.
+  content2: Civil society participation in the OGP Regional Meeting and all other outreach events is based on the principle of open invitation. Governments do not determine which civil society organizations attend from their countries, and they have no veto power. Regarding funded civil society participants at the Regional Meeting, the OGP Support Unit works with the civil society chairs to establish a transparent process to identify the most appropriate participation for each country. In addition to the OGP-funded civil society participants attending the Regional Meeting, other civil society organizations are invited using pre-defined criteria, pending availability of space as determined by the civil society chair in consultation with the other chairs.
+  title2: Criteria for determining participation and funding for civil society actors
+  content3: Civil society participation in the OGP Regional Meeting and all other outreach events is based on the principle of open invitation. If space is limited, the below criteria will be used to prioritize civil society participation. Please note IRM researchers applying for funding will be referred to the IRM team.
+  content4: The OGP budget includes funding for civil society participation. While registering, civil society actors will be asked if they need funding to attend the summit. For those indicating this need the OGP Support Unit will use the same criteria to prioritize participants. It will also reach out to other funders to see if they could facilitate participation of some of the requesters. Funded participants will be asked to play an active role at the event (i.e. organize or take part in a session). The OGP Support Unit will additionally strive to strike a geographical and gender balance and fund actors working on a diversity of open government topics.
+  content5: The Civil Society Engagement team is process lead for the below.
+  content6: The following criteria are to be used to prioritize civil-society funding recipients:
+  content7: "<b>Priority 1:</b> Civil society from an OGP member country belonging to the national OGP Steering Committee/core team."
+  content8: "<li>If more than one CS fits this criteria, CSE team will ask core team to decide among themselves.</li>"
+  content9: "<b>Priority 2:</b> Civil society actors active at regional/international level including those from multi-stakeholder initiatives and issue-based coalitions/networks currently working on OGP."
+  content10: "<li>The Support Unit will decide based on the relevant OGP activities such actors have employed to date (e.g. support of local processes; participation in working groups; pledges, etc.)</li>"
+  content11: "<b>Priority 3:</b> Civil society from an OGP member country that has been involved in national OGP process. The Support Unit will prioritize:"
+  content12: "<li>CSOs supporting implementation or monitoring of specific commitments</li><li>CSOs monitoring the overall OGP process</li><li>CSOs working closely with the core team and/or lined-up to join core team</li>"
+  content13: "<b>Priority 4:</b> Civil society from OGP eligible – non-member countries that are pushing for membership. The Support Unit will prioritize:"
+  content14: "<li>CSOs leading OGP membership advocacy efforts</li>"
+  content15: "<b>Priority 5:</b> Civil society from non-eligible OGP countries that are pushing for eligibility."
+  content16: "<li>CSOs leading the eligibility advocacy efforts</li>"
+  content17: "<b>Priority 6:</b> Civil society from an OGP member country that have interest in engaging with the national OGP process. The Support Unit will prioritize:"
+  content18: "<li>CSOs with a solid track record on open government / topics intersecting with open government</li><li>CSOs national core team / government would like to bring into the process</li>"
 
 selection_process:
   title: Proceso de Selección
