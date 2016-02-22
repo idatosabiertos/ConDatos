@@ -6,6 +6,7 @@ gem 'sequel'
 gem 'pg'
 gem 'dotenv'
 gem 'sinatra-asset-pipeline'
+gem 'sinatra-r18n'
 
 group :test, :development do
   gem 'byebug'

@@ -3,10 +3,16 @@ require 'sinatra'
 require 'sequel'
 require 'csv'
 require 'dotenv'
+require 'sinatra/r18n'
 require_relative 'models/init.rb'
 require_relative 'lib/form_data.rb'
 
 Dotenv.load
+R18n::I18n.default = 'es'
+
+before do
+  session[:locale] = params[:locale] if params[:locale]
+end
 
 get '/' do
   erb :index

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto</title>
+    <title><%= t.layout.title %></title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -21,9 +21,8 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <meta property="og:title" content="Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto" />
-    <meta property="og:description" content="
-Llamado a ponentes, temas de interés y becas del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto en Montevideo." />
+    <meta property="og:title" content="<%= t.layout.title %>" />
+    <meta property="og:description" content="<%= t.layout.description %>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<%= request.url %>" />
     <meta property="og:image" content="<%= "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}" %>/img/og.png" />
@@ -32,8 +31,8 @@ Llamado a ponentes, temas de interés y becas del Encuentro Regional de las Amé
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@agesic" />
-    <meta name="twitter:title" content="Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto" />
-    <meta name="twitter:description" content="Llamado a ponentes, temas de interés y becas del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto en Montevideo." />
+    <meta name="twitter:title" content="<%= t.layout.title %>" />
+    <meta name="twitter:description" content="<%= t.layout.description %>" />
     <meta name="twitter:image"  content="<%= "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}" %>/img/og.png" />
 
   </head>
@@ -49,19 +48,25 @@ Llamado a ponentes, temas de interés y becas del Encuentro Regional de las Amé
           <li><a id="rga" href="http://rga.uy/" target="_blank">Red de gobierno abierto uruguay</a></li>
         </ul>
         <div class="txt">
-          <h1>ENCUENTRO REGIONAL<br>
-            DE LAS AMÉRICAS DE<br>
-            LA ALIANZA PARA EL<br>
-            GOBIERNO ABIERTO
+          <h1>
+            <%= t.layout.title1 %><br>
+            <%= t.layout.title2 %><br>
+            <%= t.layout.title3 %><br>
+            <%= t.layout.title4 %>
           </h1>
-          <h2>31.05 al 02.06<br>
-            DE 2016<br>
-            MONTEVIDEO<br>
-            URUGUAY
+          <h2>
+            <%= t.layout.date1 %><br>
+            <%= t.layout.date2 %><br>
+            <%= t.layout.date3 %><br>
+            <%= t.layout.date4 %>
           </h2>
         </div>
-        <a href="/#form" class="btn  page-scroll">Registrarse</a>
-        <a id="arrow" href="/#form" class="page-scroll"><img class="tiny" src="img/arrow.svg" alt=""></a>
+        <a href="#" class="btn"><%= t.layout.language %></a>
+        <br>
+        <a href="/#form" class="btn  page-scroll"><%= t.layout.register %></a>
+        <a id="arrow" href="/#form" class="page-scroll">
+          <img class="tiny" src="img/arrow.svg" alt="">
+        </a>
       </div>
     </header>
     <%= yield %>

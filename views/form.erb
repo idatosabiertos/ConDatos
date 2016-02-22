@@ -6,22 +6,22 @@
   <div class="triangle-topleft"></div>
   <form action='/enviar' method='post' name='form' id="form">
     <div class="block">
-      <h3>Tus datos</h3>
+      <h3><%= t.form.data %></h3>
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <input type='text' name='name' id='name' class="form-control" placeholder="Nombre*">
+            <input type='text' name='name' id='name' class="form-control" placeholder="<%= t.form.name %>*">
           </div>
         </div>
         <div class="col-md-6">
           <div class="form-group">
-            <input type='text' name='organization' id='organization' class="form-control" placeholder="Organización*">
+            <input type='text' name='organization' id='organization' class="form-control" placeholder="<%= t.form.organization %>*">
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="form-group">
-            <input type='email' name='email' id='email' placeholder="Correo Electrónico*" class="form-control">
+            <input type='email' name='email' id='email' placeholder="<%= t.form.email %>*" class="form-control">
           </div>
         </div>
 
@@ -29,15 +29,29 @@
           <div class="form-group">
             <div class="select-style">
               <select name='sector' id='sector'>
-                <option>Sector*</option>
+                <option><%= t.form.sector %>*</option>
                 <option>--------</option>
-                <option value='Gobierno'>Gobierno</option>
-                <option value='Sociedad Civil'>Sociedad Civil</option>
-                <option value='Academia'>Academia</option>
-                <option value='Fundación/Donante'>Fundación/Donante</option>
-                <option value='Think Tank'>Think Tank</option>
-                <option value='Multilateral'>Multilateral</option>
-                <option value='Sector Privado'>Sector Privado</option>
+                <option value='<%= t.form.government %>'>
+                  <%= t.form.government %>
+                </option>
+                <option value='<%= t.form.society %>'>
+                  <%= t.form.society %>
+                </option>
+                <option value='<%= t.form.police_academy %>'>
+                  <%= t.form.police_academy %>
+                </option>
+                <option value='<%= t.form.foundation %>'>
+                  <%= t.form.foundation %>
+                </option>
+                <option value='<%= t.form.think_tank %>'>
+                  <%= t.form.think_tank %>
+                </option>
+                <option value='<%= t.form.multilateral %>'>
+                  <%= t.form.multilateral %>
+                </option>
+                <option value='<%= t.form.private %>'>
+                  <%= t.form.private %>
+                </option>
               </select>
             </div>
           </div>
@@ -47,7 +61,7 @@
           <div class="form-group">
             <div class="select-style">
               <select name='country' id='country'>
-                <option>País*</option>
+                <option><%= t.form.country %>*</option>
                 <option>--------</option>
                 <% FormData.countries.each do |country| %>
                   <option value='<%= country %>' name='country'><%= country %></option>
@@ -56,17 +70,17 @@
             </div>
           </div>
         </div>
-        <small>* Campos obligatorios</small>
+        <small><%= t.form.mandatory %></small>
       </div>
     </div>
 
     <div class="block">
-      <h3>Día de la Sociedad Civil</h3>
+      <h3><%= t.form.unconference %></h3>
       <div class="form-group">
 
-        <p>El 31/5 se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles.</p>
+        <p><%= t.form.unconference_info %></p>
 
-        <label for="unconference">Deseo participar de la desconferencia en el Día de la Sociedad Civil</label>
+        <label for="unconference"><%= t.form.join_unconference %></label>
         <input type="checkbox" id="unconference" name="unconference" class="check">
         <section class="checkbox">
             <span class="highlight"></span>
@@ -74,18 +88,18 @@
       </div>
 
       <div class="form-group">
-        <h4>¿Qué te gustaría aportar a la desconferencia? <span>(300 caracteres)</span></h4>
+        <h4><%= t.form.give_unconference %></h4>
         <textarea id="unconference_comments" name="unconference_comments" maxlength="300"></textarea>
       </div>
     </div>
 
     <div class="block">
       <div class="form-group">
-        <h3>Encuentro Regional de las Américas</h3>
-        <p>Los días 1 y 2/6 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.</p>
+        <h3><%= t.form.encounter_third_kind %></h3>
+        <p><%= t.form.encounter_third_kind_info %></p>
 
         <label for="regional">
-          Deseo participar de la conferencia del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016
+          <%= t.form.join_encounter %>
         </label>
         <input type="checkbox" class="check" name="regional" id="regional">
         <section class="checkbox">
@@ -94,7 +108,7 @@
       </div>
 
       <div class="form-group">
-        <h4>Temas de mi interés** <span>(seleccionar hasta 3)</span></h4>
+        <h4><%= t.form.stuff_interested %></h4>
 
         <div class="row" id="interests_group">
           <div class="col-md-6">

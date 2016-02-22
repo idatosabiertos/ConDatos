@@ -33,7 +33,7 @@ var validator = new FormValidator('form', [{
         field.className += ' error';
       }
     });
-    goTo(errors[0].id);
+    scrollTo(document.getElementById(error.id), 0, 600);
   }
 });
 
@@ -100,4 +100,16 @@ for(var i = 0; i < interests.length; ++i){
       selected[0].checked = false;
     }
   });
+}
+
+function scrollTo(element, to, duration) {
+  if (duration <= 0) return;
+  var difference = to - element.scrollTop;
+  var perTick = difference / duration * 10;
+
+  setTimeout(function() {
+    element.scrollTop = element.scrollTop + perTick;
+    if (element.scrollTop === to) return;
+    scrollTo(element, to, duration - 10);
+  }, 10);
 }
