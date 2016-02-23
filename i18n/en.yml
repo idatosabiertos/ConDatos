@@ -33,7 +33,7 @@ form:
   think_tank: Think Tank
   multilateral: Multilateral
   private: Sector Privado
-  country: País
+  country: Country
   mandatory: "* Campos obligatorios"
   unconference: Día de la Sociedad Civil
   unconference_info: El 31/5 se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles.
@@ -100,3 +100,48 @@ thanks:
   title: "Muchas gracias por completar el formulario"
   content: "Los datos fueron enviados correctamente. Las novedades del evento estarán disponibles en este sitio web (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) e informaremos de fechas clave a través de correo electrónico."
   goodbye: "¡Nos vemos en Montevideo!"
+
+interests:
+  innovation: Innovación en el sector público
+  cooperation: Cooperación gobierno-sociedad civil
+  technology: Tecnología para la gobernanza
+  open_parliament: Parlamentos Abiertos
+  open_justice: Justicia Abierta
+  mark_zuckerberg: Privacidad y vigilancia
+  public_policy: Política pública
+  docs: Documentación y archivo
+  public_designations: Designaciones públicas
+  public_purchases: Compras públicas
+  public_contracts: Contrataciones Públicas
+  subnational_governments: Gobiernos subnacionales
+  aga_experience: Experiencias en AGA
+  national_plans: Planes de acción nacionales
+  dialog_mechas: Mecanismos de diálogo permanente
+  opendata_development: Datos abiertos para el desarrollo
+  opendata_cities: Datos abiertos para ciudades
+  opendata_environment: Datos abiertos para el medio ambiente y el cambio climático
+  opendata_corruption: Datos abiertos contra la corrupción
+  natural_resources: Gobernanza de recursos naturales
+  energy: Energía
+  extractive_industries: Industrias extractivas
+  poverty: Reducción de la pobreza
+  food: Seguridad alimenticia
+  productivity: Democratización de la productividad
+  public_health: Salud pública
+  decent_job: Empleo digno
+  quality_education: Educación de calidad
+  equality: Igualdad
+  decent_housing: Vivienda digna
+  gender_equality: Igualdad de género
+  urban_development: Desarrollo urbano
+  rural_development: Desarrollo rural
+  sustainable_transport: Transporte sostenible
+  social_inclusion: Inclusión social
+  public_safety: Seguridad pública y acceso a la justicia
+  citizen_participation: Participación ciudadana
+  integrity: Integridad y anti-corrupción
+  transparent_elections: Elecciones transparentes
+  innovation_labs: Laboratorios de innovación
+  public_information: Acceso a la Información pública
+  economic_development: Desarrollo económico
+  civic_tech: Tecnología cívica y tecnología para el desarrollo

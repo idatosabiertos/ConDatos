@@ -114,8 +114,8 @@
           <div class="col-md-6">
             <% FormData.interests.take(22).each do |interest| %>
               <div class="item-checkbox">
-                <label for="<%= interest %>">
-                  <%= interest %>
+                <label for="<%= eval("t.interests." + interest.to_s) %>">
+                  <%= eval("t.interests." + interest.to_s) %>
                 </label>
                 <input type="checkbox" class="check" value="<%= interest %>" id="<%= interest %>" name="interests[]">
                 <section class="checkbox">
@@ -128,8 +128,8 @@
           <div class="col-md-6">
             <% FormData.interests[22..43].each do |interest| %>
               <div class="item-checkbox">
-                <label for="<%= interest %>">
-                  <%= interest %>
+                <label for="<%= eval("t.interests." + interest.to_s) %>">
+                  <%= eval("t.interests." + interest.to_s) %>
                 </label>
                 <input type="checkbox" class="check" value="<%= interest %>" id="<%= interest %>"  name="interests[]">
                 <section class="checkbox">
@@ -145,7 +145,9 @@
               <section class="checkbox">
                 <span class="highlight"></span>
               </section>
-              <input type="text" name="other_interests" class="other_interests">
+              <div class="form-group">
+                <input type="text" name="other_interests" class="other_interests">
+              </div>
             </div>
           </div>
         </div>

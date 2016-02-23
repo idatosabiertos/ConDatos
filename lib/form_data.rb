@@ -1,4 +1,6 @@
 # coding: utf-8
+require 'sinatra/r18n'
+
 module FormData
   def self.countries
     [
@@ -68,26 +70,7 @@ module FormData
 
   def self.interests
     [
-      'Innovación en el sector público', 'Cooperación
-    gobierno-sociedad civil', 'Tecnología para la gobernanza',
-      'Parlamentos Abiertos', 'Justicia Abierta', 'Privacidad y
-    vigilancia', 'Política pública', 'Documentación y archivo',
-      'Designaciones públicas', 'Compras públicas', 'Contrataciones
-    Públicas', 'Gobiernos subnacionales', 'Experiencias en AGA',
-      'Planes de acción nacionales', 'Mecanismos de diálogo permanente',
-      'Datos abiertos para el desarrollo', 'Datos abiertos para
-    ciudades', 'Datos abiertos para el medio ambiente y el cambio
-    climático', 'Datos abiertos contra la corrupción', 'Gobernanza de
-p    recursos naturales', 'Energía', 'Industrias extractivas',
-      'Reducción de la pobreza', 'Seguridad alimenticia',
-      'Democratización de la productividad', 'Salud pública', 'Empleo
-    digno', 'Educación de calidad', 'Igualdad', 'Vivienda digna',
-      'Igualdad de género', 'Desarrollo urbano', 'Desarrollo rural',
-      'Transporte sostenible', 'Inclusión social', 'Seguridad pública y
-    acceso a la justicia', 'Participación ciudadana', 'Integridad y
-    anti-corrupción', 'Elecciones transparentes', 'Laboratorios de
-    innovación', 'Acceso a la Información pública', 'Desarrollo
-    económico', 'Tecnología cívica y tecnología para el desarrollo'
+      :innovation, :cooperation, :technology, :open_parliament, :open_justice, :mark_zuckerberg, :public_policy, :docs, :public_designations, :public_purchases, :public_contracts, :subnational_governments, :aga_experience, :national_plans, :dialog_mechas, :opendata_development, :opendata_cities, :opendata_environment, :opendata_corruption, :natural_resources, :energy, :extractive_industries, :poverty, :food, :productivity, :public_health, :decent_job, :quality_education, :equality, :decent_housing, :gender_equality, :urban_development, :rural_development, :sustainable_transport, :social_inclusion, :public_safety, :citizen_participation, :integrity, :transparent_elections, :innovation_labs, :public_information, :economic_development, :civic_tech
     ]
   end
 end
