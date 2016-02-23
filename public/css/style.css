@@ -658,3 +658,19 @@ input:checked + section > span {
 ul.org_logos li{
     list-style: none;
 }
+
+#english_btn {
+       position: absolute;
+   right: -60px;
+   color: #2E3192 ;
+   top: 61px;
+   text-transform: uppercase;
+}
+
+.btn_back {
+   float: right;
+   margin-top: 23px;
+   color: #fff;
+   border-bottom: 1px solid #fff;
+   padding-bottom: 1px;
+}
