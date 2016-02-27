@@ -1,3 +1,16 @@
+<% if survey.errors && !survey.errors.empty? %>
+  <section id="errors" class="container content-section">
+    <div class="alert alert-danger" role="alert">
+      <h2><%= t.index.errors %></h2>
+      <ul>
+        <% survey.errors.each do |e,v| %>
+          <li><%= eval('t.survey.' + e.to_s) %> - <%= eval('t.survey.' + v[0].to_s) %></li>
+        <% end %>
+      </ul>
+    </div>
+  </section>
+<% end %>
+
 <section id="about" class="container content-section text-center">
   <div class="triangle-topright"></div>
   <div class="triangle-topleft"></div>
@@ -30,4 +43,4 @@
 </section>
 
 <!-- FORM -->
-<%= erb :form %>
+<%= erb :form, locals: { survey: survey } %>

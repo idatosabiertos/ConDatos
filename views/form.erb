@@ -10,18 +10,18 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <input type='text' name='name' id='name' class="form-control" placeholder="<%= t.form.name %>*">
+            <input type='text' name='name' id='name' class="form-control" placeholder="<%= t.form.name %>*" value="<%= survey.name %>">
           </div>
         </div>
         <div class="col-md-6">
           <div class="form-group">
-            <input type='text' name='organization' id='organization' class="form-control" placeholder="<%= t.form.organization %>*">
+            <input type='text' name='organization' id='organization' class="form-control" placeholder="<%= t.form.organization %>*" value="<%= survey.organization %>">
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="form-group">
-            <input type='email' name='email' id='email' placeholder="<%= t.form.email %>*" class="form-control">
+            <input type='email' name='email' id='email' placeholder="<%= t.form.email %>*" class="form-control" value="<%= survey.email %>">
           </div>
         </div>
 
@@ -31,27 +31,16 @@
               <select name='sector' id='sector'>
                 <option><%= t.form.sector %>*</option>
                 <option>--------</option>
-                <option value='<%= t.form.government %>'>
-                  <%= t.form.government %>
-                </option>
-                <option value='<%= t.form.society %>'>
-                  <%= t.form.society %>
-                </option>
-                <option value='<%= t.form.police_academy %>'>
-                  <%= t.form.police_academy %>
-                </option>
-                <option value='<%= t.form.foundation %>'>
-                  <%= t.form.foundation %>
-                </option>
-                <option value='<%= t.form.think_tank %>'>
-                  <%= t.form.think_tank %>
-                </option>
-                <option value='<%= t.form.multilateral %>'>
-                  <%= t.form.multilateral %>
-                </option>
-                <option value='<%= t.form.private %>'>
-                  <%= t.form.private %>
-                </option>
+                <% FormData.sectors.each do |sector| %>
+                  <% sector = eval('t.form.' + sector.to_s) %>
+                  <option value='<%= sector %>'
+                          <% if survey.sector == sector %>
+                          selected="selected"
+                          <% end %>
+                  >
+                    <%= sector %>
+                  </option>
+                <% end %>
               </select>
             </div>
           </div>
@@ -64,7 +53,13 @@
                 <option><%= t.form.country %>*</option>
                 <option>--------</option>
                 <% FormData.countries.each do |country| %>
-                  <option value='<%= country %>' name='country'><%= country %></option>
+                  <option value='<%= country %>' name='country'
+                          <% if country == survey.country %>
+                          selected="selected"
+                          <% end %>
+                  >
+                    <%= country %>
+                  </option>
                 <% end %>
               </select>
             </div>
@@ -83,13 +78,13 @@
         <label for="unconference"><%= t.form.join_unconference %></label>
         <input type="checkbox" id="unconference" name="unconference" class="check">
         <section class="checkbox">
-            <span class="highlight"></span>
+          <span class="highlight"></span>
         </section>
       </div>
 
       <div class="form-group">
         <h4><%= t.form.give_unconference %></h4>
-        <textarea id="unconference_comments" name="unconference_comments" maxlength="300"></textarea>
+        <textarea id="unconference_comments" name="unconference_comments" maxlength="300"><%= survey.unconference_comments %></textarea>
       </div>
     </div>
 
@@ -155,7 +150,7 @@
 
       <div class="form-group">
         <h4><%= t.form.what %></h4>
-        <textarea maxlength="500" id="conference_comments" name="conference_comments"></textarea>
+        <textarea maxlength="500" id="conference_comments" name="conference_comments"><%= survey.conference_comments %></textarea>
         <div class="item-checkbox">
           <label for="enabler">
             <%= t.form.vote_me %>
@@ -171,7 +166,7 @@
         <h4><%= t.form.linkedin %></h4>
         <div class="col-md-12">
           <div class="form-group">
-            <input type="text" class="form-control" id="link" placeholder="<%= t.form.link_here %>" name="link">
+            <input type="text" class="form-control" id="link" placeholder="<%= t.form.link_here %>" name="link" value="<%= survey.link %>">
           </div>
         </div>
       </div>
@@ -237,5 +232,4 @@
   <script src='/js/validate.min.js'></script>
   <script src='/js/smoothscroll.min.js'></script>
   <script src='/js/form.js'></script>
-
 </section>

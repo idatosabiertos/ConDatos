@@ -19,6 +19,7 @@ index:
   content3: Para ésto, en lugar de un llamado a ponencias tradicional, invitamos a todos los interesados en asistir a completar el siguiente formulario, seleccionar sus temas de interés y/o agregar los que les resulten relevantes, así como postularse explicitando sus posibles aportes en hasta tres temas.
   content4: Buscamos crear una agenda más dinámica y colaborativa, experimentando con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicita posibles aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
   fellows: Becarios
+  errors: Errors
 
 form:
   data: Tus datos
@@ -145,3 +146,14 @@ interests:
   public_information: Acceso a la Información pública
   economic_development: Desarrollo económico
   civic_tech: Tecnología cívica y tecnología para el desarrollo
+
+survey:
+  name: Name
+  organization: Organization
+  email: E-Mail
+  sector: Sector
+  country: Country
+  empty: Can't be empty
+  checked: Must be checked
+  email_organization: "Acepto recibir correos de la organización relacionados con el evento"
+  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento"

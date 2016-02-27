@@ -73,4 +73,9 @@ module FormData
       :innovation, :cooperation, :technology, :open_parliament, :open_justice, :mark_zuckerberg, :public_policy, :docs, :public_designations, :public_purchases, :public_contracts, :subnational_governments, :aga_experience, :national_plans, :dialog_mechas, :opendata_development, :opendata_cities, :opendata_environment, :opendata_corruption, :natural_resources, :energy, :extractive_industries, :poverty, :food, :productivity, :public_health, :decent_job, :quality_education, :equality, :decent_housing, :gender_equality, :urban_development, :rural_development, :sustainable_transport, :social_inclusion, :public_safety, :citizen_participation, :integrity, :transparent_elections, :innovation_labs, :public_information, :economic_development, :civic_tech
     ]
   end
+
+  def self.sectors
+    [:government, :society, :police_academy, :foundation, :think_tank,
+     :multilateral, :private]
+  end
 end

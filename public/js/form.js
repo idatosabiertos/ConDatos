@@ -45,7 +45,7 @@ function goTo(element){
 
 // Custom validators:
 validator.registerCallback('check_country', function(value){
-  if(value == 'País*' || value == '--------'){
+  if(value == 'País*' || value == '--------' || value == 'Country*'){
     return false;
   }
   return true;

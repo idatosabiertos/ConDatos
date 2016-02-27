@@ -19,37 +19,17 @@ before do
 end
 
 get '/' do
-  erb :index
+  survey = Survey.new
+  erb :index, locals: { survey: survey }
 end
 
 post '/enviar' do
-  #"interests"=>["Acceso a la Información pública", "Desarrollo\r\n    económico", "other"], "other_interests"=>"Nintendo 64"
-  if params[:interests] && params[:interests].include?('other') && params[:other_interests]
-    params[:interests].delete('other')
-    params[:interests] << params[:other_interests]
-  end
-  survey = Survey.new(
-    name: params[:name],
-    organization: params[:organization],
-    sector: params[:sector],
-    country: params[:country],
-    email: params[:email],
-    unconference: params[:unconference] == 'on' ? 'Sí' : 'No',
-    unconference_comments: params[:unconference_comments],
-    regional: params[:regional] == 'on' ? 'Sí' : 'No',
-    interests: params[:interests],
-    conference_comments: params[:conference_comments],
-    enabler: params[:enabler] == 'on' ? 'Sí' : 'No',
-    link: params[:link],
-    needs_transport: params[:fellows_transport] == 'on' ? 'Sí' : 'No',
-    needs_hosting: params[:fellows_hosting]  == 'on' ? 'Sí' : 'No'
-  )
-  if survey.valid?
+  survey = create_survey(params)
+  if survey.errors.empty?
     survey.save
     erb :thanks
   else
-    # TODO - Show backend errors on frontend
-    redirect to('/')
+    erb :index, locals: { survey: survey }
   end
 end
 
@@ -79,6 +59,31 @@ get '/resultados' do
     csv << survey.to_csv(except: :id)
   end
   csv
+end
+
+def create_survey(params)
+  if params[:interests] && params[:interests].include?('other') && params[:other_interests]
+    params[:interests].delete('other')
+    params[:interests] << params[:other_interests]
+  end
+  survey = Survey.new(
+    name: params[:name], organization: params[:organization],
+    sector: params[:sector], country: params[:country],
+    email: params[:email], unconference: params[:unconference] == 'on' ? 'Sí' : 'No',
+    unconference_comments: params[:unconference_comments],
+    regional: params[:regional] == 'on' ? 'Sí' : 'No', interests: params[:interests],
+    conference_comments: params[:conference_comments],
+    enabler: params[:enabler] == 'on' ? 'Sí' : 'No', link: params[:link],
+    needs_transport: params[:fellows_transport] == 'on' ? 'Sí' : 'No',
+    needs_hosting: params[:fellows_hosting] == 'on' ? 'Sí' : 'No'
+  )
+  # Check for errors, so we can add custom ones on the next line
+  survey.valid?
+  # Add error if the mandatory fields are not checked
+  survey.errors.add(:email_organization, :checked) unless params[:email_organization]
+  survey.errors.add(:register_image, :checked) unless params[:register_image]
+
+  survey
 end
 
 helpers do
