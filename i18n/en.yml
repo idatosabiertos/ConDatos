@@ -14,6 +14,7 @@ layout:
   goback: Volver al inicio
 
 index:
+  title: Llamado a ponentes, temas de interés y solicitud de becas
   content1: El Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016 se llevará a cabo en la ciudad de Montevideo y se esperan alrededor de 500 participantes de gobierno, sociedad civil, medios y empresas.
   content2: En esta edición y en línea con los principios de cooperación y participación que impulsan a la AGA, buscamos de los participantes del evento aportes para el armado de una agenda temática que refleje los intereses y prioridades de la comunidad de Gobierno Abierto regional. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano.
   content3: Para ésto, en lugar de un llamado a ponencias tradicional, invitamos a todos los interesados en asistir a completar el siguiente formulario, seleccionar sus temas de interés y/o agregar los que les resulten relevantes, así como postularse explicitando sus posibles aportes en hasta tres temas.
@@ -58,7 +59,8 @@ form:
   termos: Términos y condiciones
   termos_content: La organización no compartirá los datos proporcionados con nadie, ni enviará mensajes de correo no relacionados a la organización del evento. El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.
   email_organization: "Acepto recibir correos de la organización relacionados con el evento*"
-  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento*"
+  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento****"
+  shy: "**** Si no está de acuerdo con ésta condición, por favor contacte a la organización."
   finish_her: Finalizar
 
 criteria:
