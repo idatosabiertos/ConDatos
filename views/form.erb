@@ -84,7 +84,7 @@
 
       <div class="form-group">
         <h4><%= t.form.give_unconference %></h4>
-        <textarea id="unconference_comments" name="unconference_comments" maxlength="300"><%= survey.unconference_comments %></textarea>
+        <textarea id="unconference_comments" name="unconference_comments"><%= survey.unconference_comments %></textarea>
       </div>
     </div>
 
@@ -150,7 +150,7 @@
 
       <div class="form-group">
         <h4><%= t.form.what %></h4>
-        <textarea maxlength="500" id="conference_comments" name="conference_comments"><%= survey.conference_comments %></textarea>
+        <textarea id="conference_comments" name="conference_comments"><%= survey.conference_comments %></textarea>
         <div class="item-checkbox">
           <label for="enabler">
             <%= t.form.vote_me %>

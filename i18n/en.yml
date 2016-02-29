@@ -159,3 +159,6 @@ survey:
   checked: Must be checked
   email_organization: "Acepto recibir correos de la organización relacionados con el evento"
   register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento"
+  conference_comments: ¿Qué te gustaría aportar a la conferencia?
+  unconference_comments: ¿Qué te gustaría aportar a la desconferencia?
+  max_words: Máximo 300 palabras

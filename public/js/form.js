@@ -20,8 +20,11 @@ var validator = new FormValidator('form', [{
   name: 'register_image',
   rules: 'required'
 },{
-  name: 'unconference_give',
-  rules: 'maxlength[300]'
+  name: 'unconference_comments',
+  rules: 'callback_max_words'
+}, {
+  name: 'conference_comments',
+  rules: 'callback_max_words'
 }], function(errors, event) {
   if (errors.length > 0) {
     errors.forEach(function(error){
@@ -58,6 +61,12 @@ validator.registerCallback('check_sector', function(value){
   return true;
 }).setMessage('check_sector', 'Por favor seleccione un sector');
 
+validator.registerCallback('max_words', function(value){
+  if(value.split(" ").length > 300){
+    return false;
+  }
+  return true;
+}).setMessage('max_words', 'Max 300');
 // Validate on change
 document.getElementById('name').addEventListener('input', coso);
 document.getElementById('email').addEventListener('input', coso);
