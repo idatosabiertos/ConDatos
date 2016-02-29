@@ -11,7 +11,7 @@ Dotenv.load
 R18n::I18n.default = 'es'
 
 before do
-  session[:locale] = params.fetch(:locale, 'es')
+  session[:locale] = params.fetch('locale', 'es')
 end
 
 get '/' do
@@ -21,8 +21,8 @@ end
 
 post '/enviar' do
   survey = create_survey(params)
-  return erb :index, locals: { survey: survey } if !survey.errors.empty?
-  
+  return erb :index, locals: { survey: survey } unless survey.errors.empty?
+
   survey.save
   erb :thanks
 end
