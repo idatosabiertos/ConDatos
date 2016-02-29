@@ -39,7 +39,7 @@ form:
   unconference: Día de la Sociedad Civil
   unconference_info: El 31/5 se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles.
   join_unconference: Deseo participar de la desconferencia en el Día de la Sociedad Civil
-  give_unconference: "¿Qué te gustaría aportar a la desconferencia? <span>(300 caracteres)</span>"
+  give_unconference: "¿Qué te gustaría aportar a la desconferencia? <span>(300 palabras)</span>"
   encounter_third_kind: Encuentro Regional de las Américas
   encounter_third_kind_info: Los días 1 y 2/6 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.
   join_encounter: Deseo participar de la conferencia del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016
@@ -49,7 +49,7 @@ form:
   fellows_transport: Deseo postularme para recibir apoyo para el transporte
   fellows_hosting: Deseo postularme para recibir apoyo para el hospedaje
   other: Otro (especificar)
-  what: ¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste?
+  what: ¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste? <span>(300 palabras)</span>
   vote_me: Deseo postularme como ponente o facilitador para sesiones sobre temas de mi interés***
   linkedin: "Enlace a perfil de LinkedIn o CV:"
   link_here: Enlace aquí
