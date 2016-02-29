@@ -491,7 +491,7 @@ footer p {
     margin: 0;
 }
 footer ul { margin: 0}
-footer ul li  { display: inline-block; color: #2B3990;}
+footer ul li  { display: inline-block; color: #2B3990; margin: 0 20px }
 
 footer ul li a:hover { text-decoration: underline;}
 footer ul li a {font-size: 16px;color: #2B3990;font-weight:bold; padding-left: 5px }
