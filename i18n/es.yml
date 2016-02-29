@@ -157,4 +157,5 @@ survey:
   empty: No puede ser vacío
   checked: Debe estar chequeado
   email_organization: "Acepto recibir correos de la organización relacionados con el evento"
-  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento"
+  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento****"
+  shy: "**** Si no está de acuerdo con ésta condición, por favor contacte a la organización."
