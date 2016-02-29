@@ -1,73 +1,74 @@
 layout:
-  title: Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto
-  description: Llamado a ponentes, temas de interés y becas del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto en Montevideo.
-  title1: ENCUENTRO REGIONAL
-  title2: DE LAS AMÉRICAS DE
-  title3: LA ALIANZA PARA EL
-  title4: GOBIERNO ABIERTO
-  date1: 31.05 al 02.06
-  date2: DE 2016
+  title: Regional Americas Meeting of the Open Government Partnership
+  description: A Call for Speakers, Topics of Interest, and Grant Requests for the Regional Americas Meeting of the Open Government Partnership in Montevideo.
+  title1: REGIONAL AMERICAS
+  title2: MEETING OF THE
+  title3: OPEN GOVERNMENT
+  title4: PARTNERSHIP
+  date1: 31.05 TO 02.06
+  date2: OF 2016
   date3: MONTEVIDEO
   date4: URUGUAY
   language: Español
-  register: Registrarse
-  goback: Volver al inicio
+  register: Form
+  goback: Go back
 
 index:
-  title: Llamado a ponentes, temas de interés y solicitud de becas
-  content1: El Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016 se llevará a cabo en la ciudad de Montevideo y se esperan alrededor de 500 participantes de gobierno, sociedad civil, medios y empresas.
-  content2: En esta edición y en línea con los principios de cooperación y participación que impulsan a la AGA, buscamos de los participantes del evento aportes para el armado de una agenda temática que refleje los intereses y prioridades de la comunidad de Gobierno Abierto regional. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano.
-  content3: Para ésto, en lugar de un llamado a ponencias tradicional, invitamos a todos los interesados en asistir a completar el siguiente formulario, seleccionar sus temas de interés y/o agregar los que les resulten relevantes, así como postularse explicitando sus posibles aportes en hasta tres temas.
-  content4: Buscamos crear una agenda más dinámica y colaborativa, experimentando con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicita posibles aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
-  fellows: Becarios
+  title: A Call for Speakers, Topics of Interest, and Grant Requests
+  content1: The 2016 Regional Americas Meeting of the Open Government Partnership (OGP) will be held in the city of Montevideo with approximately 500 participants expected from government, civil society, the media, and business.
+  content2: In this edition, and in line with the principles of cooperation and participation which drive the OGP, we call on event participants to make contributions to the development of a thematic agenda that reflects the interests and priorities of the regional Open Government community.  As a unifying thread, we will develop the idea discussed at the Global Summit in Mexico of the Post-2015 Sustainable Development Goals, by focusing on how open government can contribute to their promotion in the region from the particular perspective of human development.
+  content3: To that end, instead of issuing a traditional call for speakers, we invite anyone interested in participating as a speaker or workshop facilitator to fill in the attached form, selecting the topics that interest you and/or add those you feel are relevant, as well as applying by explaining the possible contributions you could make to up to three subject areas relative to the given categories.
+  content4: We are looking to create a more dynamic and collaborative agenda by experimenting with sessions that are more participatory and characterized by exchanges among the participants, as well as having workshops in which the attendees’ capacity can be strengthened in different issue areas which contribute to the development of national action plans.  For this reason, the event’s Academic Committee requests possible contributions to the topic, in order to then invite the speakers to jointly create interactive sessions comprised of exchanges.
+  content5: Event registration will open at a later date; as such, we invite everyone to participate in this call, even if you are not absolutely sure you can attend and with the reassurance that it is not obligatory for subsequent registration.
+  fellows: Grantees
   errors: Errors
 
 form:
-  data: Tus datos
-  name: Nombre
-  organization: Organización
-  email: Correo Electrónico
+  data: Your Information
+  name: Name
+  organization: Organization
+  email: Email address
   sector: Sector
-  government: Gobierno
-  society: Sociedad Civil
+  government: Government
+  society: Civil society
   police_academy: Academia
-  foundation: Fundación/Donante
+  foundation: Foundation/donor
   think_tank: Think Tank
-  multilateral: Multilateral
-  private: Sector Privado
+  multilateral: Multilateral institution
+  private: Private sector
   country: Country
-  mandatory: "* Campos obligatorios"
-  unconference: Día de la Sociedad Civil
-  unconference_info: El 31/5 se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles.
-  join_unconference: Deseo participar de la desconferencia en el Día de la Sociedad Civil
-  give_unconference: "¿Qué te gustaría aportar a la desconferencia? <span>(300 caracteres)</span>"
-  encounter_third_kind: Encuentro Regional de las Américas
-  encounter_third_kind_info: Los días 1 y 2/6 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.
-  join_encounter: Deseo participar de la conferencia del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016
-  stuff_interested: Temas de mi interés** <span>(seleccionar hasta 3)</span>
-  fellows_title: Solicitud de Becas
-  fellows_content: Las becas se otorgarán a personas u organizaciones que no cuenten con medios propios para asistir al evento. Tendrán prioridad para el apoyo en viajes y hospedaje aquellas personas que hayan sido seleccionadas para roles de ponentes o facilitadores y no cuenten con los medios para acceder al evento por cuenta propia. Para el resto de las personas seleccionadas se aplicarán los mismos principios detallados para la selección de ponentes y facilitadores.
-  fellows_transport: Deseo postularme para recibir apoyo para el transporte
-  fellows_hosting: Deseo postularme para recibir apoyo para el hospedaje
-  other: Otro (especificar)
-  what: ¿Qué tendrías para aportar a la conferencia en los temas que seleccionaste?
-  vote_me: Deseo postularme como ponente o facilitador para sesiones sobre temas de mi interés***
-  linkedin: "Enlace a perfil de LinkedIn o CV:"
-  link_here: Enlace aquí
-  topics: "** Los temas propuestos serán compartidos para que otros asistentes puedan elegirlos, agradecemos no generar duplicados u opciones muy similares. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano."
-  books_are_good: "*** Recomendamos leer el documento especificando el proceso y criterios de selección antes de postularse. Experiencia, proyectos vinculados, historias, experiencias y aprendizajes valiosos para compartir serán tomados en cuenta."
-  termos: Términos y condiciones
-  termos_content: La organización no compartirá los datos proporcionados con nadie, ni enviará mensajes de correo no relacionados a la organización del evento. El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.
-  email_organization: "Acepto recibir correos de la organización relacionados con el evento*"
-  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento****"
-  shy: "**** Si no está de acuerdo con ésta condición, por favor contacte a la organización."
-  finish_her: Finalizar
+  mandatory: "* Required"
+  unconference: Civil Society Day
+  unconference_info: On May 31 there will be an “unconference” organized by civil society to address topics involving this sector.  An “unconference” entails an open agenda co-created by the participants in the moment with sessions for exchanging knowledge among peers that are led by facilitators.  Although it is not an exclusive event for civil society representatives, they will have preference in terms of the selection of the 150 available spots.
+  join_unconference: I wish to participate in the unconference on Civil Society Day
+  give_unconference: "What would you like to contribute to the unconference*? <span>(300 words)</span>"
+  encounter_third_kind: Regional Americas Meeting
+  encounter_third_kind_info: The conference will be held June 1-2 following a program based on the topics proposed during this registration process, with those individuals who make themselves available through the present call.
+  join_encounter: I wish to participate in the 2016 Regional Americas Meeting conference of the Open Government Partnership.
+  stuff_interested: Topics of interest to me** <span>(select up to 3)</span>
+  fellows_title: Grantees
+  fellows_content: Those persons who have been selected to serve as speakers or facilitators and do not personally have the means for attending the event will have priority for receiving support for travel and lodging.  The same principles set forth for the selection of speakers and facilitators will be applied to the rest of the individuals selected.
+  fellows_transport: I wish to apply for travel support
+  fellows_hosting: I wish to apply for lodging support
+  other: Other (specify)
+  what: What could you contribute to the conference in the topics you selected?
+  vote_me: I wish to apply to serve as a speaker or facilitator for sessions on topics of interest to me***
+  linkedin: "Link to your profile on LinkedIn or your CV:"
+  link_here: Link here
+  topics: "** The topics proposed will be shared so that other attendees can select from among them.  We would appreciate you not creating duplicates or options that are very similar to the ones listed.  As a unifying thread, we will develop the idea discussed at the Global Summit in Mexico of the Post-2015 Sustainable Development Goals, by focusing on how open government can contribute to their promotion in the region from the particular perspective of human development."
+  books_are_good: "*** We recommend that you read the section of this website specifying the selection process and criteria prior to applying. Experience, linked projects, stories, experiences, and valuable lessons learned that can be shared will be taken into account."
+  termos: Terms and Conditions
+  termos_content: The organization will not share the data provided to us with anyone outside of OGP or with institutions participating in or supporting the organization of the event, nor will it send email messages unrelated to the organization of the event.  The event will have a photographic and video record for use in later promotional materials; the names of the speakers and facilitators, as well as their images, will be available publically on the event website.
+  email_organization: "I agree to receive emails from the organization regarding the event*"
+  register_image: "AceptoI agree to have my image appear in the photographic and video record of the event****"
+  shy: "**** If you don't agree with this condition, please contact the organization."
+  finish_her: Finish
 
 criteria:
-  title: Criterios de selección
-  title2: Ponentes y facilitadores
-  content1: "En el formulario de llamado a ponentes, temas de interés y solicitud de becas invitamos a que cada asistente cuente al comité académico cuál podría ser su aporte en hasta tres temas que podrían abordarse en el evento. Una vez que se cuente con la lista de temas que más interesan a los asistentes del evento, se seleccionarán a grupos de personas de entre los propuestos u otros invitados que el comité académico considere pertinentes en base a:<ul><li>Vínculo con e involucramiento en proyectos de los temas seleccionados, historias, experiencias y aprendizajes valiosos para compartir.</li><li>Diversidad de visiones, posturas y perspectivas sobre el tema.</li><li>Diversidad de países y regiones representados en la sesión.</li><li>Diversidad de sectores, actores y grupos sociales representados en la sesión.</li><li>Diversidad de género.</li></ul>"
-  content2: Los roles de facilitación se ofrecerán a personas que se hayan ofrecido a asumir tal responsabilidad, condición que también será tenida en cuenta al momento de la selección. Cualquiera de los grupos formados por sesión puede optar por compartir el rol o cambiar a al persona designada como facilitador mediante consenso.
+  title: Selection criteria
+  title2: Speakers and facilitators
+  content1: "In the form for the call for speakers, topics of interest, and grant requests, we invite each attendee to tell the Academic Committee what his/her contribution could be to at least three topics which might be addressed during the event.  Once we have the list of topics that are of greatest interest to event attendees, groups of individuals will be selected from among those proposed and other invitees whom the Academic Committee deems relevant, based on:<ul><li>Links to and involvement in projects focused on the selected topics, stories, experiences, and valuable lessons learned that can be shared.</li><li>Diversity of visions, positions, and perspectives on the topic.</li><li>Diversity of countries and regions represented in the session.</li><li>Diversity of sectors, actors, and social groups represented in the session.</li><li>Gender diversity.</li></ul>"
+  content2: The role of facilitator will be offered to individuals who have applied for this responsibility, a condition which will also be taken into account during the selection process.  Any of the groups formed by session can opt to share the role or change the person designated as facilitator through consensus. The same criteria will be utilized when selecting workshop facilitators.
 
 fellows:
   title: Funding of civil society actors
@@ -92,62 +93,62 @@ fellows:
   content18: "<li>CSOs with a solid track record on open government / topics intersecting with open government</li><li>CSOs national core team / government would like to bring into the process</li>"
 
 selection_process:
-  title: Proceso de Selección
-  content1: Está en manos del Comité Organizador, conformado por representantes del gobierno de Uruguay (AGESIC), de la sociedad civil (Red de Gobierno Abierto) y la Unidad de Apoyo de AGA, que contará con un Comité Académico conformado especialmente para la ocasión, con apoyo de la academia.
-  content2: "Las fechas clave a tener en cuenta son:\n<ul><li>Viernes 19 de febrero - <strong>Llamado a ponentes, temas de interés y solicitud de becas</strong></li>\n<li>Viernes 31 de marzo - <strong>Cierre del llamado a ponentes, temas de interés y solicitud de becas</strong></li>\n<li>1º al 21 de abril - <strong>Deliberación del Comité Académico y armado de la agenda general</strong></li>\n<li>Viernes 22 de abril - <strong>Fecha límite de contacto con ponentes y becarios seleccionados</strong></li>\n<li>22 de abril al 20 de mayo - <strong>Co-creación de sesiones por ponentes</strong></li>\n<li>31 de mayo - <strong>Día de la Sociedad Civil</strong></li>\n<li>1 y 2 de junio - <strong>Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto</strong></li>\n</ul>"
-  content3: "Cerrado llamado a ponentes, temas de interés y solicitud de becas, el Comité académico se abocará a la tarea del armado de sesiones en la agenda <strong>de acuerdo a los temas más propuestos y los temas prioritarios para OGP</strong>, así como los <strong>grupos de ponentes, liderados cada uno por un facilitador que desarrollarán esas sesiones</strong>."
-  content4: "Los ponentes y facilitadores seleccionados serán contactados por correo electrónico antes del 22 de abril y contarán con tres días hábiles para confirmar su participación, incluyendo aquellos que requiriesen asistencia para transporte y hospedaje. Quienes acepten recibirán detalles adicionales sobre el armado de sesiones, incluyendo puntos de contacto para asuntos de contenido y logística. El resultado de la selección será publicado en el sitio (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) una vez confirmada la totalidad de los ponentes y facilitadores. A través de ésta, el público podrá hacer llegar sugerencias sobre el tema o la sesión al facilitador, ampliando al máximo la posibilidad de participación de los asistentes en la agenda."
-  content5: El facilitador de cada sesión responde por el armado de la misma ante el comité académico y tiene la responsabilidad de hacer llegar una propuesta co-creada con el resto de los ponentes al comité antes del 20 de mayo. El comité académico sugerirá a los facilitadores una serie de formatos posibles para las sesiones, sin perjuicio de que éstos propongan otras. Se insistirá especialmente en que las sesiones fomenten el diálogo más que la exposición, el intercambio de ideas entre ponentes y con el público, así como la participación externa por medio de preguntas, formatos interactivos o uso de herramientas en línea.
+  title: Selection Process
+  content1: The selection process will be coordinated by the Organizing Committee, comprised of representatives from the Uruguayan government (AGESIC), civil society (Open Government Network), and OGP’s Support Unit.  Said committee will be assisted by an Academic Committee created especially for this occasion that will receive support from academia.
+  content2: "The following are key dates to keep in mind:\n<ul><li>Tuesday March 1 - <strong>Call for speakers, topics of interest, and grant requests</strong></li>\n<li>Friday, March 31 - <strong>End of the call for speakers, topics of interest, and grant requests</strong></li>\n<li>April 1-21 - <strong>Deliberations of the Academic Committee and development of the general agenda</strong></li>\n<li>Friday, April 22 - <strong>Deadline for contacting chosen speakers and grantees</strong></li>\n<li>April 22-May 20 - <strong>Co-creation of sessions by speakers</strong></li>\n<li>May 31 - <strong>Civil Society Day</strong></li>\n<li>June 1 & 2 - <strong>EncuentroRegional Americas Encounter of the Open Government Partnership</strong></li>\n</ul>"
+  content3: "Once the call for speakers, topics of interest, and grant requests has closed, the Academic Committee will focus on the task of assembling sessions on the agenda <strong>in accordance with the most oft-proposed topics and the OGP’s priority issues and groups of speakers, each led by a facilitator who will carry out the sessions</strong>."
+  content4: "Those selected to serve as speakers and facilitators will be contacted via email prior to April 22 and will have three business days to confirm their participation, including those requiring assistance for transport and lodging costs.  Those who accept will receive additional details regarding the layout of the sessions, including points of contact for matters related to content and logistics.  The selection results will be published on the website (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) after all speakers and facilitators have confirmed their participation."
+  content5: Each session’s facilitator is responsible to the Academic Committee for assembling his/her session, as well as for ensuring that a proposal jointly created with the rest of the speakers is submitted to the Committee prior to May 20.  The Academic Committee will suggest to the facilitators a series of possible formats for the sessions, notwithstanding the latter’s proposal of others.  We will particularly insist that sessions promote dialogue more so than statements, as well as the exchange of ideas among the speakers, audience, [and] training entities, as well as external participation in the form of questions, interactive formats, or use of online tools.
 
 thanks:
-  title: "Muchas gracias por completar el formulario"
-  content: "Los datos fueron enviados correctamente. Las novedades del evento estarán disponibles en este sitio web (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) e informaremos de fechas clave a través de correo electrónico."
-  goodbye: "¡Nos vemos en Montevideo!"
+  title: "Thank you for completing the form"
+  content: "News from the event will be available on this website (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) and we'll update on key dates through email."
+  goodbye: "¡See you in Montevideo!"
 
 interests:
-  innovation: Innovación en el sector público
-  cooperation: Cooperación gobierno-sociedad civil
-  technology: Tecnología para la gobernanza
-  open_parliament: Parlamentos Abiertos
-  open_justice: Justicia Abierta
-  mark_zuckerberg: Privacidad y vigilancia
-  public_policy: Política pública
-  docs: Documentación y archivo
-  public_designations: Designaciones públicas
-  public_purchases: Compras públicas
-  public_contracts: Contrataciones Públicas
-  subnational_governments: Gobiernos subnacionales
-  aga_experience: Experiencias en AGA
-  national_plans: Planes de acción nacionales
-  dialog_mechas: Mecanismos de diálogo permanente
-  opendata_development: Datos abiertos para el desarrollo
-  opendata_cities: Datos abiertos para ciudades
-  opendata_environment: Datos abiertos para el medio ambiente y el cambio climático
-  opendata_corruption: Datos abiertos contra la corrupción
-  natural_resources: Gobernanza de recursos naturales
-  energy: Energía
-  extractive_industries: Industrias extractivas
-  poverty: Reducción de la pobreza
-  food: Seguridad alimenticia
-  productivity: Democratización de la productividad
-  public_health: Salud pública
-  decent_job: Empleo digno
-  quality_education: Educación de calidad
-  equality: Igualdad
-  decent_housing: Vivienda digna
-  gender_equality: Igualdad de género
-  urban_development: Desarrollo urbano
-  rural_development: Desarrollo rural
-  sustainable_transport: Transporte sostenible
-  social_inclusion: Inclusión social
-  public_safety: Seguridad pública y acceso a la justicia
-  citizen_participation: Participación ciudadana
-  integrity: Integridad y anti-corrupción
-  transparent_elections: Elecciones transparentes
-  innovation_labs: Laboratorios de innovación
-  public_information: Acceso a la Información pública
-  economic_development: Desarrollo económico
-  civic_tech: Tecnología cívica y tecnología para el desarrollo
+  innovation: Public sector innovation
+  cooperation: Government-civil society cooperation
+  technology: Technology for governance
+  open_parliament: Open parliaments
+  open_justice: Open justice
+  mark_zuckerberg: Privacy and surveillance
+  public_policy: Public policy
+  docs: Documentation and archives
+  public_designations: Public appointments
+  public_purchases: Public procurement
+  public_contracts: Public contracting
+  subnational_governments: Sub-national governments
+  aga_experience: OGP experiences
+  national_plans: National action plans
+  dialog_mechas: Permanent dialogue mechanisms
+  opendata_development: Open data for development
+  opendata_cities: Open data for cities
+  opendata_environment: Open data for the environment and climate change
+  opendata_corruption: Open data against corruption
+  natural_resources: Natural resource governance
+  energy: Energy
+  extractive_industries: Extractive industries
+  poverty: Poverty reduction
+  food: Food security
+  productivity: Democratization of productivity
+  public_health: Public health
+  decent_job: Decent employment
+  quality_education: Quality education
+  equality: Equality
+  decent_housing: Decent housing
+  gender_equality: Gender equality
+  urban_development: Urban development
+  rural_development: Rural development
+  sustainable_transport: Sustainable transport
+  social_inclusion: Social inclusion
+  public_safety: Public security and access to justice
+  citizen_participation: Citizen participation
+  integrity: Integrity and anti-corruption
+  transparent_elections: Transparent elections
+  innovation_labs: Innovation labs
+  public_information: Access to public information
+  economic_development: Economic development
+  civic_tech: Civic technology and technology for development
 
 survey:
   name: Name
@@ -159,6 +160,6 @@ survey:
   checked: Must be checked
   email_organization: "Acepto recibir correos de la organización relacionados con el evento"
   register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento"
-  conference_comments: ¿Qué te gustaría aportar a la conferencia?
-  unconference_comments: ¿Qué te gustaría aportar a la desconferencia?
-  max_words: Máximo 300 palabras
+  conference_comments: What could you like to contribute to the conference?
+  unconference_comments: What could you like to contribute to the unconference?
+  max_words: Máx 300 words
