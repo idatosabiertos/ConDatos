@@ -60,7 +60,7 @@ form:
   termos: Terms and Conditions
   termos_content: The organization will not share the data provided to us with anyone outside of OGP or with institutions participating in or supporting the organization of the event, nor will it send email messages unrelated to the organization of the event.  The event will have a photographic and video record for use in later promotional materials; the names of the speakers and facilitators, as well as their images, will be available publically on the event website.
   email_organization: "I agree to receive emails from the organization regarding the event*"
-  register_image: "AceptoI agree to have my image appear in the photographic and video record of the event****"
+  register_image: "I agree to have my image appear in the photographic and video record of the event****"
   shy: "**** If you don't agree with this condition, please contact the organization."
   finish_her: Finish
 
