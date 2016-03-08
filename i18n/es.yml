@@ -163,3 +163,39 @@ survey:
   conference_comments: ¿Qué te gustaría aportar a la conferencia?
   unconference_comments: ¿Qué te gustaría aportar a la desconferencia?
   max_words: Máximo 300 palabras
+
+agenda:
+  title: Agenda
+
+hqs:
+  title: Sedes
+  title_1: Radisson Victoria Plaza
+  description_1: Descripción del Radisson
+  title_2: Casona Mauá
+  description_2: Descripción de Casona
+
+event:
+  title: Evento
+  title_1: Acerca del Día de la Sociedad Civil
+  description_1: Acerca de...
+  title_2: Acerca del Encuentro Regional de las Américas
+  description_2: Acerca de...
+
+montevideo:
+  title: Montevideo
+  travel: Viaje
+  travel_1: Aire, Tierra, Mar, Visas
+  transport: Transporte
+  transport_1: Desde el aeropuerto, buses, taxi, bicicleta
+  hosting: Hospedaje
+  hosting_1: Hoteles, Hosteles, Barrios, Casas rodantes
+  activities: Actividades
+  activities_1: Paseos, Cerveza Artesanal, Espectáculos
+  weather: Clima
+  weather_1: Hace clima
+  info: Información general
+  info_1: Cambio, Seguridad, Propina, Uber
+
+contact:
+  title: Contacto
+  content: Info de contacto

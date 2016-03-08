@@ -15,8 +15,12 @@ before do
 end
 
 get '/' do
+  erb :index
+end
+
+get '/form' do
   survey = Survey.new
-  erb :index, locals: { survey: survey }
+  erb :form, locals: { survey: survey }
 end
 
 post '/enviar' do
@@ -25,6 +29,26 @@ post '/enviar' do
 
   survey.save
   erb :thanks
+end
+
+get '/agenda' do
+  erb :agenda
+end
+
+get '/sedes' do
+  erb :sedes
+end
+
+get '/evento' do
+  erb :evento
+end
+
+get '/montevideo' do
+  erb :montevideo
+end
+
+get '/contact' do
+  erb :contact
 end
 
 get '/proceso' do
