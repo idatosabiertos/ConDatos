@@ -331,7 +331,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
     font-family: 'Montserrat', sans-serif;
 
 }
-#btn_finish:hover {border-color:#23527c; color: #23527c}
+#about .btn:hover, #form .btn:hover {border-color:#23527c; color: #23527c}
 
 
 .btn-default {
