@@ -200,3 +200,21 @@ montevideo:
 contact:
   title: Contacto
   content: Info de contacto
+
+new_form:
+  visa: Visados
+  visa_content: "A los ciudadanos de ninguno de los países miembros de AGA en la región se les exige visado para ingresar al país, ni a la mayoría de los países de América Latina y el Caribe. Antes de marcar la siguiente casilla por favor lea con atención <a href=\"#\">la sección Visas del sitio</a>."
+  visa_help: Requiero asistencia para obtener visa
+  food: Comida
+  food_content: Se brindarán opciones veganas y para celíacos en las comidas del evento, solicitamos esta información para prever las necesidades de los asistentes según su dieta.
+  food_heroes: Vegana
+  food_celiac: Celíaca
+  food_diabetic: Diabética
+  accessibility: Accesibilidad
+  accessibility_content: Seleccione según sus necesidades. Las instalaciones de los eventos son accesibles, solicitamos esta información para brindar seguimiento y/o apoyo adicional de ser necesario.
+  accessibility_movility: Accesibilidad para movilidad reducida
+  accessibility_sign: "Traducción a lengua de señas**"
+  language: Idiomas
+  language_content: El track principal del evento cuenta con traducción. Solicitamos la siguiente información para prever las necesidades del evento.
+  spaniolo: Español
+  english: Inglés
