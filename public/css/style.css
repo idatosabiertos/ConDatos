@@ -462,7 +462,7 @@ form .textarea-container {
 form .textarea-container label { position: relative; margin-bottom: 32px;}
 form .textarea-container:before {
 } 
-form .input-container .error { border-color:#ED2387}
+form .input-container.error { border-color:#ED2387}
 
 form .input-container { display: inline-block; width: 100%; margin-right: 3%}
 
@@ -500,7 +500,7 @@ form .input-container select {
 form .input-container select option {padding: 0}
 
 
-form label {
+form .input-container label {
   display: block;
   position: absolute;
   margin-top: 2px;
@@ -519,7 +519,7 @@ form label {
   -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
           animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
-form input:focus + label, form input:valid + label {
+form .input-container input:focus + label, form .input-container input:valid + label {
   -webkit-animation-name: labelOut;
           animation-name: labelOut;
   -webkit-animation-duration: 0.35s;
@@ -574,14 +574,14 @@ form input:focus + label, form input:valid + label {
   50% {
     font-size: 13px;
     left: 1em;
-    opacity: 0;
+    opacity:1;
     top: 1.2em;
     font-weight: 300;
   }
   50.01% {
     font-size: 0.65em;
     left: 1em;
-    opacity: 0;
+    opacity: 1;
     top: 0.2em;
     color: #23527c;
     font-weight: 400;
@@ -691,8 +691,8 @@ form *:focus {
 #form .form-group  { text-align: left;font-family: "Roboto"}
 #form .form-group p { font-size: 16px; font-family: "Roboto"}
 #form .form-group a { color: #fff}
-#form .form-group label {float: left;margin-left: 30px;font-size: 16px;font-weight: normal; color: #23527c}
-.error { border:2px solid red !important;}
+#form .form-group label {float: left !important;margin:0 0 0 30px;font-size: 16px;font-weight: normal; color: #23527c}
+.error { border:2px solid red;}
 .select-style {
     padding: 0;
     margin: 0;
@@ -944,7 +944,7 @@ input:checked + section > span {
 }
 .fixed-error p {font-size: 14px; margin: 0}
 
-#sucess { text-align: center;font-weight: normal;} 
+#success { text-align: center;font-weight: normal;} 
 #success h4 { text-align: center;font-size: 35px;font-weight: lighter;}
 #success h5 { color: #23527c;text-transform: none;font-size: 25px;font-weight: lighter;font-family: "Roboto";border-bottom: 1px solid #ECB61E;display: inline-block;padding-bottom: 5px;}
 #success p {font-size: 18px; line-height: 28px;font-family: "Roboto"; width: 70%;text-align: center; margin:20px auto}
