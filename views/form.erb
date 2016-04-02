@@ -13,7 +13,6 @@
 <section id="form" class="container content-section text-center">
   <div class="triangle-topright"></div>
   <div class="triangle-topleft" style="left:-120px;top:500px"></div>
-  <div class="triangle-topleft" style="right:-120px;top:1500px"></div>
 
   <div class="cilinder"></div>
   <div class="lines"></div>
@@ -107,7 +106,7 @@
         <h3><%= t.form.encounter_third_kind %></h3>
         <p><%= t.form.encounter_third_kind_info %></p>
 
-        <label for="regional">
+        <label class="checkbox_label" for="regional">
           <%= t.form.join_encounter %>
         </label>
         <input type="checkbox" class="check" name="regional" id="regional">
@@ -115,93 +114,13 @@
           <span class="highlight"></span>
         </section>
       </div>
-
-      <div class="form-group">
-        <h4><%= t.form.stuff_interested %></h4>
-
-        <div class="row" id="interests_group">
-          <div class="col-md-6">
-            <% FormData.interests.take(22).each do |interest| %>
-              <div class="item-checkbox">
-                <label for="<%= eval("t.interests." + interest.to_s) %>">
-                  <%= eval("t.interests." + interest.to_s) %>
-                </label>
-                <input type="checkbox" class="check" value="<%= interest %>" id="<%= interest %>" name="interests[]">
-                <section class="checkbox">
-                  <span class="highlight"></span>
-                </section>
-              </div>
-            <% end %>
-          </div>
-
-          <div class="col-md-6">
-            <% FormData.interests[22..43].each do |interest| %>
-              <div class="item-checkbox">
-                <label for="<%= eval("t.interests." + interest.to_s) %>">
-                  <%= eval("t.interests." + interest.to_s) %>
-                </label>
-                <input type="checkbox" class="check" value="<%= interest %>" id="<%= interest %>"  name="interests[]">
-                <section class="checkbox">
-                  <span class="highlight"></span>
-                </section>
-              </div>
-            <% end %>
-            <div class="item-checkbox">
-              <label for="other">
-                <%= t.form.other %>
-              </label>
-              <input type="checkbox" class="check" value="other" id="other"  name="interests[]">
-              <section class="checkbox">
-                <span class="highlight"></span>
-              </section>
-              <div class="form-group">
-                <input type="text" name="other_interests" class="other_interests form-control">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <h4><%= t.form.what %></h4>
-        <textarea id="conference_comments" name="conference_comments"><%= survey.conference_comments %></textarea>
-        <div class="item-checkbox">
-          <label for="enabler">
-            <%= t.form.vote_me %>
-          </label>
-          <input type="checkbox" class="check" id="enabler" name="enabler">
-          <section class="checkbox">
-            <span class="highlight"></span>
-          </section>
-        </div>
-      </div>
-
-      <div class="row">
-        <h4><%= t.form.linkedin %></h4>
-        <div class="col-md-12">
-          <div class="form-group">
-            <input type="text" class="form-control" id="link" placeholder="<%= t.form.link_here %>" name="link" value="<%= survey.link %>">
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="row">
-          <div class="col-md-6">
-            <small><%= t.form.topics %></small>
-          </div>
-          <div class="col-md-6">
-            <small><%= t.form.books_are_good %></small>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="block">
       <div class="form-group">
         <h3><%= t.form.fellows_title %></h3>
         <p><%= t.form.fellows_content %></p>
-        <label for="fellows_transport">
+        <label class="checkbox_label" for="fellows_transport">
           <%= t.form.fellows_transport %>
         </label>
         <input type='checkbox' name='fellows_transport' id='fellows_transport' class="check">
@@ -209,7 +128,7 @@
           <span class="highlight"></span>
         </section>
 
-        <label for="fellows_hosting">
+        <label class="checkbox_label" for="fellows_hosting">
           <%= t.form.fellows_hosting %>
         </label>
         <input type='checkbox' name='fellows_hosting' id='fellows_hosting' class="check">
@@ -223,7 +142,7 @@
       <div class="form-group">
         <h3><%= t.form.termos %></h3>
         <p><%= t.form.termos_content %></p>
-        <label for="email_organization">
+        <label class="checkbox_label" for="email_organization">
           <%= t.form.email_organization %>
         </label>
         <input type='checkbox' value='email_organization' name='email_organization' id='email_organization' class="check">
@@ -231,7 +150,7 @@
           <span class="highlight"></span>
         </section>
 
-        <label for='register_image'><%= t.form.register_image %></label>
+        <label class="checkbox_label" for='register_image'><%= t.form.register_image %></label>
         <input type='checkbox' value='register_image' name='register_image' id='register_image' class="check">
         <section class="checkbox">
           <span class="highlight"></span>

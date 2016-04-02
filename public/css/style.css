@@ -40,6 +40,7 @@ textarea:focus { outline: none}
         font-size: 20px;
         line-height: 1.6;
     }
+    #logo { background-size: 30%}
 }
 
 a {
@@ -56,7 +57,7 @@ a:focus {
 }
 
 .small { width: 10%}
-.tiny { width: 3%}
+.tiny { width: 4%; margin-bottom: 2%}
 
 .light {
     font-weight: 400;
@@ -140,15 +141,17 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
-    .intro .txt { width: 90%}
 
     #about .btns .btn {
 
     }
+    #logo { background-size: 40%}
 
 }
 
-a#logo { background: url(../img/logo.jpg) no-repeat; height: 158px; width: 158px;position: absolute;top:0;left:5%;text-indent: -9000px;}
+
+
+a#logo { background: url(../img/logo.jpg) no-repeat;position: absolute;top:0;left:5%;text-indent: -9000px;background-size: 100%}
 #logoevento { 
     width:100%;
     display: block;
@@ -206,7 +209,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
 .intro ul li p {color:#ECB61E;text-transform: uppercase;font-size: 14px;}
 .intro ul li.when { background: url(../img/calendaricon.png) no-repeat left top; padding-left: 40px;}
 .intro ul li.where { background: url(../img/pinicon.png) no-repeat left top; padding-left: 40px;}
-
+.intro ul li:first-child { margin-left: 0}
 
 
 .intro .btn { margin: 10px 0}
@@ -233,7 +236,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
 .intro .txt {
     text-align: center;
     margin:10% auto 2% auto;
-    padding-left: 60px;
+    padding-left:0;
 }
 .intro h2 {
     text-align: left;
@@ -241,6 +244,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
     font-size: 20px;
     line-height: 28px;
 
+}
+
+
+@media(min-width:1024px) {
+  a#logo {
+    height: 158px; width: 158px;
+    background-size: 100%;
+  }
 }
 
 @media(min-width:768px) {
@@ -255,6 +266,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
 
     .intro .intro-body .intro-text {
         font-size: 26px;
+    }
+
+    a#logo {
+    height: 158px; width: 158px;
     }
 
 
@@ -297,6 +312,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
     font-size: 13px;
     color:#ECB61E; 
     letter-spacing: 2px;
+    background: none;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -315,6 +331,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
     font-family: 'Montserrat', sans-serif;
 
 }
+#btn_finish:hover {border-color:#23527c; color: #23527c}
 
 
 .btn-default {
@@ -359,6 +376,8 @@ ul.banner-social-buttons {
 
 
 footer::before,footer::after {display: none;}
+#logo { height: 108px; width: 90px;}
+.intro ul li { }
 
 }
 
@@ -375,10 +394,14 @@ footer::before,footer::after {display: none;}
     .txt { width: 100%}
     .txt h1, .txt h2 {text-align: center;}
     .btn { padding: 20px; width: 100%}
-    #arrow img { width: 10%;}
+    #arrow img { width: 10%; margin-bottom: 2%}
     #about .btn { margin: 10px 0}
 
     #form .form-group p { font-size: 20px}
+    #logo { background-size: 100%}
+    .jcountTimer {width: 100%;}
+    .jcountTimer span {font-size: 30px !important; display: inline-block;padding-left:10px !important;border: none !important;}
+    #english_btn { position: relative;}
 
  }
 
