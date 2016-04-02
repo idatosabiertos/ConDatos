@@ -63,6 +63,7 @@ form:
   register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento****"
   shy: "**** Si no está de acuerdo con ésta condición, por favor contacte a la organización."
   finish_her: Finalizar
+  unconference_limit: Por tratarse de un evento con cupos limitados, los usuarios recibirán una confirmación de su inscripción a la desconferencia.
 
 criteria:
   title: Criterios de selección

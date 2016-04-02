@@ -12,69 +12,72 @@
 <% end %>
 <section id="form" class="container content-section text-center">
   <div class="triangle-topright"></div>
-  <div class="triangle-topleft blue" style="left:-120px;top:500px"></div>
+  <div class="triangle-topleft" style="left:-120px;top:500px"></div>
+  <div class="triangle-topleft" style="right:-120px;top:1500px"></div>
+
   <div class="cilinder"></div>
   <div class="lines"></div>
   <div class="triangle-topleft"></div>
+
   <form action='/enviar' method='post' name='form' id="form">
     <div class="block">
       <h3><%= t.form.data %></h3>
       <div class="row">
         <div class="col-md-6">
-          <div class="form-group">
-            <input type='text' name='name' id='name' class="form-control" placeholder="<%= t.form.name %>*" value="<%= survey.name %>">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <input type='text' name='organization' id='organization' class="form-control" placeholder="<%= t.form.organization %>*" value="<%= survey.organization %>">
+          <div class="input-container">
+            <input type='text' name='name' id='name' value="<%= survey.name %>">
+            <label for="name"><%= t.form.name %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
-          <div class="form-group">
-            <input type='email' name='email' id='email' placeholder="<%= t.form.email %>*" class="form-control" value="<%= survey.email %>">
+          <div class="input-container">
+            <input type='text' name='organization' id='organization' value="<%= survey.organization %>">
+            <label for="organization"><%= t.form.organization %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
-          <div class="form-group">
-            <div class="select-style">
-              <select name='sector' id='sector'>
-                <option><%= t.form.sector %>*</option>
-                <option>--------</option>
-                <% FormData.sectors.each do |sector| %>
-                  <% sector = eval('t.form.' + sector.to_s) %>
-                  <option value='<%= sector %>'
-                          <% if survey.sector == sector %>
-                          selected="selected"
-                          <% end %>
-                  >
-                    <%= sector %>
-                  </option>
-                <% end %>
-              </select>
-            </div>
+          <div class="input-container">
+            <input type='email' name='email' id='email' value="<%= survey.email %>">
+            <label for="email"><%= t.form.email %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
-          <div class="form-group">
-            <div class="select-style">
-              <select name='country' id='country'>
-                <option><%= t.form.country %>*</option>
-                <option>--------</option>
-                <% FormData.countries.each do |country| %>
-                  <option value='<%= country %>' name='country'
-                          <% if country == survey.country %>
-                          selected="selected"
-                          <% end %>
-                  >
-                    <%= country %>
-                  </option>
-                <% end %>
-              </select>
-            </div>
+          <div class="input-container">
+            <select name='sector' id='sector'>
+              <option><%= t.form.sector %>*</option>
+              <option>--------</option>
+              <% FormData.sectors.each do |sector| %>
+                <% sector = eval('t.form.' + sector.to_s) %>
+                <option value='<%= sector %>'
+                        <% if survey.sector == sector %>
+                        selected="selected"
+                        <% end %>
+                >
+                  <%= sector %>
+                </option>
+              <% end %>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="input-container">
+            <select name='country' id='country'>
+              <option><%= t.form.country %>*</option>
+              <option>--------</option>
+              <% FormData.countries.each do |country| %>
+                <option value='<%= country %>' name='country'
+                        <% if country == survey.country %>
+                        selected="selected"
+                        <% end %>
+                >
+                  <%= country %>
+                </option>
+              <% end %>
+            </select>
           </div>
         </div>
         <small><%= t.form.mandatory %></small>
@@ -87,16 +90,15 @@
 
         <p><%= t.form.unconference_info %></p>
 
-        <label for="unconference"><%= t.form.join_unconference %></label>
+        <label class="checkbox_label" for="unconference">
+          <%= t.form.join_unconference %>
+        </label>
         <input type="checkbox" id="unconference" name="unconference" class="check">
         <section class="checkbox">
           <span class="highlight"></span>
         </section>
-      </div>
 
-      <div class="form-group">
-        <h4><%= t.form.give_unconference %></h4>
-        <textarea id="unconference_comments" name="unconference_comments"><%= survey.unconference_comments %></textarea>
+        <small><%= t.form.unconference_limit %></small>
       </div>
     </div>
 
