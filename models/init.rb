@@ -3,4 +3,4 @@ require 'sequel'
 DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost:5432/ogp')
 DB << "SET CLIENT_ENCODING TO 'UTF8';"
 
-require_relative 'survey.rb'
+Dir["./models/*.rb"].each {|file| require file }

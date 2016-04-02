@@ -1,10 +1,10 @@
-<% if survey.errors && !survey.errors.empty? %>
+<% if inscription.errors && !inscription.errors.empty? %>
   <section id="errors" class="container content-section">
     <div class="alert alert-danger" role="alert">
       <h2><%= t.index.errors %></h2>
       <ul>
-        <% survey.errors.each do |e,v| %>
-          <li><%= eval('t.survey.' + e.to_s) %> - <%= eval('t.survey.' + v[0].to_s) %></li>
+        <% inscription.errors.each do |e,v| %>
+          <li><%= eval('t.inscription.' + e.to_s) %> - <%= eval('t.inscription.' + v[0].to_s) %></li>
         <% end %>
       </ul>
     </div>
@@ -24,21 +24,21 @@
       <div class="row">
         <div class="col-md-6">
           <div class="input-container">
-            <input type='text' name='name' id='name' value="<%= survey.name %>">
+            <input type='text' name='name' id='name' value="<%= inscription.name %>">
             <label for="name"><%= t.form.name %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="input-container">
-            <input type='text' name='organization' id='organization' value="<%= survey.organization %>">
+            <input type='text' name='organization' id='organization' value="<%= inscription.organization %>">
             <label for="organization"><%= t.form.organization %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="input-container">
-            <input type='email' name='email' id='email' value="<%= survey.email %>">
+            <input type='email' name='email' id='email' value="<%= inscription.email %>">
             <label for="email"><%= t.form.email %>*</label>
           </div>
         </div>
@@ -51,7 +51,7 @@
               <% FormData.sectors.each do |sector| %>
                 <% sector = eval('t.form.' + sector.to_s) %>
                 <option value='<%= sector %>'
-                        <% if survey.sector == sector %>
+                        <% if inscription.sector == sector %>
                         selected="selected"
                         <% end %>
                 >
@@ -69,7 +69,7 @@
               <option>--------</option>
               <% FormData.countries.each do |country| %>
                 <option value='<%= country %>' name='country'
-                        <% if country == survey.country %>
+                        <% if country == inscription.country %>
                         selected="selected"
                         <% end %>
                 >
@@ -123,7 +123,7 @@
       <label class="checkbox_label">
         <%= t.new_form.visa_help %>
       </label>
-      <input type="checkbox" class="check">
+      <input type="checkbox" class="check" name="visa">
       <section class="checkbox">
         <span class="highlight"></span>
       </section>
@@ -135,21 +135,21 @@
 
       <label class="checkbox_label"><%= t.new_form.food_heroes %>
       </label>
-      <input type="checkbox" class="check">
+      <input type="checkbox" class="check" value="vegan" name="food[]">
       <section class="checkbox">
         <span class="highlight"></span>
       </section>
 
       <label class="checkbox_label"><%= t.new_form.food_celiac %>
       </label>
-      <input type="checkbox" class="check">
+      <input type="checkbox" class="check" value="celiac" name="food[]">
       <section class="checkbox">
         <span class="highlight"></span>
       </section>
 
       <label class="checkbox_label"><%= t.new_form.food_diabetic %>
       </label>
-      <input type="checkbox" class="check">
+      <input type="checkbox" class="check" value="diabetic" name="food[]">
       <section class="checkbox">
         <span class="highlight"></span>
       </section
@@ -163,7 +163,7 @@
       <label class="checkbox_label">
         <%= t.new_form.accessibility_movility %>
       </label>
-      <input type="checkbox" class="check">
+      <input type="checkbox" class="check" value="reduced_movility" name="accessibility[]">
       <section class="checkbox">
         <span class="highlight"></span>
       </section>
@@ -171,7 +171,7 @@
       <label class="checkbox_label">
         <%= t.new_form.accessibility_sign %>
       </label>
-      <input type="checkbox" class="check">
+      <input type="checkbox" class="check" value="sign_language" name="accessibility[]">
       <section class="checkbox">
         <span class="highlight"></span>
       </section>
@@ -185,7 +185,7 @@
       <label class="checkbox_label">
         <%= t.new_form.spaniolo %>
       </label>
-      <input type="checkbox" class="check">
+      <input type="checkbox" class="check" name="languages[]" value="spanish">
       <section class="checkbox">
         <span class="highlight"></span>
       </section>
@@ -193,7 +193,7 @@
       <label class="checkbox_label">
         <%= t.new_form.english %>
       </label>
-      <input type="checkbox" class="check">
+      <input type="checkbox" class="check" name="languages[]" value="english">
       <section class="checkbox">
         <span class="highlight"></span>
       </section>

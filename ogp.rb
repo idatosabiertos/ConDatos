@@ -19,16 +19,20 @@ get '/' do
 end
 
 get '/form' do
-  survey = Survey.new
-  erb :form, locals: { survey: survey }
+  inscription = Inscription.new
+  erb :form, locals: { inscription: inscription }
 end
 
 post '/enviar' do
-  survey = create_survey(params)
-  return erb :index, locals: { survey: survey } unless survey.errors.empty?
+  inscription = create_inscription(params)
+  return erb :index, locals: { inscription: inscription } unless inscription.errors.empty?
 
-  survey.save
+  inscription.save
   erb :thanks
+end
+
+get '/thanks' do
+    erb :thanks
 end
 
 get '/agenda' do
@@ -79,29 +83,25 @@ get '/resultados' do
   csv
 end
 
-def create_survey(params)
-  if params[:interests] && params[:interests].include?('other') && params[:other_interests]
-    params[:interests].delete('other')
-    params[:interests] << params[:other_interests]
-  end
-  survey = Survey.new(
+def create_inscription(params)
+  inscription = Inscription.new(
     name: params[:name], organization: params[:organization],
     sector: params[:sector], country: params[:country],
     email: params[:email], unconference: params[:unconference] == 'on' ? 'Sí' : 'No',
-    unconference_comments: params[:unconference_comments],
-    regional: params[:regional] == 'on' ? 'Sí' : 'No', interests: params[:interests],
-    conference_comments: params[:conference_comments],
-    enabler: params[:enabler] == 'on' ? 'Sí' : 'No', link: params[:link],
-    needs_transport: params[:fellows_transport] == 'on' ? 'Sí' : 'No',
-    needs_hosting: params[:fellows_hosting] == 'on' ? 'Sí' : 'No'
+    conference: params[:regional] == 'on' ? 'Sí' : 'No',
+    visa_help: params[:visa] == 'on' ? 'Sí' : 'No',
+    food: params[:food],
+    accessibility: params[:accessibility],
+    languages: params[:languages]
   )
   # Check for errors, so we can add custom ones on the next line
-  survey.valid?
-  # Add error if the mandatory fields are not checked
-  survey.errors.add(:email_organization, :checked) unless params[:email_organization]
-  survey.errors.add(:register_image, :checked) unless params[:register_image]
+  inscription.valid?
 
-  survey
+  # Add error if the mandatory fields are not checked
+  inscription.errors.add(:email_organization, :checked) unless params[:email_organization]
+  inscription.errors.add(:register_image, :checked) unless params[:register_image]
+
+  inscription
 end
 
 helpers do
