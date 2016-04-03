@@ -24,21 +24,21 @@
       <div class="row">
         <div class="col-md-6">
           <div class="input-container">
-            <input type='text' name='name' id='name' value="<%= inscription.name %>">
+            <input type='text' name='name' id='name' value="<%= inscription.name %>" required>
             <label for="name"><%= t.form.name %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="input-container">
-            <input type='text' name='organization' id='organization' value="<%= inscription.organization %>">
+            <input type='text' name='organization' id='organization' value="<%= inscription.organization %>" required>
             <label for="organization"><%= t.form.organization %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="input-container">
-            <input type='email' name='email' id='email' value="<%= inscription.email %>">
+            <input type='email' name='email' id='email' value="<%= inscription.email %>" required>
             <label for="email"><%= t.form.email %>*</label>
           </div>
         </div>
@@ -218,6 +218,7 @@
           <span class="highlight"></span>
         </section>
         <small><%= t.form.mandatory %></small>
+        <small><%= t.new_form.accessibility_disclaimer %></small>
         <small><%= t.form.shy %></small>
       </div>
 
