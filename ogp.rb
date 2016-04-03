@@ -32,7 +32,7 @@ post '/enviar' do
 end
 
 get '/thanks' do
-    erb :thanks
+  erb :thanks
 end
 
 get '/agenda' do
@@ -55,17 +55,17 @@ get '/contact' do
   erb :contact
 end
 
-get '/proceso' do
-  erb :proceso
-end
+# get '/proceso' do
+#   erb :proceso
+# end
 
-get '/criterios' do
-  erb :criterios
-end
+# get '/criterios' do
+#   erb :criterios
+# end
 
-get '/becarios' do
-  erb :becarios
-end
+# get '/becarios' do
+#   erb :becarios
+# end
 
 get '/resultados' do
   protected!
