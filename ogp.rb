@@ -15,10 +15,6 @@ before do
 end
 
 get '/' do
-  erb :index
-end
-
-get '/form' do
   inscription = Inscription.new
   erb :form, locals: { inscription: inscription }
 end
