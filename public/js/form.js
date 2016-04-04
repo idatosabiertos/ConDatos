@@ -19,12 +19,6 @@ var validator = new FormValidator('form', [{
 },{
   name: 'register_image',
   rules: 'required'
-},{
-  name: 'unconference_comments',
-  rules: 'callback_max_words'
-}, {
-  name: 'conference_comments',
-  rules: 'callback_max_words'
 }], function(errors, event) {
   if (errors.length > 0) {
     errors.forEach(function(error){
@@ -41,11 +35,6 @@ var validator = new FormValidator('form', [{
   }
 });
 
-function goTo(element){
-  location.href = "#";
-  location.href = "#" + element;
-}
-
 // Custom validators:
 validator.registerCallback('check_country', function(value){
   if(value == 'País*' || value == '--------' || value == 'Country*'){
@@ -61,12 +50,6 @@ validator.registerCallback('check_sector', function(value){
   return true;
 }).setMessage('check_sector', 'Por favor seleccione un sector');
 
-validator.registerCallback('max_words', function(value){
-  if(value.split(" ").length > 300){
-    return false;
-  }
-  return true;
-}).setMessage('max_words', 'Max 300');
 // Validate on change
 document.getElementById('name').addEventListener('input', coso);
 document.getElementById('email').addEventListener('input', coso);
@@ -98,18 +81,6 @@ function coso_check(){
   if(label.className.indexOf('error') > -1 && this.checked === true){
     label.className = label.className.replace('error', '');
   }
-}
-
-// Limit interests to 3
-var interests = document.getElementsByName("interests[]");
-
-for(var i = 0; i < interests.length; ++i){
-  interests[i].addEventListener('click', function(event){
-    var selected = document.getElementById('interests_group').querySelectorAll("input[name=interests\\[\\]]:checked");
-    if (selected.length > 3){
-      selected[0].checked = false;
-    }
-  });
 }
 
 document.getElementById('arrow').addEventListener('click', function(){

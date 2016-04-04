@@ -25,8 +25,29 @@ namespace :db do
       String :needs_hosting
     end
   end
+
+  desc "Create inscriptions"
+  task :create_inscriptions do
+    puts "Creating inscriptions table"
+    DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost:5432/ogp')
+    DB.create_table :inscriptions do
+      primary_key :id
+      String :name
+      String :organization
+      String :sector
+      String :country
+      String :email
+      String :unconference
+      String :conference
+      String :visa_help
+      String :food
+      String :accessibility
+      String :languages
+    end
+  end
 end
 
+desc "Console"
 task :console do
   require 'irb'
   require 'irb/completion'

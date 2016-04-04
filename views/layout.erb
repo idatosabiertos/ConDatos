@@ -39,34 +39,35 @@
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Intro Header -->
-    <header class="intro  text-center">
+    <header class="intro text-center">
+      <% locale = (session[:locale] == 'es') ? 'en' : 'es' %>
+      <a href="<%= "#{clean_current_url}?locale=#{locale}" %>" id="english_btn" class="btn">
+        <%= t.layout.language %>
+      </a>
+      <a id="logo" href="http://www.opengovpartnership.org" target="_blank">Open Goverment Partnership</a>
+
       <div class="container">
-        <a id="logo" href="http://www.opengovpartnership.org/" target="_blank">Open Goverment Partnership</a>
         <ul class="org_logos">
           <li><a id="agesic" href="http://www.agesic.gub.uy/" target="_blank">Agesic</a></li>
           <li><a id="presidencia" href="https://www.presidencia.gub.uy/" target="_blank">Presidencia</a></li>
           <li><a id="rga" href="http://rga.uy/" target="_blank">Red de gobierno abierto uruguay</a></li>
         </ul>
+
         <div class="txt">
-          <h1>
-            <%= t.layout.title1 %><br>
-            <%= t.layout.title2 %><br>
-            <%= t.layout.title3 %><br>
-            <%= t.layout.title4 %>
-          </h1>
-          <h2>
-            <%= t.layout.date1 %><br>
-            <%= t.layout.date2 %><br>
-            <%= t.layout.date3 %><br>
-            <%= t.layout.date4 %>
-          </h2>
+          <a id="logoevento" href="#" class="svg">
+            <object data="img/logoevent.svg" type="image/svg+xml" class="mailicon">
+            </object>
+          </a>
+
+          <ul>
+            <li class="where"><p><%= t.layout.date3 %>, <%= t.layout.date4 %></p></li>
+            <li class="when"><p><%= t.layout.date1 %> <%= t.layout.date2 %></p></li>
+          </ul>
+          <h3 class="jcountTimer"></h3>
         </div>
-        <% locale = (session[:locale] == 'es') ? 'en' : 'es' %>
-        <a href="<%= "#{clean_current_url}?locale=#{locale}" %>" id="english_btn">
-          | <%= t.layout.language %>
-        </a>
-        <a href="/#form" class="btn  page-scroll" id="register_btn"><%= t.layout.register %></a>
-        <a id="arrow" href="/#form" class="page-scroll">
+
+        <a href="/form#form" class="btn  page-scroll" id="register_btn"><%= t.layout.register %></a>
+        <a id="arrow" href="/form#form" class="page-scroll">
           <img class="tiny" src="img/arrow.svg" alt="">
         </a>
       </div>
@@ -103,6 +104,7 @@
         </ul>
       </div>
     </footer>
+    <script src="/js/countdown.js"></script>
     <script>
      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
