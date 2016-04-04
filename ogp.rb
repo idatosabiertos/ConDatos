@@ -15,10 +15,6 @@ before do
 end
 
 get '/' do
-  erb :index
-end
-
-get '/form' do
   inscription = Inscription.new
   erb :form, locals: { inscription: inscription }
 end
@@ -32,7 +28,7 @@ post '/enviar' do
 end
 
 get '/thanks' do
-    erb :thanks
+  erb :thanks
 end
 
 get '/agenda' do
@@ -55,17 +51,17 @@ get '/contact' do
   erb :contact
 end
 
-get '/proceso' do
-  erb :proceso
-end
+# get '/proceso' do
+#   erb :proceso
+# end
 
-get '/criterios' do
-  erb :criterios
-end
+# get '/criterios' do
+#   erb :criterios
+# end
 
-get '/becarios' do
-  erb :becarios
-end
+# get '/becarios' do
+#   erb :becarios
+# end
 
 get '/resultados' do
   protected!
@@ -83,6 +79,22 @@ get '/resultados' do
   csv
 end
 
+get '/inscripciones' do
+  protected!
+  Sequel::Plugins::CsvSerializer.configure(
+    Inscription,
+    col_sep: ';',
+    encoding: 'UTF-8'
+  )
+  content_type 'application/csv'
+  attachment 'inscripciones_ogp.csv'
+  csv = "Nombre;Organización;Sector;País;Email;Inscripción Desconferencia;Inscripción encuentro Regional;Requiere ayuda Visa;Comida;Accesibilidad;Idiomas\n"
+  Inscription.each do |inscription|
+    csv << inscription.to_csv(except: :id)
+  end
+  csv
+end
+
 def create_inscription(params)
   inscription = Inscription.new(
     name: params[:name], organization: params[:organization],
@@ -90,9 +102,9 @@ def create_inscription(params)
     email: params[:email], unconference: params[:unconference] == 'on' ? 'Sí' : 'No',
     conference: params[:regional] == 'on' ? 'Sí' : 'No',
     visa_help: params[:visa] == 'on' ? 'Sí' : 'No',
-    food: params[:food],
+    food: params[:food].join(', '),
     accessibility: params[:accessibility],
-    languages: params[:languages]
+    languages: params[:languages].join(', ')
   )
   # Check for errors, so we can add custom ones on the next line
   inscription.valid?

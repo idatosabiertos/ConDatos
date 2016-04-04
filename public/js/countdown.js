@@ -29,7 +29,7 @@ var countDown = function(theSelector, time){
 };
 
 
-var Time = "7/11/2016 18:25:00";
+var Time = "6/15/2016 18:25:00";
 setInterval(function(){
   countDown(".jcountTimer", Time);
 }, 1000);
