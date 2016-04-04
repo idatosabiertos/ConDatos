@@ -28,7 +28,6 @@ var countDown = function(theSelector, time){
   document.querySelector(theSelector).innerHTML = output;
 };
 
-
 var Time = "6/15/2016 18:25:00";
 setInterval(function(){
   countDown(".jcountTimer", Time);
