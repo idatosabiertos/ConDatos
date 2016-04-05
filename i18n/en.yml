@@ -63,6 +63,7 @@ form:
   register_image: "I agree to have my image appear in the photographic and video record of the event****"
   shy: "**** If you don't agree with this condition, please contact the organization."
   finish_her: Finish
+  unconference_limit: As this is an event with limited spots available, you will receive a confirmation of your unconference registration.
 
 criteria:
   title: Selection criteria
