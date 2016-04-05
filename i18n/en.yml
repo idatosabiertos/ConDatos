@@ -201,20 +201,20 @@ contact:
   content: Info de contacto
 
 new_form:
-  visa: Visados
-  visa_content: "A los ciudadanos de ninguno de los países miembros de AGA en la región se les exige visado para ingresar al país, ni a la mayoría de los países de América Latina y el Caribe. Antes de marcar la siguiente casilla por favor lea con atención <a href=\"#\">la sección Visas del sitio</a>."
-  visa_help: Requiero asistencia para obtener visa
-  food: Comida
-  food_content: Se brindarán opciones veganas y para celíacos en las comidas del evento, solicitamos esta información para prever las necesidades de los asistentes según su dieta.
-  food_heroes: Vegana
-  food_celiac: Celíaca
-  food_diabetic: Diabética
-  accessibility: Accesibilidad
-  accessibility_content: Seleccione según sus necesidades. Las instalaciones de los eventos son accesibles, solicitamos esta información para brindar seguimiento y/o apoyo adicional de ser necesario.
-  accessibility_movility: Accesibilidad para movilidad reducida
-  accessibility_sign: "Traducción a lengua de señas**"
-  language: Idiomas
-  language_content: El track principal del evento cuenta con traducción. Solicitamos la siguiente información para prever las necesidades del evento.
-  spaniolo: Español
-  english: Inglés
-  accessibility_disclaimer: "** Se hará el máximo esfuerzo para facilitar la accesibilidad en la sala principal del evento y las sesiones que sea posible, pero no se puede garantizar para el 100% de las actividades"
+  visa: Visas
+  visa_content: "No citizens of OGP member countries are required to obtain a visa in order to enter Uruguay, and the same is true for the majority of the countries of Latin America and the Caribbean. Before checking the box below, please read closely the <a href=\"#\">Visas Section page</a>."
+  visa_help: I require assistance to obtain a visa
+  food: Food
+  food_content: Vegan, diabetic and gluten-free food options will be offered at the event. We request this information in order to cater to your dietary requirements.
+  food_heroes: Vegan
+  food_celiac: Gluten-free
+  food_diabetic: Diabetic
+  accessibility: Accessibility
+  accessibility_content: Select based on your needs. The facilities of the event are accessible. We request this information in order to offer follow-up and/or additional support if needed.
+  accessibility_movility: Accessibility for reduced mobility
+  accessibility_sign: "Sign language translation**"
+  language: Languages
+  language_content: The main track of the event will be translated. We request you indicate the languages you understand to anticipate the needs of the event.
+  spaniolo: Spanish
+  english: English
+  accessibility_disclaimer: "** All possible efforts will be made to ensure accessibility in the main hall of the event and in the sessions, but this cannot be guaranteed for 100% of the activities"
