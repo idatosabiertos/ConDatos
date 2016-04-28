@@ -10,6 +10,13 @@ require_relative 'lib/form_data.rb'
 Dotenv.load
 R18n::I18n.default = 'es'
 
+# Start Rollbar config
+require 'rollbar'
+Rollbar.configure do |config|
+  config.access_token = ENV['ROLLBAR_ACCESS_TOKEN']
+end
+# End Rollbar config
+
 before do
   session[:locale] = params.fetch('locale', 'es')
 end
