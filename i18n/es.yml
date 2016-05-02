@@ -24,6 +24,13 @@ index:
   content5: El registro para el evento se abrirá posteriormente, por lo que invitamos a todos a participar de este llamado, aún si no tienen certeza absoluta de su asistencia y con la tranquilidad de que no es obligatorio para el registro posterior.
   fellows: Becarios
   errors: Errores
+  organizers: Organizadores
+
+speakers:
+  title: Conocé a los expositores
+
+sponsors:
+  title: Conocé a los partners
 
 form:
   data: Tus datos
