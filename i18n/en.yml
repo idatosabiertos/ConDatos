@@ -9,7 +9,8 @@ layout:
   date2: OF 2016
   date3: MONTEVIDEO
   date4: URUGUAY
-  language: Español
+  spanish: Español
+  english: English
   register: Form
   goback: Go back
 

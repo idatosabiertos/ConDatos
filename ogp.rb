@@ -143,4 +143,14 @@ helpers do
     regex = /\?.+/
     request.url.gsub(regex, '')
   end
+
+  def language_buttons
+    if (session[:locale] == 'es')
+      "<a class=\"active\">Español</a>" +
+      "<a href=\"#{clean_current_url}?locale=en\">English</a>"
+    else
+      "<a href=\"#{clean_current_url}?locale=es\">Español</a>" +
+      "<a class=\"active\">English</a>"
+    end
+  end
 end

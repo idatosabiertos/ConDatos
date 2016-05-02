@@ -10,8 +10,10 @@ layout:
   date3: MONTEVIDEO
   date4: URUGUAY
   language: English
+  language2: Español
   register: Inscripción
   goback: Volver al inicio
+  home: Inicio
 
 index:
   title: Llamado a ponentes, temas de interés y solicitud de becas
@@ -219,3 +221,6 @@ new_form:
   spaniolo: Español
   english: Inglés
   accessibility_disclaimer: "** Se hará el máximo esfuerzo para facilitar la accesibilidad en la sala principal del evento y las sesiones que sea posible, pero no se puede garantizar para el 100% de las actividades"
+
+more_info:
+  title: Más información
