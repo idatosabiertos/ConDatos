@@ -30,7 +30,8 @@ speakers:
   title: Conocé a los expositores
 
 sponsors:
-  title: Conocé a los partners
+  support: Apoyan
+  colaborate: Colaboran
 
 form:
   data: Tus datos
@@ -179,6 +180,7 @@ agenda:
 
 hqs:
   title: Sedes
+  content1: Seleccione una de las locaciones para mayor información
   title_1: Radisson Victoria Plaza
   description_1: Descripción del Radisson
   title_2: Casona Mauá

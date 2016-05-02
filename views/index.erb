@@ -1,80 +1,83 @@
-<div id="intro_txt">
-  <figure>
-    <img src="img/logo_small.svg">
-  </figure>
-
-  <div class="mt">
-    <p>
-      <b>
-        <%= t.index.content1 %>
-      </b>
-    </p>
-    <p>
-      <%= t.index.content2 %>
-    </p>
-  </div>
-</div>
-
-<div id="speakers">
-  <h2 class="sub_title"><%= t.speakers.title %></h2>
-  <div class="speaker">
+<section class="main_container" id="home_page">
+  <a id="goup_btn" href="#"><img src="img/arrow.svg"></a>
+  <div id="intro_txt">
     <figure>
-      <img src="img/speaker01.png">
+      <img src="img/logo_small.svg">
     </figure>
+
     <div class="mt">
-      <h3>Juan Jose Lopez</h3>
-      <p>CEO en JL Company</p>
-      <a href="#">www.jp.com</a>
-      <nav>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-      </nav>
+      <p>
+        <b>
+          <%= t.index.content1 %>
+        </b>
+      </p>
+      <p>
+        <%= t.index.content2 %>
+      </p>
     </div>
   </div>
-  <div class="speaker">
-    <figure>
-      <img src="img/speaker01.png">
-    </figure>
-    <div class="mt">
-      <h3>Juan Jose Lopez</h3>
-      <p>CEO en JL Company</p>
-      <a href="#">www.jp.com</a>
-      <nav>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-      </nav>
-    </div>
-  </div>
-  <div class="speaker">
-    <figure>
-      <img src="img/speaker01.png">
-    </figure>
-    <div class="mt">
-      <h3>Juan Jose Lopez</h3>
-      <p>CEO en JL Company</p>
-      <a href="#">www.jp.com</a>
-      <nav>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-      </nav>
-    </div>
-  </div>
-  <div class="speaker">
-    <figure>
-      <img src="img/speaker01.png">
-    </figure>
-    <div class="mt">
-      <h3>Juan Jose Lopez</h3>
-      <p>CEO en JL Company</p>
-      <a href="#">www.jp.com</a>
-      <nav>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-      </nav>
-    </div>
-  </div>
-</div>
 
-<%= erb :sponsors %>
-<%= erb :organizers %>
+  <div id="speakers">
+    <h2 class="sub_title"><%= t.speakers.title %></h2>
+    <div class="speaker">
+      <figure>
+        <img src="img/speaker01.png">
+      </figure>
+      <div class="mt">
+        <h3>Juan Jose Lopez</h3>
+        <p>CEO en JL Company</p>
+        <a href="#">www.jp.com</a>
+        <nav>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </nav>
+      </div>
+    </div>
+    <div class="speaker">
+      <figure>
+        <img src="img/speaker01.png">
+      </figure>
+      <div class="mt">
+        <h3>Juan Jose Lopez</h3>
+        <p>CEO en JL Company</p>
+        <a href="#">www.jp.com</a>
+        <nav>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </nav>
+      </div>
+    </div>
+    <div class="speaker">
+      <figure>
+        <img src="img/speaker01.png">
+      </figure>
+      <div class="mt">
+        <h3>Juan Jose Lopez</h3>
+        <p>CEO en JL Company</p>
+        <a href="#">www.jp.com</a>
+        <nav>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </nav>
+      </div>
+    </div>
+    <div class="speaker">
+      <figure>
+        <img src="img/speaker01.png">
+      </figure>
+      <div class="mt">
+        <h3>Juan Jose Lopez</h3>
+        <p>CEO en JL Company</p>
+        <a href="#">www.jp.com</a>
+        <nav>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </nav>
+      </div>
+    </div>
+  </div>
 
+  <%= erb :sponsors %>
+  <%= erb :organizers %>
+
+</section>

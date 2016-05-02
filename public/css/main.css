@@ -551,3 +551,21 @@ form *:focus {
 
 
 form .textarea-container textarea { height:150px; border:2px solid #23527c; width: 100%; color:#23527c;padding: 20px}
+
+#map{
+    width: 75%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 272px;
+    top: 80px;
+}
+
+#sedes_content{
+    background: rgba(117, 198, 225, 0.9);
+    z-index: 9999;
+    position: absolute;
+    margin-top: 40px;
+    padding: 40px;
+    color: #fff;
+}
