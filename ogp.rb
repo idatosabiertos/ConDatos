@@ -22,13 +22,17 @@ before do
 end
 
 get '/' do
+  erb :index
+end
+
+get '/inscription' do
   inscription = Inscription.new
   erb :form, locals: { inscription: inscription }
 end
 
 post '/enviar' do
   inscription = create_inscription(params)
-  return erb :index, locals: { inscription: inscription } unless inscription.errors.empty?
+  return erb :form, locals: { inscription: inscription } unless inscription.errors.empty?
 
   inscription.save
   erb :thanks
@@ -56,6 +60,10 @@ end
 
 get '/contact' do
   erb :contact
+end
+
+get '/mode_info' do
+  erb :more_info
 end
 
 # get '/proceso' do

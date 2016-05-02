@@ -44,18 +44,32 @@
       <nav id="main_nav">
         <ul>
           <ul>
-            <li class="active"><a href="/"><%= t.layout.home %></a></li>
-            <li><a href="/agenda"><%= t.agenda.title %></a></li>
-            <li><a href="/sedes"><%= t.hqs.title %></a></li>
-            <li><a href="/evento"><%= t.event.title %></a></li>
-            <li><a href="#"><%= t.more_info.title %></a></li>
-            <li><a href="/montevideo"><%= t.montevideo.title %></a></li>
-            <li><a href="/contact"><%= t.contact.title %></a></li>
+            <li <%= "class=\"active\"" if '/' == request.path_info %>>
+              <a href="/"><%= t.layout.home %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/agenda' == request.path_info %>>
+              <a href="/agenda"><%= t.agenda.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/sedes' == request.path_info %>>
+              <a href="/sedes"><%= t.hqs.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/evento' == request.path_info %>>
+              <a href="/evento"><%= t.event.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/more_info' == request.path_info %>>
+              <a href="/more_info"><%= t.more_info.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/montevideo' == request.path_info %>>
+              <a href="/montevideo"><%= t.montevideo.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/contact' == request.path_info %>>
+              <a href="/contact"><%= t.contact.title %></a>
+            </li>
           </ul>
         </ul>
       </nav>
 
-      <a href="/inscripcion" class="btn"><%= t.layout.register %></a>
+      <a href="/inscription" class="btn"><%= t.layout.register %></a>
 
       <div class="date_info">
         <h3><%= t.layout.date1 %>
@@ -80,7 +94,6 @@
 
     <!-- Footer -->
     <footer>
-
       <nav id="social_nav">
         <ul>
           <li><a href="">1</a></li>
@@ -92,10 +105,7 @@
       <!--Start Twitter Feed-->
       <div class="twitter_feed">
         <h3><i></i>Twitter Feed</h3>
-
       </div>
-      <!--End Organizadores-->
-
 
       <div class="row">
         <div class="col-md-6">
@@ -104,47 +114,15 @@
         <div class="col-md-6">
           2
         </div>
-        <div>
-
-    </footer>
-    <footer>
-      <div class="container text-center">
-        <ul>
-          <li>
-            <i class="fa fa-globe"></i>
-            <a href="http//agesic.gub.uy/gobiernodigital" target="_blank">
-              agesic.gub.uy/gobiernodigital
-            </a>
-          </li>
-          <li>
-            <i class="fa fa-globe"></i>
-            <a href="http://rga.uy" target="_blank">
-              rga.uy
-            </a>
-          </li>
-          <li>
-            <i class="fa fa-facebook"></i>
-            <a href="https://es-es.facebook.com/agesic.uy" target="_blank">
-              /agesic.uy
-            </a>
-          </li>
-          <li>
-            <i class="fa fa-twitter"></i>
-            <a href="http://www.twitter.com/agesic" target="_blank">
-              @agesic
-            </a>
-          </li>
-        </ul>
       </div>
     </footer>
-    <script src="/js/countdown.js"></script>
     <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     ga('create', 'UA-34702401-12', 'auto');
-     ga('send', 'pageview')
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-34702401-12', 'auto');
+      ga('send', 'pageview')
     </script>
   </body>
 </html>
