@@ -14,6 +14,7 @@ layout:
   register: Inscripción
   goback: Volver al inicio
   home: Inicio
+  close: Cerrar
 
 index:
   title: Llamado a ponentes, temas de interés y solicitud de becas
@@ -183,8 +184,19 @@ hqs:
   content1: Seleccione una de las locaciones para mayor información
   title_1: Radisson Victoria Plaza
   description_1: Descripción del Radisson
-  title_2: Casona Mauá
-  description_2: Descripción de Casona
+  address: Dirección
+  activities: Actividades y fechas a realizarse
+
+maua:
+  title: Casona Mauá
+  address: Juan Carlos Gómez 1530, Montevideo, Uruguay
+  description1: Sede de la desconferencia del Día de la Sociedad Civil y el cierre del evento. Es una antigua casona de diseño ecléctico construida en la década de 1870 y residencia del Barón de Mauá (reconocido empresario e industrial brasilero).
+  description2: "Fue restaurada recientemente, recuperando buena parte de sus revestimientos, carpintería y herrería original, de factura artesanal. Se enmarca en la zona conocida como “El Bajo de Ciudad Vieja” que nuclea propuestas artísticas y culturales."
+  date1: 31 de mayo - 08:30 a 18:00hs
+  event1: Día de la Sociedad Civil
+  date2: 31 de mayo - 08:30 a 18:00hs
+  close: Cierre
+  apps_info: "Ver en<a href=\"http://www.openstreetmap.org/node/945602666\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Casona+Mau%C3%A1/@-34.9038895,-56.2063727,17z/data=!3m1!4b1!4m2!3m1!1s0x959f7f87432a0d69:0x9e657eb77a382898?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/casona-mau%C3%A1/51ace2a4498eb63043257ba5\" target=\"_blank\">Foursquare</a>"
 
 event:
   title: Evento

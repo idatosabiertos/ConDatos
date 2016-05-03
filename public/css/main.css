@@ -269,6 +269,7 @@ footer ul li a:hover > i  {color: #fff}
 #sedes_page .map_info_sidebar { 
 	overflow-x:scroll;width: 35%;background:#fff;position: absolute;right: 0; height: 100%;box-shadow: 12px 0px 15px 6px #000;
 	animation:all 5s linear 2s;
+  display:none;
 }
 #sedes_page .map_info_sidebar .inner { padding: 30px}
 #sedes_page .map_info_sidebar .inner .close { color: #5DBFDD;font-size: 13px;}
@@ -618,12 +619,10 @@ form *:focus {
 form .textarea-container textarea { height:150px; border:2px solid #23527c; width: 100%; color:#23527c;padding: 20px}
 
 #map{
-    width: 75%;
+    width: 90%;
     height: 100%;
     display: inline-block;
     position: absolute;
-    left: 272px;
-    top: 80px;
 }
 
 #sedes_content{

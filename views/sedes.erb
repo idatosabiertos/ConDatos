@@ -1,20 +1,44 @@
 <link href="css/leaflet.css" rel="stylesheet">
-<section class="main_container">
+<section class="main_container" id="sedes_page">
   <div id="sedes_content">
-    Seleccione una de las locaciones para mayor información
+    <%= t.hqs.content1 %>
   </div>
+
   <div id="map">
   </div>
-  <!-- div class="row">
-    <div class="col-md-12">
-      <%= erb :volver_top %>
-      <h1><%= t.hqs.title %></h1>
-      <h2><%= t.hqs.title_1 %></h2>
-      <p><%= t.hqs.description_1 %></p>
-      <h2><%= t.hqs.title_2 %></h2>
-      <p><%= t.hqs.description_2 %></p>
+
+  <div class="map_info_sidebar" id="maua">
+    <div class="inner">
+      <a href="#" class="close"><%= t.layout.close %></a>
+      <div class="title">
+        <h3><%= t.maua.title %></h3>
+      </div>
+
+      <div class="direction">
+        <h4><%= t.hqs.address %></h4>
+        <p><%= t.maua.address %></p>
+      </div>
+
+      <div class="general_info">
+        <p><b><%= t.maua.description1 %></b></p>
+        <p><%= t.maua.description2 %></p>
+        <h4 class="title_activity"><%= t.hqs.activities %></h4>
+        <div class="activity">
+          <p><%= t.maua.date1 %></p>
+          <small><%= t.maua.event1 %></small>
+        </div>
+        <div class="activity">
+          <p><%= t.maua.date2 %></p>
+          <small><%= t.maua.close %></small>
+        </div>
+      </div>
     </div>
-  </div-->
+
+    <div class="apps_info">
+      <p><%= t.maua.apps_info %></p>
+    </div>
+  </div>
+
 </section>
 <script src="js/leaflet.js" type="text/javascript"></script>
 <script src="js/sedes.js" type="text/javascript"></script>

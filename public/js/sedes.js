@@ -10,6 +10,7 @@ var myIcon = L.icon({
   iconAnchor: [40, 102],
   popupAnchor: [-16, -29]
 });
+
 // Radisson
 var marker = L.marker(
   [-34.90592,-56.19947],
@@ -33,5 +34,12 @@ var casona = L.marker(
     alt: "Casona Mauá"
   }).addTo(map);
 casona.addEventListener('click', function(){
+  var maua = document.getElementById('maua');
+  if (maua.style.display == 'none'){
+    maua.style.display = 'inline-block';
+  }else{
+    maua.style.display = 'none';
+  }
+
   // TODO : Mostrar info a la izquierda
 });
