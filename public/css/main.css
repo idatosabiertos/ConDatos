@@ -204,7 +204,7 @@ footer ul li a:hover > i  {color: #fff}
 #home_page #intro_txt .mt b {font-size: 18px;}
 
 @media (min-width: 768px) {
-#home_page #partners .partner, #home_page #orgnices .organce  { width: 15%;display: inline-block;margin-right:150px}
+#home_page #partners .partner, #home_page #orgnices .organce  { width: 15%;display: inline-block;margin-right:150px; margin-bottom: 50px;}
 #orgnices .organce figure img { width: 150%;}
 }
 
