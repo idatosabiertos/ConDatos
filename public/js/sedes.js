@@ -5,12 +5,10 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var myIcon = L.icon({
-  iconUrl: './img/maps/pinicon.png',
-  iconSize: [24, 25],
-  iconAnchor: [26, 27],
-  popupAnchor: [-16, -29],
-  shadowUrl: './img/maps/marker-shadow.png',
-  shadowAnchor: [24, 40]
+  iconUrl: './img/maps/pinactive.svg',
+  iconSize: [78, 104],
+  iconAnchor: [40, 102],
+  popupAnchor: [-16, -29]
 });
 // Radisson
 var marker = L.marker(
