@@ -198,6 +198,17 @@ maua:
   close: Cierre
   apps_info: "Ver en<a href=\"http://www.openstreetmap.org/node/945602666\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Casona+Mau%C3%A1/@-34.9038895,-56.2063727,17z/data=!3m1!4b1!4m2!3m1!1s0x959f7f87432a0d69:0x9e657eb77a382898?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/casona-mau%C3%A1/51ace2a4498eb63043257ba5\" target=\"_blank\">Foursquare</a>"
 
+radisson:
+  title: Radisson Victoria Plaza
+  address: Plaza Independencia 759,Montevideo, Uruguay
+  description1: Sede central del evento, es un hotel y centro de conferencias construido originalmente en la década del 40 y con sucesivas reformas.
+  description2: Está ubicado sobre la Plaza Independencia, donde también se encuentran la Puerta de la Ciudadela, Torre Ejecutiva, Palacio Salvo y monumento y mausoleo a Artigas. De ésta plaza al este nace la Avenida 18 de Julio, principal de la ciudad de Montevideo. Hacia el oeste comienza la Ciudad Vieja con la Peatonal Sarandí, llegando hasta la escollera y el puerto de Montevideo.
+  date1: 31 de mayo   XX a XX:XXhs
+  event1: Reunión de Puntos Focales (no abierta al público)
+  date2: 1º de junio - 08:30 a 18:40hs
+  event2: Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto
+  apps_info: "Ver en<a href=\"http://www.openstreetmap.org/node/1167139189\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Radisson+Montevideo+Victoria+Plaza+Hotel,+Montevideo+11000/@-34.9052736,-56.2021887,17z/data=!3m1!4b1!4m2!3m1!1s0x959f802bba8814d1:0x629e593130096426?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/radisson-victoria-plaza/4bbc71ce51b89c742a62872a\" target=\"_blank\">Foursquare</a>"
+
 event:
   title: Evento
   title_1: Acerca del Día de la Sociedad Civil

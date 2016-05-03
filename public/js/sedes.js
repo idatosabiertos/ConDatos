@@ -12,7 +12,7 @@ var myIcon = L.icon({
 });
 
 // Radisson
-var marker = L.marker(
+var radisson = L.marker(
   [-34.90592,-56.19947],
   {
     icon: myIcon,
@@ -20,9 +20,13 @@ var marker = L.marker(
     alt: "Radisson Victoria Plaza"
   }).addTo(map);
 
-marker.addEventListener('click', function(){
-  // TODO : Mostrar info a la izquierda
-  alert("TODO : Mostrar info a la izquierda");
+radisson.addEventListener('click', function(){
+  var radisson = document.getElementById('radisson');
+  if (radisson.style.display == 'none'){
+    radisson.style.display = 'inline-block';
+  }else{
+    radisson.style.display = 'none';
+  }
 });
 
 // Casona Mauá
@@ -40,6 +44,4 @@ casona.addEventListener('click', function(){
   }else{
     maua.style.display = 'none';
   }
-
-  // TODO : Mostrar info a la izquierda
 });
