@@ -144,6 +144,12 @@ a#ogp_logo {
 
 .main_menu .date_info { margin-bottom: 20px;}
 .main_menu .date_info h3 {color: #707070;}
+
+.main_menu nav#main_nav ul .submenu {padding:10px 0 0 0px; margin-bottom: 0px; display: none;}
+.main_menu nav#main_nav ul .show_submenu {display: block;}
+.main_menu nav#main_nav ul .submenu li {list-style-type: none;position: relative; margin: 10px 0 10px 0}
+.main_menu nav#main_nav ul .submenu li a {font-family: 'Roboto', sans-serif; color: #707070; font-size: 14px;letter-spacing: 1px;}
+.main_menu nav#main_nav ul .submenu li:before, .main_menu nav#main_nav ul .submenu li a:hover:after{display: none;}
 /* ==========================================================================
    Main Menu styles
    ========================================================================== */
@@ -251,8 +257,50 @@ footer ul li a:hover > i  {color: #fff}
 #montevideo_page .transport .info { width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #5DBFDD; border-top: 1px solid #5DBFDD;padding: 20px 0;margin: 20px 0}
 #montevideo_page .transport .info p a {font-weight:500;font-size: 15px;color: #5DBFDD;font-family: 'Roboto', sans-serif;border-bottom: 2px solid #5DBFDD}
 
+/* ==========================================================================
+   Sedes Page styles
+   ========================================================================== */
+#sedes_page { position: relative;}
+#sedes_page .hide_map_info_sidebar {
+	-ms-transform: translateX(100%); /* IE 9 */
+   	-webkit-transform: translateX(100%); /* Safari */
+    transform: translateX(100%);
+}
+#sedes_page .map_info_sidebar { 
+	overflow-x:scroll;width: 35%;background:#fff;position: absolute;right: 0; height: 100%;box-shadow: 12px 0px 15px 6px #000;
+	animation:all 5s linear 2s;
+}
+#sedes_page .map_info_sidebar .inner { padding: 30px}
+#sedes_page .map_info_sidebar .inner .close { color: #5DBFDD;font-size: 13px;}
+#sedes_page .map_info_sidebar .inner .direction { border: 2px solid #5DBFDD; padding: 10px;margin: 20px 0}
+#sedes_page .map_info_sidebar .inner .direction h4 {font-size: 16px;font-family: 'Roboto', sans-serif;font-weight: bold;color: #5DBFDD;margin:0 0px 5px 0}
+#sedes_page .map_info_sidebar .inner .direction p {font-size: 14px;font-family: 'Roboto', sans-serif;}
+#sedes_page .map_info_sidebar .inner .general_info { font-size: 14px;font-family: 'Roboto', sans-serif;}
+#sedes_page .map_info_sidebar .inner .general_info h4 { font-size: 15px; color: #5DBFDD; margin: 20px 0}
+#sedes_page .map_info_sidebar .inner .general_info .activity { margin:10px 0;width: 100%; display: inline-block;}
+#sedes_page .map_info_sidebar .inner .general_info .activity p { font-size: 14px;font-family: 'Roboto', sans-serif;font-weight: bold;margin: 0}
+#sedes_page .map_info_sidebar .inner .general_info .activity small {font-size: 14px;font-family: 'Roboto', sans-serif;}
+#sedes_page .map_info_sidebar  .apps_info { width: 100%; display:block;background: #5DBFDD;padding: 20px 0;text-align: center;}
+#sedes_page .map_info_sidebar  .apps_info p {color: #231F20;font-size: 14px;font-family: 'Roboto', sans-serif;}
+#sedes_page .map_info_sidebar  .apps_info a {color: #fff;font-size: 14px;font-family: 'Roboto', sans-serif; margin:0 5px}
 
 
+/* ==========================================================================
+   Evento  styles
+   ========================================================================== */
+
+#evento_page {padding-top: 100px;padding-right: 80px}
+#evento_page h3 {color: #5DBFDD;font-size: 18px;margin: 0 0 30px 0}
+#evento_page h3:before { content: ''; height: 5px; background:#5DBFDD; width: 20%;position: absolute;top: -15px;}
+
+#evento_page h4 {color: #333;font-size: 15px;margin: 0 0 30px 0}
+#evento_page h4:before { content: ''; height: 5px; background:#5DBFDD; width: 10%;position: absolute;top: -15px;}
+
+#evento_page p {font-size: 14px;font-family: 'Roboto', sans-serif;}
+#evento_page .row { margin: 50px 0}
+#evento_page .coffe_module {border: 2px solid #5DBFDD; padding: 10px;margin:0}
+#evento_page .coffe_module p {font-size: 14px;font-family: 'Roboto', sans-serif;color:#5DBFDD;font-weight: 500;}
+#evento_page .steps h2 {color: #5DBFDD;font-size: 91px;margin: 0 0 0px 0;font-weight: bold;}
 
 /* ==========================================================================
    Contact Form  styles

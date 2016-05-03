@@ -189,9 +189,30 @@ hqs:
 event:
   title: Evento
   title_1: Acerca del Día de la Sociedad Civil
-  description_1: Acerca de...
-  title_2: Acerca del Encuentro Regional de las Américas
-  description_2: Acerca de...
+  content1: El 31 de mayo se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles.
+  content2: "En una desconferencia, se invierte la dinámica de un orador y muchos oyentes, para hacer de todos los participantes a su vez oradores y oyentes, de forma simultánea. En múltiples sesiones simultáneas con un número limitado de personas, se fomenta un diálogo según los temas recogidos de la agenda común.<br><br>Las sesiones cuentan con un facilitador que asegura que el las personas tengan iguales oportunidades de escuchar y ser escuchadas y con una persona voluntaria para tomar notas que serán compartidas con el resto de los participantes y cualquier persona"
+  content3: "interesada en la web. En las sesiones no se utilizan diapositivas, ni aparatos electrónicos, incluyendo celulares y laptops (con la excepción de la persona que toma las notas).<br><br>El objetivo de la desconferencia es compartir conocimiento entre pares, y las dinámicas así lo fomentan. Facilitadores guiarán a los participantes a lo largo del día, pero en última instancia son los propios asistentes quienes hacen al evento y su contenido.
+El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes."
+  title2: Acerca del Encuentro Regional de las Américas
+  description1: Los días 1 y 2 de junio se llevará a cabo la conferencia, con un programa basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
+  description2: La agenda, en búsqueda de ser más dinámica y colaborativa, experimenta con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicitó en el llamado aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
+  description3: "El evento contará con tres carriles de contenido:"
+  title3: Presentaciones y sesiones en el salón principal
+  description4: Las mismas contarán con traducción simultánea y buscarán formatos que fomenten el diálogo entre los participantes y con el público presente.
+  title4: Charlas relámpago en el área de livings
+  description5: Presentaciones breves de todos los países miembros de AGA de la región, mediante sus representantes de Gobierno, Sociedad Civil y el Mecanismo de Revisión Independiente en cada país. También se contará con una serie de presentaciones breves de iniciativas y proyectos regionales.
+  title5: Talleres en el aula
+  description6: Con más de dos horas de duración y expertos de primer nivel, éstos talleres buscan fomentar el aprendizaje en profundidad y aplicación práctica de conceptos para distintos tipos de público de niveles bajo, medio y alto de experiencia en el tema.
+  description7: En términos más generales, este encuentro quiere también reconocer el valor de los intercambios interpersonales y las “charlas de pasillo”, por lo que da espacios entre sesiones para interacción, facilitará materiales para el intercambio de ideas en las áreas comunes (rotafolios, marcadores, etc.) e invita a usar el área de livings para encuentros y reuniones durante el evento.
+  coffee: El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes.
+  title6: "Acerca de la Reunión<br>de Puntos Focales<br>(no abierta al público)"
+  description8: El 31 de mayo en seguimiento a experiencias exitosas en México, Georgia y Tanzania se realizará una conferencia para puntos de contacto de gobierno de los países de la región que participan en la Alianza para el Gobierno Abierto.
+  title7: "Esta conferencia buscará los siguientes objetivos:"
+  description9: A través de discusiones facilitadas y sesiones participativas y dinámicas, los participantes tendrán la oportunidad de expresar reflexiones y aprender sobre prácticas innovadoras en temas relacionados con los procesos de OGP.
+  title8: Impulsar mejores prácticas.
+  description10: A lo largo del día los puntos de contacto tendrán la oportunidad de comparar sus procesos con otros países en la región y así identificar buenas prácticas y soluciones a problemas comunes.
+  title9: Oportunidad de generar redes de colaboración.
+  description11: Lo cual permitirá a los reformadores establecer relaciones de trabajo sólidas e identificar oportunidades nuevas de colaboración y alianzas para temas clave.
 
 montevideo:
   title: Montevideo
