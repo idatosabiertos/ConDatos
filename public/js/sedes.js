@@ -4,7 +4,14 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var myIcon = L.icon({
+var normal_pin = L.icon({
+  iconUrl: './img/maps/pinnormal.svg',
+  iconSize: [78, 104],
+  iconAnchor: [40, 60],
+  popupAnchor: [-16, -29]
+});
+
+var active_pin = L.icon({
   iconUrl: './img/maps/pinactive.svg',
   iconSize: [78, 104],
   iconAnchor: [40, 102],
@@ -13,36 +20,40 @@ var myIcon = L.icon({
 
 // Radisson
 var radisson = L.marker(
-  [-34.90592,-56.19947],
+  [-34.9058709, -56.1995317],
   {
-    icon: myIcon,
+    icon: normal_pin,
     title: "Radisson Victoria Plaza",
     alt: "Radisson Victoria Plaza"
   }).addTo(map);
 
 radisson.addEventListener('click', function(){
-  var radisson = document.getElementById('radisson');
-  if ( (radisson.style.display == 'none') || (radisson.style.display != 'inline-block') ){
-    radisson.style.display = 'inline-block';
+  var radisson_info = document.getElementById('radisson');
+  if ( (radisson_info.style.display == 'none') || (radisson_info.style.display != 'inline-block') ){
+    radisson_info.style.display = 'inline-block';
+    radisson.setIcon(active_pin);
   }else{
-    radisson.style.display = 'none';
+    radisson_info.style.display = 'none';
+    radisson.setIcon(normal_pin);
   }
 });
 
 // Casona Mauá
 var casona = L.marker(
-  [-34.90388,-56.20434],
+  [-34.9038875, -56.2042725],
   {
-    icon: myIcon,
+    icon: normal_pin,
     title: "Casona Mauá",
     alt: "Casona Mauá"
   }).addTo(map);
 casona.addEventListener('click', function(){
   var maua = document.getElementById('maua');
   if ( (maua.style.display == 'none') || (maua.style.display != 'inline-block') ){
+    casona.setIcon(active_pin);
     maua.style.display = 'inline-block';
   }else{
     maua.style.display = 'none';
+    casona.setIcon(normal_pin);
   }
 });
 
