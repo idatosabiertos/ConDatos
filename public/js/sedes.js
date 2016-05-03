@@ -13,5 +13,27 @@ var myIcon = L.icon({
   shadowAnchor: [24, 40]
 });
 // Radisson
-var marker = L.marker([-34.90592,-56.19947], {icon: myIcon}).addTo(map);
-marker.bindPopup("Radisson Victoria Plaza");
+var marker = L.marker(
+  [-34.90592,-56.19947],
+  {
+    icon: myIcon,
+    title: "Radisson Victoria Plaza",
+    alt: "Radisson Victoria Plaza"
+  }).addTo(map);
+
+marker.addEventListener('click', function(){
+  // TODO : Mostrar info a la izquierda
+  alert("TODO : Mostrar info a la izquierda");
+});
+
+// Casona Mauá
+var casona = L.marker(
+  [-34.90388,-56.20434],
+  {
+    icon: myIcon,
+    title: "Casona Mauá",
+    alt: "Casona Mauá"
+  }).addTo(map);
+casona.addEventListener('click', function(){
+  // TODO : Mostrar info a la izquierda
+});

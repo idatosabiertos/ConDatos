@@ -1,9 +1,63 @@
-<section class="container content-section">
-  <div class="row">
-    <div class="col-md-12">
-      <%= erb :volver_top %>
-      <h1><%= t.contact.title %></h1>
-      <h2><%= t.contact.content %></h2>
+<section class="main_container" id="contact_page">
+  <!--Form Contact -->
+  <div class="title">
+    <h2><%= t.contact.title %></h2>
+
+    <figure>
+      <img src="img/logo_small.svg">
+    </figure>
+  </div>
+
+  <form id="contact" method="post" action="/contactar">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="input-container">
+          <input type="text" name="name" id="name" value="" required="">
+          <label for="name"><%= t.form.name %>*</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="input-container">
+          <input type="text" name="organization" id="organization" value="" required="">
+          <label for="organization"><%= t.form.organization %>*</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="input-container">
+          <input type="email" name="email" id="email" value="" required="">
+          <label for="email"><%= t.form.email %>*</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="input-container">
+          <select name="country" id="country">
+            <option><%= t.form.country %>*</option>
+            <option>--------</option>
+            <% FormData.countries.each do |country| %>
+              <option value='<%= country %>' name='country' >
+                <%= country %>
+              </option>
+            <% end %>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="textarea-container">
+          <textarea placeholder="<%= t.contact.message %>" name="body"></textarea>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <small><%= t.form.mandatory %></small>
+        <a href="#" class="btn" id="send"><%= t.contact.submit %></a>
+      </div>
     </div>
+  </form>
+
+  <div class="message">
+    <p class="sent"><%= t.contact.sent %></p>
   </div>
 </section>
+<script src="/js/contact.js"></script>

@@ -4,7 +4,9 @@ require 'sequel'
 require 'csv'
 require 'dotenv'
 require 'sinatra/r18n'
+require 'mail'
 require_relative 'models/init.rb'
+require_relative 'config.rb'
 require_relative 'lib/form_data.rb'
 
 Dotenv.load
@@ -60,6 +62,29 @@ end
 
 get '/contact' do
   erb :contact
+end
+
+post '/contactar' do
+  #{"name"=>"", "organization"=>"", "email"=>"", "country"=>"País*"}
+  email = params['email']
+  name = params['name']
+  subject = "[ogp-montevideo] - correo de #{name}"
+  message = <<-eos
+    Nombre: #{name}
+    Correo: #{email}
+    Organización: #{params['organization']}
+    País: #{params['country']}\n
+
+    Mensaje: #{params['body']}
+  eos
+  destiny = ENV['CONTACT_EMAIL']
+  mail = Mail.new do
+    from    email
+    to      destiny
+    subject subject
+    body    message
+  end
+  mail.deliver
 end
 
 get '/mode_info' do

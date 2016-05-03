@@ -209,8 +209,10 @@ montevideo:
   info_1: Cambio, Seguridad, Propina, Uber
 
 contact:
-  title: Contacto
-  content: Info de contacto
+  title: Formulario de contacto
+  message: Dejanos tu mensaje
+  submit: Enviar
+  sent: El mensaje fue enviado
 
 new_form:
   visa: Visados
