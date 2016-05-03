@@ -1,7 +1,7 @@
 var map = L.map('map').setView([-34.9058707, -56.2001407], 15);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 var myIcon = L.icon({
@@ -22,7 +22,7 @@ var radisson = L.marker(
 
 radisson.addEventListener('click', function(){
   var radisson = document.getElementById('radisson');
-  if (radisson.style.display == 'none'){
+  if ( (radisson.style.display == 'none') || (radisson.style.display != 'inline-block') ){
     radisson.style.display = 'inline-block';
   }else{
     radisson.style.display = 'none';
@@ -39,9 +39,17 @@ var casona = L.marker(
   }).addTo(map);
 casona.addEventListener('click', function(){
   var maua = document.getElementById('maua');
-  if (maua.style.display == 'none'){
+  if ( (maua.style.display == 'none') || (maua.style.display != 'inline-block') ){
     maua.style.display = 'inline-block';
   }else{
     maua.style.display = 'none';
   }
+});
+
+document.getElementById('close_maua').addEventListener('click', function(){
+  document.getElementById('maua').style.display = 'none';
+});
+
+document.getElementById('close_radisson').addEventListener('click', function(){
+  document.getElementById('radisson').style.display = 'none';
 });
