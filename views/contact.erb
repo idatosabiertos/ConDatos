@@ -8,7 +8,7 @@
     </figure>
   </div>
 
-  <form id="contact" method="post" action="/contactar">
+  <form id="contact" method="post" action="/contactar" name="contact">
     <div class="row">
       <div class="col-md-6">
         <div class="input-container">
@@ -46,18 +46,16 @@
       </div>
       <div class="col-md-6">
         <div class="textarea-container">
-          <textarea placeholder="<%= t.contact.message %>" name="body"></textarea>
+          <textarea placeholder="<%= t.contact.message %>" name="message" id="message"></textarea>
         </div>
       </div>
       <div class="col-md-6">
         <small><%= t.form.mandatory %></small>
-        <a href="#" class="btn" id="send"><%= t.contact.submit %></a>
+        <button type="submit" class="btn" id="send"><%= t.contact.submit %></a>
       </div>
     </div>
   </form>
-
-  <div class="message">
-    <p class="sent"><%= t.contact.sent %></p>
-  </div>
 </section>
+<script src='/js/smoothscroll.min.js'></script>
+<script src='/js/validate.min.js'></script>
 <script src="/js/contact.js"></script>

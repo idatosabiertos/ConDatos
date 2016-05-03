@@ -75,8 +75,9 @@ post '/contactar' do
     Organización: #{params['organization']}
     País: #{params['country']}\n
 
-    Mensaje: #{params['body']}
+    Mensaje: #{params['message']}
   eos
+
   destiny = ENV['CONTACT_EMAIL']
   mail = Mail.new do
     from    email
@@ -84,7 +85,14 @@ post '/contactar' do
     subject subject
     body    message
   end
-  mail.deliver
+  if ENV['RACK_ENV'] == 'production'
+    mail.deliver
+  else
+    puts mail.to_s
+    mail.to_s
+  end
+
+  erb :contactar
 end
 
 get '/mode_info' do
