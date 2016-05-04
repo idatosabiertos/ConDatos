@@ -57,9 +57,26 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="modal" tabindex="-1" id="visa-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="visa-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="mt">
+          <h3><%= t.montevideo.visas %></h3>
+          <p><%= t.montevideo_modals.visas %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+</div><!-- /.modal -->
+
 <script>
- ['earth', 'sea', 'air'].forEach(openModal);
- ['earth', 'sea', 'air'].forEach(setClose);
+ ['earth', 'sea', 'air', 'visa'].forEach(openModal);
+ ['earth', 'sea', 'air', 'visa'].forEach(setClose);
 
  function openModal(name){
    document.getElementById(name).addEventListener('click', function(e){
