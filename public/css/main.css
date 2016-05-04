@@ -137,6 +137,7 @@ a#ogp_logo {
 .main_menu nav#main_nav ul .active a, .main_menu nav ul li a:hover  {text-decoration: none; color:#5DBFDD;padding-bottom: 5px;border-bottom:2px solid #5DBFDD;}
 
 .main_menu .btn { font-family: 'Roboto', sans-serif;text-align: center; border-radius: 0;border-color: #5DBFDD; font-size: 15px;color: #5DBFDD;}
+.main_menu .btn:hover {border-color: #fff;color: #fff}
 
 .main_menu .language_nav { }
 .main_menu .language_nav a {font-family: 'Roboto', sans-serif;text-transform: uppercase;font-size: 13px;color: #707070;margin-right: 5px}
@@ -155,14 +156,14 @@ a#ogp_logo {
    ========================================================================== */
 footer {
 
-	overflow: hidden;
-    width: 88.4vw;
-    float: right;
-    margin-right: 83.6px;
+    float: left;
     background:#252626;
-    padding-left: 15%;
     padding-bottom: 50px;
     padding-top: 50px;
+    width:75%;
+	margin-left:272px;
+	margin-right:80px;
+    overflow: hidden;
 }
 footer ul { margin: 0;float: left; width: 50%}
 footer ul li  { display: inline-block; width: 100%; color: #707070; margin:10px 0}
@@ -257,18 +258,31 @@ footer ul li a:hover > i  {color: #fff}
 #montevideo_page .transport .info { width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #5DBFDD; border-top: 1px solid #5DBFDD;padding: 20px 0;margin: 20px 0}
 #montevideo_page .transport .info p a {font-weight:500;font-size: 15px;color: #5DBFDD;font-family: 'Roboto', sans-serif;border-bottom: 2px solid #5DBFDD}
 
+/*#modal { background:#fff;width: 800px;position: absolute;top: 0;left: 50%; margin-left: -277px;;} 
+.modal_bg {background: rgba(0,0,0,0.4); height: 100%;width: 100%; position: fixed;left: 0;top: 0;}
+#modal figure {float: left;}
+#modal .mt { float: left;}*/
+
+.modal figure { width: 40%; float: left;}
+.modal .mt { width: 60%;display: inline-block;}
+.modal .mt p {font-size: 14px; font-family: 'Roboto', sans-serif; padding: 20px;}
+.modal .mt h3 {color: #231F20;font-size: 18px;font-weight: bold; margin: 0; padding: 0 20px;}
+
+
 /* ==========================================================================
    Sedes Page styles
    ========================================================================== */
 #sedes_page { position: relative;}
-#sedes_page .hide_map_info_sidebar {
-	-ms-transform: translateX(100%); /* IE 9 */
-   	-webkit-transform: translateX(100%); /* Safari */
-    transform: translateX(100%);
+#sedes_page .show_sidebar {
+	  -webkit-transform: translate3d(0px, 0, 0) !important;
 }
 #sedes_page .map_info_sidebar { 
 	overflow-x:scroll;width: 35%;background:#fff;position: absolute;right: 0; height: 100%;box-shadow: 12px 0px 15px 6px #000;
-	animation:all 5s linear 2s;
+	  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translate3d(420px, 0, 0);
   display:none;
 }
 #sedes_page .map_info_sidebar .inner { padding: 30px}
@@ -278,8 +292,9 @@ footer ul li a:hover > i  {color: #fff}
 #sedes_page .map_info_sidebar .inner .direction p {font-size: 14px;font-family: 'Roboto', sans-serif;}
 #sedes_page .map_info_sidebar .inner .general_info { font-size: 14px;font-family: 'Roboto', sans-serif;}
 #sedes_page .map_info_sidebar .inner .general_info h4 { font-size: 15px; color: #5DBFDD; margin: 20px 0}
+#sedes_page .map_info_sidebar .inner .title_activity i {font-size: 22px;}
 #sedes_page .map_info_sidebar .inner .general_info .activity { margin:10px 0;width: 100%; display: inline-block;}
-#sedes_page .map_info_sidebar .inner .general_info .activity p { font-size: 14px;font-family: 'Roboto', sans-serif;font-weight: bold;margin: 0}
+#sedes_page .map_info_sidebar .inner .general_info .activity p {line-height: 20px; font-size: 14px;font-family: 'Roboto', sans-serif;font-weight: bold;margin: 0}
 #sedes_page .map_info_sidebar .inner .general_info .activity small {font-size: 14px;font-family: 'Roboto', sans-serif;}
 #sedes_page .map_info_sidebar  .apps_info { width: 100%; display:block;background: #5DBFDD;padding: 20px 0;text-align: center;}
 #sedes_page .map_info_sidebar  .apps_info p {color: #231F20;font-size: 14px;font-family: 'Roboto', sans-serif;}
@@ -299,10 +314,14 @@ footer ul li a:hover > i  {color: #fff}
 
 #evento_page p {font-size: 14px;font-family: 'Roboto', sans-serif;}
 #evento_page .row { margin: 50px 0}
-#evento_page .coffe_module {border: 2px solid #5DBFDD; padding: 10px;margin:0}
+#evento_page .coffe_module {border: 2px solid #5DBFDD; padding: 15px 10px;margin:0}
 #evento_page .coffe_module p {font-size: 14px;font-family: 'Roboto', sans-serif;color:#5DBFDD;font-weight: 500;}
+#evento_page .coffe_module i {font-size: 40px; float: left; width: 30%}
+#evento_page .coffe_module small {display: inline-block; width: 60%}
 #evento_page .steps h2 {color: #5DBFDD;font-size: 91px;margin: 0 0 0px 0;font-weight: bold;}
-
+#evento_page #event_panel_icon { font-size: 80px; color: #5DBFDD}
+#evento_page .icon-commenticon {font-size: 80px;float: left;color: #5DBFDD; border-left: 4px  solid #5DBFDD}
+#evento_page .comment_info { float: left; width: 70%; font-weight: normal;}
 /* ==========================================================================
    Contact Form  styles
    ========================================================================== */
@@ -619,9 +638,9 @@ form *:focus {
 form .textarea-container textarea { height:150px; border:2px solid #23527c; width: 100%; color:#23527c;padding: 20px}
 
 #map{
-    width: 90%;
+    width: 92%;
     height: 100%;
-    display: inline-block;
+    display: block;
     position: absolute;
 }
 

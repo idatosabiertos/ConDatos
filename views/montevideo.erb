@@ -1,20 +1,54 @@
 <section class="main_container" id="montevideo_page">
-  <div class="row">
-    <div class="col-md-12">
-      <%= erb :volver_top %>
-      <h1><%= t.montevideo.title %></h1>
-      <h2><%= t.montevideo.travel %></h2>
-      <p><%= t.montevideo.travel_1 %></p>
-      <h2><%= t.montevideo.transport %></h2>
-      <p><%= t.montevideo.transport_1 %></p>
-      <h2><%= t.montevideo.hosting %></h2>
-      <p><%= t.montevideo.hosting_1 %></p>
-      <h2><%= t.montevideo.activities %></h2>
-      <p><%= t.montevideo.activities_1 %></p>
-      <h2><%= t.montevideo.weather %></h2>
-      <p><%= t.montevideo.weather_1 %></p>
-      <h2><%= t.montevideo.info %></h2>
-      <p><%= t.montevideo.info_1 %></p>
+  <div class="title">
+    <h2><%= t.montevideo.title %></h2>
+    <p><%= t.montevideo.subtitle %></p>
+  </div>
+
+  <div class="travel">
+    <h3><%= t.montevideo.travel %></h3>
+    <div class="cta">
+      <a href="#" id="earth"><img src="img/mvd/bus.svg"></a>
+      <p><%= t.montevideo.earth %></p>
+    </div>
+    <div class="cta">
+      <a href="#"><img src="img/mvd/air.svg"></a>
+      <p><%= t.montevideo.air %></p>
+    </div>
+    <div class="cta">
+      <a href="#"><img src="img/mvd/sea.svg"></a>
+      <p><%= t.montevideo.sea %></p>
+    </div>
+
+    <div class="info">
+      <p><i></i><%= t.montevideo.visas %></p>
+    </div>
+  </div>
+
+  <div class="transport">
+    <h3><%= t.montevideo.transport %></h3>
+
+    <div class="cta">
+      <a href="#"><img src="img/mvd/landing.svg"></a>
+      <p><%= t.montevideo.earth %></p>
+    </div>
+
+    <div class="cta">
+      <a href="#"><img src="img/mvd/bus02.svg"></a>
+      <p><%= t.montevideo.bus %></p>
+    </div>
+
+    <div class="cta">
+      <a href="#"><img src="img/mvd/taxi.svg"></a>
+      <p><%= t.montevideo.taxi %></p>
+    </div>
+
+    <div class="cta">
+      <a href="#"><img src="img/mvd/bici.svg"></a>
+      <p><%= t.montevideo.bike %></p>
+    </div>
+
+    <div class="info">
+      <p><i></i><%= t.montevideo.accessibility %></a></p>
     </div>
   </div>
 </section>

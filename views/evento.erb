@@ -15,6 +15,7 @@
   <div class="row">
     <div class="col-md-6">
       <h3><%= t.event.title2 %></h3>
+      <i class="icon-panelicon" id="event_panel_icon"></i>
     </div>
     <div class="col-md-6">
       <p><b><%= t.event.description1 %></b></p>
@@ -42,11 +43,15 @@
 
   <div class="row">
     <div class="col-md-8">
-      <p><b><%= t.event.description7 %></b></p>
+      <i class="icon-commenticon"></i>
+      <p class="comment_info"><%= t.event.description7 %></p>
     </div>
     <div class="col-md-4">
       <div class="coffee_module">
-        <p><%= t.event.coffee %></p>
+        <p>
+          <i class="icon-coffeicon"></i>
+          <small><%= t.event.coffee %></small>
+        </p>
       </div>
     </div>
   </div>

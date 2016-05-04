@@ -245,18 +245,18 @@ El evento incluye café en la mañana y la tarde y almuerzo para todos los asist
 
 montevideo:
   title: Montevideo
+  subtitle: Aqui podrás encontrar toda la información necesaria para tu estadía
   travel: Viaje
-  travel_1: Aire, Tierra, Mar, Visas
+  earth: Tierra
+  air: Aire
+  sea: Mar
+  visas: "Información sobre <a href=\"#\">VISAS</a>"
   transport: Transporte
-  transport_1: Desde el aeropuerto, buses, taxi, bicicleta
-  hosting: Hospedaje
-  hosting_1: Hoteles, Hosteles, Barrios, Casas rodantes
-  activities: Actividades
-  activities_1: Paseos, Cerveza Artesanal, Espectáculos
-  weather: Clima
-  weather_1: Hace clima
-  info: Información general
-  info_1: Cambio, Seguridad, Propina, Uber
+  bus: Ómnibus
+  taxi: Taxi
+  bike: Bici
+  accessibility: "Información sobre <a href=\"#\">ACCESIBILIDAD"
+
 
 contact:
   title: Contacto
