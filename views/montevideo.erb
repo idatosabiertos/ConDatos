@@ -7,16 +7,22 @@
   <div class="travel">
     <h3><%= t.montevideo.travel %></h3>
     <div class="cta">
-      <a href="#" id="earth"><img src="img/mvd/bus.svg"></a>
-      <p><%= t.montevideo.earth %></p>
+      <a href="#" id="earth">
+        <img src="img/mvd/bus.svg">
+        <p><%= t.montevideo.earth %></p>
+      </a>
     </div>
     <div class="cta">
-      <a href="#"><img src="img/mvd/air.svg"></a>
-      <p><%= t.montevideo.air %></p>
+      <a href="#" id="air">
+        <img src="img/mvd/air.svg">
+        <p><%= t.montevideo.air %></p>
+      </a>
     </div>
     <div class="cta">
-      <a href="#"><img src="img/mvd/sea.svg"></a>
-      <p><%= t.montevideo.sea %></p>
+      <a href="#" id="sea">
+        <img src="img/mvd/sea.svg">
+        <p><%= t.montevideo.sea %></p>
+      </a>
     </div>
 
     <div class="info">
@@ -52,3 +58,4 @@
     </div>
   </div>
 </section>
+<%= erb :montevideo_modals %>

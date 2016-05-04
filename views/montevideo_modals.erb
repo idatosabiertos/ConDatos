@@ -1,0 +1,82 @@
+<div class="modal" tabindex="-1" id="earth-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="earth-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <figure>
+          <img src="img/mvd/bus.svg">
+        </figure>
+        <div class="mt">
+          <h3><%= t.montevideo.earth %></h3>
+          <p><%= t.montevideo_modals.earth %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="air-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="air-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <figure>
+          <img src="img/mvd/air.svg">
+        </figure>
+        <div class="mt">
+          <h3><%= t.montevideo.air %></h3>
+          <p><%= t.montevideo_modals.air %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="sea-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="sea-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <figure>
+          <img src="img/mvd/sea.svg">
+        </figure>
+        <div class="mt">
+          <h3>Mar</h3>
+          <p><%= t.montevideo_modals.sea %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+ ['earth', 'sea', 'air'].forEach(openModal);
+ ['earth', 'sea', 'air'].forEach(setClose);
+
+ function openModal(name){
+   document.getElementById(name).addEventListener('click', function(e){
+     e.preventDefault();
+     var modal = document.getElementById(name + '-modal');
+     if (modal.classList.contains('fade')){
+       modal.style.display = "none";
+     } else {
+       modal.style.display = "block";
+     }
+   });
+ }
+
+ function setClose(name){
+   document.getElementById(name + '-close').addEventListener('click', function(e){
+     e.preventDefault();
+     document.getElementById(name + '-modal').style.display = 'none';
+   });
+ }
+</script>
