@@ -255,13 +255,20 @@ montevideo:
   bus: Ómnibus
   taxi: Taxi
   bike: Bici
-  accessibility: "Información sobre <a href=\"#\">ACCESIBILIDAD</a>"
+  accessibility: "Información sobre <a href=\"#\" id=\"accessibility\">ACCESIBILIDAD</a>"
+  airport: Desde el aeropuerto
 
 montevideo_modals:
   earth: "Viajar por tierra"
   sea: "Numerosas frecuencias de buques y ferrys unen a Buenos Aires con Colonia, Carmelo y Montevideo e incluyen la posibilidad de traslado de automóviles. Las empresas <a href=\"#\">Buquebus</a> y <a href=\"#\">Colonia Express</a> llegan al puerto de Colonia y ofrecen paquetes con traslado en bus hasta Montevideo. La primera también llega a Montevideo en forma directa. La empresa <a href=\"#\">Cacciola hace</a> el trayecto entre Tigre y Carmelo, con paquetes que completan el tramo Buenos Aires-Montevideo por tierra."
   air: "Viajar por aire"
   visas: Información sobre visas
+  airport: Información de aeropuerto
+  bus: Información sobre ómnibus
+  taxi: Información sobre taxis
+  bike: Información sobre Montevideo Bicis :P
+  accessibility: Información sobre accesibilidad
+
 contact:
   title: Contacto
   message: Dejanos tu mensaje

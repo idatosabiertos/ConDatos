@@ -15,7 +15,6 @@
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div>
 </div><!-- /.modal -->
 
 <div class="modal" tabindex="-1" id="air-modal">
@@ -35,7 +34,6 @@
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div>
 </div><!-- /.modal -->
 
 <div class="modal" tabindex="-1" id="sea-modal">
@@ -71,12 +69,103 @@
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div>
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="airport-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="airport-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <figure>
+          <img src="img/mvd/landing.svg">
+        </figure>
+        <div class="mt">
+          <h3><%= t.montevideo.airport %></h3>
+          <p><%= t.montevideo_modals.airport %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="bus-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="bus-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <figure>
+          <img src="img/mvd/bus02.svg">
+        </figure>
+        <div class="mt">
+          <h3><%= t.montevideo.bus %></h3>
+          <p><%= t.montevideo_modals.bus %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="taxi-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="taxi-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <figure>
+          <img src="img/mvd/taxi.svg">
+        </figure>
+        <div class="mt">
+          <h3><%= t.montevideo.taxi %></h3>
+          <p><%= t.montevideo_modals.taxi %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="bike-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="bike-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <figure>
+          <img src="img/mvd/bici.svg">
+        </figure>
+        <div class="mt">
+          <h3><%= t.montevideo.bike %></h3>
+          <p><%= t.montevideo_modals.bike %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="accessibility-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="accessibility-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="mt">
+          <h3><%= t.montevideo.accessibility %></h3>
+          <p><%= t.montevideo_modals.accessibility %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
 <script>
- ['earth', 'sea', 'air', 'visa'].forEach(openModal);
- ['earth', 'sea', 'air', 'visa'].forEach(setClose);
+ ['earth', 'sea', 'air', 'visa', 'airport', 'bus', 'taxi', 'bike', 'accessibility'].forEach(openModal);
+ ['earth', 'sea', 'air', 'visa', 'airport', 'bus', 'taxi', 'bike', 'accessibility'].forEach(setClose);
 
  function openModal(name){
    document.getElementById(name).addEventListener('click', function(e){
