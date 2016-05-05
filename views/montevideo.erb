@@ -66,24 +66,41 @@
     </div>
   </div>
 
-  <div class="lodging">
-    <h3><%= t.montevideo.lodging %></h3>
+  <div class="other">
+    <h3><%= t.montevideo.other %></h3>
     <div class="cta">
-      <a href="#" id="hotel">
-        <p><%= t.montevideo.hotel %></p>
+      <a href="#" id="activity">
+        <img src="img/mvd/activity.svg">
+        <p><%= t.montevideo.activities %></p>
+      </a>
+    </div>
+    <div class="cta">
+      <a href="#" id="lodging">
+        <img src="img/mvd/house.svg">
+        <p><%= t.montevideo.lodging %></p>
+      </a>
+    </div>
+    <div class="cta">
+      <a href="#" id="weather">
+        <img src="img/mvd/weather.svg">
+        <p><%= t.montevideo.weather %></p>
       </a>
     </div>
 
-    <div class="cta">
-      <a href="#" id="hostel">
-        <p><%= t.montevideo.hostel %></p>
-      </a>
-    </div>
-
-    <div class="cta">
-      <a href="#" id="hood">
-        <p><%= t.montevideo.hood %></p>
-      </a>
+    <div class="info">
+      <h3>Información general</h3>
+      <p>
+        <strong><%= t.montevideo.change %></strong> : <%= t.montevideo.change_info %>
+      </p>
+      <p>
+        <strong><%= t.montevideo.security %></strong> : <%= t.montevideo.security_info %>
+      </p>
+      <p>
+        <strong><%= t.montevideo.tip %></strong> : <%= t.montevideo.tip_info %>
+      </p>
+      <p>
+        <strong><%= t.montevideo.electricity %></strong> : <%= t.montevideo.electricity_info %>
+      </p>
     </div>
   </div>
 </section>
