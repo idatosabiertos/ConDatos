@@ -263,15 +263,56 @@ montevideo:
   hood: Barrios
 
 montevideo_modals:
-  earth: "Viajar por tierra"
+  earth: "La terminal Tres Cruces es la principal terminal de ómnibus del país. Desde dicha terminal se contacta con destinos del Uruguay así como de Argentina, Brasil, Paraguay y Bolivia. Las frecuencias internacionales que llegan a Montevideo pueden ser consultadas en el sitio web de la terminal o en la aplicación Viajeros!, hecha en base a datos abiertos, así que muy especialmente apropiada en éste caso :)"
   sea: "Numerosas frecuencias de buques y ferrys unen a Buenos Aires con Colonia, Carmelo y Montevideo e incluyen la posibilidad de traslado de automóviles. Las empresas <a href=\"#\">Buquebus</a> y <a href=\"#\">Colonia Express</a> llegan al puerto de Colonia y ofrecen paquetes con traslado en bus hasta Montevideo. La primera también llega a Montevideo en forma directa. La empresa <a href=\"#\">Cacciola hace</a> el trayecto entre Tigre y Carmelo, con paquetes que completan el tramo Buenos Aires-Montevideo por tierra."
-  air: "Viajar por aire"
-  visas: Información sobre visas
-  airport: Información de aeropuerto
-  bus: Información sobre ómnibus
-  taxi: Información sobre taxis
-  bike: Información sobre Montevideo Bicis :P
-  accessibility: Información sobre accesibilidad
+  air: "A el Aeropuerto Internacional de Carrasco llegan las principales líneas aéreas del mundo, con vuelos regionales desde Buenos Aires, Porto Alegre, San Pablo, Río de Janeiro, Asunción, Panamá, Santiago de Chile y Lima. Además arriban vuelos internacionales de Estados Unidos y Europa. El nuevo Aeropuerto Internacional de Carrasco fue inaugurado en 2009 y es considerado uno de los más modernos y atractivos del mundo. Desde allí se tiene acceso al centro Montevideo con buses (planilla de horarios), es posible contratar un transfer, tomar un taxi o alquilar un auto en algunas de las rentadoras localizadas en el aeropuerto."
+  visas: "A los ciudadanos de ninguno de los países miembros de AGA en la región se les exige visado para ingresar al país, ni a la mayoría de los países de América Latina y el Caribe. La lista actualizada de los países y sus distintas exigencias, puede ser consultada en el sitio web de la Dirección Nacional de Migraciones.
+La autorización de la visa es otorgada por la Dirección Nacional de Migraciones y suele tomar al menos 20 días hábiles desde el momento de la solicitud de la misma. Una vez que el Consulado recibe por escrito dicha autorización está en condiciones de expedir la visa, estampándola en el pasaporte de la persona titular.
+Los Consulados de la República en el exterior son los encargados de recepcionar las solicitudes de visa e informan de los requisitos para poder solicitarla. El listado de todas las oficinas consulares puede en la web del Ministerio de Relaciones Exteriores. Requisitos:
+Formulario completo y firmado
+Carta invitación o reserva de hotel
+Pasaporte vigente por al menos 6 meses posteriores al arribo al Uruguay.
+Una foto tamaño pasaporte.
+Reserva de viaje.
+Costo: US$42 (se cobra únicamente si la visa es otorgada)
+Si usted viaja con documentación de un país al que se le exige visa y reside en un país CON representación consular uruguaya, puede ponerse en contacto con la organización para obtener una nota de invitación personalizada y dirigida a la misión en el país de residencia.
+Si usted viaja con documentación de un país al que se le exige visa y reside en un país SIN representación consular uruguaya, debe ponerse en contacto con la organización para antes del 15 de abril, para habilitar un visado especial.
+En ambos casos, al momento de contactarse con la organización incluir los siguientes datos y copias de documentación probatoria:
+Nombre
+Pasaporte
+Nacionalidad
+Lugar de residencia
+Itinerario previsto"
+  airport: "A el Aeropuerto Internacional de Carrasco llegan las principales líneas aéreas del mundo, con vuelos regionales desde Buenos Aires, Porto Alegre, San Pablo, Río de Janeiro, Asunción, Panamá, Santiago de Chile y Lima. Además arriban vuelos internacionales de Estados Unidos y Europa. El nuevo Aeropuerto Internacional de Carrasco fue inaugurado en 2009 y es considerado uno de los más modernos y atractivos del mundo. Desde allí se tiene acceso al centro Montevideo con buses (planilla de horarios), es posible contratar un transfer, tomar un taxi o alquilar un auto en algunas de las rentadoras localizadas en el aeropuerto."
+  bus: "Llegar a cualquier parte de Montevideo en ómnibus es sencillo y un boleto cuesta $28 (menos de un dólar), sólo recomendamos buscar de antemano la línea o líneas que llevan al destino deseado, porque no todas las paradas cuentan con información de rutas y destinos.
+Los buses sólo se detienen a pedido, ésto es haciendo una señal levantando el brazo en la parada o presionando un botón junto a la puerta al bajarse.
+Aplicaciones web
+Cómo Ir  - Búsqueda de rutas y horarios
+A qué hora pasa - Consulta de horarios en una parada
+Consulta de horarios de ómnibus - Tabla con horarios
+Aplicaciones móviles
+Cómo Ir (iOS, Android)
+Moovit (iOS, Andorid, Windows Phone)
+STM Montevideo (iOS, Andorid, Windows Phone)
+NextBus (Android)
+Cutcsa (iOS, Android, solo una empresa)
+Solo Bus (Android)"
+  taxi: "Los taxis en Montevideo son oficiales y seguros, se identifican con los colores blanco y amarillo o negro y amarillo. Los viajes se cobran mediante el uso de un taxímetro con una única tarifa oficial. El taxímetro puede medir en “fichas” o directamente convertir al precio. En cualquiera de los casos el taxi dispone de una tabla con los precios oficiales por cantidad de fichas disponible para el pasajero.
+  Aplicaciones móviles
+EasyTaxi (iOS, Android, Windows Phone)
+VoyEnTaxi (iOS, Android)"
+  bike: "Montevideo cuenta con ciclovías y calles de velocidad limitada para bicicletas en parte de la ciudad y un sistema de bicicletas públicas en la zona de Ciudad Vieja (donde se desarrolla el evento). Para hacer uso del mismo, es necesario inscribirse en la oficina de Movete, a pocas cuadras de las sedes del evento.
+Aplicaciones móviles
+MVD BIKE (iOS)
+		Aplicaciones web
+MontevideoBicis.com
+Bicimap.uy
+Montevideo en Bici"
+  accessibility: "La accesibilidad de la ciudad es despareja, contando con rampas en muchas esquinas pero no llegando a ser universal. La zona del evento se encuentra en pleno proceso de recambio de veredas que las hacen más accesibles pero a su vez las obras pueden implicar un obstáculo en sí mismo.
+Todos los espacios del evento cuentan con accesibilidad plena.
+Recomendamos la aplicación Rampita para contar con más información sobre accesibilidad de distintos lugares de la ciudad.
+Existe un servicio de Taxi Accesible para el que se debe llamar de lunes a viernes, de 8 a 18 horas a los teléfonos 095 685532 o 2203 1354. La reserva debe realizarse con 24 horas de anticipación.
+Buena parte de la flota de buses de Montevideo es accesible, pero no en su totalidad."
   hotel: Hay una gran cantidad de hoteles en la zona cercana a las sedes del evento, con gran variedad de calidades y precios. La sede de la conferencia será el Hotel Radisson Victoria Plaza y muchos de los participantes estarán alojados en el Hotel Esplendor Montevideo.
   hostel: Existen múltiples hosteles en la zona de Ciudad Vieja cercana a las sedes del evento, con habitaciones compartidas y privadas, con precios económicos (especialmente por estar fuera de temporada).
   hood: Si se opta por un apartamento o casa, puede que prefieran ubicarse por la zona de Cordón, Centro o Ciudad Vieja cerca de las sedes del evento. Especialmente en Centro y Ciudad Vieja vale la pena saber que son barrios más activos durante el horario laboral. Otros barrios cercanos y usualmente elegidos por los visitantes son Pocitos, Parque Rodó y Punta Carretas. Éstos son residenciales, cuentan con más opciones para todo el día y amplia variedad de servicios.
