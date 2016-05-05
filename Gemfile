@@ -7,6 +7,8 @@ gem 'pg'
 gem 'dotenv'
 gem 'sinatra-asset-pipeline'
 gem 'sinatra-r18n'
+gem 'rollbar', '~> 2.8.3'
+gem 'mail'
 
 group :test, :development do
   gem 'byebug'

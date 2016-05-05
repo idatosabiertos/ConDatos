@@ -9,7 +9,8 @@ layout:
   date2: OF 2016
   date3: MONTEVIDEO
   date4: URUGUAY
-  language: Español
+  spanish: Español
+  english: English
   register: Form
   goback: Go back
 
@@ -22,6 +23,13 @@ index:
   content5: Event registration will open at a later date; as such, we invite everyone to participate in this call, even if you are not absolutely sure you can attend and with the reassurance that it is not obligatory for subsequent registration.
   fellows: Grantees
   errors: Errors
+  organizers: Organizers
+
+speakers:
+  title: Meet the speakers
+
+sponsors:
+  title: Meet the partners
 
 form:
   data: Your Information

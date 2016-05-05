@@ -1,22 +1,30 @@
+<section class="main_container" id="home_page">
+  <a id="goup_btn" href="#"><img src="img/arrow.svg"></a>
+  <div id="intro_txt">
+    <figure>
+      <img src="img/logo_small.svg">
+    </figure>
 
-<section id="about" class="container content-section text-center">
-  <div class="triangle-topright"></div>
-  <div class="triangle-topleft"></div>
-  <div class="triangle-topleft blue" style="left:-120px;top:500px"></div>
-  <div class="cilinder"></div>
-  <div class="lines"></div>
-  <div class="row">
-    <h1><%= t.index.title %></h1>
-    <div class="col-md-6">
-      <p><%= t.index.content1 %></p>
-      <p><%= t.index.content2 %></p>
+    <div class="mt">
+      <p>
+        <b>
+          <%= t.index.content1 %>
+        </b>
+      </p>
+      <p>
+        <%= t.index.content2 %>
+      </p>
     </div>
-    <div class="col-md-6">
-      <p><%= t.index.content3 %></p>
-      <p><%= t.index.content4 %></p>
-    </div>
-    <div class="col-md-6">
-      <p><%= t.index.content5 %></p>
+  </div>
+
+  <!-- - TODO: erb :speakers -->
+
+  <%= erb :sponsors %>
+  <%= erb :organizers %>
+  <div id="interest">
+    <h2 class="sub_title"><%= t.index.interest %></h2>
+    <div>
+      <figure><img src="img/mintur.png"></figure>
     </div>
   </div>
 </section>

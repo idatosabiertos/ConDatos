@@ -4,24 +4,37 @@ require 'sequel'
 require 'csv'
 require 'dotenv'
 require 'sinatra/r18n'
+require 'mail'
 require_relative 'models/init.rb'
+require_relative 'config.rb'
 require_relative 'lib/form_data.rb'
 
 Dotenv.load
 R18n::I18n.default = 'es'
+
+# Start Rollbar config
+require 'rollbar'
+Rollbar.configure do |config|
+  config.access_token = ENV['ROLLBAR_ACCESS_TOKEN']
+end
+# End Rollbar config
 
 before do
   session[:locale] = params.fetch('locale', 'es')
 end
 
 get '/' do
+  erb :index
+end
+
+get '/inscription' do
   inscription = Inscription.new
   erb :form, locals: { inscription: inscription }
 end
 
 post '/enviar' do
   inscription = create_inscription(params)
-  return erb :index, locals: { inscription: inscription } unless inscription.errors.empty?
+  return erb :form, locals: { inscription: inscription } unless inscription.errors.empty?
 
   inscription.save
   erb :thanks
@@ -49,6 +62,41 @@ end
 
 get '/contact' do
   erb :contact
+end
+
+post '/contactar' do
+  #{"name"=>"", "organization"=>"", "email"=>"", "country"=>"País*"}
+  email = params['email']
+  name = params['name']
+  subject = "[ogp-montevideo] - correo de #{name}"
+  message = <<-eos
+    Nombre: #{name}
+    Correo: #{email}
+    Organización: #{params['organization']}
+    País: #{params['country']}\n
+
+    Mensaje: #{params['message']}
+  eos
+
+  destiny = ENV['CONTACT_EMAIL']
+  mail = Mail.new do
+    from    email
+    to      destiny
+    subject subject
+    body    message
+  end
+  if ENV['RACK_ENV'] == 'production'
+    mail.deliver
+  else
+    puts mail.to_s
+    mail.to_s
+  end
+
+  erb :contactar
+end
+
+get '/mode_info' do
+  erb :more_info
 end
 
 # get '/proceso' do
@@ -135,5 +183,15 @@ helpers do
   def clean_current_url
     regex = /\?.+/
     request.url.gsub(regex, '')
+  end
+
+  def language_buttons
+    if (session[:locale] == 'es')
+      "<a class=\"active\">Español</a>" +
+      "<a href=\"#{clean_current_url}?locale=en\">English</a>"
+    else
+      "<a href=\"#{clean_current_url}?locale=es\">Español</a>" +
+      "<a class=\"active\">English</a>"
+    end
   end
 end

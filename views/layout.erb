@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="<%= t.layout.description %>">
     <meta name="author" content="">
     <title><%= t.layout.title %></title>
     <link rel="shortcut icon" href="<%= home_url %>/img/favicon.png" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="<%= home_url %>/img/apple-touch-icon.png">
     <!-- Custom Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -36,82 +37,101 @@
     <meta name="twitter:image"  content="<%= home_url %>/img/og.png" />
 
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Intro Header -->
-    <header class="intro text-center">
-      <% locale = (session[:locale] == 'es') ? 'en' : 'es' %>
-      <a href="<%= "#{clean_current_url}?locale=#{locale}" %>" id="english_btn" class="btn">
-        <%= t.layout.language %>
-      </a>
-      <a id="logo" href="http://www.opengovpartnership.org" target="_blank">Open Goverment Partnership</a>
-
-      <div class="container">
-        <ul class="org_logos">
-          <li><a id="agesic" href="http://www.agesic.gub.uy/" target="_blank">Agesic</a></li>
-          <li><a id="presidencia" href="https://www.presidencia.gub.uy/" target="_blank">Presidencia</a></li>
-          <li><a id="rga" href="http://rga.uy/" target="_blank">Red de gobierno abierto uruguay</a></li>
-        </ul>
-
-        <div class="txt">
-          <a id="logoevento" href="#" class="svg">
-            <object data="img/logoevent.svg" type="image/svg+xml" class="mailicon">
-            </object>
-          </a>
-
-          <ul>
-            <li class="where"><p><%= t.layout.date3 %>, <%= t.layout.date4 %></p></li>
-            <li class="when"><p><%= t.layout.date1 %> <%= t.layout.date2 %></p></li>
-          </ul>
-          <h3 class="jcountTimer"></h3>
-        </div>
-
-        <a href="/#form" class="btn  page-scroll" id="register_btn"><%= t.layout.register %></a>
-        <a id="arrow" href="/#form" class="page-scroll">
-          <img class="tiny" src="img/arrow.svg" alt="">
-        </a>
-      </div>
-    </header>
-    <%= yield %>
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
+  <body>
+    <!--Main menu -->
+    <div class="main_menu">
+      <a id="ogp_logo" href="http://www.opengovpartnership.org/" target="_blank">Open Goverment Partnership</a>
+      <nav id="main_nav">
         <ul>
-          <li>
-            <i class="fa fa-globe"></i>
-            <a href="http//agesic.gub.uy/gobiernodigital" target="_blank">
-              agesic.gub.uy/gobiernodigital
-            </a>
-          </li>
-          <li>
-            <i class="fa fa-globe"></i>
-            <a href="http://rga.uy" target="_blank">
-              rga.uy
-            </a>
-          </li>
-          <li>
-            <i class="fa fa-facebook"></i>
-            <a href="https://es-es.facebook.com/agesic.uy" target="_blank">
-              /agesic.uy
-            </a>
-          </li>
-          <li>
-            <i class="fa fa-twitter"></i>
-            <a href="http://www.twitter.com/agesic" target="_blank">
-              @agesic
-            </a>
-          </li>
+          <ul>
+            <li <%= "class=\"active\"" if '/' == request.path_info %>>
+              <a href="/"><%= t.layout.home %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/agenda' == request.path_info %>>
+              <a href="/agenda"><%= t.agenda.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/sedes' == request.path_info %>>
+              <a href="/sedes"><%= t.hqs.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/evento' == request.path_info %>>
+              <a href="/evento"><%= t.event.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/montevideo' == request.path_info %>>
+              <a href="/montevideo"><%= t.montevideo.title %></a>
+            </li>
+            <li <%= "class=\"active\"" if '/contact' == request.path_info %>>
+              <a href="/contact"><%= t.contact.title %></a>
+            </li>
+          </ul>
         </ul>
+      </nav>
+
+      <!-- a href="/inscription" class="btn"><%= t.layout.register %></a-->
+
+      <div class="date_info">
+        <h3><%= t.layout.date1 %>
+          <br><%= t.layout.date2 %>
+          <br><%= t.layout.date3 %>
+          <br><%= t.layout.date4 %>
+        </h3>
+      </div>
+
+      <nav class="language_nav">
+        <%= language_buttons %>
+      </nav>
+    </div>
+    <!--End main menu-->
+
+    <%= yield %>
+
+    <footer>
+      <ul>
+        <li>
+          <i class="fa fa-globe"></i>
+          <a href="http//agesic.gub.uy/gobiernodigital" target="_blank">
+            agesic.gub.uy/gobiernodigital
+          </a>
+        </li>
+        <li>
+          <i class="fa fa-globe"></i>
+          <a href="http://rga.uy" target="_blank">
+            rga.uy
+          </a>
+        </li>
+        <li>
+          <i class="fa fa-facebook"></i>
+          <a href="https://es-es.facebook.com/agesic.uy" target="_blank">
+            /agesic.uy
+          </a>
+        </li>
+        <li>
+          <i class="fa fa-twitter"></i>
+          <a href="http://www.twitter.com/agesic" target="_blank">
+            @agesic
+          </a>
+        </li>
+      </ul>
+      <!--Start Twitter Feed-->
+      <div class="twitter_feed">
+        <h3><i class="fa fa-twitter"></i>Twitter Feed</h3>
+        <div class="tweet">
+          <p>Grabehan #OGPmvd People by Alabama Shakes <a href="#">http://spoti.fi/1CTPWcW</a></p>
+          <small>7 sep 2015</small>
+        </div>
+        <div class="tweet">
+          <p>Grabehan #OGPmvd People by Alabama Shakes <a href="#">http://spoti.fi/1CTPWcW</a></p>
+          <small>7 sep 2015</small>
+        </div>
       </div>
     </footer>
-    <script src="/js/countdown.js"></script>
+
     <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     ga('create', 'UA-34702401-12', 'auto');
-     ga('send', 'pageview')
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-34702401-12', 'auto');
+      ga('send', 'pageview')
     </script>
   </body>
 </html>

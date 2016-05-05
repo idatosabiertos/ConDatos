@@ -1,20 +1,90 @@
-<section class="container content-section">
-  <div class="row">
-    <div class="col-md-12">
-      <%= erb :volver_top %>
-      <h1><%= t.montevideo.title %></h1>
-      <h2><%= t.montevideo.travel %></h2>
-      <p><%= t.montevideo.travel_1 %></p>
-      <h2><%= t.montevideo.transport %></h2>
-      <p><%= t.montevideo.transport_1 %></p>
-      <h2><%= t.montevideo.hosting %></h2>
-      <p><%= t.montevideo.hosting_1 %></p>
-      <h2><%= t.montevideo.activities %></h2>
-      <p><%= t.montevideo.activities_1 %></p>
-      <h2><%= t.montevideo.weather %></h2>
-      <p><%= t.montevideo.weather_1 %></p>
-      <h2><%= t.montevideo.info %></h2>
-      <p><%= t.montevideo.info_1 %></p>
+<section class="main_container" id="montevideo_page">
+  <div class="title">
+    <h2><%= t.montevideo.title %></h2>
+    <p><%= t.montevideo.subtitle %></p>
+  </div>
+
+  <div class="travel">
+    <h3><%= t.montevideo.travel %></h3>
+    <div class="cta">
+      <a href="#" id="earth">
+        <img src="img/mvd/bus.svg">
+        <p><%= t.montevideo.earth %></p>
+      </a>
+    </div>
+    <div class="cta">
+      <a href="#" id="air">
+        <img src="img/mvd/air.svg">
+        <p><%= t.montevideo.air %></p>
+      </a>
+    </div>
+    <div class="cta">
+      <a href="#" id="sea">
+        <img src="img/mvd/sea.svg">
+        <p><%= t.montevideo.sea %></p>
+      </a>
+    </div>
+
+    <div class="info">
+      <p><i></i><%= t.montevideo.visas %></p>
+    </div>
+  </div>
+
+  <div class="transport">
+    <h3><%= t.montevideo.transport %></h3>
+
+    <div class="cta">
+      <a href="#" id="airport">
+        <img src="img/mvd/landing.svg">
+        <p><%= t.montevideo.airport %></p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <a href="#" id="bus">
+        <img src="img/mvd/bus02.svg">
+        <p><%= t.montevideo.bus %></p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <a href="#" id="taxi">
+        <img src="img/mvd/taxi.svg">
+        <p><%= t.montevideo.taxi %></p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <a href="#" id="bike">
+        <img src="img/mvd/bici.svg">
+        <p><%= t.montevideo.bike %></p>
+      </a>
+    </div>
+
+    <div class="info">
+      <p><i></i><%= t.montevideo.accessibility %></a></p>
+    </div>
+  </div>
+
+  <div class="lodging">
+    <h3><%= t.montevideo.lodging %></h3>
+    <div class="cta">
+      <a href="#" id="hotel">
+        <p><%= t.montevideo.hotel %></p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <a href="#" id="hostel">
+        <p><%= t.montevideo.hostel %></p>
+      </a>
+    </div>
+
+    <div class="cta">
+      <a href="#" id="hood">
+        <p><%= t.montevideo.hood %></p>
+      </a>
     </div>
   </div>
 </section>
+<%= erb :montevideo_modals %>
