@@ -163,9 +163,57 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="modal" tabindex="-1" id="hotel-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="hotel-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="mt">
+          <h3><%= t.montevideo.hotel %></h3>
+          <p><%= t.montevideo_modals.hotel %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="hostel-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="hostel-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="mt">
+          <h3><%= t.montevideo.hostel %></h3>
+          <p><%= t.montevideo_modals.hostel %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" id="hood-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="hood-close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="mt">
+          <h3><%= t.montevideo.hood %></h3>
+          <p><%= t.montevideo_modals.hood %></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script>
- ['earth', 'sea', 'air', 'visa', 'airport', 'bus', 'taxi', 'bike', 'accessibility'].forEach(openModal);
- ['earth', 'sea', 'air', 'visa', 'airport', 'bus', 'taxi', 'bike', 'accessibility'].forEach(setClose);
+ ['earth', 'sea', 'air', 'visa', 'airport', 'bus', 'taxi', 'bike', 'accessibility', 'hotel', 'hostel', 'hood'].forEach(openModal);
+ ['earth', 'sea', 'air', 'visa', 'airport', 'bus', 'taxi', 'bike', 'accessibility', 'hotel', 'hostel', 'hood'].forEach(setClose);
 
  function openModal(name){
    document.getElementById(name).addEventListener('click', function(e){

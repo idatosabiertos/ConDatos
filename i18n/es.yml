@@ -257,6 +257,10 @@ montevideo:
   bike: Bici
   accessibility: "Información sobre <a href=\"#\" id=\"accessibility\">ACCESIBILIDAD</a>"
   airport: Desde el aeropuerto
+  lodging: Hospedaje
+  hotel: Hoteles
+  hostel: Hosteles
+  hood: Barrios
 
 montevideo_modals:
   earth: "Viajar por tierra"
@@ -268,6 +272,9 @@ montevideo_modals:
   taxi: Información sobre taxis
   bike: Información sobre Montevideo Bicis :P
   accessibility: Información sobre accesibilidad
+  hotel: Hay una gran cantidad de hoteles en la zona cercana a las sedes del evento, con gran variedad de calidades y precios. La sede de la conferencia será el Hotel Radisson Victoria Plaza y muchos de los participantes estarán alojados en el Hotel Esplendor Montevideo.
+  hostel: Existen múltiples hosteles en la zona de Ciudad Vieja cercana a las sedes del evento, con habitaciones compartidas y privadas, con precios económicos (especialmente por estar fuera de temporada).
+  hood: Si se opta por un apartamento o casa, puede que prefieran ubicarse por la zona de Cordón, Centro o Ciudad Vieja cerca de las sedes del evento. Especialmente en Centro y Ciudad Vieja vale la pena saber que son barrios más activos durante el horario laboral. Otros barrios cercanos y usualmente elegidos por los visitantes son Pocitos, Parque Rodó y Punta Carretas. Éstos son residenciales, cuentan con más opciones para todo el día y amplia variedad de servicios.
 
 contact:
   title: Contacto
