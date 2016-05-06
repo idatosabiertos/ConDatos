@@ -293,9 +293,10 @@ footer ul li a:hover > i  {color: #fff}
 #modal .mt { float: left;}*/
 
 .modal figure { width: 40%; float: left;}
-.modal .mt { width: 60%;display: inline-block;}
+.modal .mt { width: 60%;display: inline-block;font-size: 14px; font-family: 'Roboto', sans-serif;}
 .modal .mt p {font-size: 14px; font-family: 'Roboto', sans-serif; padding: 20px;}
 .modal .mt h3 {color: #231F20;font-size: 18px;font-weight: bold; margin: 0; padding: 0 20px;}
+.modal-header { border: none}
 
 
 /* ==========================================================================
@@ -343,10 +344,10 @@ footer ul li a:hover > i  {color: #fff}
 
 #evento_page p {font-size: 14px;font-family: 'Roboto', sans-serif;}
 #evento_page .row { margin: 50px 0}
-#evento_page .coffe_module {border: 2px solid #5DBFDD; padding: 15px 10px;margin:0}
-#evento_page .coffe_module p {font-size: 14px;font-family: 'Roboto', sans-serif;color:#5DBFDD;font-weight: 500;}
-#evento_page .coffe_module i {font-size: 40px; float: left; width: 30%}
-#evento_page .coffe_module small {display: inline-block; width: 60%}
+#evento_page .coffee_module {border: 2px solid #5DBFDD; padding: 15px 10px;margin:0}
+#evento_page .coffee_module p {font-size: 14px;font-family: 'Roboto', sans-serif;color:#5DBFDD;font-weight: 500;}
+#evento_page .coffee_module i {font-size: 40px; float: left; width: 30%}
+#evento_page .coffee_module small {display: inline-block; width: 60%}
 #evento_page .steps h2 {color: #5DBFDD;font-size: 91px;margin: 0 0 0px 0;font-weight: bold;}
 #evento_page #event_panel_icon { font-size: 80px; color: #5DBFDD}
 #evento_page .icon-commenticon {font-size: 80px;float: left;color: #5DBFDD; border-left: 4px  solid #5DBFDD}
@@ -688,6 +689,7 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 	 color: #5DBFDD;
     font-size: 18px;
     margin: 0 0 30px 0;
+    position: relative;
 }
 #form h3:before {
 	content: '';
@@ -708,9 +710,11 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
     border-radius: 0;
     border-color: #5DBFDD;
     font-size: 15px;
+    margin: 20px 0;
     color: #5DBFDD;
+    background: none;
 }
-
+#form .block {width: 100%; display: inline-block;margin: 20px 0;}
 /* ==========================================================================
    Fonts icon styles
    ========================================================================== */
