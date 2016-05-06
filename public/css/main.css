@@ -291,7 +291,7 @@ footer ul li a:hover > i  {color: #fff}
 .modal_bg {background: rgba(0,0,0,0.4); height: 100%;width: 100%; position: fixed;left: 0;top: 0;}
 #modal figure {float: left;}
 #modal .mt { float: left;}*/
-
+.modal{ background: rgba(0,0,0,0.7); }
 .modal figure { width: 40%; float: left;}
 .modal .mt { width: 60%;display: inline-block;font-size: 14px; font-family: 'Roboto', sans-serif;}
 .modal .mt p {font-size: 14px; font-family: 'Roboto', sans-serif; padding: 20px;}
