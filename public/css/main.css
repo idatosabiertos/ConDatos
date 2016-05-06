@@ -303,17 +303,15 @@ footer ul li a:hover > i  {color: #fff}
    Sedes Page styles
    ========================================================================== */
 #sedes_page { position: relative;}
-#sedes_page .show_sidebar {
-	  -webkit-transform: translate3d(0px, 0, 0) !important;
-}
 #sedes_page .map_info_sidebar { 
-	overflow-x:scroll;width: 35%;background:#fff;position: absolute;right: 0; height: 100%;box-shadow: 12px 0px 15px 6px #000;
-	  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: translate3d(420px, 0, 0);
-  display:none;
+	  overflow-x:scroll;
+    width: 35%;
+    background:#fff;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    box-shadow: 12px 0px 15px 6px #000;
+    display:none;
 }
 #sedes_page .map_info_sidebar .inner { padding: 30px}
 #sedes_page .map_info_sidebar .inner .close { color: #5DBFDD;font-size: 13px;}
