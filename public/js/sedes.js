@@ -19,7 +19,7 @@ var active_pin = L.icon({
 });
 
 // Radisson
-var radisson = L.marker(
+var radisson_marker = L.marker(
   [-34.9058709, -56.1995317],
   {
     icon: normal_pin,
@@ -27,14 +27,16 @@ var radisson = L.marker(
     alt: "Radisson Victoria Plaza"
   }).addTo(map);
 
-radisson.addEventListener('click', function(){
+radisson_marker.addEventListener('click', function(){
   var radisson_info = document.getElementById('radisson');
-  if ( (radisson_info.style.display == 'none') || (radisson_info.style.display != 'inline-block') ){
-    radisson_info.style.display = 'inline-block';
-    radisson.setIcon(active_pin);
-  }else{
-    radisson_info.style.display = 'none';
-    radisson.setIcon(normal_pin);
+  if (radisson_info.classList.contains('unhide') ){
+    document.getElementById('maua').classList.remove('unhide');
+    casona.setIcon(normal_pin);
+    radisson_info.classList.remove('unhide');
+    radisson_marker.setIcon(normal_pin);
+  } else {
+    radisson_info.classList.add('unhide');
+    radisson_marker.setIcon(active_pin);
   }
 });
 
@@ -46,21 +48,27 @@ var casona = L.marker(
     title: "Casona Mauá",
     alt: "Casona Mauá"
   }).addTo(map);
+
 casona.addEventListener('click', function(){
   var maua = document.getElementById('maua');
-  if ( (maua.style.display == 'none') || (maua.style.display != 'inline-block') ){
-    casona.setIcon(active_pin);
-    maua.style.display = 'inline-block';
-  }else{
-    maua.style.display = 'none';
+  if (maua.classList.contains('unhide') ){
+    document.getElementById('radisson').classList.remove('unhide');
+    maua.classList.remove('unhide');
     casona.setIcon(normal_pin);
+  } else {
+    maua.classList.add('unhide');
+    document.getElementById('radisson').classList.remove('unhide');
+    radisson_marker.setIcon(normal_pin);
+    casona.setIcon(active_pin);
   }
 });
 
 document.getElementById('close_maua').addEventListener('click', function(){
-  document.getElementById('maua').style.display = 'none';
+  document.getElementById('maua').classList.remove('unhide');
+  casona.setIcon(normal_pin);
 });
 
 document.getElementById('close_radisson').addEventListener('click', function(){
-  document.getElementById('radisson').style.display = 'none';
+  document.getElementById('radisson').classList.remove('unhide');
+  radisson_marker.setIcon(normal_pin);
 });

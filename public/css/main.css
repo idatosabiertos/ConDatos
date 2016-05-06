@@ -303,7 +303,7 @@ footer ul li a:hover > i  {color: #fff}
    Sedes Page styles
    ========================================================================== */
 #sedes_page { position: relative;}
-#sedes_page .map_info_sidebar { 
+#sedes_page .map_info_sidebar {
 	  overflow-x:scroll;
     width: 35%;
     background:#fff;
@@ -311,8 +311,18 @@ footer ul li a:hover > i  {color: #fff}
     right: 0;
     height: 100%;
     box-shadow: 12px 0px 15px 6px #000;
-    display:none;
+    display: inline-block;
+    transition: opacity 0.6s ease-out;
+    opacity: 0;
+    z-index: 100;
 }
+
+#sedes_page .map_info_sidebar.unhide {
+    transition: opacity 0.6s ease-out;
+    opacity: 1;
+    z-index: 200;
+}
+
 #sedes_page .map_info_sidebar .inner { padding: 30px}
 #sedes_page .map_info_sidebar .inner .close { color: #5DBFDD;font-size: 13px;}
 #sedes_page .map_info_sidebar .inner .direction { border: 2px solid #5DBFDD; padding: 10px;margin: 20px 0}
