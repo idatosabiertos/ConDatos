@@ -11,8 +11,10 @@ layout:
   date4: URUGUAY
   spanish: Español
   english: English
-  register: Form
+  register: Inscription
   goback: Go back
+  home: Home
+  close: Close
 
 index:
   title: A Call for Speakers, Topics of Interest, and Grant Requests
@@ -24,12 +26,14 @@ index:
   fellows: Grantees
   errors: Errors
   organizers: Organizers
+  interest: Declarations of interest
 
 speakers:
   title: Meet the speakers
 
 sponsors:
-  title: Meet the partners
+  support: Supporters
+  colaborate: Collaborators
 
 form:
   data: Your Information
@@ -174,21 +178,68 @@ survey:
   max_words: Máx 300 words
 
 agenda:
-  title: Agenda
+  title: Schedule
+  soon: Coming soon
 
 hqs:
-  title: Sedes
+  title: Venues
   title_1: Radisson Victoria Plaza
-  description_1: Descripción del Radisson
+  description_1: Radisson description
   title_2: Casona Mauá
-  description_2: Descripción de Casona
+  description_2: Casona Mauá description
+
+maua:
+  title: Casona Mauá
+  address: Juan Carlos Gómez 1530, Montevideo, Uruguay
+  description1: "Site of the unconference on Civil Society Day as well as the close of the event.  It is a mansion with an eclectic design that was constructed in the 1870s and was the residence of the Baron of Mauá (a famous Brazilian businessman and industrialist)."
+  description2: "It was recently renovated, with much of its original flooring, woodwork and ironwork professionally restored. It is located in the “El Bajo de Ciudad Vieja” area of the city, known as a hub of art and culture."
+  date0: May 30 - 09:00 to 17:00hs
+  event0: Datacamp
+  date1: May 31 - 08:30 to 18:00hs
+  event1: Civil Society Day
+  date2: June 2 - 20:00hs
+  close: Closing party
+  apps_info: "See on<a href=\"http://www.openstreetmap.org/node/945602666\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Casona+Mau%C3%A1/@-34.9038895,-56.2063727,17z/data=!3m1!4b1!4m2!3m1!1s0x959f7f87432a0d69:0x9e657eb77a382898?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/casona-mau%C3%A1/51ace2a4498eb63043257ba5\" target=\"_blank\">Foursquare</a>"
+
+radisson:
+  title: Radisson Victoria Plaza
+  address: Plaza Independencia 759,Montevideo, Uruguay
+  description1: The central site of the event is this hotel and conference center. Originally constructed in the 1940s but having undergone several upgrades since then.
+  description2: Located at Plaza Independencia, where one can also find the Gateway of the Citadel, the Executive Tower, Salvo Palace, and the Artigas Mausoleum. The main avenue of the city, Avenida 18 de Julio, also starts here and goes east. The Old City of Montevideo, along with the famous Sarandí pedestrian street, start on the other side of the plaza and run westward to the port and the shoreline.
+  date1: May 31
+  event1: Focal Points Meeting (not open to the public)
+  date2: June 1 and 2 - 08:30 to 18:40hs
+  event2: OGP Americas Regional Meeting
+  apps_info: "See on<a href=\"http://www.openstreetmap.org/node/1167139189\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Radisson+Montevideo+Victoria+Plaza+Hotel,+Montevideo+11000/@-34.9052736,-56.2021887,17z/data=!3m1!4b1!4m2!3m1!1s0x959f802bba8814d1:0x629e593130096426?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/radisson-victoria-plaza/4bbc71ce51b89c742a62872a\" target=\"_blank\">Foursquare</a>"
 
 event:
-  title: Evento
-  title_1: Acerca del Día de la Sociedad Civil
-  description_1: Acerca de...
-  title_2: Acerca del Encuentro Regional de las Américas
-  description_2: Acerca de...
+  title: Event
+  title_0: About Datacamp
+  content0: On May 30, before the start of official event activities, we'll have this experimentatation and learning space. participants will learn how to find, extract and analyze public data, using forensic tools to tell better journalistic stories. It'll offer journalists, civic activists and developers a crash course in the most important teqniques and tools to analyze public data, They'll also work in teams to create newsapps and civic participation tools that enhance the value of traditional reporting.
+  title_1: About Civil Society Day
+  content1: On May 31 there will be an unconference organized by civil society groups in order to address subjects related to them. An unconference implies an open agenda co-created on the spot by the participants, as well as sessions for peer knowledge exchange, which will be led by facilitators. Although the event is not exclusive to civil society representatives, these will receive preference in the filling of the 150 available spaces.
+  content2: "In an unconference, the speaker-listeners dynamic is inverted so that all of the participants become both speakers and listeners. In several simultaneous sessions, each with a limited number of people, a dialogue is fostered based on the topics chosen from the common agenda. Each session has a facilitator who ensures that everyone has equal opportunity to hear and be heard, as well as a someone that volunteers to take notes to be shared with the rest of the participants and any interested person via the web."
+  content3: "In the sessions there is no use of multimedia presentations or electronic devices such as cell phones and laptops (except for the individual taking notes).<br><br>The goal of an unconference is for knowledge to be shared among peers, and its setup helps foster this. Facilitators guide the participants during the day, but ultimately it is the attendees themselves that make the event and generate its content. The event will include coffee in the morning and afternoon, as well as lunch for all attendees."
+  title2: About the Americas Regional Meeting
+  description1: The conference will take place on June 1 and 2, with a program based on the themes that were proposed during the registration process, that were received during the call for submissions in March, or that were deemed relevant by the Academic Committee.
+  description2: In the interest of being more dynamic and collaborative, the agenda includes more participative sessions instead of a traditional, exposition-based program. For this reason, the Academic Committee of the event requested contributions to the themes, rather than traditional presentations, so that speakers could then be invited to co-create sessions built around exchange and interaction.
+  description3: "The event will have three principal tracks:"
+  title3: Presentations and sessions in the main hall
+  description4: These will include simultaneous translation and will aim to foster dialogue between the speakers and the audience.
+  title4: Lightning talks in the lobby
+  description5: Brief presentations from all OGP member countries in the region – by their governmental, civil society, and Independent Reporting Mechanism representatives. There will also be a series of brief presentations of regional initiatives and projects.
+  title5: Classroom Workshops
+  description6: Lasting more than two hours and conducted by first-class experts, these workshops will aim to foster deep and practical learning on concepts for audiences with varying levels of experience.
+  description7: In more general terms, this gathering will recognize the value of interpersonal exchanges and “hallway talk,” and it will therefore open spaces between sessions for interaction, will provide materials for the exchange of ideas in common areas (flipcharts, markers, etc.), and will welcome the use of the lobby for meetings during the event.
+  coffee: The event will include coffee in the morning and afternoon, as well as lunch for all attendees.
+  title6: "Abot the <br>Focal Point<br> meeting (not open to the public)"
+  description8: On May 31, continuing the successful experiences in Mexico, Georgia and Tanzania, a conference will be held for government POC from countries participating in OGP from the region.
+  title7: "This conference will have the following objectives:"
+  description9: Through facilitated discussions and participatory sessions, participants will have the opportunity to reflect and learn on innovative practices in OGP-related topics.
+  title8: Foster best practices.
+  description10: Along the day, POC will have the chance to compare processes with other regional countires and identify good practices and common problems.
+  title9: Opportunity for collaboration networks.
+  description11: This will allow reformers establish solid working relationships and identify new opportunities for collaboration and alliances on key subjects.
 
 montevideo:
   title: Montevideo
