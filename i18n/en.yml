@@ -243,22 +243,86 @@ event:
 
 montevideo:
   title: Montevideo
-  travel: Viaje
-  travel_1: Aire, Tierra, Mar, Visas
-  transport: Transporte
-  transport_1: Desde el aeropuerto, buses, taxi, bicicleta
-  hosting: Hospedaje
-  hosting_1: Hoteles, Hosteles, Barrios, Casas rodantes
-  activities: Actividades
-  activities_1: Paseos, Cerveza Artesanal, Espectáculos
-  weather: Clima
-  weather_1: Hace clima
-  info: Información general
-  info_1: Cambio, Seguridad, Propina, Uber
+  subtitle: Here you'll find information for your stay
+  travel: Travel
+  earth: Land
+  air: Air
+  sea: Sea
+  visas: "Iformation on <a href=\"#\" id=\"visa\">VISAS</a>"
+  transport: Transport
+  bus: Bus
+  taxi: Taxi
+  bike: Bike
+  accessibility: "Information on <a href=\"#\" id=\"accessibility\">ACCESIBILIDAD</a>"
+  airport: From the airport
+  other: Other
+  activity: Activities
+  lodging: Lodging
+  weather: Climate
+  hotel: Hotels
+  hostel: Hostels
+  hood: Neighborhoods
+  info: General information
+  change: Currency exchange
+  security: Security
+  tip: Tips
+  electricity: Electrical outlets and voltage
+  change_info: Official exchange rates are available in the <a href="http://bcu.gub.uy/">Central Bank</a> website but it's an average that might not reflect what exchanges offer. A good guide of the best availabe rate is the one in <a href="http://www.brou.com.uy/">Banco República's</a> website. Currency exchange is free and lots of places where you can exchange money can be easily found. No ID or signatures are needed for small sums. Rates are published outside each one of them and you can ask for a better rate, specially when exchanging over $100. You can find currency exchange in the aiport, although it does not offer the best available rate.
+  security_info: Montevideo is a safe city but still care is reccommended. Basic precautions such as not leaving your belongings unattended or unnecessarily exhibiting valuables should suffice. The area where the event takes place has special surveillance including video surveillance. 911 can be called upon any emergency and a specialized Tourist Police in the Ciudad Vieja Zone exists, that can be easily identifiable for their yellow jackets.
+  tip_info: Tip in Uruguay is customary for bars, restaurants, food delivery and taxis, but optional. The tip amount reflects satisfaction with service, not surpassing in general 10% of the expenditure.
+  electricity_info: Uruguay has 220v current y and uses "three in line" prongs or Type L plugs. However, you migh find European “Schuko” (Tipo E) style or multi-type plugs.
+  
+montevideo_modals:
+  earth: "<a href='http://www.trescruces.com.uy/'>Tres Cruces</a>, the main bus terminal in the country, links Montevideo to Argentina, Brazil, Paraguay and Bolivia. It is also the seat of a big mall located inside the main building. The timetable of international routes arriving to Montevideo can be consulted on the terminal’s web page or through the <a href='http://www.viajeros.com/'>Viajeros!</a> App, which is actually based on open data and therefore especially appropriate for this event :)
+  sea: "Many small ships and ferries link Buenos Aires with the cities of Colonia, Carmelo and Montevideo, and they also carry cars. <a href=\"https://www.buquebus.com\">Buquebus</a> and <a href=\"https://coloniaexpress.com/\">Colonia Express</a> are two companies that travel to Colonia and offer packets which include bus trips to Montevideo. Some Buquebus ferries also go directly to Montevideo. <a href=\"http://www.cacciolaviajes.com/\">Cacciola hace</a> has a ferry that travels from Tigre and Carmelo, and it offers full Buenos Aires-Montevideo services by boat and bus."
+  air: "<a href=\"http://www.aeropuertodecarrasco.com.uy\">Carrasco International Airport</a> is served by the major airlines of the world, with regional flights from Buenos Aires, Porto Alegre, San Pablo, Río de Janeiro, Asunción, Panama, Santiago de Chile and Lima. Additionally, international flights arrive in Uruguay from the United States and Europe. The new airport was inaugurated in 2009 and is considered one of the most modern and attractive in the world. From there you have easy access to the center of Montevideo with <a href=\"http://www.copsa.com.uy/horarios.htm\">buses (bus schedule)</a>. It is also possible to hire a private <a href=\"http://www.taxisaeropuerto.com/transfer.html\">transfer</a>, take a <a href=\"http://www.taxisaeropuerto.com/\">taxi</a> or rent a car from some of the local car rental agencies in the airport."
+  visas: "No citizens of OGP member countries are required to obtain a visa in order to enter Uruguay, and the same is true for the majority of the countries of Latin America and the Caribbean. For a full list of countries and their different visa requirements, please check the <a href=\"https://migracion.minterior.gub.uy/index.php?option=com_content&view=article&id=1280\">National Immigration Directorate website</a>.<br><br>.Visas are granted by National Immigration Directorate and usually take at least 20 business days from the moment a request is made. Once the consulate receives written authorization, the visa may be expedited, with a stamp being provided in the passport of the recipient.<br><br>Uruguayan consulates are responsible for receiving visa requests and provide information on the requirements for making them. For a full list of all consulate offices, please check the <a href=\"http://www.mrree.gub.uy/frontend/page?1,inicio,oficinas-consulares,O,es,0,\">Ministry of Foreign Relations website</a>.<br><br><b>Requirements:</b><br><li>Completed and signed form</li><li>Invitation letter and hotel reservation</li><li>Passport valid for at least six months after arrival in Uruguay</li><li>A passport-sized photo</li><li>Travel reservation</li><br><br><b>Cost: USD42</b> (charged only if the visa is granted)<br><br>If you <b>travel with documents from a country for which visa is required</b> and reside in a country <b>WITH uruguayan consular representation</b>, you can contact the organization to obtain a personalized invitation note addressed to the mission in your country of residence.<br><br>If you <b>travel with documents from a country for which visa is required</b> and reside in a country  <b>WITHOUT uruguayan consular representation</b>, you can contact the organization to obtain a special visa.<br><br>In both cases, at the time of contact please include the following information and copies of probatory documentation:<br><br><li>Name</li><li>Passport</li><li>Nationality</li><li>Place of residence</li><li>Itinerary</li>"
+  airport: "From the airport you can access the center of Montevideo with <a href=\"http://www.copsa.com.uy/horarios.htm\">buses (bus schedule)</a>. It is also possible to hire a private <a href=\"http://www.taxisaeropuerto.com/transfer.html\">transfer</a>, take a <a href=\"http://www.taxisaeropuerto.com/\">taxi</a> or rent a car from some of the local car rental agencies in the airport."
+  bus: "Reaching any part of Montevideo by bus is simple and tickets cost $28 (less than a dollar), we do reccomend knowing the lines that can take you there beforehand because not every stop has information on routes and destinations. Buses stop only on demand, this means signalling with your hand at the stop or pressing a button next to the door when getting down.<br>
+<h4>Web apps</h4>
+<ul><li>
+<a href=\"http://www.montevideo.gub.uy/aplicacion/como-ir\" target='_blank'>Cómo Ir</a>  - Route and schedule search</li>
+<li><a href='http://www.montevideo.gub.uy/aquehorapasa/aquehorapasa.html' target='_blank'>A qué hora pasa</a> - Schedule for a specific stop</li>
+<li><a href='http://www.montevideo.gub.uy/horariosSTM/' target='_blank'>Consulta de horarios de ómnibus</a> - Schedule table</li></ul>
+<h4>Mobile apps:</h4>
+<ul><li>
+Cómo Ir (iOS, <a href='https://play.google.com/store/apps/details?id=uy.gub.imm.stm.mobile.comoir' target='_blank'>Android</a>)</li>
+<li><a href='http://moovitapp.com/es/' target='_blank'>Moovit</a> (iOS, Andorid, Windows Phone)</li>
+<li>STM Montevideo (<a href='https://itunes.apple.com/app/id938009980' target='_blank'>iOS</a>, <a href='https://play.google.com/store/apps/details?id=com.matungos.stm' target='_blank'>Android</a>, <a href='https://www.microsoft.com/es-es/store/apps/stm-montevideo-beta/9wzdncrdx163' target='_blank'>Windows Phone</a>)</li>
+<li><a href='https://play.google.com/store/apps/details?id=com.skyquake.nextbusmvd' target='_blank'>NextBus</a> (Android)</li>
+<li>Cutcsa (<a href='https://itunes.apple.com/uy/app/cutcsa/id973079317?mt=8' target='_blank'>iOS</a>, <a href='https://play.google.com/store/apps/details?id=com.goova.android.cutcsa' target='_blank'>Android</a>, one company only)</li>
+<li><a href='https://play.google.com/store/apps/details?id=com.pisco.solobus' target='_blank'>Solo Bus</a> (Android)</li>"
+  taxi: "Taxis in Montevideo are official and safe, they identify with either black and yellow or white and yellow colours. Trips are charged through a meter with a single official rate. The meter can measure “tokens” or directly convert to the final price. In any case, the taxi has a conversion table available for the passenger with the official prices for any amount of tokens.
+<h4>Web apps:</h4>
+<ul>
+<li>EasyTaxi (<a href='https://app.adjust.io/5owkla?campaign=ALL_ALL_ORG_iOS&adgroup=ALL_ALL_ORG_iOS_Website&creative=Website_ALL_AUG_2015main' target='_blank'>iOS</a>, <a href='https://app.adjust.io/dogrfl?campaign=ALL_ALL_ORG_AND&adgroup=ALL_ALL_ORG_AND_Website&creative=Website_ALL_AUG_2015main' target='_blank'>Android</a>, <a href='https://app.adjust.io/f9bqhx?campaign=ALL_ALL_ORG_WP&adgroup=ALL_ALL_ORG_WP_Website&creative=Website_ALL_AUG_2015main' target='_blank'>Windows Phone</a>)</li>
+<li>VoyEnTaxi (<a href='https://itunes.apple.com/us/app/voy-en-taxi/id939470696?l=es&ls=1&mt=8' target='_blank'>iOS</a>, <a href='http://voyentaxi.com/descargar.html' target='_blank'>Android</a>)</li>
+</ul>"
+  bike: "Montevideo has bikepaths and limited speed streets for bikes in part of the city and a public bike system in the Ciudad Vieja area (where the event takes place). To use it, you need to sign up at the <a href='http://movete.montevideo.gub.uy/' target='_blank'>Movete offices</a>, a few blocks away from the event venues.
+<h4>Mobile apps</h4>
+<ul>
+<li><a href='https://itunes.apple.com/es/app/mvd-bike-montevideo-by-bike/id1067920390' target='_blank'>MVD BIKE</a> (iOS)</li>
+</ul>
+<h4>Web apps</h4>
+<ul>
+<li><a href='http://montevideobicis.com' target='_blank'>MontevideoBicis.com</a></li>
+<li><a href='http://bicimap.uy' target='_blank'>Bicimap.uy</a></li>
+<li><a href='http://www.montevideo.gub.uy/mapa-montevideo-en-bici' target='_blank'>Montevideo en Bici</a></li><ul>"
+  accessibility: "Accessibility is uneven, with ramps in many corners but not univerally. The event area is currently remodeling its sidewalks to make them more accesible, but work can be themselves an obstacle. All event spaces have full accesibility. We reccomend the <a href="http://www.rampita.com.uy">Rampita</a> app to know more about accessibility around Montevideo.<br><br>An accessible taxi service is available when reserved 24 hs prior by phone (095 685532 o 2203 1354), monday to friday from 8:00 to 18:00. Most of the buses in Montevideo are accessible, but not all."
+  lodging: "<h4>Hotels</h4>
+Many hotels are available close to the event venues, with vast options in quality and price. The main venue will be the Raddisson Victoria Plaza Hotel and many participants will be at the Esplendor Hotel Montevideo.
+<h4>Hostels</h4>
+Many hostels are available in Ciudad Vieja close to the event venues, with shared and private rooms and accessible pricing (specially since it's off-season).
+<h4>Neighborhoods</h4>
+If you opt for a house or apartment, you might prefer to stay around Cordón, Centro or Ciudad Vieja close to the event venues. Specially for Centro and Ciudad Vieja, you might be interested to know that those neighborhoods are usually active during workhours only. Other close neighborhood usually chosen by visitors are Pocitos, Parque Rodó and Punta Carretas. Those are residential, offer more options around the clock and a vast variety of services."
+  activity: "For information on activities, places to go or shows, we reccomebd the site <a href='http://www.descubrimontevideo.uy/es/' target='_blank'>Descubrí Montevideo</a> or downloading the <a href='http://www.guitur.net/' target='_blank'>Guitur</a> app. You might also find the <a href='http://www.turismo.gub.uy/' target='_blank'>Ministry of Tourism website</a> useful."
+  weather: Uruguay is a temperate climate country… but we're in the middle of winter! Low temperatures around 10º C and max of less than 20º C are expected. The city sits next to the sea so humidity does not help either. With a bit of luck we won't have any rain and snow does not fall in the country.
 
 contact:
-  title: Contacto
-  content: Info de contacto
+  title: Contact
+  message: Leave us a message
+  submit: Send
+  sent: Message sent
 
 new_form:
   visa: Visas
@@ -278,3 +342,6 @@ new_form:
   spaniolo: Spanish
   english: English
   accessibility_disclaimer: "** All possible efforts will be made to ensure accessibility in the main hall of the event and in the sessions, but this cannot be guaranteed for 100% of the activities"
+
+more_info:
+  title: More info
