@@ -116,7 +116,7 @@ selection_process:
 thanks:
   title: "Thank you for completing the form"
   content: "News from the event will be available on this website (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) and we'll update on key dates through email."
-  goodbye: "¡See you in Montevideo!"
+  goodbye: "See you in Montevideo!"
 
 interests:
   innovation: Public sector innovation
@@ -169,12 +169,12 @@ survey:
   email: E-Mail
   sector: Sector
   country: Country
-  empty: Can't be empty
+  empty: "Can't be empty"
   checked: Must be checked
   email_organization: "Acepto recibir correos de la organización relacionados con el evento"
   register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento"
-  conference_comments: What could you like to contribute to the conference?
-  unconference_comments: What could you like to contribute to the unconference?
+  conference_comments: "What could you like to contribute to the conference?"
+  unconference_comments: "What could you like to contribute to the unconference?"
   max_words: Máx 300 words
 
 agenda:
@@ -183,10 +183,9 @@ agenda:
 
 hqs:
   title: Venues
-  title_1: Radisson Victoria Plaza
-  description_1: Radisson description
-  title_2: Casona Mauá
-  description_2: Casona Mauá description
+  content1: Select one of the locations for more information
+  address: Address
+  activities: Activities and dates
 
 maua:
   title: Casona Mauá
@@ -205,7 +204,7 @@ radisson:
   title: Radisson Victoria Plaza
   address: Plaza Independencia 759,Montevideo, Uruguay
   description1: The central site of the event is this hotel and conference center. Originally constructed in the 1940s but having undergone several upgrades since then.
-  description2: Located at Plaza Independencia, where one can also find the Gateway of the Citadel, the Executive Tower, Salvo Palace, and the Artigas Mausoleum. The main avenue of the city, Avenida 18 de Julio, also starts here and goes east. The Old City of Montevideo, along with the famous Sarandí pedestrian street, start on the other side of the plaza and run westward to the port and the shoreline.
+  description2: "Located at Plaza Independencia, where one can also find the Gateway of the Citadel, the Executive Tower, Salvo Palace, and the Artigas Mausoleum. The main avenue of the city, Avenida 18 de Julio, also starts here and goes east. The Old City of Montevideo, along with the famous Sarandí pedestrian street, start on the other side of the plaza and run westward to the port and the shoreline."
   date1: May 31
   event1: Focal Points Meeting (not open to the public)
   date2: June 1 and 2 - 08:30 to 18:40hs
@@ -230,30 +229,30 @@ event:
   description5: Brief presentations from all OGP member countries in the region – by their governmental, civil society, and Independent Reporting Mechanism representatives. There will also be a series of brief presentations of regional initiatives and projects.
   title5: Classroom Workshops
   description6: Lasting more than two hours and conducted by first-class experts, these workshops will aim to foster deep and practical learning on concepts for audiences with varying levels of experience.
-  description7: In more general terms, this gathering will recognize the value of interpersonal exchanges and “hallway talk,” and it will therefore open spaces between sessions for interaction, will provide materials for the exchange of ideas in common areas (flipcharts, markers, etc.), and will welcome the use of the lobby for meetings during the event.
+  description7: "In more general terms, this gathering will recognize the value of interpersonal exchanges and \"hallway talk\", and it will therefore open spaces between sessions for interaction, will provide materials for the exchange of ideas in common areas (flipcharts, markers, etc.), and will welcome the use of the lobby for meetings during the event."
   coffee: The event will include coffee in the morning and afternoon, as well as lunch for all attendees.
-  title6: "Abot the <br>Focal Point<br> meeting (not open to the public)"
+  title6: "About the <br>Focal Point<br> meeting (not open to the public)"
   description8: On May 31, continuing the successful experiences in Mexico, Georgia and Tanzania, a conference will be held for government POC from countries participating in OGP from the region.
   title7: "This conference will have the following objectives:"
-  description9: Through facilitated discussions and participatory sessions, participants will have the opportunity to reflect and learn on innovative practices in OGP-related topics.
+  description9: "Through facilitated discussions and participatory sessions, participants will have the opportunity to reflect and learn on innovative practices in OGP-related topics."
   title8: Foster best practices.
-  description10: Along the day, POC will have the chance to compare processes with other regional countires and identify good practices and common problems.
+  description10: Along the day, POC will have the chance to compare processes with other regional countries and identify good practices and common problems.
   title9: Opportunity for collaboration networks.
   description11: This will allow reformers establish solid working relationships and identify new opportunities for collaboration and alliances on key subjects.
 
 montevideo:
   title: Montevideo
-  subtitle: Here you'll find information for your stay
+  subtitle: "Here you'll find information for your stay"
   travel: Travel
   earth: Land
   air: Air
   sea: Sea
-  visas: "Iformation on <a href=\"#\" id=\"visa\">VISAS</a>"
+  visas: "Information on <a href=\"#\" id=\"visa\">VISAS</a>"
   transport: Transport
   bus: Bus
   taxi: Taxi
   bike: Bike
-  accessibility: "Information on <a href=\"#\" id=\"accessibility\">ACCESIBILIDAD</a>"
+  accessibility: "Information on <a href=\"#\" id=\"accessibility\">ACCSESSIBILITY</a>"
   airport: From the airport
   other: Other
   activity: Activities
@@ -267,13 +266,13 @@ montevideo:
   security: Security
   tip: Tips
   electricity: Electrical outlets and voltage
-  change_info: Official exchange rates are available in the <a href="http://bcu.gub.uy/">Central Bank</a> website but it's an average that might not reflect what exchanges offer. A good guide of the best availabe rate is the one in <a href="http://www.brou.com.uy/">Banco República's</a> website. Currency exchange is free and lots of places where you can exchange money can be easily found. No ID or signatures are needed for small sums. Rates are published outside each one of them and you can ask for a better rate, specially when exchanging over $100. You can find currency exchange in the aiport, although it does not offer the best available rate.
-  security_info: Montevideo is a safe city but still care is reccommended. Basic precautions such as not leaving your belongings unattended or unnecessarily exhibiting valuables should suffice. The area where the event takes place has special surveillance including video surveillance. 911 can be called upon any emergency and a specialized Tourist Police in the Ciudad Vieja Zone exists, that can be easily identifiable for their yellow jackets.
-  tip_info: Tip in Uruguay is customary for bars, restaurants, food delivery and taxis, but optional. The tip amount reflects satisfaction with service, not surpassing in general 10% of the expenditure.
-  electricity_info: Uruguay has 220v current y and uses "three in line" prongs or Type L plugs. However, you migh find European “Schuko” (Tipo E) style or multi-type plugs.
-  
+  change_info: "Official exchange rates are available in the <a href=\"http://bcu.gub.uy/\">Central Bank</a> website but it's an average that might not reflect what exchanges offer. A good guide of the best availabe rate is the one in <a href=\"http://www.brou.com.uy/\">Banco República's</a> website. Currency exchange is free and lots of places where you can exchange money can be easily found. No ID or signatures are needed for small sums. Rates are published outside each one of them and you can ask for a better rate, specially when exchanging over $100. You can find currency exchange in the airport, although it does not offer the best available rate."
+  security_info: "Montevideo is a safe city but still care is reccommended. Basic precautions such as not leaving your belongings unattended or unnecessarily exhibiting valuables should suffice. The area where the event takes place has special surveillance including video surveillance. 911 can be called upon any emergency and a specialized Tourist Police in the Ciudad Vieja Zone exists, that can be easily identifiable for their yellow jackets."
+  tip_info: "Tip in Uruguay is customary for bars, restaurants, food delivery and taxis, but optional. The tip amount reflects satisfaction with service, not surpassing in general 10% of the expenditure."
+  electricity_info: "Uruguay has 220v current and uses \"three in line\" prongs or Type L plugs. However, you migh find European \"Schuko\" (Tipo E) style or multi-type plugs."
+
 montevideo_modals:
-  earth: "<a href='http://www.trescruces.com.uy/'>Tres Cruces</a>, the main bus terminal in the country, links Montevideo to Argentina, Brazil, Paraguay and Bolivia. It is also the seat of a big mall located inside the main building. The timetable of international routes arriving to Montevideo can be consulted on the terminal’s web page or through the <a href='http://www.viajeros.com/'>Viajeros!</a> App, which is actually based on open data and therefore especially appropriate for this event :)
+  earth: "<a href=\"http://www.trescruces.com.uy/\">Tres Cruces</a>, the main bus terminal in the country, links Montevideo to Argentina, Brazil, Paraguay and Bolivia. It is also the seat of a big mall located inside the main building. The timetable of international routes arriving to Montevideo can be consulted on the terminal's web page or through the <a href=\"http://www.viajeros.com/\">Viajeros!</a> App, which is actually based on open data and therefore especially appropriate for this event :)"
   sea: "Many small ships and ferries link Buenos Aires with the cities of Colonia, Carmelo and Montevideo, and they also carry cars. <a href=\"https://www.buquebus.com\">Buquebus</a> and <a href=\"https://coloniaexpress.com/\">Colonia Express</a> are two companies that travel to Colonia and offer packets which include bus trips to Montevideo. Some Buquebus ferries also go directly to Montevideo. <a href=\"http://www.cacciolaviajes.com/\">Cacciola hace</a> has a ferry that travels from Tigre and Carmelo, and it offers full Buenos Aires-Montevideo services by boat and bus."
   air: "<a href=\"http://www.aeropuertodecarrasco.com.uy\">Carrasco International Airport</a> is served by the major airlines of the world, with regional flights from Buenos Aires, Porto Alegre, San Pablo, Río de Janeiro, Asunción, Panama, Santiago de Chile and Lima. Additionally, international flights arrive in Uruguay from the United States and Europe. The new airport was inaugurated in 2009 and is considered one of the most modern and attractive in the world. From there you have easy access to the center of Montevideo with <a href=\"http://www.copsa.com.uy/horarios.htm\">buses (bus schedule)</a>. It is also possible to hire a private <a href=\"http://www.taxisaeropuerto.com/transfer.html\">transfer</a>, take a <a href=\"http://www.taxisaeropuerto.com/\">taxi</a> or rent a car from some of the local car rental agencies in the airport."
   visas: "No citizens of OGP member countries are required to obtain a visa in order to enter Uruguay, and the same is true for the majority of the countries of Latin America and the Caribbean. For a full list of countries and their different visa requirements, please check the <a href=\"https://migracion.minterior.gub.uy/index.php?option=com_content&view=article&id=1280\">National Immigration Directorate website</a>.<br><br>.Visas are granted by National Immigration Directorate and usually take at least 20 business days from the moment a request is made. Once the consulate receives written authorization, the visa may be expedited, with a stamp being provided in the passport of the recipient.<br><br>Uruguayan consulates are responsible for receiving visa requests and provide information on the requirements for making them. For a full list of all consulate offices, please check the <a href=\"http://www.mrree.gub.uy/frontend/page?1,inicio,oficinas-consulares,O,es,0,\">Ministry of Foreign Relations website</a>.<br><br><b>Requirements:</b><br><li>Completed and signed form</li><li>Invitation letter and hotel reservation</li><li>Passport valid for at least six months after arrival in Uruguay</li><li>A passport-sized photo</li><li>Travel reservation</li><br><br><b>Cost: USD42</b> (charged only if the visa is granted)<br><br>If you <b>travel with documents from a country for which visa is required</b> and reside in a country <b>WITH uruguayan consular representation</b>, you can contact the organization to obtain a personalized invitation note addressed to the mission in your country of residence.<br><br>If you <b>travel with documents from a country for which visa is required</b> and reside in a country  <b>WITHOUT uruguayan consular representation</b>, you can contact the organization to obtain a special visa.<br><br>In both cases, at the time of contact please include the following information and copies of probatory documentation:<br><br><li>Name</li><li>Passport</li><li>Nationality</li><li>Place of residence</li><li>Itinerary</li>"
@@ -308,7 +307,7 @@ Cómo Ir (iOS, <a href='https://play.google.com/store/apps/details?id=uy.gub.imm
 <li><a href='http://montevideobicis.com' target='_blank'>MontevideoBicis.com</a></li>
 <li><a href='http://bicimap.uy' target='_blank'>Bicimap.uy</a></li>
 <li><a href='http://www.montevideo.gub.uy/mapa-montevideo-en-bici' target='_blank'>Montevideo en Bici</a></li><ul>"
-  accessibility: "Accessibility is uneven, with ramps in many corners but not univerally. The event area is currently remodeling its sidewalks to make them more accesible, but work can be themselves an obstacle. All event spaces have full accesibility. We reccomend the <a href="http://www.rampita.com.uy">Rampita</a> app to know more about accessibility around Montevideo.<br><br>An accessible taxi service is available when reserved 24 hs prior by phone (095 685532 o 2203 1354), monday to friday from 8:00 to 18:00. Most of the buses in Montevideo are accessible, but not all."
+  accessibility: "Accessibility is uneven, with ramps in many corners but not univerally. The event area is currently remodeling its sidewalks to make them more accesible, but work can be themselves an obstacle. All event spaces have full accesibility. We reccomend the <a href=\"http://www.rampita.com.uy\">Rampita</a> app to know more about accessibility around Montevideo.<br><br>An accessible taxi service is available when reserved 24 hs prior by phone (095 685532 o 2203 1354), monday to friday from 8:00 to 18:00. Most of the buses in Montevideo are accessible, but not all."
   lodging: "<h4>Hotels</h4>
 Many hotels are available close to the event venues, with vast options in quality and price. The main venue will be the Raddisson Victoria Plaza Hotel and many participants will be at the Esplendor Hotel Montevideo.
 <h4>Hostels</h4>
