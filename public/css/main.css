@@ -19,6 +19,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
 	text-transform: uppercase;
 	margin: 50px 0;
 }
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+	#goup_btn { width:32px; height: 63px; right: 0; line-height: 60px;}
+}
+@media (max-width: 640px) {
+  #ogp_logo_mobile { display: block;}
+}
+
+
+
 /* ==========================================================================
    Main container styles
    ========================================================================== */
@@ -45,9 +58,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
 
 @media (min-width: 1024px) {
 .main_container { background:#fff}
+a#ogp_logo_mobile { display: none;}
+
 }
 @media (max-width: 640px) {
-.main_container { background:orange}
+.main_container {  width: 100%; margin: 0;padding: 20px; text-align: center;}
 }
 
 
@@ -72,9 +87,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
 @media (min-width: 1024px) {
 .main_menu {width: 272px;}
 }
-@media (max-width: 640px) {
-.main_menu {width: 100%; position: fixed;}
 
+@media (max-width: 640px) {
+.main_menu { 
+  width: 96%; padding-left: 22px;
+  display: none;
+}
+
+.main_menu nav#main_nav ul{ padding: 20px 0 0 10px !important;}
+.main_menu nav#main_nav ul li { margin: 10px 0}
+.main_menu .date_info h3  { font-size:14px }
+.main_menu .btn { width: 93%;}
+.main_menu .language_nav { text-align: center;}
+.main_menu .language_nav a {font-size: 18px !important}
+a#ogp_logo { display: none;}
+#ogp_logo_mobile {display: block !important;}
+#menu_mobile_open { display: block !important;}
 }
 
 @media screen and ( max-height: 750px ){
@@ -101,6 +129,18 @@ a#ogp_logo {
 	font-size: 0;
 	position: absolute;
 	left: 70px;
+}
+
+a#ogp_logo_mobile {
+  background: url(../img/ogp_logo.png) no-repeat;
+  height: 142px;
+  width: 142px;
+  margin: auto;
+  display: block;
+  font-size: 0;
+  background-size: 70%;
+  float: left;
+  display: none;
 }
 
 .main_menu nav#main_nav { border-left: 1px solid #fff;}
@@ -151,6 +191,20 @@ a#ogp_logo {
 .main_menu nav#main_nav ul .submenu li {list-style-type: none;position: relative; margin: 10px 0 10px 0}
 .main_menu nav#main_nav ul .submenu li a {font-family: 'Roboto', sans-serif; color: #707070; font-size: 14px;letter-spacing: 1px;}
 .main_menu nav#main_nav ul .submenu li:before, .main_menu nav#main_nav ul .submenu li a:hover:after{display: none;}
+
+
+#menu_mobile_open {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #5dbfdd;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #5dbfdd;
+    display: none;
+}
 /* ==========================================================================
    Main Menu styles
    ========================================================================== */
@@ -164,6 +218,7 @@ footer {
 	margin-left:272px;
 	margin-right:80px;
     overflow: hidden;
+    border-top: 3px solid #5dbfdd;
 }
 footer ul { margin: 0;float: left; width: 50%}
 footer ul li  { display: inline-block; width: 100%; color: #707070; margin:10px 0}
@@ -180,6 +235,22 @@ footer ul li a:hover > i  {color: #fff}
 .twitter_feed p { color: #707070;font-size: 11px; margin: 0}
 .twitter_feed a { color: #5DBFDD;font-size: 11px;}
 .twitter_feed small {font-size: 10px;color:#707070} 
+
+@media (max-width: 640px) {
+  footer {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .twitter_feed h3 {font-size: 15px;}
+ }
+
+/* ==========================================================================
+   Twitter feed styles
+   ========================================================================== */
+
+.timeline-Tweet-text {font-size: 12px !important}
+
 /* ==========================================================================
    Btns  styles
    ========================================================================== */
@@ -205,13 +276,29 @@ footer ul li a:hover > i  {color: #fff}
 #home_page #intro_txt .mt b {font-size: 18px;}
 
 @media (min-width: 768px) {
-#home_page #partners .partner, #home_page #orgnices .organce  { width: 15%;display: inline-block;margin-right:150px; margin-bottom: 50px;}
+#home_page #partners .partner, #home_page #orgnices .organce  { width: 13%;display: inline-block;margin-right:150px; margin-bottom: 50px;}
 #orgnices .organce figure img { width: 150%;}
 }
 
 @media (min-width: 1024px) {
 }
 @media (max-width: 640px) {
+
+#home_page {padding-top: 0}
+
+#home_page #intro_txt .mt {
+    margin: auto;
+    width: 90%;
+    text-align: left;
+    float: none;
+}
+#home_page #intro_txt figure {
+    float: none;
+    width: 30%;
+    margin: 30px auto;
+}
+#home_page #partners .partner, #home_page #orgnices .organce { width: 40%; display: inline-block; margin: 10px 0}
+
 
 }
 
@@ -282,10 +369,24 @@ footer ul li a:hover > i  {color: #fff}
 #montevideo_page .other .cta p { font-size: 15px; font-weight: bold;font-family: 'Roboto', sans-serif; }
 #montevideo_page .other .info h3 { margin: 0}
 #montevideo_page .other .info { width: 100%; display: inline-block;text-align: left;border-bottom:1px solid #5DBFDD; border-top: 1px solid #5DBFDD;padding: 20px 0;margin: 20px 0}
-#montevideo_page .other .info p { margin: 30px 0}
+#montevideo_page .other .info p { margin: 30px 0; font-size: 14px; font-family: 'Roboto', sans-serif; }
 
 #montevideo_page .cta a {color: #555;}
+#montevideo_page .cta:hover > img { transform:scale(1.2);}
 
+
+@media (max-width: 640px) {
+   #montevideo_page .title { margin: 0}
+   #montevideo_page .title h2 { float: none;text-align: left;}
+   #montevideo_page .title p {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+   }
+   #montevideo_page .cta { width: 100% !important;}
+   #montevideo_page .travel .cta img { width: 100%;}
+  }
 
 /*#modal { background:#fff;width: 800px;position: absolute;top: 0;left: 50%; margin-left: -277px;;} 
 .modal_bg {background: rgba(0,0,0,0.4); height: 100%;width: 100%; position: fixed;left: 0;top: 0;}
@@ -338,6 +439,11 @@ footer ul li a:hover > i  {color: #fff}
 #sedes_page .map_info_sidebar  .apps_info p {color: #231F20;font-size: 14px;font-family: 'Roboto', sans-serif;}
 #sedes_page .map_info_sidebar  .apps_info a {color: #fff;font-size: 14px;font-family: 'Roboto', sans-serif; margin:0 5px}
 
+@media (max-width: 640px) { 
+  #sedes_page .map_info_sidebar { width: 100%; box-shadow: none; text-align: left;}
+}
+
+
 
 /* ==========================================================================
    Evento  styles
@@ -360,6 +466,19 @@ footer ul li a:hover > i  {color: #fff}
 #evento_page #event_panel_icon { font-size: 80px; color: #5DBFDD}
 #evento_page .icon-commenticon {font-size: 80px;float: left;color: #5DBFDD; border-left: 4px  solid #5DBFDD}
 #evento_page .comment_info { float: left; width: 70%; font-weight: normal;}
+
+@media (max-width: 640px) {
+
+  #evento_page { padding: 20px;}
+  #evento_page .row { display: inline-block;}
+  #evento_page .row h3 { text-align: left;}
+   #evento_page .row h4 {position: relative; text-align: left; margin: 50px 0px 0 0}
+  #evento_page p { text-align: left;}
+  .coffee_module { display: inline-block;margin: 30px 0 !important}
+  #evento_page .coffee_module small {font-size: 16px}
+  #evento_page .coffee_module i {font-size: 50px;text-align: center;}
+}
+
 /* ==========================================================================
    Contact Form  styles
    ========================================================================== */
@@ -676,7 +795,7 @@ form *:focus {
 form .textarea-container textarea { height:150px; border:2px solid #23527c; width: 100%; color:#23527c;padding: 20px}
 
 #map{
-    width: 92%;
+    width: 100%;
     height: 100%;
     display: block;
     position: absolute;

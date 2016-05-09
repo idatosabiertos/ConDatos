@@ -1,5 +1,6 @@
 <link href="css/leaflet.css" rel="stylesheet">
 <section class="main_container" id="sedes_page">
+  <a id="ogp_logo_mobile" href="#">Open Goverment Partnership</a>
   <div id="sedes_content">
     <%= t.hqs.content1 %>
   </div>
@@ -22,7 +23,9 @@
       <div class="general_info">
         <p><b><%= t.maua.description1 %></b></p>
         <p><%= t.maua.description2 %></p>
-        <h4 class="title_activity"><%= t.hqs.activities %></h4>
+        <h4 class="title_activity">
+          <i class="icon-calendaricon"></i><%= t.hqs.activities %>
+        </h4>
         <div class="activity">
           <p><%= t.maua.date1 %></p>
           <small><%= t.maua.event1 %></small>
