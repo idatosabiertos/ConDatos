@@ -11,7 +11,7 @@ background: linear-gradient(to bottom,  rgb(42,57,144) 0%,rgb(44,60,145) 12%,rgb
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', endColorstr='#3f7eb5',GradientType=0 ); /* IE6-9 */
  }
 
- #goup_btn {background: #252626;height: 125px; width: 64px;position: fixed;line-height:123px;top: 50px;text-align:center;right: 120px;}
+ #goup_btn {background: #252626;height: 125px; width: 64px;position: fixed;line-height:123px;top: 50px;text-align:center;right: 120px;display: none;}
  #goup_btn img { width: 50%;}
 .sub_title {
 	font-size: 20px;
@@ -30,8 +30,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
   #ogp_logo_mobile { display: block;}
 }
 
-
-
 /* ==========================================================================
    Main container styles
    ========================================================================== */
@@ -48,7 +46,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', end
     padding-right: 20px;
     padding-left: 85px;
 	padding-bottom: 85px;
-   
 }
 
 }
@@ -100,7 +97,7 @@ a#ogp_logo_mobile { display: none;}
 .main_menu .btn { width: 93%;}
 .main_menu .language_nav { text-align: center;}
 .main_menu .language_nav a {font-size: 18px !important}
-a#ogp_logo { display: none;}
+a#ogp_logo { display: none !important;}
 #ogp_logo_mobile {display: block !important;}
 #menu_mobile_open { display: block !important;}
 }
@@ -301,6 +298,7 @@ footer ul li a:hover > i  {color: #fff}
 
 
 }
+#home_page figure img { width: 100%;}
 
 
 #speakers .speaker { width: 40%; display: inline-block;margin:20px 0}
@@ -403,7 +401,11 @@ footer ul li a:hover > i  {color: #fff}
 /* ==========================================================================
    Sedes Page styles
    ========================================================================== */
-#sedes_page { position: relative;}
+#sedes_page {
+    position: relative;
+    margin-left: 187px;
+}
+
 #sedes_page .map_info_sidebar {
 	  overflow-x:scroll;
     width: 35%;
@@ -415,13 +417,13 @@ footer ul li a:hover > i  {color: #fff}
     display: inline-block;
     transition: opacity 0.6s ease-out;
     opacity: 0;
-    z-index: 100;
+    z-index: -100;
 }
 
 #sedes_page .map_info_sidebar.unhide {
     transition: opacity 0.6s ease-out;
     opacity: 1;
-    z-index: 200;
+    z-index: 1001;
 }
 
 #sedes_page .map_info_sidebar .inner { padding: 30px}
@@ -438,10 +440,6 @@ footer ul li a:hover > i  {color: #fff}
 #sedes_page .map_info_sidebar  .apps_info { width: 100%; display:block;background: #5DBFDD;padding: 20px 0;text-align: center;}
 #sedes_page .map_info_sidebar  .apps_info p {color: #231F20;font-size: 14px;font-family: 'Roboto', sans-serif;}
 #sedes_page .map_info_sidebar  .apps_info a {color: #fff;font-size: 14px;font-family: 'Roboto', sans-serif; margin:0 5px}
-
-@media (max-width: 640px) { 
-  #sedes_page .map_info_sidebar { width: 100%; box-shadow: none; text-align: left;}
-}
 
 
 
@@ -490,6 +488,12 @@ footer ul li a:hover > i  {color: #fff}
 #contact_page .btn {background: #5DBFDD; color: #fff;border-radius: 0; padding:15px 60px;}
 #contact_page small { display: block; line-height: 30px;}
 #contact_page .sent { font-size: 20px; font-weight: bold; color: #5DBFDD; display: none;}
+
+@media (max-width: 640px) {
+
+  #contact_page { padding-top: 0}
+
+}
 
 form {
   padding-top: 1em;
@@ -803,9 +807,10 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 
 #sedes_content{
     background: rgba(117, 198, 225, 0.9);
-    z-index: 9999;
+    z-index: 100;
     position: absolute;
     margin-top: 40px;
+    margin-left:50px;
     padding: 40px;
     color: #fff;
 }
@@ -907,3 +912,16 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 .icon-panelicon:before { content: '\e802'; } /* '' */
 .icon-calendaricon:before { content: '\e803'; } /* '' */
 .icon-createicon:before { content: '\e804'; } /* '' */
+
+@media (max-width: 640px) {
+    #sedes_page .map_info_sidebar { width: 100%; box-shadow: none; text-align: left;}
+    #sedes_page {
+        margin: 0;
+        padding: 0;
+    }
+    #sedes_content {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+}
