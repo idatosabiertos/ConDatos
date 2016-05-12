@@ -293,7 +293,7 @@ footer ul li a:hover > i  {color: #fff}
         margin: 30px auto;
     }
     #home_page #partners .partner, #home_page #orgnices .organce { width: 40%; display: inline-block; margin: 10px 0}
-
+    #home_page figure img { width: 100%; }
 
 }
 
@@ -382,10 +382,6 @@ footer ul li a:hover > i  {color: #fff}
     #montevideo_page .travel .cta img { width: 100%;}
 }
 
-/*#modal { background:#fff;width: 800px;position: absolute;top: 0;left: 50%; margin-left: -277px;;}
-.modal_bg {background: rgba(0,0,0,0.4); height: 100%;width: 100%; position: fixed;left: 0;top: 0;}
-#modal figure {float: left;}
-#modal .mt { float: left;}*/
 .modal{ background: rgba(0,0,0,0.7); }
 .modal figure { width: 40%; float: left;}
 .modal .mt { width: 60%;display: inline-block;font-size: 14px; font-family: 'Roboto', sans-serif;}
