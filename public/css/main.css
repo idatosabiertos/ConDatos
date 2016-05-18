@@ -30,6 +30,114 @@ body {
     #ogp_logo_mobile { display: block;}
 }
 
+#main_section { position: relative;}
+
+
+
+
+/* ==========================================================================
+   Main intro styles
+   ========================================================================== */
+
+
+#logoevento {
+    width:100%;
+    display: block;
+    margin: 15px 0;
+}
+#logoevento object {
+    width: 50%;
+}
+
+.intro {
+    float: left;
+    width: 75%;
+    margin-left: 272px;
+    text-align: center;
+    color: #fff;
+
+}
+.intro ul li a {display: block;text-indent: -9000px;font-size: 0; background: url(../img/logos.png) no-repeat;}
+
+.intro ul li #agesic { width: 108px; height: 50px;}
+.intro ul li #presidencia {
+    width: 121px;
+    height: 69px;
+    background-position: -164px;
+
+}
+.intro ul li #rga {
+    width: 137px;
+    height: 69px;
+    background-position: -336px;
+}
+
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+.intro ul { width: 100%; display: inline-block;text-align: center;margin: 0;padding: 0}
+.intro ul li {list-style-type: none;display: inline-block; margin-left: 5%}
+.intro ul li p {color:#ECB61E;text-transform: uppercase;font-size: 14px;}
+.intro ul li.when { background: url(../img/calendaricon.png) no-repeat left top; padding-left: 40px;}
+.intro ul li.where { background: url(../img/pinicon.png) no-repeat left top; padding-left: 40px;}
+.intro ul li:first-child { margin-left: 0}
+
+
+.intro .btn { margin: 10px 0}
+
+.intro #arrow_small {text-align: center; display: block; margin: 30px auto; width: 3%}
+
+.intro h1 {
+    font-size: 23px;
+    font-weight: normal;
+    color: #2E3192;
+    position: relative;
+    text-align: left;
+    line-height: 29px;
+}
+.intro h1::before {
+    content: "";
+    height: 8px;
+    position: absolute;
+    top: -30px;
+    width: 40px;
+    background: #2E3192;
+}
+
+.intro .txt {
+    text-align: center;
+    margin:10% auto 2% auto;
+    padding-left:0;
+}
+.intro h2 {
+    text-align: left;
+    color:#fff;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+#english_btn {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    padding: 8px 20px;
+    font-size: 12px;
+}
+.jcountTimer  {font-weight: normal;display: inline-block;}
+.jcountTimer span { width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:1px solid #ECB61E; padding:0 40px;}
+.jcountTimer span small { display:block;font-size: 0.3em; text-transform: none;color:#fff;font-weight: normal;text-align:left;font-family:"Arial"}
+.jcountTimer span:first-child { border: none; margin-left:0}
 /* ==========================================================================
    Main container styles
    ========================================================================== */

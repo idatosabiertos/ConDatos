@@ -1,5 +1,31 @@
+<header class="intro  text-center">
+  <ul>
+    <li><a id="agesic" href="http://www.agesic.gub.uy" target="_blank">Agesic</a></li>
+    <li><a id="presidencia" href="https://www.presidencia.gub.uy" target="_blank">Presidencia</a></li>
+    <li><a id="rga" href="http://rga.uy" target="_blank">Red de gobierno abierto uruguay</a></li>
+  </ul>
+
+  <div class="txt">
+    <a id="logoevento" href="#" class="svg">
+      <object data="img/logoevent.svg" type="image/svg+xml" class="mailicon">
+      </object>
+    </a>
+
+    <ul>
+      <li class="where"><p><%= t.layout.date3 %>, <%= t.layout.date4 %></p></li>
+      <li class="when"><p><%= t.layout.date1 %> <%= t.layout.date2 %></p></li>
+    </ul>
+
+    <h3 class="jcountTimer"></h3>
+
+    <a id="arrow_small" href="#home_page" class="page-scroll">
+      <img class="tiny" src="img/arrow_small.svg" alt="">
+    </a>
+  </div>
+</header>
+
+
 <section class="main_container" id="home_page">
-  <a id="goup_btn" href="#"><img src="img/arrow.svg"></a>
   <div id="intro_txt">
     <figure>
       <img src="img/logo_small.svg">
@@ -32,3 +58,5 @@
     </div>
   </div>
 </section>
+<script src="js/countdown.js"></script>
+<script src="js/smoothscroll.min.js"></script>
