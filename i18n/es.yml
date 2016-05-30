@@ -76,6 +76,7 @@ form:
   shy: "**** Si no está de acuerdo con ésta condición, por favor contacte a la organización."
   finish_her: Finalizar
   unconference_limit: Por tratarse de un evento con cupos limitados, los usuarios recibirán una confirmación de su inscripción a la desconferencia.
+  closed: Las inscripciones online están cerradas, pero es posible registrarse personalmente en la sede de la conferencia.
 
 criteria:
   title: Criterios de selección

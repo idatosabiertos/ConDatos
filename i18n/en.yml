@@ -76,6 +76,7 @@ form:
   shy: "**** If you don't agree with this condition, please contact the organization."
   finish_her: Finish
   unconference_limit: As this is an event with limited spots available, you will receive a confirmation of your unconference registration.
+  closed: Online inscriptions are closed, but it’s possible to register personally at the concerence venue
 
 criteria:
   title: Selection criteria
