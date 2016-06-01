@@ -48,7 +48,7 @@ body {
 }
 .stream_video { width: 50% !important; float: right; margin: 40px 0 !important}
 
-#video_stream  { max-width: 640px; margin: auto; height: 480px; clear: both}
+#video_stream  { width: 800px; margin: auto; height: 500px; clear: both}
 #video_stream h3 { text-transform: uppercase; font-size: 14px;text-align: left; width: 100%; display: inline-block;}
 
 #logoevento object {
@@ -163,7 +163,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    .main_container { background: red}
 }
 
 @media (min-width: 1024px) {
@@ -213,6 +212,13 @@ body {
     a#ogp_logo { display: none !important;}
     #ogp_logo_mobile {display: block !important;}
     #menu_mobile_open { display: block !important;}
+    #video_stream {
+        max-width: 370px;
+        height: 250px;
+    }
+    .intro {
+        margin-left: 20px;
+    }
 }
 
 @media screen and ( max-height: 750px ){
@@ -1029,5 +1035,21 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
         padding: 10px;
         margin-top: 10px;
         font-size: 13px;
+    }
+}
+
+@media (max-width: 400px){
+    #video_stream {
+        max-width: 350px;
+    }
+}
+@media (max-width: 360px){
+    #video_stream {
+        max-width: 310px;
+    }
+}
+@media (max-width: 320px){
+    #video_stream {
+        max-width: 270px;
     }
 }
