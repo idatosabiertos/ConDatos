@@ -27,6 +27,7 @@ index:
   errors: Errors
   organizers: Organizers
   interest: Declarations of interest
+  transmission: Watch the event's live transmission
 
 speakers:
   title: Meet the speakers
