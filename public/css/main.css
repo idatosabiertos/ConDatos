@@ -32,8 +32,9 @@ body {
 
 #main_section { position: relative;}
 
-
-
+.partner img{
+    width: 100%;
+}
 
 /* ==========================================================================
    Main intro styles
@@ -395,8 +396,8 @@ footer ul li a:hover > i  {color: #fff}
 #home_page #intro_txt .mt b {font-size: 18px;}
 
 @media (min-width: 768px) {
-    #home_page #partners .partner, #home_page #orgnices .organce  { width: 13%;display: inline-block;margin-right:150px; margin-bottom: 50px;}
-    #orgnices .organce figure img { width: 150%;}
+    #home_page #partners .partner, #home_page #orgnices .organce  { width: 13%;display: inline-block;margin-right:150px;}
+    #orgnices .organce figure img { width: 100%;}
 }
 
 @media (min-width: 1024px) {
@@ -417,7 +418,7 @@ footer ul li a:hover > i  {color: #fff}
         margin: 30px auto;
     }
     #home_page #partners .partner, #home_page #orgnices .organce { width: 40%; display: inline-block; margin: 10px 0}
-    #home_page figure img { width: 100%; }
+    #home_page figure img { width: 80%; }
 
 }
 

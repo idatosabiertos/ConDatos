@@ -40,15 +40,12 @@
   <body>
     <!--Main menu -->
     <div class="main_menu" id="main_menu">
-      <a id="ogp_logo" href="http://www.opengovpartnership.org/" target="_blank">Open Goverment Partnership</a>
+      <a id="ogp_logo" href="" target="_self">ConDatos/AbreLatam</a>
       <nav id="main_nav">
         <ul>
           <ul>
             <li <%= "class=\"active\"" if '/' == request.path_info %>>
               <a href="/"><%= t.layout.home %></a>
-            </li>
-            <li <%= "class=\"active\"" if '/agenda' == request.path_info %>>
-              <a href="/agenda"><%= t.agenda.title %></a>
             </li>
             <li <%= "class=\"active\"" if '/sedes' == request.path_info %>>
               <a href="/sedes"><%= t.hqs.title %></a>
@@ -76,12 +73,9 @@
         </h3>
       </div>
 
-      <nav class="language_nav">
-        <%= language_buttons %>
-      </nav>
     </div>
     <!--End main menu-->
-    <a id="ogp_logo_mobile" href="#">Open Goverment Partnership</a>
+    <a id="ogp_logo_mobile" href="#">ConDatos/AbreLatam</a>
     <a href="#" id="menu_mobile_open">Menu</a>
     <%= yield %>
 
@@ -89,45 +83,15 @@
     <footer>
       <ul>
         <li>
-          <i class="fa fa-globe"></i>
-          <a href="http://www.opengovpartnership.org/" target="_blank">
-            opengovpartnership.org
-          </a>
-        </li>
-        <li>
-          <i class="fa fa-globe"></i>
-          <a href="http//agesic.gub.uy/gobiernodigital" target="_blank">
-            agesic.gub.uy/gobiernodigital
-          </a>
-        </li>
-        <li>
-          <i class="fa fa-globe"></i>
-          <a href="http://rga.uy" target="_blank">
-            rga.uy
-          </a>
-        </li>
-        <li>
           <i class="fa fa-facebook"></i>
-          <a href="https://www.facebook.com/OpenGovernmentPartnership/" target="_blank">
-            /OpenGovernmentPartnership
+          <a href="https://www.facebook.com/ConDatos/" target="_blank">
+            /ConDatos
           </a>
         </li>
         <li>
           <i class="fa fa-twitter"></i>
-          <a href="http://www.twitter.com/opengovpart" target="_blank">
-            @opengovpart
-          </a>
-        </li>
-        <li>
-          <i class="fa fa-facebook"></i>
-          <a href="https://es-es.facebook.com/agesic.uy" target="_blank">
-            /agesic.uy
-          </a>
-        </li>
-        <li>
-          <i class="fa fa-twitter"></i>
-          <a href="http://www.twitter.com/agesic" target="_blank">
-            @agesic
+          <a href="http://www.twitter.com/ConDatosLATAM" target="_blank">
+            @ConDatosLATAM
           </a>
         </li>
       </ul>
@@ -135,12 +99,11 @@
       <div class="twitter_feed">
         <h3>
           <i class="fa fa-twitter"></i>
-          Twitter Feed <a href="https://twitter.com/hashtag/OGPMontevideo" target="_blank">#OGPMontevideo</a>
-        </h3>
-        <a class="twitter-timeline"  href="https://twitter.com/hashtag/ogpmontevideo" data-widget-id="728694126754009089" data-chrome="noheader,nofooter,transparent,noborder">
-          #ogpmontevideo Tweets
-        </a>
+          Twitter <a href="https://twitter.com/hashtag/ConDatos2017" target="_blank">#ConDatos2017</a>
+        </h3>             
+         <a class="twitter-timeline"  href="https://twitter.com/hashtag/ConDatos2017" data-widget-id="855587020072157188">Tweets sobre #ConDatos2017</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                
       </div>
     </footer>
     <script src="js/main.js"></script>

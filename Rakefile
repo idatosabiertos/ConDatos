@@ -4,7 +4,7 @@ namespace :db do
   desc "Create database"
   task :create do
     puts 'Creating database'
-    DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost:5432/ogp')
+    DB = Sequel.connect(ENV['PG_DB_URL'], :user=>ENV['PG_USER'], :password=>ENV['PG_PWD'])
 
     puts 'Creating surveys table'
     DB.create_table :surveys do
@@ -29,7 +29,7 @@ namespace :db do
   desc "Create inscriptions"
   task :create_inscriptions do
     puts "Creating inscriptions table"
-    DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost:5432/ogp')
+    DB = Sequel.connect(ENV['PG_DB_URL'], :user=>ENV['PG_USER'], :password=>ENV['PG_PWD'])
     DB.create_table :inscriptions do
       primary_key :id
       String :name

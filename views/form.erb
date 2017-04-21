@@ -1,4 +1,4 @@
-<!--% if inscription.errors && !inscription.errors.empty? %>
+<% if inscription.errors && !inscription.errors.empty? %>
   <section id="errors" class="container content-section">
     <div class="alert alert-danger" role="alert">
       <h2><%= t.index.errors %></h2>
@@ -9,10 +9,10 @@
       </ul>
     </div>
   </section>
-<-- % end %> -->
+<% end %>
   <section id="form" class="main_container">
-    <p><%= t.form.closed %></p>
-  <!-- div class="triangle-topright"></div>
+    <!--p><%= t.form.closed %></p-->
+  <div class="triangle-topright"></div>
   <div class="triangle-topleft" style="left:-120px;top:500px"></div>
 
   <div class="cilinder"></div>
@@ -227,8 +227,8 @@
         <button type="submit" class="btn"><%= t.form.finish_her %></button>
       </div>
     </div>
-  </form-->
-  <!-- script src='/js/validate.min.js'></script>
+  </form>
+  <script src='/js/validate.min.js'></script>
   <script src='/js/smoothscroll.min.js'></script>
-  <script src='/js/form.js'></script-->
+  <script src='/js/form.js'></script>
 </section>

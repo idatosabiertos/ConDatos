@@ -4,10 +4,10 @@ require 'sequel'
 require 'csv'
 require 'dotenv'
 require 'sinatra/r18n'
-require 'mail'
 require_relative 'models/init.rb'
-require_relative 'config.rb'
 require_relative 'lib/form_data.rb'
+require 'sendgrid-ruby'
+include SendGrid
 
 Dotenv.load
 R18n::I18n.default = 'es'
@@ -44,9 +44,9 @@ get '/thanks' do
   erb :thanks
 end
 
-get '/agenda' do
-  erb :agenda
-end
+#get '/agenda' do
+#  erb :agenda
+#end
 
 get '/sedes' do
   erb :sedes
@@ -65,32 +65,32 @@ get '/contact' do
 end
 
 post '/contactar' do
-  #{"name"=>"", "organization"=>"", "email"=>"", "country"=>"País*"}
-  email = params['email']
-  name = params['name']
-  subject = "[ogp-montevideo] - correo de #{name}"
-  message = <<-eos
-    Nombre: #{name}
-    Correo: #{email}
-    Organización: #{params['organization']}
-    País: #{params['country']}\n
-
-    Mensaje: #{params['message']}
-  eos
-
-  destiny = ENV['CONTACT_EMAIL']
-  mail = Mail.new do
-    from    email
-    to      destiny
-    subject subject
-    body    message
-  end
-  if ENV['RACK_ENV'] == 'production'
-    mail.deliver
-  else
-    puts mail.to_s
-    mail.to_s
-  end
+ 
+  data = JSON.parse('{
+    "personalizations": [
+      {
+        "to": [
+          {
+            "email":"'+ ENV['CONTACT_EMAIL'] +'"
+          }
+        ],
+        "subject": "[CONDATOS/ABRELATAM] - correo de: '+params['name']+'"
+      }
+    ],
+    "from": {
+      "email": "'+params['email']+'"
+    },
+    "content": [
+      {
+        "type": "text/plain",
+        "value": "Nombre: '+params['name']+' \n Correo: '+params['email']+' \n Organización: '+params['email']+' \n País: '+params['country']+' \n \n Mensaje: '+params['message']+'"
+      }
+    ]
+  }')
+  sg = SendGrid::API.new(api_key: ENV['SENDGRID_APIKEY'])
+  response = sg.client.mail._("send").post(request_body: data)
+  puts response.status_code
+  puts response.body
 
   erb :contactar
 end
