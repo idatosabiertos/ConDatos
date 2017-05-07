@@ -4,10 +4,10 @@
 body {
     overflow-x:hidden;font-family: 'Montserrat', sans-serif;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a3990+0,2c3c91+12,2a4194+20,2e4a98+35,31559d+51,32589f+54,335aa0+58,3564a5+69,356dab+80,3f7eb5+98 */
-    background: rgb(42,57,144); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgb(42,57,144) 0%, rgb(44,60,145) 12%, rgb(42,65,148) 20%, rgb(46,74,152) 35%, rgb(49,85,157) 51%, rgb(50,88,159) 54%, rgb(51,90,160) 58%, rgb(53,100,165) 69%, rgb(53,109,171) 80%, rgb(63,126,181) 98%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgb(42,57,144) 0%,rgb(44,60,145) 12%,rgb(42,65,148) 20%,rgb(46,74,152) 35%,rgb(49,85,157) 51%,rgb(50,88,159) 54%,rgb(51,90,160) 58%,rgb(53,100,165) 69%,rgb(53,109,171) 80%,rgb(63,126,181) 98%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgb(42,57,144) 0%,rgb(44,60,145) 12%,rgb(42,65,148) 20%,rgb(46,74,152) 35%,rgb(49,85,157) 51%,rgb(50,88,159) 54%,rgb(51,90,160) 58%,rgb(53,100,165) 69%,rgb(53,109,171) 80%,rgb(63,126,181) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: rgb(3,118,147); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%);  /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%);  /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', endColorstr='#3f7eb5',GradientType=0 ); /* IE6-9 */
 }
 
@@ -146,7 +146,7 @@ body {
     font-size: 12px;
 }
 .jcountTimer  {font-weight: normal;display: inline-block;}
-.jcountTimer span { width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:1px solid #ECB61E; padding:0 40px;}
+.jcountTimer span { width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:1px solid #efa4c7; padding:0 40px;}
 .jcountTimer span small { display:block;font-size: 0.3em; text-transform: none;color:#fff;font-weight: normal;text-align:left;font-family:"Arial"}
 .jcountTimer span:first-child { border: none; margin-left:0}
 /* ==========================================================================
@@ -331,14 +331,13 @@ a#ogp_logo_mobile {
    ========================================================================== */
 footer {
     float: left;
-    background:#252626;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    background:#efa4c7;
+    padding-top: 10px;
     width:75%;
     margin-left:272px;
     margin-right:80px;
+    margin-top: -4%;
     overflow: hidden;
-    border-top: 3px solid #5dbfdd;
 }
 footer ul { margin: 0;float: left; width: 50%}
 footer ul li  { display: inline-block; width: 100%; color: #707070; margin:10px 0}
@@ -350,10 +349,10 @@ footer ul li a:hover > i  {color: #fff}
 .twitter_feed { float: right; width: 45%; margin-right: 5%;}
 
 .twitter_feed .tweet { width: 100%; display: inline-block;margin: 10px 0}
-.twitter_feed h3 { color: #5DBFDD;font-weight: normal; margin: 0px 0 15px 0;font-size: 20px;}
+.twitter_feed h3 { color: white;font-weight: normal; margin: 0px 0 15px 0;font-size: 20px;}
 .twitter_feed h3 i {margin-right: 20px;}
-.twitter_feed p { color: #707070;font-size: 11px; margin: 0}
-.twitter_feed a { color: #5DBFDD;font-size: 11px;}
+.twitter_feed p { color: white;font-size: 11px; margin: 0}
+.twitter_feed a { color: white;font-size: 11px;}
 .twitter_feed small {font-size: 10px;color:#707070}
 
 @media (max-width: 640px) {
@@ -386,12 +385,9 @@ footer ul li a:hover > i  {color: #fff}
 /* ==========================================================================
    Home Page  styles
    ========================================================================== */
-#home_page {
-    padding-top: 120px;
-}
 #home_page #intro_txt, #speakers, #partners { width: 100%; display: inline-block; margin:0 0 55px 0}
 #home_page #intro_txt figure { float: left;}
-#home_page #intro_txt figure img { width: 100%}
+#home_page #intro_txt figure img { width: 100px}
 #home_page #intro_txt .mt { font-family: 'Roboto', sans-serif;float: left; width: 60%; margin-left: 50px; margin-top: 55px;}
 #home_page #intro_txt .mt b {font-size: 18px;}
 
@@ -519,8 +515,9 @@ footer ul li a:hover > i  {color: #fff}
    Sedes Page styles
    ========================================================================== */
 #sedes_page {
-    position: relative;
     margin-left: 187px;
+    margin-bottom: 60px;
+    background-color: transparent;
 }
 
 #sedes_page .map_info_sidebar {
@@ -564,7 +561,7 @@ footer ul li a:hover > i  {color: #fff}
    Evento  styles
    ========================================================================== */
 
-#evento_page {padding-top: 100px;padding-right: 80px}
+#evento_page {padding-right: 80px}
 #evento_page h3 {color: #5DBFDD;font-size: 18px;margin: 0 0 30px 0}
 #evento_page h3:before { content: ''; height: 5px; background:#5DBFDD; width: 20%;position: absolute;top: -15px;}
 
@@ -597,7 +594,6 @@ footer ul li a:hover > i  {color: #fff}
 /* ==========================================================================
    Contact Form  styles
    ========================================================================== */
-#contact_page { padding-top: 100px;}
 #contact_page .title { width: 100%; display: inline-block;}
 #contact_page .title h2 {float: left;font-size: 18px; color: #5DBFDD; text-transform: uppercase;line-height: 80px;}
 #contact_page .title h2:before {content: ''; width: 60%;height: 6px; background: #5DBFDD;display: block;}
@@ -932,7 +928,6 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
     color: #fff;
 }
 
-#form {padding-top: 120px;}
 #form h3 {
 
     color: #5DBFDD;
