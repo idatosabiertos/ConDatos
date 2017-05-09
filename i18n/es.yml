@@ -1,15 +1,14 @@
 layout:
-  title: Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto
-  description: Llamado a ponentes, temas de interés y becas del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto en Montevideo.
-  title1: ENCUENTRO REGIONAL
-  title2: DE LAS AMÉRICAS DE
-  title3: LA ALIANZA PARA EL
-  title4: GOBIERNO ABIERTO
+  title: Conferencia Regional de Datos Abiertos 
+  description: Llamado a ponentes, temas de interés y becas de Abrelatam-Condatos
+  title1: CONFERENCIA REGIONAL
+  title2: DE DATOS ABIERTOS
+  title3: CONDATOS
+  title4: 
   date1: 23.08 al 25.08
   date2: DE 2017
-  date3: MONTEVIDEO
-  date4: URUGUAY
-  language: English
+  date3: SAN JOSE DE COSTA RICA
+  date4: COSTA RICA
   language2: Español
   register: Inscripción
   goback: Volver al inicio
@@ -18,20 +17,37 @@ layout:
 
 index:
   title: Llamado a ponentes, temas de interés y solicitud de becas
-  content1: El Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016 se llevará a cabo en la ciudad de Montevideo y se esperan alrededor de 500 participantes de gobierno, sociedad civil, medios y empresas.
-  content2: En esta edición y en línea con los principios de cooperación y participación que impulsan a la AGA, buscamos de los participantes del evento aportes para el armado de una agenda temática que refleje los intereses y prioridades de la comunidad de Gobierno Abierto regional. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano.
-  content3: Para ésto, en lugar de un llamado a ponencias tradicional, invitamos a todos los interesados en asistir a completar el siguiente formulario, seleccionar sus temas de interés y/o agregar los que les resulten relevantes, así como postularse explicitando sus posibles aportes en hasta tres temas.
-  content4: Buscamos crear una agenda más dinámica y colaborativa, experimentando con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicita posibles aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
-  content5: El registro para el evento se abrirá posteriormente, por lo que invitamos a todos a participar de este llamado, aún si no tienen certeza absoluta de su asistencia y con la tranquilidad de que no es obligatorio para el registro posterior.
-  fellows: Becarios
+  content1: "<p>AbreLatam y ConDatos son los eventos en los cuales la comunidad de sociedad civil, gobierno, academia, tecnologías, empresas o que por iniciativa individual, trabajan por los datos abiertos en América Latina y el Caribe, se encuentran para entablar un diálogo sobre el estado e impacto de los procesos en el campo, en la región.
+			</p><p>ConDatos es una conferencia que reúne a los expertos de instituciones públicas, sector privado y de la sociedad civil para presentar, debatir, discutir y proponer sobre aspectos claves en materia de políticas de datos abiertos, gobierno abierto, innovación cívica, retos públicos, privacidad y nuevas formas de trabajo con datos abiertos.</p>"
+  content2: "En esta edición ponemos especial énfasis en los siguientes temas:"
+  content3: " <ul><li>Capacidades para la captura, transformación, liberación y uso de datos.</li>
+    					<li>Impacto local y regional a través del uso de datos abiertos relevantes.</li>
+    					<li>Sensibilización a los actores del ecosistema sobre datos abiertos.</li>
+    					<li>Datos abiertos para la prevención y lucha contra la corrupción.</li>
+    					<li>Emprendimiento con datos abiertos y su sostenibilidad.</li>
+    					<li>Objetivos de desarrollo sostenible y datos abiertos.</li>
+    					<li>Datos abiertos para salvaguardar los derechos humanos.</li>
+    					<li>Infraestructura para la promoción de los datos abiertos.</li>
+    					<li>Seguridad, privacidad y datos abiertos.</li>
+    					<li>Datos abiertos en gobernanza de asuntos fiscales y extractivas.</li>
+    					<li>Datos, algoritmos y tecnología.</li>
+    					<li>Periodismo de datos para reportar y monitorear.</li>
+    					<li>Tecnología cívica y su impacto social.</li>
+    					<li>Uso de datos y tecnología cívica para apoyar la igualdad de género</li></ul>"
+  content4: "Buscamos crear una agenda más dinámica y colaborativa, experimentando con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo te sugerimos que al presentar tu idea consideres algunos de estos formatos o nos propongas uno nuevo:
+			<ul><li>Speed Story Telling: presentación de experiencias donde el principal objetivo es narrar la historia de una solución, el moderador realizará la presentación e introducción a cada uno de los panelistas de la sesión en diez minutos; cada uno de los panelistas contará con un tiempo de diez minutos para narrar la historia de su experiencia. Al finalizar las presentaciones, el moderador coordinará un espacio de discusión con la audiencia de diez minutos y finalizará la sesión con el planteamiento del reto de esta sesión cinco minutos.</li>
+			<li>Como se hace en 10 pasos: En este espacio, el moderador presentará en diez minutos el objetivo de la sesión y la metodología a utilizar, dándole inicio a cada uno de los panelistas, quienes en diez minutos contarán sus recomendaciones de calidad, señalando las 10 lecciones aprendidas que pueden ser replicadas por los asistentes. Al finalizar la intervención de los panelistas, el moderador recogerá las 10 buenas prácticas comunes entre los panelistas y abrirá sesión de discusión con la audiencia.</li>
+			<li>Talleres: sesiones en pequeños grupos con resultados de construcción colectiva.</li>
+			<li>Speed Networking: colocar unas 5 estaciones por las cuales grupos de hasta 5 personas vayan pasando por cada una para conocer sobre un proyecto o el trabajo de una organización en específico. Debe ser un evento bien controlado.</li>
+			<li>Elevator pitch sesión: Espacio para elevator pitch de 3-5 minutos para personas que deseen encontrar colaboración para resolver un problema.</li>
+			<li>Área de exposición: puestos permanentes de exposición de servicios y productos.</li>
+			<li>Laboratorios: espacios para la construcción colectiva de soluciones a problemas específicos, utilizando datos abiertos para su desarrollo.</li>
+			<li>Café charlado o conversatorio: Es un espacio informal en el que los expertos seleccionados y un moderado se reúnen a compartir sus puntos de vista sobre un tema específico, y disfrutan de una taza de café, durante la charla con la audiencia. En este espacio, el moderador abre la charla contando en diez minutos los panelistas de la sesión, el objetivo de la misma y la metodología a utilizar. Durante cuarenta minutos se realizarán sesiones de preguntas orientadas al rol de las instituciones en la construcción y dinamización de la iniciativa de datos abiertos en la región.</li></ul>"
   errors: Errores
   organizers: Organizan
   co_organizers: Co-Organizan
   interest: Declarado de interés
   transmission: Mira la transmisión del evento en vivo
-
-speakers:
-  title: Conocé a los expositores
 
 sponsors:
   support: Apoyan
@@ -52,12 +68,12 @@ form:
   private: Sector Privado
   country: País
   mandatory: "* Campos obligatorios"
-  unconference: Día de la Sociedad Civil
-  unconference_info: El <b>31/5 de 8:30 a 18:00</b> en <a href="http://ogpmontevideo.uy/sedes">Casona Mauá</a> se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles.
+  unconference: Abrelatam
+  unconference_info: El <b>23/8 de 8:30 a 18:00</b> en <a href="http://ogpmontevideo.uy/sedes">Casona Mauá</a> AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más Puedes conocer mas sobre Abrelatam en <a href="http://www.abrelatam.org</a>
   join_unconference: Deseo participar de la desconferencia en el Día de la Sociedad Civil
   give_unconference: "¿Qué te gustaría aportar a la desconferencia? <span>(300 palabras)</span>"
-  encounter_third_kind: Encuentro Regional de las Américas
-  encounter_third_kind_info: Los días 1 y 2/6 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.
+  encounter_third_kind: Condatos
+  encounter_third_kind_info: Los días 24 y 25/8 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.
   join_encounter: Deseo participar de la conferencia del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016
   stuff_interested: Temas de mi interés** <span>(seleccionar hasta 3)</span>
   fellows_title: Solicitud de Becas
@@ -69,10 +85,7 @@ form:
   vote_me: Deseo postularme como ponente o facilitador para sesiones sobre temas de mi interés***
   linkedin: "Enlace a perfil de LinkedIn o CV:"
   link_here: Enlace aquí
-  topics: "** Los temas propuestos serán compartidos para que otros asistentes puedan elegirlos, agradecemos no generar duplicados u opciones muy similares. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano."
-  books_are_good: "*** Recomendamos leer la sección de este sitio especificando el proceso y criterios de selección antes de postularse. Experiencia, proyectos vinculados, historias, experiencias y aprendizajes valiosos para compartir serán tomados en cuenta."
-  termos: Términos y condiciones
-  termos_content: La organización no compartirá los datos proporcionados con nadie, ni enviará mensajes de correo no relacionados a la organización del evento. El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.
+  termos_content: Los datos de registro solo serán utilizados con fines vinculados al evento y a eventuales notificaciones de los resultados de la Conferencia, por parte de la Iniciativa Latinoamericana por los Datos Abiertos (ILDA). El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.
   email_organization: "Acepto recibir correos de la organización relacionados con el evento*"
   register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento****"
   shy: "**** Si no está de acuerdo con ésta condición, por favor contacte a la organización."
@@ -80,105 +93,10 @@ form:
   unconference_limit: Por tratarse de un evento con cupos limitados, los usuarios recibirán una confirmación de su inscripción a la desconferencia.
   closed: Las inscripciones online están cerradas, pero es posible registrarse personalmente en la sede de la conferencia.
 
-criteria:
-  title: Criterios de selección
-  title2: Ponentes y facilitadores
-  content1: "En el formulario de llamado a ponentes, temas de interés y solicitud de becas invitamos a que cada asistente cuente al comité académico cuál podría ser su aporte en hasta tres temas que podrían abordarse en el evento. Una vez que se cuente con la lista de temas que más interesan a los asistentes del evento, se seleccionarán a grupos de personas de entre los propuestos u otros invitados que el comité académico considere pertinentes en base a:<ul><li>Vínculo con e involucramiento en proyectos de los temas seleccionados, historias, experiencias y aprendizajes valiosos para compartir.</li><li>Diversidad de visiones, posturas y perspectivas sobre el tema.</li><li>Diversidad de países y regiones representados en la sesión.</li><li>Diversidad de sectores, actores y grupos sociales representados en la sesión.</li><li>Diversidad de género.</li></ul>"
-  content2: Los roles de facilitación se ofrecerán a personas que se hayan ofrecido a asumir tal responsabilidad, condición que también será tenida en cuenta al momento de la selección. Cualquiera de los grupos formados por sesión puede optar por compartir el rol o cambiar a al persona designada como facilitador mediante consenso.
-
-fellows:
-  title: Funding of civil society actors
-  content1: "The Articles of Governance say the following about Civil Society Participation in the Regional Meeting: The Support Unit is to fund the travel of a certain number of local civil society representatives from OGP participating countries, contingent on available resources. All steps of the process to select local civil society representatives from OGP participating countries will be made public on the OGP website."
-  content2: Civil society participation in the OGP Regional Meeting and all other outreach events is based on the principle of open invitation. Governments do not determine which civil society organizations attend from their countries, and they have no veto power. Regarding funded civil society participants at the Regional Meeting, the OGP Support Unit works with the civil society chairs to establish a transparent process to identify the most appropriate participation for each country. In addition to the OGP-funded civil society participants attending the Regional Meeting, other civil society organizations are invited using pre-defined criteria, pending availability of space as determined by the civil society chair in consultation with the other chairs.
-  title2: Criteria for determining participation and funding for civil society actors
-  content3: Civil society participation in the OGP Regional Meeting and all other outreach events is based on the principle of open invitation. If space is limited, the below criteria will be used to prioritize civil society participation. Please note IRM researchers applying for funding will be referred to the IRM team.
-  content4: The OGP budget includes funding for civil society participation. While registering, civil society actors will be asked if they need funding to attend the summit. For those indicating this need the OGP Support Unit will use the same criteria to prioritize participants. It will also reach out to other funders to see if they could facilitate participation of some of the requesters. Funded participants will be asked to play an active role at the event (i.e. organize or take part in a session). The OGP Support Unit will additionally strive to strike a geographical and gender balance and fund actors working on a diversity of open government topics.
-  content5: The Civil Society Engagement team is process lead for the below.
-  content6: "The following criteria are to be used to prioritize civil-society funding recipients:"
-  content7: "<b>Priority 1:</b> Civil society from an OGP member country belonging to the national OGP Steering Committee/core team."
-  content8: "<li>If more than one CS fits this criteria, CSE team will ask core team to decide among themselves.</li>"
-  content9: "<b>Priority 2:</b> Civil society actors active at regional/international level including those from multi-stakeholder initiatives and issue-based coalitions/networks currently working on OGP."
-  content10: "<li>The Support Unit will decide based on the relevant OGP activities such actors have employed to date (e.g. support of local processes; participation in working groups; pledges, etc.)</li>"
-  content11: "<b>Priority 3:</b> Civil society from an OGP member country that has been involved in national OGP process. The Support Unit will prioritize:"
-  content12: "<li>CSOs supporting implementation or monitoring of specific commitments</li><li>CSOs monitoring the overall OGP process</li><li>CSOs working closely with the core team and/or lined-up to join core team</li>"
-  content13: "<b>Priority 4:</b> Civil society from OGP eligible – non-member countries that are pushing for membership. The Support Unit will prioritize:"
-  content14: "<li>CSOs leading OGP membership advocacy efforts</li>"
-  content15: "<b>Priority 5:</b> Civil society from non-eligible OGP countries that are pushing for eligibility."
-  content16: "<li>CSOs leading the eligibility advocacy efforts</li>"
-  content17: "<b>Priority 6:</b> Civil society from an OGP member country that have interest in engaging with the national OGP process. The Support Unit will prioritize:"
-  content18: "<li>CSOs with a solid track record on open government / topics intersecting with open government</li><li>CSOs national core team / government would like to bring into the process</li>"
-
-selection_process:
-  title: Proceso de Selección
-  content1: Está en manos del Comité Organizador, conformado por representantes del gobierno de Uruguay (AGESIC), de la sociedad civil (Red de Gobierno Abierto) y la Unidad de Apoyo de AGA, que contará con un Comité Académico conformado especialmente para la ocasión, con apoyo de la academia.
-  content2: "Las fechas clave a tener en cuenta son:\n<ul><li>Martes 1 de marzo - <strong>Llamado a ponentes, temas de interés y solicitud de becas</strong></li>\n<li>Viernes 31 de marzo - <strong>Cierre del llamado a ponentes, temas de interés y solicitud de becas</strong></li>\n<li>Viernes, 1º de abril - <strong>Apertura de inscripciones</strong>\n<li>1º al 21 de abril - <strong>Deliberación del Comité Académico y armado de la agenda general</strong></li>\n<li>Viernes 22 de abril - <strong>Fecha límite de contacto con ponentes y becarios seleccionados</strong></li>\n<li>22 de abril al 20 de mayo - <strong>Co-creación de sesiones por ponentes</strong></li>\n<li>31 de mayo - <strong>Día de la Sociedad Civil</strong></li>\n<li>1 y 2 de junio - <strong>Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto</strong></li>\n</ul>"
-  content3: "Cerrado llamado a ponentes, temas de interés y solicitud de becas, el Comité académico se abocará a la tarea del armado de sesiones en la agenda <strong>de acuerdo a los temas más propuestos y los temas prioritarios para OGP</strong>, así como los <strong>grupos de ponentes, liderados cada uno por un facilitador que desarrollarán esas sesiones</strong>."
-  content4: "Los ponentes y facilitadores seleccionados serán contactados por correo electrónico antes del 22 de abril y contarán con tres días hábiles para confirmar su participación, incluyendo aquellos que requiriesen asistencia para transporte y hospedaje. Quienes acepten recibirán detalles adicionales sobre el armado de sesiones, incluyendo puntos de contacto para asuntos de contenido y logística. El resultado de la selección será publicado en el sitio (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) una vez confirmada la totalidad de los ponentes y facilitadores. A través de ésta, el público podrá hacer llegar sugerencias sobre el tema o la sesión al facilitador, ampliando al máximo la posibilidad de participación de los asistentes en la agenda."
-  content5: El facilitador de cada sesión responde por el armado de la misma ante el comité académico y tiene la responsabilidad de hacer llegar una propuesta co-creada con el resto de los ponentes al comité antes del 20 de mayo. El comité académico sugerirá a los facilitadores una serie de formatos posibles para las sesiones, sin perjuicio de que éstos propongan otras. Se insistirá especialmente en que las sesiones fomenten el diálogo más que la exposición, el intercambio de ideas entre ponentes y con el público, así como la participación externa por medio de preguntas, formatos interactivos o uso de herramientas en línea.
-
 thanks:
   title: Muchas gracias por completar el formulario
   content: "Los datos fueron enviados correctamente. Las novedades del evento estarán disponibles en este sitio web (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) e informaremos de fechas clave a través de correo electrónico."
   goodbye: "¡Nos vemos en Montevideo!"
-
-interests:
-  innovation: Innovación en el sector público
-  cooperation: Cooperación gobierno-sociedad civil
-  technology: Tecnología para la gobernanza
-  open_parliament: Parlamentos Abiertos
-  open_justice: Justicia Abierta
-  mark_zuckerberg: Privacidad y vigilancia
-  public_policy: Política pública
-  docs: Documentación y archivo
-  public_designations: Designaciones públicas
-  public_purchases: Compras públicas
-  public_contracts: Contrataciones Públicas
-  subnational_governments: Gobiernos subnacionales
-  aga_experience: Experiencias en AGA
-  national_plans: Planes de acción nacionales
-  dialog_mechas: Mecanismos de diálogo permanente
-  opendata_development: Datos abiertos para el desarrollo
-  opendata_cities: Datos abiertos para ciudades
-  opendata_environment: Datos abiertos para el medio ambiente y el cambio climático
-  opendata_corruption: Datos abiertos contra la corrupción
-  natural_resources: Gobernanza de recursos naturales
-  energy: Energía
-  extractive_industries: Industrias extractivas
-  poverty: Reducción de la pobreza
-  food: Seguridad alimenticia
-  productivity: Democratización de la productividad
-  public_health: Salud pública
-  decent_job: Empleo digno
-  quality_education: Educación de calidad
-  equality: Igualdad
-  decent_housing: Vivienda digna
-  gender_equality: Igualdad de género
-  urban_development: Desarrollo urbano
-  rural_development: Desarrollo rural
-  sustainable_transport: Transporte sostenible
-  social_inclusion: Inclusión social
-  public_safety: Seguridad pública y acceso a la justicia
-  citizen_participation: Participación ciudadana
-  integrity: Integridad y anti-corrupción
-  transparent_elections: Elecciones transparentes
-  innovation_labs: Laboratorios de innovación
-  public_information: Acceso a la Información pública
-  economic_development: Desarrollo económico
-  civic_tech: Tecnología cívica y tecnología para el desarrollo
-
-survey:
-  name: Nombre
-  organization: Organización
-  email: Correo electrónico
-  sector: Sector
-  country: País
-  empty: No puede ser vacío
-  checked: Debe estar chequeado
-  email_organization: "Acepto recibir correos de la organización relacionados con el evento"
-  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento"
-  conference_comments: ¿Qué te gustaría aportar a la conferencia?
-  unconference_comments: ¿Qué te gustaría aportar a la desconferencia?
-  max_words: Máximo 300 palabras
 
 agenda:
   title: Agenda
@@ -189,19 +107,6 @@ hqs:
   content1: Seleccione una de las locaciones para mayor información
   address: Dirección
   activities: Actividades y fechas a realizarse
-
-maua:
-  title: Casona Mauá
-  address: Juan Carlos Gómez 1530, Montevideo, Uruguay
-  description1: Sede de la desconferencia del Día de la Sociedad Civil y el cierre del evento. Es una antigua casona de diseño ecléctico construida en la década de 1870 y residencia del Barón de Mauá (reconocido empresario e industrial brasilero).
-  description2: "Fue restaurada recientemente, recuperando buena parte de sus revestimientos, carpintería y herrería original, de factura artesanal. Se enmarca en la zona conocida como “El Bajo de Ciudad Vieja” que nuclea propuestas artísticas y culturales."
-  date0: 30 de mayo - 09:00 a 17:00hs
-  event0: Datacamp
-  date1: 31 de mayo - 08:30 a 18:00hs
-  event1: Día de la Sociedad Civil
-  date2: 2 de junio - 20:00hs
-  close: Cierre
-  apps_info: "Ver en<a href=\"http://www.openstreetmap.org/node/945602666\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Casona+Mau%C3%A1/@-34.9038895,-56.2063727,17z/data=!3m1!4b1!4m2!3m1!1s0x959f7f87432a0d69:0x9e657eb77a382898?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/casona-mau%C3%A1/51ace2a4498eb63043257ba5\" target=\"_blank\">Foursquare</a>"
 
 radisson:
   title: Radisson Victoria Plaza
@@ -218,13 +123,13 @@ event:
   title: Evento
   title_0: Acerca del Datacamp
   content0: "El 30 de mayo, previo al comienzo oficial de las actividades del evento, contaremos con este espacio de experimentación y aprendizaje. Los participantes aprenden cómo encontrar, extraer y analizar datos públicos, usando herramientas forenses para contar mejores historias periodísticas. Brinda a los periodistas, activistas cívicos y desarrolladores un curso con las técnicas más importantes y herramientas necesarias para analizar datos públicos. También trabajan en equipos para construir nuevas aplicaciones de noticias y sitios de participación cívica que ayudan a mejorar el valor de los reportajes tradicionales. <a href=\"http://bit.ly/DatacampUY2016\" target=\"_blank\">Más información e inscripciones</a>."
-  title_1: Acerca del Día de la Sociedad Civil
-  content1: "El <strong>31 de mayo  de 8:30 a 18:00</strong> se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles."
+  title_1: Acerca de Abrelatam
+  content1: "El <strong>23 de agosto  de 8:30 a 18:00</strong> se realizará Abrelatam AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más." 
   content2: "En una desconferencia, se invierte la dinámica de un orador y muchos oyentes, para hacer de todos los participantes a su vez oradores y oyentes, de forma simultánea. En múltiples sesiones simultáneas con un número limitado de personas, se fomenta un diálogo según los temas recogidos de la agenda común.<br><br>Las sesiones cuentan con un facilitador que asegura que el las personas tengan iguales oportunidades de escuchar y ser escuchadas y con una persona voluntaria para tomar notas que serán compartidas con el resto de los participantes y cualquier persona"
-  content3: "interesada en la web. En las sesiones no se utilizan diapositivas, ni aparatos electrónicos, incluyendo celulares y laptops (con la excepción de la persona que toma las notas).<br><br>El objetivo de la desconferencia es compartir conocimiento entre pares, y las dinámicas así lo fomentan. Facilitadores guiarán a los participantes a lo largo del día, pero en última instancia son los propios asistentes quienes hacen al evento y su contenido.
-El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes."
-  title2: Acerca del Encuentro Regional de las Américas
-  description1: Los días 1 y 2 de junio se llevará a cabo la conferencia, con un programa basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
+  content3: "En las sesiones no se utilizan diapositivas, ni aparatos electrónicos, incluyendo celulares y laptops (con la excepción de la persona que toma las notas).<br><br>El objetivo de la desconferencia es compartir conocimiento entre pares, y las dinámicas así lo fomentan. Facilitadores guiarán a los participantes a lo largo del día, pero en última instancia son los propios asistentes quienes hacen al evento y su contenido.
+             El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes. Puedes conocer más sobre Abrelatam en www.abrelatam.org"
+  title2: Condatos
+  description1: Los días 24 y 25 de agosto se llevará a cabo la conferencia, con un programa basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
   description2: La agenda, en búsqueda de ser más dinámica y colaborativa, experimenta con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicitó en el llamado aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
   description3: "El evento contará con tres carriles de contenido:"
   title3: Presentaciones y sesiones en el salón principal
@@ -242,10 +147,10 @@ El evento incluye café en la mañana y la tarde y almuerzo para todos los asist
   title8: Impulsar mejores prácticas.
   description10: A lo largo del día los puntos de contacto tendrán la oportunidad de comparar sus procesos con otros países en la región y así identificar buenas prácticas y soluciones a problemas comunes.
   title9: Oportunidad de generar redes de colaboración.
-  description11: Lo cual permitirá a los reformadores establecer relaciones de trabajo sólidas e identificar oportunidades nuevas de colaboración y alianzas para temas clave.
+  description11: Lo cual permitirá a los reformadores establecer relaciones de trabajo sólidas e identificar oportunidades nuevas de colaboración y alianzas para temas clave.#
 
 montevideo:
-  title: Montevideo
+  title: San José de Costa Rica
   subtitle: Aqui podrás encontrar toda la información necesaria para tu estadía
   travel: Viaje
   earth: Tierra
@@ -271,7 +176,7 @@ montevideo:
   tip: Propina
   electricity: Corriente y enchufes
   change_info: "La cotización oficial está disponible en la web del <a href=\"http://bcu.gub.uy/\">Banco Central</a> pero se trata de un precio promedio, no el que se consigue en las casas de cambio. Una buena guía del mejor cambio disponible en el mercado es la cotización del <a href=\"http://www.brou.com.uy/\">Banco República</a>. El cambio en Uruguay es libre y hay muchas casas de cambio, además de que se puede cambiar en redes de pagos y otros lugares. No es necesario mostrar documentos ni firmar papeles para cambiar montos pequeños de dinero. La cotización está publicada en el exterior de cada local y se puede pedir una mejora, especialmente si se cambian cantidades de más de U$S100. Existe una casa de cambio en el aeropuerto que no tiene la mejor cotización del mercado."
-  security_info: Montevideo es una ciudad segura pero igualmente no conviene descuidarse. Las precauciones básicas de no dejar pertenencias sin atender o exhibir innecesariamente objetos de valor deberían ser más que suficientes. La zona del evento cuenta con especial vigilancia incluyendo videovigilancia. Ante cualquier emergencia se puede llamar al teléfono 911 y existe un cuerpo especializado de Policía Turística que actúa en la zona de Ciudad Vieja y se identifica con camperas de color amarillo.
+  security_info: San José de Costa Rica es una ciudad segura pero igualmente no conviene descuidarse. Las precauciones básicas de no dejar pertenencias sin atender o exhibir innecesariamente objetos de valor deberían ser más que suficientes. La zona del evento cuenta con especial vigilancia incluyendo videovigilancia. 
   tip_info: "La propina en Uruguay es costumbre en bares, restoranes, deliveries de comida y taxis, pero opcional. La cantidad de propina refleja la satisfacción con el servicio, no superando por lo general el 10% de lo gastado."
   electricity_info: "Uruguay tiene 220v de corriente y usa enchufes del tipo 'tres en línea' o Tipo L. Sin embargo, también se pueden encontrar en ocasiones los del tipo 'Schuko' Europeo (Tipo E) o enchufes multi-conexión."
 

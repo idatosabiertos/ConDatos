@@ -304,7 +304,7 @@ a#ogp_logo_mobile {
 .main_menu .language_nav a {font-family: 'Roboto', sans-serif;text-transform: uppercase;font-size: 13px;color: #707070;margin-right: 5px}
 .main_menu .language_nav a:hover, .main_menu .language_nav a.active { color:#5DBFDD;border-bottom: 2px solid #5DBFDD;text-decoration: none;}
 
-.main_menu .date_info { margin-bottom: 20px;}
+.main_menu .date_info { margin-bottom: 20px; margin-right: 20px;}
 .main_menu .date_info h3 {color: #707070;}
 
 .main_menu nav#main_nav ul .submenu {padding:10px 0 0 0px; margin-bottom: 0px; display: none;}
