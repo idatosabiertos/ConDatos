@@ -36,6 +36,8 @@
     <meta name="twitter:description" content="<%= t.layout.description %>" />
     <meta name="twitter:image"  content="<%= home_url %>/img/og.png" />
 
+    <script src='/js/jquery.min.js'></script>
+
   </head>
   <body>
     <!--Main menu -->
@@ -54,7 +56,7 @@
               <a href="/evento"><%= t.event.title %></a>
             </li>
             <li <%= "class=\"active\"" if '/montevideo' == request.path_info %>>
-              <a href="/montevideo"><%= t.montevideo.title %></a>
+              <a href="/ciudad"><%= t.montevideo.title %></a>
             </li>
             <li <%= "class=\"active\"" if '/contact' == request.path_info %>>
               <a href="/contact"><%= t.contact.title %></a>

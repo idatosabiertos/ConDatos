@@ -54,19 +54,52 @@ sponsors:
   colaborate: Colaboran
 
 form:
-  data: Tus datos
+  data: Datos Personales
   name: Nombre
+  surname: Apellidos
   organization: Organización
+  organization_type: Tipo de organización  
+  organization_role: ¿Cuál es su rol en la organización?
   email: Correo Electrónico
   sector: Sector
-  government: Gobierno
-  society: Sociedad Civil
-  police_academy: Academia
-  foundation: Fundación/Donante
-  think_tank: Think Tank
-  multilateral: Multilateral
-  private: Sector Privado
+  particpated_before: ¿Ha participado en otras ediciones de AbreLatam / ConDatos?
+  scholarship_before: ¿Ha recibido beca para asistir a otras ediciones?
+  scholarship_more_than_once: ¿Ha recibido beca en más de una vez? 
+  parcipate_in: Participará en
+  participates_in_representation: ¿Participa en representación de alguna organización/institución?
+  yep: "Si"
+  nop: "No"
+  financial_support: Requiere apoyo financiero para
+  plain_ticket: Tiquetes aéreos 
+  lodgment: Hospedaje
+  financial_support_note: "NOTA: Acepto que en caso de obtener una beca es posible que deba compartir habitación. Tiquetes aéreos + hospedaje"
+  thematic: Seleccione, de las siguientes temáticas, las tres que más le interesaría que se aborden en el evento
+  thematic_1: Capacidades para la captura, transformación, liberación y uso de datos
+  thematic_2: Impacto local y regional a través del uso de datos abiertos relevantes
+  thematic_3: Sensibilización a los actores del ecosistema sobre datos abiertos
+  thematic_4: Datos abiertos para la prevención y lucha contra la corrupción
+  thematic_5: Emprendimiento con datos abiertos y su sostenibilidad
+  thematic_6: Objetivos de desarrollo sostenible y datos abiertos
+  thematic_7: Datos abiertos para salvaguardar los derechos humanos
+  thematic_8: Infraestructura para la promoción de los datos abiertos
+  thematic_9: Seguridad, privacidad y datos abiertos
+  thematic_10: Datos abiertos en gobernanza de asuntos fiscales, extractivas, etc.
+  thematic_11: Datos, algoritmos y tecnología que constituyen riesgos para la habilidad de organización de la sociedad civil y la privacidad 
+  thematic_12: Periodismo de datos para reportar y monitorear
+  open_data_problem: ¿Qué problemática enfrenta su país/región/comunidad/organización, a la cual quisiera encontrar una solución que involucre el uso de datos abiertos? 
+  public_institution: Institución pública
+  civil_society_org: Organización de sociedad civil
+  cooperation_org: Organismo de cooperación
+  company: Empresa
+  media: Medio de comunicación
+  academic_institution: Institución académica
+  other_type: Otro
   country: País
+  country_origin: País de Origen
+  country_residence: País de Residencia
+  job: ¿A qué se dedica?
+  open_data_usage: ¿Utiliza datos abiertos para trabajo, investigación o activismo?
+  open_data_usage_tooltip: "Favor comentar acerca de su relación con el tema de  datos abiertos: el uso que hace, en qué proyectos, cuál es su especialidad, etc. (máximo 250 palabras)"
   mandatory: "* Campos obligatorios"
   unconference: Abrelatam
   unconference_info: El <b>23/8 de 8:30 a 18:00</b> en <a href="http://ogpmontevideo.uy/sedes">Casona Mauá</a> AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más Puedes conocer mas sobre Abrelatam en <a href="http://www.abrelatam.org</a>
@@ -85,25 +118,40 @@ form:
   vote_me: Deseo postularme como ponente o facilitador para sesiones sobre temas de mi interés***
   linkedin: "Enlace a perfil de LinkedIn o CV:"
   link_here: Enlace aquí
-  termos_content: Los datos de registro solo serán utilizados con fines vinculados al evento y a eventuales notificaciones de los resultados de la Conferencia, por parte de la Iniciativa Latinoamericana por los Datos Abiertos (ILDA). El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.
-  email_organization: "Acepto recibir correos de la organización relacionados con el evento*"
-  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento****"
-  shy: "**** Si no está de acuerdo con ésta condición, por favor contacte a la organización."
   finish_her: Finalizar
   unconference_limit: Por tratarse de un evento con cupos limitados, los usuarios recibirán una confirmación de su inscripción a la desconferencia.
   closed: Las inscripciones online están cerradas, pero es posible registrarse personalmente en la sede de la conferencia.
+  website: Sitio web
+  facebook: Facebook
+  twitter: Twitter
+  instagram: Instagram
+  extra: Extra
+  participate_as_colaborator: ¿Tiene interés en realizar trabajo voluntario durante el evento?
+  colaborator_area: ¿En qué área de trabajo podría apoyar como voluntario/a?
+  colaborator_area_1: Logística y organización
+  colaborator_area_2: Moderación
+  colaborator_area_3: Facilitación de espacios de discusión
+  colaborator_area_4: Acompañamiento a participantes que asisten por primera vez
+  colaborator_area_5: Otra
+  has_proposition: ¿Tiene alguna experiencia o propuesta temática que le gustaría compartir durante las actividades de contenido?
+  title: Título
+  summary: Resumen de la propuesta.
+  why_include: ¿Por qué debería de estar esta propuesta en el evento?
+  others_needed: ¿Requiere de la participación de otras personas?
+  others_needed_tooltip: Indique el nombre, organización de cada una de las personas sugeridas y sus referencias en redes sociales
+  require_one: Seleccione al menos una opción
 
 thanks:
   title: Muchas gracias por completar el formulario
-  content: "Los datos fueron enviados correctamente. Las novedades del evento estarán disponibles en este sitio web (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) e informaremos de fechas clave a través de correo electrónico."
-  goodbye: "¡Nos vemos en Montevideo!"
+  content: "Los datos fueron enviados correctamente."
+  goodbye: "¡Nos vemos en San José de Costa Rica!"
 
 agenda:
   title: Agenda
   soon: Muy pronto
 
 hqs:
-  title: Sedes
+  title: Sede
   content1: Seleccione una de las locaciones para mayor información
   address: Dirección
   activities: Actividades y fechas a realizarse
@@ -234,22 +282,12 @@ contact:
   sent: El mensaje fue enviado
 
 new_form:
-  visa: Visados
-  visa_content: "A los ciudadanos de ninguno de los países miembros de AGA en la región se les exige visado para ingresar al país, ni a la mayoría de los países de América Latina y el Caribe. Antes de marcar la siguiente casilla por favor lea con atención <a href=\"#\">la sección Visas del sitio</a>."
-  visa_help: Requiero asistencia para obtener visa
-  food: Comida
-  food_content: Se brindarán opciones veganas y para celíacos en las comidas del evento, solicitamos esta información para prever las necesidades de los asistentes según su dieta.
-  food_heroes: Vegana
-  food_celiac: Celíaca
-  food_diabetic: Diabética
-  accessibility: Accesibilidad
-  accessibility_content: Seleccione según sus necesidades. Las instalaciones de los eventos son accesibles, solicitamos esta información para brindar seguimiento y/o apoyo adicional de ser necesario.
-  accessibility_movility: Accesibilidad para movilidad reducida
-  accessibility_sign: "Traducción a lengua de señas**"
+  gender: Género
+  gender_female: Femenino
+  gender_male: Masculino
+  gender_other: Otro
+  gender_none: Prefiero no indicarlo
   language: Idiomas
-  language_content: El track principal del evento cuenta con traducción. Solicitamos indique qué idiomas domina para prever las necesidades del evento.
-  spaniolo: Español
-  english: Inglés
   accessibility_disclaimer: "** Se hará el máximo esfuerzo para facilitar la accesibilidad en la sala principal del evento y las sesiones que sea posible, pero no se puede garantizar para el 100% de las actividades"
 
 more_info:

@@ -7,7 +7,7 @@ body {
     background: rgb(3,118,147); /* Old browsers */
     background: -moz-linear-gradient(top,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%);  /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%);  /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(31, 167, 197) 20%,rgb(54, 171, 196) 35%,rgb(91, 186, 212) 51%,rgb(94, 185, 208) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', endColorstr='#3f7eb5',GradientType=0 ); /* IE6-9 */
 }
 
@@ -28,6 +28,12 @@ body {
 }
 @media (max-width: 640px) {
     #ogp_logo_mobile { display: block;}
+    a#ogp_logo_mobile {
+    background: url(../img/ogp_logo_white.png) no-repeat !important;
+    height: 142px !important;
+    width: 142px !important;
+    background-size: 142px 142px !important;
+}
 }
 
 #main_section { position: relative;}
@@ -187,7 +193,7 @@ body {
 .main_menu {
     position: fixed;
     display: block;
-    background-color: #333;
+    background-color: #014454;
     padding-left:50px;
     height: 100vh;
     vertical-align: middle;
@@ -242,10 +248,11 @@ body {
 }
 
 a#ogp_logo {
-    background: url(../img/ogp_logo.png) no-repeat;
-    height: 142px;
-    width: 142px;
-    margin: auto;
+    background: url(../img/ogp_logo.png) no-repeat;   
+    height: 120px;
+    width: 180px;
+    background-size: 180px 120px;
+    margin-top: 30px;
     display: block;
     font-size: 0;
     position: absolute;
@@ -305,7 +312,7 @@ a#ogp_logo_mobile {
 .main_menu .language_nav a:hover, .main_menu .language_nav a.active { color:#5DBFDD;border-bottom: 2px solid #5DBFDD;text-decoration: none;}
 
 .main_menu .date_info { margin-bottom: 20px; margin-right: 20px;}
-.main_menu .date_info h3 {color: #707070;}
+.main_menu .date_info h3 {color: #ef59a1; font-weight: 700;}
 
 .main_menu nav#main_nav ul .submenu {padding:10px 0 0 0px; margin-bottom: 0px; display: none;}
 .main_menu nav#main_nav ul .show_submenu {display: block;}
@@ -387,9 +394,15 @@ footer ul li a:hover > i  {color: #fff}
    ========================================================================== */
 #home_page #intro_txt, #speakers, #partners { width: 100%; display: inline-block; margin:0 0 55px 0}
 #home_page #intro_txt figure { float: left;}
-#home_page #intro_txt figure img { width: 100px}
-#home_page #intro_txt .mt { font-family: 'Roboto', sans-serif;float: left; width: 60%; margin-left: 50px; margin-top: 55px;}
+#home_page #intro_txt figure img {    
+    max-width: 700px;
+    margin-top: 5%;
+    margin: 5%;
+    margin-left: 25%;
+}
+#home_page #intro_txt .mt { font-family: 'Roboto', sans-serif; margin-right: 25px; float: left;}
 #home_page #intro_txt .mt b {font-size: 18px;}
+#home_page #intro_txt .mt p,  #home_page #intro_txt .mt li {font-size: 15px;}
 
 @media (min-width: 768px) {
     #home_page #partners .partner, #home_page #orgnices .organce  { width: 13%;display: inline-block;margin-right:150px;}
@@ -1052,4 +1065,14 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
     #video_stream {
         max-width: 270px;
     }
+}
+.lbl{
+    font-weight: normal;
+    color: #23527c;
+    padding-bottom: 11px;
+    margin-top: 20px;
+    letter-spacing: 0.012em;
+}
+.radio-inline, .checkbox{
+    margin-left: 10px !important;
 }

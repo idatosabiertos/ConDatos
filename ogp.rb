@@ -56,7 +56,7 @@ get '/evento' do
   erb :evento
 end
 
-get '/montevideo' do
+get '/ciudad' do
   erb :montevideo
 end
 
@@ -145,21 +145,42 @@ end
 
 def create_inscription(params)
   inscription = Inscription.new(
-    name: params[:name], organization: params[:organization],
-    sector: params[:sector], country: params[:country],
-    email: params[:email], unconference: params[:unconference] == 'on' ? 'Sí' : 'No',
-    conference: params[:regional] == 'on' ? 'Sí' : 'No',
-    visa_help: params[:visa] == 'on' ? 'Sí' : 'No',
-    food: params[:food] ? params[:food].join(', ') : '',
-    accessibility: params[:accessibility],
-    languages: params[:languages] ? params[:languages].join(', ') : ''
-  )
+    name: params[:name], 
+    surname: params[:surname],
+    gender: params[:gender],
+    email: params[:email],
+    country_origin: params[:country_origin],
+    country_residence: params[:country_residence],
+    job: params[:job],
+    open_data_usage: params[:open_data_usage],
+    particpated_before: params[:particpated_before] == 'on' ? 'Sí' : 'No',
+    scholarship_before: params[:scholarship_before] == 'on' ? 'Sí' : 'No',
+    scholarship_more_than_once: params[:scholarship_more_than_once] == 'on' ? 'Sí' : 'No',
+    participates_in_representation: params[:participates_in_representation] == 'on' ? 'Sí' : 'No',
+    event: params[:event] ? params[:event].join(', ') : '',
+    financial_support: params[:financial_support] ? params[:financial_support].join(', ') : '',
+    thematic: params[:thematic] ? params[:thematic].join(', ') : '',
+    open_data_problem: params[:open_data_problem],
+    organization: params[:organization],
+    organization_role: params[:organization_role],
+    organization_type: params[:organization_type],
+    website: params[:website],
+    facebook: params[:facebook],
+    twitter: params[:twitter],
+    instagram: params[:instagram],
+    participate_as_colaborator: params[:participate_as_colaborator] == 'on' ? 'Sí' : 'No',
+    colaborator_area: params[:colaborator_area] ? params[:colaborator_area].join(', ') : '',
+    has_proposition: params[:has_proposition] == 'on' ? 'Sí' : 'No',
+    proposition_title: params[:proposition_title],
+    proposition_summary: params[:proposition_summary],
+    proposition_why_include: params[:proposition_why_include],
+    proposition_others_needed: params[:proposition_others_needed])
   # Check for errors, so we can add custom ones on the next line
-  inscription.valid?
+  # inscription.valid?
 
   # Add error if the mandatory fields are not checked
-  inscription.errors.add(:email_organization, :checked) unless params[:email_organization]
-  inscription.errors.add(:register_image, :checked) unless params[:register_image]
+  #inscription.errors.add(:email_organization, :checked) unless params[:email_organization]
+  #inscription.errors.add(:register_image, :checked) unless params[:register_image]
 
   inscription
 end

@@ -10,7 +10,7 @@
     </div>
   </section>
 <% end %>
-  <section id="form" class="main_container">
+  <section class="main_container">
     <!--p><%= t.form.closed %></p-->
   <div class="triangle-topright"></div>
   <div class="triangle-topleft" style="left:-120px;top:500px"></div>
@@ -20,57 +20,49 @@
   <div class="triangle-topleft"></div>
 
   <form action='/enviar' method='post' name='form' id="form">
+   
     <div class="block">
       <h3><%= t.form.data %></h3>
       <div class="row">
         <div class="col-md-6">
           <div class="input-container">
-            <input type='text' name='name' id='name' value="<%= inscription.name %>" required>
+            <input type='text' name='name' id='name' required>
             <label for="name"><%= t.form.name %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="input-container">
-            <input type='text' name='organization' id='organization' value="<%= inscription.organization %>" required>
-            <label for="organization"><%= t.form.organization %>*</label>
+            <input type='text' name='surname' id='surname' required>
+            <label for="surname"><%= t.form.surname %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
+          <label class="lbl" for="gender_radio"><%= t.new_form.gender %>*</label>
+           <div id="gender_radio">
+            <label class="radio-inline"><input type="radio" name="gender" value="<%= t.new_form.gender_male %>" ><%= t.new_form.gender_male %></label>
+            <label class="radio-inline"><input type="radio" name="gender" value="<%= t.new_form.gender_female %>" ><%= t.new_form.gender_female %></label>
+            <label class="radio-inline"><input type="radio" name="gender" value="<%= t.new_form.gender_other %>" ><%= t.new_form.gender_other %></label>
+            <label class="radio-inline"><input type="radio" name="gender"value="<%= t.new_form.gender_none %>" checked><%= t.new_form.gender_none %></label>
+           </div>
+        </div>
+
+        <div class="col-md-6">
           <div class="input-container">
-            <input type='email' name='email' id='email' value="<%= inscription.email %>" required>
+            <input type='email' name='email' id='email' required>
             <label for="email"><%= t.form.email %>*</label>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="input-container">
-            <select name='sector' id='sector'>
-              <option><%= t.form.sector %>*</option>
-              <option>--------</option>
-              <% FormData.sectors.each do |sector| %>
-                <% sector = eval('t.form.' + sector.to_s) %>
-                <option value='<%= sector %>'
-                        <% if inscription.sector == sector %>
-                        selected="selected"
-                        <% end %>
-                >
-                  <%= sector %>
-                </option>
-              <% end %>
-            </select>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="input-container">
-            <select name='country' id='country'>
-              <option><%= t.form.country %>*</option>
+            <select name='country_origin' id='country_origin' required>
+              <option><%= t.form.country_origin %>*</option>
               <option>--------</option>
               <% FormData.countries.each do |country| %>
-                <option value='<%= country %>' name='country'
-                        <% if country == inscription.country %>
+                <option value='<%= country %>' name='country_origin'
+                        <% if country == inscription.country_origin %>
                         selected="selected"
                         <% end %>
                 >
@@ -80,155 +72,295 @@
             </select>
           </div>
         </div>
+
+        <div class="col-md-6">
+          <div class="input-container">
+            <select name='country_residence' id='country_residence' required>
+              <option><%= t.form.country_residence %>*</option>
+              <option>--------</option>
+              <% FormData.countries.each do |country| %>
+                <option value='<%= country %>' name='country_residence'
+                        <% if country == inscription.country_residence %>
+                        selected="selected"
+                        <% end %>
+                >
+                  <%= country %>
+                </option>
+              <% end %>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="textarea-container">
+              <textarea placeholder="<%= t.form.job %>" name="job" id="job"></textarea>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="textarea-container">
+            <textarea placeholder="<%= t.form.open_data_usage %>" name="open_data_usage" id="open_data_usage"></textarea>
+          </div>  
+          <small><%= t.form.open_data_usage_tooltip %></small>
+        </div>
+
         <small><%= t.form.mandatory %></small>
       </div>
     </div>
 
     <div class="block">
-      <h3><%= t.form.unconference %></h3>
-      <div class="form-group">
+      <h3><%= t.event.title %></h3>
+      <div class="row">   
 
-        <p><%= t.form.unconference_info %></p>
+        <div class="col-md-6">
+          <label class="lbl" for="particpated_before"><%= t.form.particpated_before %></label>
+           <div id="particpated_before">
+            <label class="radio-inline"><input type="radio" name="particpated_before"><%= t.form.yep %></label>
+            <label class="radio-inline"><input type="radio" name="particpated_before" checked><%= t.form.nop %></label>
+           </div>
+        </div> 
+      
+        <div class="col-md-6">
+          <label class="lbl" for="scholarship_before"><%= t.form.scholarship_before %></label>
+           <div id="scholarship_before">
+            <label class="radio-inline"><input type="radio" name="scholarship_before"><%= t.form.yep %></label>
+            <label class="radio-inline"><input type="radio" name="scholarship_before" checked><%= t.form.nop %></label>
+           </div>
+        </div>
+      
+        <div class="col-md-6" id="scholarship_more_than_once_group">
+          <label class="lbl" for="scholarship_more_than_once"><%= t.form.scholarship_more_than_once %></label>
+           <div id="scholarship_more_than_once">
+            <label class="radio-inline"><input type="radio" name="scholarship_more_than_once" ><%= t.form.yep %></label>
+            <label class="radio-inline"><input type="radio" name="scholarship_more_than_once" checked><%= t.form.nop %></label>
+           </div>
+        </div>
+        
+        <div class="col-md-6">
+          <label class="lbl" for="participates_in_representation"><%= t.form.participates_in_representation %></label>
+           <div id="participates_in_representation">
+            <label class="radio-inline"><input type="radio" name="participates_in_representation"><%= t.form.yep %></label>
+            <label class="radio-inline"><input type="radio" name="participates_in_representation" checked><%= t.form.nop %></label>
+           </div>
+        </div>
+      
+        <div class="col-md-6">
+          <label class="lbl" for="parcipate_in"><%= t.form.parcipate_in %>*:</label>
+           <div id="parcipate_in">
+             <div class="checkbox">
+                <label><input type="checkbox" name="event[]" class="require-one" value="<%= t.form.unconference %>"><%= t.form.unconference %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="event[]" class="require-one" value="<%= t.form.encounter_third_kind %>"><%= t.form.encounter_third_kind %></label>
+              </div>
+           </div>
+          <p id="form_error" class="error"><%= t.form.require_one %></p>
+        </div>
+      
+        <div class="col-md-6">
+          <label class="lbl" for="financial_support"><%= t.form.financial_support %>:</label>
+           <div id="financial_support">
+             <div class="checkbox">
+                <label><input type="checkbox" name="financial_support[]" value="<%= t.form.plain_ticket %>"><%= t.form.plain_ticket %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="financial_support[]" value="<%= t.form.lodgment %>"><%= t.form.lodgment %></label>
+              </div>
+           </div>
+          <small style="margin-bottom: 15px;"><%= t.form.financial_support_note %></small>
+        </div>
+      
+        <div class="col-md-6">
+          <label class="lbl" for="thematic"><%= t.form.thematic %>:</label>
+           <div id="thematic">
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_1 %>"><%= t.form.thematic_1 %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_2 %>"><%= t.form.thematic_2 %></label>
+              </div>
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_3 %>"><%= t.form.thematic_3 %></label>
+              </div>
 
-        <label class="checkbox_label" for="unconference">
-          <%= t.form.join_unconference %>
-        </label>
-        <input type="checkbox" id="unconference" name="unconference" class="check">
-        <section class="checkbox">
-          <span class="highlight"></span>
-        </section>
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_4 %>"><%= t.form.thematic_4 %></label>
+              </div>
 
-        <small><%= t.form.unconference_limit %></small>
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_5 %>"><%= t.form.thematic_5 %></label>
+              </div>
+
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_6 %>"><%= t.form.thematic_6 %></label>
+              </div>
+
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_7 %>"><%= t.form.thematic_7 %></label>
+              </div>
+
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_8 %>"><%= t.form.thematic_8 %></label>
+              </div>
+
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_9 %>"><%= t.form.thematic_9 %></label>
+              </div>
+
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_10 %>"><%= t.form.thematic_10 %></label>
+              </div>
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_11 %>"><%= t.form.thematic_11 %></label>
+              </div>
+
+             <div class="checkbox">
+                <label><input type="checkbox" name="thematic[]" value="<%= t.form.thematic_12 %>"><%= t.form.thematic_12 %></label>
+              </div>
+           </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="textarea-container">
+            <textarea placeholder="<%= t.form.open_data_problem %>" name="open_data_problem" id="open_data_problem"></textarea>
+          </div>      
+        </div>
+
       </div>
     </div>
 
     <div class="block">
-      <div class="form-group">
-        <h3><%= t.form.encounter_third_kind %></h3>
-        <p><%= t.form.encounter_third_kind_info %></p>
+      <h3><%= t.form.organization %></h3>
 
-        <label class="checkbox_label" for="regional">
-          <%= t.form.join_encounter %>
-        </label>
-        <input type="checkbox" class="check" name="regional" id="regional">
-        <section class="checkbox">
-          <span class="highlight"></span>
-        </section>
-      </div>
-    </div>
+      <div class="row">
 
-    <div class="form-group">
-      <h3><%= t.new_form.visa %></h3>
-      <p><%= t.new_form.visa_content %></p>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='text' name='organization' id='organization'>
+              <label for="organization"><%= t.form.name %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <select name='organization_type' id='organization_type'>
+                <option><%= t.form.organization_type %></option>
+                <option>--------</option>
+                <% FormData.sectors.each do |sector| %>
+                  <% sector = eval('t.form.' + sector.to_s) %>
+                  <option value='<%= sector %>'
+                          <% if inscription.organization_type == sector %>
+                          selected="selected"
+                          <% end %>
+                  >
+                    <%= sector %>
+                  </option>
+                <% end %>
+              </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="textarea-container">
+            <textarea placeholder="<%= t.form.organization_role %>" name="organization_role" id="organization_role"></textarea>
+          </div>      
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='url' name='website' id='website'>
+              <label for="website"><%= t.form.website %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='url' name='facebook' id='facebook'>
+              <label for="facebook"><%= t.form.facebook %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='url' name='twitter' id='twitter'>
+              <label for="twitter"><%= t.form.twitter %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='url' name='instagram' id='instagram'>
+              <label for="instagram"><%= t.form.instagram %></label>
+            </div>
+        </div>
+      </div>    
 
-      <label class="checkbox_label" for="visa">
-        <%= t.new_form.visa_help %>
-      </label>
-      <input type="checkbox" class="check" name="visa" id="visa">
-      <section class="checkbox">
-        <span class="highlight"></span>
-      </section>
-    </div>
-
-    <div class="form-group">
-      <h3><%= t.new_form.food%></h3>
-      <p><%= t.new_form.food_content %></p>
-
-      <label class="checkbox_label" for="vegan">
-        <%= t.new_form.food_heroes %>
-      </label>
-      <input type="checkbox" class="check" value="vegan" name="food[]" id="vegan">
-      <section class="checkbox">
-        <span class="highlight"></span>
-      </section>
-
-      <label class="checkbox_label" for="celiac">
-        <%= t.new_form.food_celiac %>
-      </label>
-      <input type="checkbox" class="check" value="celiac" name="food[]" id="celiac">
-      <section class="checkbox">
-        <span class="highlight"></span>
-      </section>
-
-      <label class="checkbox_label" for="diabetic">
-        <%= t.new_form.food_diabetic %>
-      </label>
-      <input type="checkbox" class="check" value="diabetic" name="food[]" id="diabetic">
-      <section class="checkbox">
-        <span class="highlight"></span>
-      </section
-    </div>
-
-    <div class="form-group">
-
-      <h3><%= t.new_form.accessibility %></h3>
-      <p><%= t.new_form.accessibility_content %></p>
-
-      <label class="checkbox_label" for="reduced_movility">
-        <%= t.new_form.accessibility_movility %>
-      </label>
-      <input type="checkbox" class="check" value="reduced_movility" name="accessibility[]" id="reduced_movility">
-      <section class="checkbox">
-        <span class="highlight"></span>
-      </section>
-
-      <label class="checkbox_label" for="sign_language">
-        <%= t.new_form.accessibility_sign %>
-      </label>
-      <input type="checkbox" class="check" value="sign_language" name="accessibility[]" id="sign_language">
-      <section class="checkbox">
-        <span class="highlight"></span>
-      </section>
-
-    </div>
-
-    <div class="form-group">
-      <h3><%= t.new_form.language %></h3>
-      <p><%= t.new_form.language_content %></p>
-
-      <label class="checkbox_label" for="spanish">
-        <%= t.new_form.spaniolo %>
-      </label>
-      <input type="checkbox" class="check" name="languages[]" value="spanish" id="spanish">
-      <section class="checkbox">
-        <span class="highlight"></span>
-      </section>
-
-      <label class="checkbox_label" for="english">
-        <%= t.new_form.english %>
-      </label>
-      <input type="checkbox" class="check" name="languages[]" value="english" id="english">
-      <section class="checkbox">
-        <span class="highlight"></span>
-      </section>
-    </div>
     </div>
 
     <div class="block">
-      <div class="form-group">
-        <h3><%= t.form.termos %></h3>
-        <p><%= t.form.termos_content %></p>
-        <label class="checkbox_label" for="email_organization">
-          <%= t.form.email_organization %>
+      <h3></h3>
+      <div class="row col-md-12">
+        <label class="checkbox_label" for="participate_as_colaborator">
+          <%= t.form.participate_as_colaborator %>
         </label>
-        <input type='checkbox' value='email_organization' name='email_organization' id='email_organization' class="check">
+        <input type='checkbox' name='participate_as_colaborator' id='participate_as_colaborator' class="check">
         <section class="checkbox">
           <span class="highlight"></span>
         </section>
-
-        <label class="checkbox_label" for='register_image'><%= t.form.register_image %></label>
-        <input type='checkbox' value='register_image' name='register_image' id='register_image' class="check">
-        <section class="checkbox">
-          <span class="highlight"></span>
-        </section>
-        <small><%= t.form.mandatory %></small>
-        <small><%= t.new_form.accessibility_disclaimer %></small>
-        <small><%= t.form.shy %></small>
-        <button type="submit" class="btn"><%= t.form.finish_her %></button>
       </div>
+      <div id="colaborator_group" class="row">
+          <div class="col-md-6">
+            <label class="lbl" for="colaborator_area"><%= t.form.colaborator_area %>:</label>
+             <div id="colaborator_area">
+               <div class="checkbox">
+                  <label><input type="checkbox" name="colaborator_area[]" value="<%= t.form.colaborator_area_1 %>"><%= t.form.colaborator_area_1 %></label>
+                </div>
+                <div class="checkbox">
+                 <label><input type="checkbox" name="colaborator_area[]" value="<%= t.form.colaborator_area_2 %>"><%= t.form.colaborator_area_2 %></label>
+                </div>
+               <div class="checkbox">
+                  <label><input type="checkbox" name="colaborator_area[]" value="<%= t.form.colaborator_area_3 %>"><%= t.form.colaborator_area_3 %></label>
+                </div>
+               <div class="checkbox">
+                  <label><input type="checkbox" name="colaborator_area[]" value="<%= t.form.colaborator_area_4 %>"><%= t.form.colaborator_area_4 %></label>
+                </div>
+               <div class="checkbox">
+                  <label><input type="checkbox" name="colaborator_area[]" value="<%= t.form.colaborator_area_5 %>"><%= t.form.colaborator_area_5 %></label>
+                </div>
+             </div>
+          </div>
+      </div>
+      <div class="row col-md-12">
+        <label class="checkbox_label" for="has_proposition">
+          <%= t.form.has_proposition %>
+        </label>
+        <input type='checkbox' name='has_proposition' id='has_proposition' class="check">
+        <section class="checkbox">
+          <span class="highlight"></span>
+        </section>
+      </div> 
+      <div class="row" id="proposition_group">
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='text' id='proposition_title' name="proposition_title">
+              <label for="proposition_title"><%= t.form.title %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="textarea-container">
+            <textarea placeholder="<%= t.form.summary %>" name="proposition_summary" id="proposition_summary"></textarea>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="textarea-container">
+            <textarea placeholder="<%= t.form.why_include %>" name="proposition_why_include" id="proposition_why_include"></textarea>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="textarea-container">
+            <textarea placeholder="<%= t.form.others_needed %>" name="proposition_others_needed" id="proposition_others_needed"></textarea>
+          </div>
+          <small style="margin-bottom: 15px;"><%= t.form.others_needed_tooltip %></small>
+        </div>     
+      </div> 
     </div>
+
+    <button type="submit" class="btn pull-right"><%= t.form.finish_her %></button>
   </form>
-  <script src='/js/validate.min.js'></script>
-  <script src='/js/smoothscroll.min.js'></script>
   <script src='/js/form.js'></script>
+  <script src='/js/smoothscroll.min.js'></script>
 </section>
