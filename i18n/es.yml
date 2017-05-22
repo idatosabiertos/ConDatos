@@ -34,15 +34,6 @@ index:
     					<li>Periodismo de datos para reportar y monitorear.</li>
     					<li>Tecnología cívica y su impacto social.</li>
     					<li>Uso de datos y tecnología cívica para apoyar la igualdad de género</li></ul>"
-  content4: "Buscamos crear una agenda más dinámica y colaborativa, experimentando con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo te sugerimos que al presentar tu idea consideres algunos de estos formatos o nos propongas uno nuevo:
-			<ul><li>Speed Story Telling: presentación de experiencias donde el principal objetivo es narrar la historia de una solución, el moderador realizará la presentación e introducción a cada uno de los panelistas de la sesión en diez minutos; cada uno de los panelistas contará con un tiempo de diez minutos para narrar la historia de su experiencia. Al finalizar las presentaciones, el moderador coordinará un espacio de discusión con la audiencia de diez minutos y finalizará la sesión con el planteamiento del reto de esta sesión cinco minutos.</li>
-			<li>Como se hace en 10 pasos: En este espacio, el moderador presentará en diez minutos el objetivo de la sesión y la metodología a utilizar, dándole inicio a cada uno de los panelistas, quienes en diez minutos contarán sus recomendaciones de calidad, señalando las 10 lecciones aprendidas que pueden ser replicadas por los asistentes. Al finalizar la intervención de los panelistas, el moderador recogerá las 10 buenas prácticas comunes entre los panelistas y abrirá sesión de discusión con la audiencia.</li>
-			<li>Talleres: sesiones en pequeños grupos con resultados de construcción colectiva.</li>
-			<li>Speed Networking: colocar unas 5 estaciones por las cuales grupos de hasta 5 personas vayan pasando por cada una para conocer sobre un proyecto o el trabajo de una organización en específico. Debe ser un evento bien controlado.</li>
-			<li>Elevator pitch sesión: Espacio para elevator pitch de 3-5 minutos para personas que deseen encontrar colaboración para resolver un problema.</li>
-			<li>Área de exposición: puestos permanentes de exposición de servicios y productos.</li>
-			<li>Laboratorios: espacios para la construcción colectiva de soluciones a problemas específicos, utilizando datos abiertos para su desarrollo.</li>
-			<li>Café charlado o conversatorio: Es un espacio informal en el que los expertos seleccionados y un moderado se reúnen a compartir sus puntos de vista sobre un tema específico, y disfrutan de una taza de café, durante la charla con la audiencia. En este espacio, el moderador abre la charla contando en diez minutos los panelistas de la sesión, el objetivo de la misma y la metodología a utilizar. Durante cuarenta minutos se realizarán sesiones de preguntas orientadas al rol de las instituciones en la construcción y dinamización de la iniciativa de datos abiertos en la región.</li></ul>"
   errors: Errores
   organizers: Organizan
   co_organizers: Co-Organizan
@@ -180,12 +171,22 @@ event:
   description1: Los días 24 y 25 de agosto se llevará a cabo la conferencia, con un programa basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
   description2: La agenda, en búsqueda de ser más dinámica y colaborativa, experimenta con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicitó en el llamado aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
   description3: "El evento contará con tres carriles de contenido:"
-  title3: Presentaciones y sesiones en el salón principal
-  description4: Las mismas contarán con traducción simultánea y buscarán formatos que fomenten el diálogo entre los participantes y con el público presente.
-  title4: Charlas relámpago en el área de livings
-  description5: Presentaciones breves de todos los países miembros de AGA de la región, mediante sus representantes de Gobierno, Sociedad Civil y el Mecanismo de Revisión Independiente en cada país. También se contará con una serie de presentaciones breves de iniciativas y proyectos regionales.
-  title5: Talleres en el aula
-  description6: Con más de dos horas de duración y expertos de primer nivel, éstos talleres buscan fomentar el aprendizaje en profundidad y aplicación práctica de conceptos para distintos tipos de público de niveles bajo, medio y alto de experiencia en el tema.
+  title3: Speed Story Telling
+  description4: Presentación de experiencias donde el principal objetivo es narrar la historia de una solución, el moderador realizará la presentación e introducción a cada uno de los panelistas de la sesión en diez minutos; cada uno de los panelistas contará con un tiempo de diez minutos para narrar la historia de su experiencia. Al finalizar las presentaciones, el moderador coordinará un espacio de discusión con la audiencia de diez minutos y finalizará la sesión con el planteamiento del reto de esta sesión cinco minutos.
+  title4: Como se hace en 10 pasos
+  description5: En este espacio, el moderador presentará en diez minutos el objetivo de la sesión y la metodología a utilizar, dándole inicio a cada uno de los panelistas, quienes en diez minutos contarán sus recomendaciones de calidad, señalando las 10 lecciones aprendidas que pueden ser replicadas por los asistentes. Al finalizar la intervención de los panelistas, el moderador recogerá las 10 buenas prácticas comunes entre los panelistas y abrirá sesión de discusión con la audiencia.
+  title5: Talleres
+  description6: Sesiones en pequeños grupos con resultados de construcción colectiva.
+  title_6: Speed Networking
+  description_6: Colocar unas 5 estaciones por las cuales grupos de hasta 5 personas vayan pasando por cada una para conocer sobre un proyecto o el trabajo de una organización en específico. Debe ser un evento bien controlado.
+  title_7: Elevator pitch sesión
+  description_7: Espacio para elevator pitch de 3-5 minutos para personas que deseen encontrar colaboración para resolver un problema.
+  title_8: Área de exposición
+  description_8: Puestos permanentes de exposición de servicios y productos.
+  title_9: Laboratorios
+  description_9: Espacios para la construcción colectiva de soluciones a problemas específicos, utilizando datos abiertos para su desarrollo.
+  title_10: Café charlado o conversatorio
+  description_10: Es un espacio informal en el que los expertos seleccionados y un moderado se reúnen a compartir sus puntos de vista sobre un tema específico, y disfrutan de una taza de café, durante la charla con la audiencia. En este espacio, el moderador abre la charla contando en diez minutos los panelistas de la sesión, el objetivo de la misma y la metodología a utilizar. Durante cuarenta minutos se realizarán sesiones de preguntas orientadas al rol de las instituciones en la construcción y dinamización de la iniciativa de datos abiertos en la región.
   description7: En términos más generales, este encuentro quiere también reconocer el valor de los intercambios interpersonales y las “charlas de pasillo”, por lo que da espacios entre sesiones para interacción, facilitará materiales para el intercambio de ideas en las áreas comunes (rotafolios, marcadores, etc.) e invita a usar el área de livings para encuentros y reuniones durante el evento.
   coffee: El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes.
   title6: "Acerca de la Reunión<br>de Puntos Focales<br>(no abierta al público)"

@@ -29,11 +29,18 @@ body {
 @media (max-width: 640px) {
     #ogp_logo_mobile { display: block;}
     a#ogp_logo_mobile {
-    background: url(../img/ogp_logo_white.png) no-repeat !important;
-    height: 142px !important;
-    width: 142px !important;
-    background-size: 142px 142px !important;
-}
+    background: url(../img/ogp_logo_white.png) no-repeat !important;   
+    height: 130px !important;
+    width: 100% !important;
+    background-size: 150px 100px !important;
+    background-position-x: 25px !important;
+    background-color: #157e99 !important;
+    }
+    #home_page #intro_txt figure img {
+    max-width: 350px !important;
+    margin-left: 5% !important;
+    }
+    .jcountTimer span { width:8% !important;}
 }
 
 #main_section { position: relative;}
@@ -398,7 +405,6 @@ footer ul li a:hover > i  {color: #fff}
     max-width: 700px;
     margin-top: 5%;
     margin: 5%;
-    margin-left: 25%;
 }
 #home_page #intro_txt .mt { font-family: 'Roboto', sans-serif; margin-right: 25px; float: left;}
 #home_page #intro_txt .mt b {font-size: 18px;}
@@ -423,7 +429,7 @@ footer ul li a:hover > i  {color: #fff}
     }
     #home_page #intro_txt figure {
         float: none;
-        width: 30%;
+        width: 100%;
         margin: 30px auto;
     }
     #home_page #partners .partner, #home_page #orgnices .organce { width: 40%; display: inline-block; margin: 10px 0}
