@@ -472,7 +472,7 @@ footer ul li a:hover > i  {color: #fff}
    ========================================================================== */
 #montevideo_page .title { width: 100%; display: inline-block; margin: 60px 0}
 #montevideo_page .title h2 {color: #231F20;font-size: 18px;font-weight: bold;float: left;}
-#montevideo_page .title p {color: #231F20;font-size: 15px; width: 30%; margin-left: 30px;padding-top: 20px; float: left;}
+#montevideo_page .title p {color: #231F20;font-size: 15px; margin-left: 30px;padding-top: 20px; float: left;}
 #montevideo_page .travel { width: 100%; display: inline-block;text-align: center;}
 #montevideo_page .travel .cta { width: 33%; display: inline-block;text-align:center;
                               }
