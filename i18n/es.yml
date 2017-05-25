@@ -4,7 +4,6 @@ layout:
   title1: CONFERENCIA REGIONAL
   title2: DE DATOS ABIERTOS
   title3: CONDATOS
-  title4: 
   date1: 23.08 al 25.08
   date2: DE 2017
   date3: SAN JOSE DE COSTA RICA
@@ -143,34 +142,32 @@ agenda:
 
 hqs:
   title: Sede
-  content1: Seleccione una de las locaciones para mayor información
+  content1: Seleccione el pin para mayor información
   address: Dirección
   activities: Actividades y fechas a realizarse
 
 radisson:
-  title: Radisson Victoria Plaza
-  address: Plaza Independencia 759,Montevideo, Uruguay
+  title: Centro Nacional de la Cultura (CENAC)
+  address: San Jose Centro, San José, Costa Rica
   description1: Sede central del evento, es un hotel y centro de conferencias construido originalmente en la década del 40 y con sucesivas reformas.
   description2: Está ubicado sobre la Plaza Independencia, donde también se encuentran la Puerta de la Ciudadela, Torre Ejecutiva, Palacio Salvo y monumento y mausoleo a Artigas. De ésta plaza al este nace la Avenida 18 de Julio, principal de la ciudad de Montevideo. Hacia el oeste comienza la Ciudad Vieja con la Peatonal Sarandí, llegando hasta la escollera y el puerto de Montevideo.
   date1: 31 de mayo
   event1: Reunión de Puntos Focales (no abierta al público)
-  date2: 1º y 2 de junio - 08:30 a 18:40hs
+  date2: 23, 24 y 25 de Agosto 
   event2: Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto
   apps_info: "Ver en<a href=\"http://www.openstreetmap.org/node/1167139189\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Radisson+Montevideo+Victoria+Plaza+Hotel,+Montevideo+11000/@-34.9052736,-56.2021887,17z/data=!3m1!4b1!4m2!3m1!1s0x959f802bba8814d1:0x629e593130096426?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/radisson-victoria-plaza/4bbc71ce51b89c742a62872a\" target=\"_blank\">Foursquare</a>"
 
 event:
   title: Evento
-  title_0: Acerca del Datacamp
-  content0: "El 30 de mayo, previo al comienzo oficial de las actividades del evento, contaremos con este espacio de experimentación y aprendizaje. Los participantes aprenden cómo encontrar, extraer y analizar datos públicos, usando herramientas forenses para contar mejores historias periodísticas. Brinda a los periodistas, activistas cívicos y desarrolladores un curso con las técnicas más importantes y herramientas necesarias para analizar datos públicos. También trabajan en equipos para construir nuevas aplicaciones de noticias y sitios de participación cívica que ayudan a mejorar el valor de los reportajes tradicionales. <a href=\"http://bit.ly/DatacampUY2016\" target=\"_blank\">Más información e inscripciones</a>."
   title_1: Acerca de Abrelatam
-  content1: "El <strong>23 de agosto  de 8:30 a 18:00</strong> se realizará Abrelatam AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más." 
+  content1: "El <strong>23 de agosto  de 8:30 a 18:00</strong> se realizará Abrelatam. <p>AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más.</p>" 
   content2: "En una desconferencia, se invierte la dinámica de un orador y muchos oyentes, para hacer de todos los participantes a su vez oradores y oyentes, de forma simultánea. En múltiples sesiones simultáneas con un número limitado de personas, se fomenta un diálogo según los temas recogidos de la agenda común.<br><br>Las sesiones cuentan con un facilitador que asegura que el las personas tengan iguales oportunidades de escuchar y ser escuchadas y con una persona voluntaria para tomar notas que serán compartidas con el resto de los participantes y cualquier persona"
   content3: "En las sesiones no se utilizan diapositivas, ni aparatos electrónicos, incluyendo celulares y laptops (con la excepción de la persona que toma las notas).<br><br>El objetivo de la desconferencia es compartir conocimiento entre pares, y las dinámicas así lo fomentan. Facilitadores guiarán a los participantes a lo largo del día, pero en última instancia son los propios asistentes quienes hacen al evento y su contenido.
              El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes. Puedes conocer más sobre Abrelatam en www.abrelatam.org"
-  title2: Condatos
+  title2: Acerca de Condatos
   description1: Los días 24 y 25 de agosto se llevará a cabo la conferencia, con un programa basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
   description2: La agenda, en búsqueda de ser más dinámica y colaborativa, experimenta con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicitó en el llamado aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
-  description3: "El evento contará con tres carriles de contenido:"
+  description3: "Por este motivo te sugerimos que al presentar tu idea consideres algunos de estos formatos o nos propongas uno nuevo:"
   title3: Speed Story Telling
   description4: Presentación de experiencias donde el principal objetivo es narrar la historia de una solución, el moderador realizará la presentación e introducción a cada uno de los panelistas de la sesión en diez minutos; cada uno de los panelistas contará con un tiempo de diez minutos para narrar la historia de su experiencia. Al finalizar las presentaciones, el moderador coordinará un espacio de discusión con la audiencia de diez minutos y finalizará la sesión con el planteamiento del reto de esta sesión cinco minutos.
   title4: Como se hace en 10 pasos
@@ -187,16 +184,7 @@ event:
   description_9: Espacios para la construcción colectiva de soluciones a problemas específicos, utilizando datos abiertos para su desarrollo.
   title_10: Café charlado o conversatorio
   description_10: Es un espacio informal en el que los expertos seleccionados y un moderado se reúnen a compartir sus puntos de vista sobre un tema específico, y disfrutan de una taza de café, durante la charla con la audiencia. En este espacio, el moderador abre la charla contando en diez minutos los panelistas de la sesión, el objetivo de la misma y la metodología a utilizar. Durante cuarenta minutos se realizarán sesiones de preguntas orientadas al rol de las instituciones en la construcción y dinamización de la iniciativa de datos abiertos en la región.
-  description7: En términos más generales, este encuentro quiere también reconocer el valor de los intercambios interpersonales y las “charlas de pasillo”, por lo que da espacios entre sesiones para interacción, facilitará materiales para el intercambio de ideas en las áreas comunes (rotafolios, marcadores, etc.) e invita a usar el área de livings para encuentros y reuniones durante el evento.
-  coffee: El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes.
-  title6: "Acerca de la Reunión<br>de Puntos Focales<br>(no abierta al público)"
-  description8: El 31 de mayo en seguimiento a experiencias exitosas en México, Georgia y Tanzania se realizará una conferencia para puntos de contacto de gobierno de los países de la región que participan en la Alianza para el Gobierno Abierto.
-  title7: "Esta conferencia buscará los siguientes objetivos:"
-  description9: A través de discusiones facilitadas y sesiones participativas y dinámicas, los participantes tendrán la oportunidad de expresar reflexiones y aprender sobre prácticas innovadoras en temas relacionados con los procesos de OGP.
-  title8: Impulsar mejores prácticas.
-  description10: A lo largo del día los puntos de contacto tendrán la oportunidad de comparar sus procesos con otros países en la región y así identificar buenas prácticas y soluciones a problemas comunes.
-  title9: Oportunidad de generar redes de colaboración.
-  description11: Lo cual permitirá a los reformadores establecer relaciones de trabajo sólidas e identificar oportunidades nuevas de colaboración y alianzas para temas clave.#
+
 
 montevideo:
   title: San José de Costa Rica
