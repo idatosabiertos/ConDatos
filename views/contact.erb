@@ -33,9 +33,9 @@
 
       <div class="col-md-6">
         <div class="input-container">
-          <select name="country" id="country">
-            <option><%= t.form.country %>*</option>
-            <option>--------</option>
+          <select name="country" id="country" required="">
+            <option value=""><%= t.form.country %>*</option>
+            <option value="">--------</option>
             <% FormData.countries.each do |country| %>
               <option value='<%= country %>' name='country' >
                 <%= country %>
@@ -46,7 +46,7 @@
       </div>
       <div class="col-md-6">
         <div class="textarea-container">
-          <textarea placeholder="<%= t.contact.message %>" name="message" id="message"></textarea>
+          <textarea placeholder="<%= t.contact.message %>*" name="message" id="message" required></textarea>
         </div>
       </div>
       <div class="col-md-6">

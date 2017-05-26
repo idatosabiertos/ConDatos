@@ -23,8 +23,8 @@ var radisson_marker = L.marker(
   [9.935743, -84.072618],
   {
     icon: normal_pin,
-    title: "Radisson Victoria Plaza",
-    alt: "Radisson Victoria Plaza"
+    title: "Centro Nacional de la Cultura (CENAC)",
+    alt: "Centro Nacional de la Cultura (CENAC)"
   }).addTo(map);
 
 radisson_marker.addEventListener('click', function(){

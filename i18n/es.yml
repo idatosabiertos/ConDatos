@@ -44,9 +44,18 @@ sponsors:
   colaborate: Colaboran
 
 form:
+  inscription: Inscripción
+  process_title: "La participación en <strong>Abrelatam-Condatos</strong> requiere de un proceso de inscripción. Se solicita la colaboración de todas las personas que deseen asistir, cumpliendo lo siguiente:"
+  process: "<ol><li>Llenar el formulario de pre-inscripción que encontrará a continuación.</li><li>Esperar respuesta de aceptación e instrucciones para la confirmación de asistencia.</li><li>Confirmación de participación, por la vía que les será debidamente comunicada.</li></ol><p>El evento es gratuito y cubrirá los almuerzos de los tres días. Las personas participantes deben asumir los costos de transporte y hospedaje y otros tiempos de alimentación, hasta y en la ciudad de San José. Se dispone de fondos limitados para apoyar a algunas personas en estos dos rubros, por lo que si usted lo requiere, deberá indicarlo en las opciones indicadas. La solicitud de beca, no garantiza su otorgamiento.</p>"
+  process_dates: "<u>Fechas importantes:</u> <ul><li><strong>Pre-inscripción: </strong>29 de Mayo al 29 de Junio de 2017.</li><li><strong>Selección de personas becadas: </strong>30 de Junio al 10 de Julio.</li><li><strong>Comunicación de resultados de becas: </strong> 11 al 15 de Julio.</li><li><strong>Confirmación de participación: </strong>16 de Julio al 16 de Agosto.</li></ul>"
   data: Datos Personales
   name: Nombre
   surname: Apellidos
+  gender: Género
+  gender_female: Femenino
+  gender_male: Masculino
+  gender_other: Otro
+  gender_none: Prefiero no indicarlo
   organization: Organización
   organization_type: Tipo de organización  
   organization_role: ¿Cuál es su rol en la organización?
@@ -85,7 +94,7 @@ form:
   academic_institution: Institución académica
   other_type: Otro
   country: País
-  country_origin: País de Origen
+  country_origin: Nacionalidad
   country_residence: País de Residencia
   job: ¿A qué se dedica?
   open_data_usage: ¿Utiliza datos abiertos para trabajo, investigación o activismo?
@@ -115,7 +124,9 @@ form:
   facebook: Facebook
   twitter: Twitter
   instagram: Instagram
+  github: Github
   extra: Extra
+  proposals_volunteering: Propuestas y Voluntariado
   participate_as_colaborator: ¿Tiene interés en realizar trabajo voluntario durante el evento?
   colaborator_area: ¿En qué área de trabajo podría apoyar como voluntario/a?
   colaborator_area_1: Logística y organización
@@ -130,6 +141,9 @@ form:
   others_needed: ¿Requiere de la participación de otras personas?
   others_needed_tooltip: Indique el nombre, organización de cada una de las personas sugeridas y sus referencias en redes sociales
   require_one: Seleccione al menos una opción
+  require_three: Seleccione 3 opciones
+  disclaimer_title: Protección de datos
+  disclaimer: "Los datos que nos proporcione en este formulario no serán vendidos, ni compartidos nunca con terceros. En aras de su confidencialidad, solamente podrán ser consultados por la persona a cuyos datos se refiere. Se recolectan con el fin de conocer a las personas y organizaciones relacionadas con el evento Abrelatam-Condatos y comunicarnos con ellas. La negativa a suministrarlos nos impedirá comunicarnos adecuadamente. Al llenar este formulario consiente en suministrar estos datos solicitados. En Costa Rica, le asisten los derechos de la ley 8968, Ley de Protección de la Persona frente al tratamiento de sus datos personales. Responsable de la base: Comisión organizadora Abrelatam-Condatos <a href=\"mailto:abrelatamcondatos@gmail.com\" target=\"_top\">abrelatamcondatos@gmail.com</a>"
 
 thanks:
   title: Muchas gracias por completar el formulario
@@ -148,19 +162,19 @@ hqs:
 
 radisson:
   title: Centro Nacional de la Cultura (CENAC)
-  address: San Jose Centro, San José, Costa Rica
-  description1: Sede central del evento, es un hotel y centro de conferencias construido originalmente en la década del 40 y con sucesivas reformas.
-  description2: Está ubicado sobre la Plaza Independencia, donde también se encuentran la Puerta de la Ciudadela, Torre Ejecutiva, Palacio Salvo y monumento y mausoleo a Artigas. De ésta plaza al este nace la Avenida 18 de Julio, principal de la ciudad de Montevideo. Hacia el oeste comienza la Ciudad Vieja con la Peatonal Sarandí, llegando hasta la escollera y el puerto de Montevideo.
-  date1: 31 de mayo
-  event1: Reunión de Puntos Focales (no abierta al público)
-  date2: 23, 24 y 25 de Agosto 
-  event2: Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto
-  apps_info: "Ver en<a href=\"http://www.openstreetmap.org/node/1167139189\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Radisson+Montevideo+Victoria+Plaza+Hotel,+Montevideo+11000/@-34.9052736,-56.2021887,17z/data=!3m1!4b1!4m2!3m1!1s0x959f802bba8814d1:0x629e593130096426?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/radisson-victoria-plaza/4bbc71ce51b89c742a62872a\" target=\"_blank\">Foursquare</a>"
+  address: Se ubica en la antigua Fábrica Nacional de Licores (FANAL), Ave. 3 y 7, calles 11 y 15, al costado este del Parque España, San José.
+  description1: Constituye el mayor complejo cultural del país y está ubicado en lo que fueron las instalaciones de la Fábrica Nacional de Licores. Se trata de una de las edificaciones más antiguas de la capital.
+  description2: "<p>El funcionamiento de la fábrica se mantuvo en el mismo sitio hasta el año 1981, en que se habilitó un espacio más adecuado y seguro en el cantón de Grecia, provincia de Alajuela.</p><p>El Centro se abrió para promover el arte y la cultura en todas sus manifestaciones y la creación de espacios para el desarrollo</p>"
+  date1: AbreLatam
+  event1: 23 de Agosto
+  date2: ConDatos
+  event2: 24 y 25 de Agosto 
+  apps_info: "Ver en<a href=\"https://www.openstreetmap.org/#map=19/9.93576/-84.07249\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com/maps/place/Centro+Nacional+de+la+Cultura/@9.9357459,-84.0747564,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0e363abf205c7:0xb88620bc0cf731e3!8m2!3d9.9357459!4d-84.0725677\" target=\"_blank\">Google Maps</a>"
 
 event:
   title: Evento
   title_1: Acerca de Abrelatam
-  content1: "El <strong>23 de agosto  de 8:30 a 18:00</strong> se realizará Abrelatam. <p>AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más.</p>" 
+  content1: "El <strong>23 de Agosto</strong> se realizará Abrelatam. <p>AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más.</p>" 
   content2: "En una desconferencia, se invierte la dinámica de un orador y muchos oyentes, para hacer de todos los participantes a su vez oradores y oyentes, de forma simultánea. En múltiples sesiones simultáneas con un número limitado de personas, se fomenta un diálogo según los temas recogidos de la agenda común.<br><br>Las sesiones cuentan con un facilitador que asegura que el las personas tengan iguales oportunidades de escuchar y ser escuchadas y con una persona voluntaria para tomar notas que serán compartidas con el resto de los participantes y cualquier persona"
   content3: "En las sesiones no se utilizan diapositivas, ni aparatos electrónicos, incluyendo celulares y laptops (con la excepción de la persona que toma las notas).<br><br>El objetivo de la desconferencia es compartir conocimiento entre pares, y las dinámicas así lo fomentan. Facilitadores guiarán a los participantes a lo largo del día, pero en última instancia son los propios asistentes quienes hacen al evento y su contenido.
              El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes. Puedes conocer más sobre Abrelatam en www.abrelatam.org"
@@ -211,9 +225,9 @@ montevideo:
   change: Cambio
   security: Seguridad
   tip: Propina
-  change_info: "El tipo de cambio oscila en algunos colones más o menos diariamente, pero está cerca del promedio de 590 colones por dólar estadounidense. Puede consultarlo diariamente <a href=\"http://indicadoreseconomicos.bccr.fi.cr/indicadoreseconomicos/cuadros/frmvercatcuadro.aspx?CodCuadro=400\">aquí</a><p>En el aeropuerto encontrará algunos puestos de cambio y oficinas bancarias. También en los hoteles prestan este servicio. Sin embargo, si cuenta con el tiempo suficiente, le recomendamos utilizar una agencia bancaria, las cuales tienen horarios en diferentes puntos de la ciudad durante todos los días de la semana  y nunca aceptar ofertas de canje en la calle.</p>"
+  change_info: "El tipo de cambio oscila en algunos colones más o menos diariamente, pero está cerca del promedio de 590 colones por dólar estadounidense. Puede consultarlo diariamente <a href=\"http://indicadoreseconomicos.bccr.fi.cr/indicadoreseconomicos/cuadros/frmvercatcuadro.aspx?CodCuadro=400\">aquí</a>.<p>En el aeropuerto encontrará algunos puestos de cambio y oficinas bancarias. También en los hoteles prestan este servicio. Sin embargo, si cuenta con el tiempo suficiente, le recomendamos utilizar una agencia bancaria, las cuales tienen horarios en diferentes puntos de la ciudad durante todos los días de la semana  y nunca aceptar ofertas de canje en la calle.</p>"
   security_info: "Al igual que en cualquier lugar del mundo, les recomendamos usar el sentido común con el cuido de sus pertenencias y la circulación por la calle. Procure andar en grupo y si tiene que desplazarse en la ciudad a horas avanzadas de la noche, tome un taxi. Preferiblemente, no exhiba su cámara u objetos electrónicos en la vía pública." 
-  tip_info: "En Costa Rica, la propina está incluida en todos los precios, junto con el impuesto de servicio. No se acostumbra dar montos adicionales por servicio en restaurantes, transporte u otros"
+  tip_info: "En Costa Rica, la propina está incluida en todos los precios, junto con el impuesto de servicio. No se acostumbra dar montos adicionales por servicio en restaurantes, transporte u otros."
   
 montevideo_modals:
   earth: "Existen compañías de bus que ofrecen transporte terrestre desde Guatemala, El Salvador, Honduras, Nicaragua y Panamá. Puede encontrar más información visitando las páginas web de <a href=\"https://www.ticabus.com/Route/routes_maps\">TICABUS</a> y <a href=\"http://transnica.com/new/horarios-para-su-conveniencia/\">TRANSNICA</a>, que son las principales empresas que prestan este servicio."
@@ -232,15 +246,6 @@ contact:
   message: Dejanos tu mensaje
   submit: Enviar
   sent: El mensaje fue enviado
-
-new_form:
-  gender: Género
-  gender_female: Femenino
-  gender_male: Masculino
-  gender_other: Otro
-  gender_none: Prefiero no indicarlo
-  language: Idiomas
-  accessibility_disclaimer: "** Se hará el máximo esfuerzo para facilitar la accesibilidad en la sala principal del evento y las sesiones que sea posible, pero no se puede garantizar para el 100% de las actividades"
 
 more_info:
   title: Más información

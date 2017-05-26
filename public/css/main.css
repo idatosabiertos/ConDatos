@@ -649,11 +649,6 @@ form .input-container {
     border-bottom: 2px solid #23527c;
 }
 
-form .textarea-container {
-    position: relative;
-    width: 100%;
-    float: left;
-}
 form .textarea-container label { position: relative; margin-bottom: 32px;}
 form .textarea-container:before {
 }
@@ -714,7 +709,7 @@ form .input-container label {
     -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
     animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
-form .input-container input:focus + label, form .input-container input:valid + label {
+form .input-container input:focus + label, form .input-container input.empty + label {
                                                -webkit-animation-name: labelOut;
                                                animation-name: labelOut;
                                                -webkit-animation-duration: 0.35s;
@@ -1082,3 +1077,35 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 .radio-inline, .checkbox{
     margin-left: 10px !important;
 }
+
+#thematic{
+    margin-bottom: 50px;
+    text-align: left;
+}
+#colaborator_area{
+    text-align: left;    
+}
+
+.message{
+    font-weight: bold;   
+    font-size: 20px;
+    margin-top: 20%;
+    margin-bottom: 30px;
+}
+
+#success{
+    margin-top: 20%;
+    margin-bottom: 30px;
+}
+
+.inscription{    
+    margin-bottom: 50px;
+    text-align: left;
+    margin-top: 10px;
+    border: 2px solid #5ebfdd;
+    padding: 15px;
+}
+.inscription h1{  
+    color: #5DBFDD;
+    margin: 0 0 30px 0;
+} 

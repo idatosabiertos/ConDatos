@@ -168,6 +168,7 @@ def create_inscription(params)
     facebook: params[:facebook],
     twitter: params[:twitter],
     instagram: params[:instagram],
+    github: params[:github],
     participate_as_colaborator: params[:participate_as_colaborator] == 'on' ? 'Sí' : 'No',
     colaborator_area: params[:colaborator_area] ? params[:colaborator_area].join(', ') : '',
     has_proposition: params[:has_proposition] == 'on' ? 'Sí' : 'No',

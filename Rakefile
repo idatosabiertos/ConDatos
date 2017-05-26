@@ -31,6 +31,7 @@ namespace :db do
       String :facebook
       String :twitter
       String :instagram
+      String :github
       String :participate_as_colaborator
       String :colaborator_area
       String :has_proposition
