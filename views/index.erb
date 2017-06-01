@@ -1,23 +1,18 @@
 <header class="intro intro_video text-center">
-  <ul>
-    <li><a id="agesic" href="http://www.agesic.gub.uy" target="_blank">Agesic</a></li>
-    <li><a id="presidencia" href="https://www.presidencia.gub.uy" target="_blank">Presidencia</a></li>
-    <li><a id="rga" href="http://rga.uy" target="_blank">Red de gobierno abierto uruguay</a></li>
-  </ul>
 
-  <a id="logoevento" class="stream_video" href="#" class="svg">
-    <object data="img/logoevent.svg" type="image/svg+xml" class="mailicon">
-    </object>
-  </a>
+  <h3 class="jcountTimer"></h3>
+
   <div id="video_stream">
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/uj_BZLTlslI" frameborder="0" allowfullscreen></iframe>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/TMkj5sElN2w" frameborder="0" allowfullscreen></iframe>
   </div>
+
 </header>
+
 
 <section class="main_container" id="home_page">
   <div id="intro_txt">
     <figure>
-      <img src="img/logo_small.svg">
+      <img src="img/calendar.png">
     </figure>
 
     <div class="mt">
@@ -29,23 +24,15 @@
       <p>
         <%= t.index.content2 %>
       </p>
+      <p>
+        <%= t.index.content3 %>
+      </p>
     </div>
   </div>
 
-  <!-- - TODO: erb :speakers -->
-
-  <%= erb :sponsors %>
   <%= erb :organizers %>
-  <div id="interest">
-    <h2 class="sub_title"><%= t.index.interest %></h2>
-    <div>
-      <figure>
-        <a href="http://www.turismo.gub.uy/" target="_blank">
-          <img src="img/mintur.png">
-        </a>
-      </figure>
-    </div>
-  </div>
+  <%= erb :sponsors %>
+  
 </section>
 <script src="js/countdown.js"></script>
 <script src="js/smoothscroll.min.js"></script>

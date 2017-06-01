@@ -10,13 +10,13 @@
 - Clone the repo
 - Under ConDatos directory run $ bundle install
 - Set environment variables:
-    $ export PG_DB_URL=postgres://localhost:5432/ogp
-    $ export PG_USER='yourUsername'
-    $ export PG_PWD='yourPassword'
-    $ export CONTACT_EMAIL= destiny@email.com
-    $ export SENDGRID_APIKEY= yourApiKey
+    - $ export PG_DB_URL=postgres://localhost:5432/ogp
+    - $ export PG_USER='yourUsername'
+    - $ export PG_PWD='yourPassword'
+    - $ export CONTACT_EMAIL='destiny@email.com'
+    - $ export SENDGRID_APIKEY='yourApiKey'
 - Create 'ogp' database in postgres  
-- Create inscriptions table  $rake db:create_inscriptions
+- Create inscriptions table  $ rake db:create_inscriptions
 - Start the server $ shotgun
 - navigate to localhost:9393
 
@@ -81,11 +81,12 @@
     export PG_USER='yourUsername'
     export PG_PWD='yourPassword'
 
-    export CONTACT_EMAIL= destiny@mail.com
-    export SENDGRID_APIKEY0 yourApiKey
+    export CONTACT_EMAIL='destiny@mail.com'
+    export SENDGRID_APIKEY='yourApiKey'
 
     sudo apt-get -y install postgresql postgresql-contrib
     echo 'CREATE DATABASE ogp;' > db_create.sql
     psql -U postgres postgres -f ./db_create.sql
+    rake db:create_inscriptions
 
     echo 'all set, rock on!'

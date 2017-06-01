@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby '2.3.1'
 
 gem 'sinatra'
 gem 'sequel'
@@ -8,7 +8,7 @@ gem 'dotenv'
 gem 'sinatra-asset-pipeline'
 gem 'sinatra-r18n'
 gem 'rollbar', '~> 2.8.3'
-gem 'mail'
+gem 'sendgrid-ruby'
 
 group :test, :development do
   gem 'byebug'

@@ -1,48 +1,44 @@
 require 'sequel'
 
 namespace :db do
-  desc "Create database"
-  task :create do
-    puts 'Creating database'
-    DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost:5432/ogp')
-
-    puts 'Creating surveys table'
-    DB.create_table :surveys do
-      primary_key :id
-      String :name
-      String :organization
-      String :sector
-      String :country
-      String :email
-      String :unconference
-      String :unconference_comments
-      String :regional
-      String :conference_comments
-      String :interests
-      String :enabler
-      String :link
-      String :needs_transport
-      String :needs_hosting
-    end
-  end
 
   desc "Create inscriptions"
   task :create_inscriptions do
     puts "Creating inscriptions table"
-    DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost:5432/ogp')
+    DB = Sequel.connect(ENV['PG_DB_URL'], :user=>ENV['PG_USER'], :password=>ENV['PG_PWD'])
     DB.create_table :inscriptions do
       primary_key :id
       String :name
-      String :organization
-      String :sector
-      String :country
+      String :surname
+      String :gender
       String :email
-      String :unconference
-      String :conference
-      String :visa_help
-      String :food
-      String :accessibility
-      String :languages
+      String :country_origin
+      String :country_residence
+      String :job
+      String :open_data_usage
+      String :particpated_before
+      String :scholarship_before
+      String :scholarship_more_than_once
+      String :participates_in_representation
+      String :event
+      String :financial_support
+      String :thematic
+      String :open_data_problem
+      String :organization      
+      String :organization_type 
+      String :organization_role
+      String :website
+      String :facebook
+      String :twitter
+      String :instagram
+      String :github
+      String :participate_as_colaborator
+      String :colaborator_area
+      String :has_proposition
+      String :proposition_title
+      String :proposition_summary
+      String :proposition_why_include
+      String :proposition_others_needed
     end
   end
 end
