@@ -75,7 +75,7 @@ module FormData
   end
 
   def self.sectors
-    [:government, :society, :police_academy, :foundation, :think_tank,
-     :multilateral, :private]
+    [:public_institution, :civil_society_org, :cooperation_org, :company, :media,
+     :academic_institution, :other_type]
   end
 end

@@ -4,10 +4,10 @@
 body {
     overflow-x:hidden;font-family: 'Montserrat', sans-serif;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a3990+0,2c3c91+12,2a4194+20,2e4a98+35,31559d+51,32589f+54,335aa0+58,3564a5+69,356dab+80,3f7eb5+98 */
-    background: rgb(42,57,144); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgb(42,57,144) 0%, rgb(44,60,145) 12%, rgb(42,65,148) 20%, rgb(46,74,152) 35%, rgb(49,85,157) 51%, rgb(50,88,159) 54%, rgb(51,90,160) 58%, rgb(53,100,165) 69%, rgb(53,109,171) 80%, rgb(63,126,181) 98%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgb(42,57,144) 0%,rgb(44,60,145) 12%,rgb(42,65,148) 20%,rgb(46,74,152) 35%,rgb(49,85,157) 51%,rgb(50,88,159) 54%,rgb(51,90,160) 58%,rgb(53,100,165) 69%,rgb(53,109,171) 80%,rgb(63,126,181) 98%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgb(42,57,144) 0%,rgb(44,60,145) 12%,rgb(42,65,148) 20%,rgb(46,74,152) 35%,rgb(49,85,157) 51%,rgb(50,88,159) 54%,rgb(51,90,160) 58%,rgb(53,100,165) 69%,rgb(53,109,171) 80%,rgb(63,126,181) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: rgb(3,118,147); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%);  /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%);  /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(31, 167, 197) 20%,rgb(54, 171, 196) 35%,rgb(91, 186, 212) 51%,rgb(94, 185, 208) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', endColorstr='#3f7eb5',GradientType=0 ); /* IE6-9 */
 }
 
@@ -28,12 +28,26 @@ body {
 }
 @media (max-width: 640px) {
     #ogp_logo_mobile { display: block;}
+    a#ogp_logo_mobile {
+    background: url(../img/ogp_logo_white.png) no-repeat !important;   
+    height: 130px !important;
+    width: 100% !important;
+    background-size: 150px 100px !important;
+    background-position-x: 25px !important;
+    background-color: #157e99 !important;
+    }
+    #home_page #intro_txt figure img {
+    max-width: 350px !important;
+    margin-left: 5% !important;
+    }
+    .jcountTimer span { width:8% !important;}
 }
 
 #main_section { position: relative;}
 
-
-
+.partner img{
+    width: 100%;
+}
 
 /* ==========================================================================
    Main intro styles
@@ -145,7 +159,7 @@ body {
     font-size: 12px;
 }
 .jcountTimer  {font-weight: normal;display: inline-block;}
-.jcountTimer span { width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:1px solid #ECB61E; padding:0 40px;}
+.jcountTimer span { width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:1px solid #efa4c7; padding:0 40px;}
 .jcountTimer span small { display:block;font-size: 0.3em; text-transform: none;color:#fff;font-weight: normal;text-align:left;font-family:"Arial"}
 .jcountTimer span:first-child { border: none; margin-left:0}
 /* ==========================================================================
@@ -186,7 +200,7 @@ body {
 .main_menu {
     position: fixed;
     display: block;
-    background-color: #333;
+    background-color: #014454;
     padding-left:50px;
     height: 100vh;
     vertical-align: middle;
@@ -241,10 +255,11 @@ body {
 }
 
 a#ogp_logo {
-    background: url(../img/ogp_logo.png) no-repeat;
-    height: 142px;
-    width: 142px;
-    margin: auto;
+    background: url(../img/ogp_logo.png) no-repeat;   
+    height: 120px;
+    width: 180px;
+    background-size: 180px 120px;
+    margin-top: 30px;
     display: block;
     font-size: 0;
     position: absolute;
@@ -303,8 +318,8 @@ a#ogp_logo_mobile {
 .main_menu .language_nav a {font-family: 'Roboto', sans-serif;text-transform: uppercase;font-size: 13px;color: #707070;margin-right: 5px}
 .main_menu .language_nav a:hover, .main_menu .language_nav a.active { color:#5DBFDD;border-bottom: 2px solid #5DBFDD;text-decoration: none;}
 
-.main_menu .date_info { margin-bottom: 20px;}
-.main_menu .date_info h3 {color: #707070;}
+.main_menu .date_info { margin-bottom: 20px; margin-right: 20px;}
+.main_menu .date_info h3 {color: #ef59a1; font-weight: 700;}
 
 .main_menu nav#main_nav ul .submenu {padding:10px 0 0 0px; margin-bottom: 0px; display: none;}
 .main_menu nav#main_nav ul .show_submenu {display: block;}
@@ -330,14 +345,13 @@ a#ogp_logo_mobile {
    ========================================================================== */
 footer {
     float: left;
-    background:#252626;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    background:#efa4c7;
+    padding-top: 10px;
     width:75%;
     margin-left:272px;
     margin-right:80px;
+    margin-top: -4%;
     overflow: hidden;
-    border-top: 3px solid #5dbfdd;
 }
 footer ul { margin: 0;float: left; width: 50%}
 footer ul li  { display: inline-block; width: 100%; color: #707070; margin:10px 0}
@@ -349,10 +363,10 @@ footer ul li a:hover > i  {color: #fff}
 .twitter_feed { float: right; width: 45%; margin-right: 5%;}
 
 .twitter_feed .tweet { width: 100%; display: inline-block;margin: 10px 0}
-.twitter_feed h3 { color: #5DBFDD;font-weight: normal; margin: 0px 0 15px 0;font-size: 20px;}
+.twitter_feed h3 { color: white;font-weight: normal; margin: 0px 0 15px 0;font-size: 20px;}
 .twitter_feed h3 i {margin-right: 20px;}
-.twitter_feed p { color: #707070;font-size: 11px; margin: 0}
-.twitter_feed a { color: #5DBFDD;font-size: 11px;}
+.twitter_feed p { color: white;font-size: 11px; margin: 0}
+.twitter_feed a { color: white;font-size: 11px;}
 .twitter_feed small {font-size: 10px;color:#707070}
 
 @media (max-width: 640px) {
@@ -385,18 +399,20 @@ footer ul li a:hover > i  {color: #fff}
 /* ==========================================================================
    Home Page  styles
    ========================================================================== */
-#home_page {
-    padding-top: 120px;
-}
 #home_page #intro_txt, #speakers, #partners { width: 100%; display: inline-block; margin:0 0 55px 0}
 #home_page #intro_txt figure { float: left;}
-#home_page #intro_txt figure img { width: 100%}
-#home_page #intro_txt .mt { font-family: 'Roboto', sans-serif;float: left; width: 60%; margin-left: 50px; margin-top: 55px;}
+#home_page #intro_txt figure img {    
+    max-width: 700px;
+    margin-top: 5%;
+    margin: 5%;
+}
+#home_page #intro_txt .mt { font-family: 'Roboto', sans-serif; margin-right: 25px; float: left;}
 #home_page #intro_txt .mt b {font-size: 18px;}
+#home_page #intro_txt .mt p,  #home_page #intro_txt .mt li {font-size: 15px;}
 
 @media (min-width: 768px) {
-    #home_page #partners .partner, #home_page #orgnices .organce  { width: 13%;display: inline-block;margin-right:150px; margin-bottom: 50px;}
-    #orgnices .organce figure img { width: 150%;}
+    #home_page #partners .partner, #home_page #orgnices .organce  { width: 13%;display: inline-block;margin-right:150px;}
+    #orgnices .organce figure img { width: 100%;}
 }
 
 @media (min-width: 1024px) {
@@ -413,11 +429,11 @@ footer ul li a:hover > i  {color: #fff}
     }
     #home_page #intro_txt figure {
         float: none;
-        width: 30%;
+        width: 100%;
         margin: 30px auto;
     }
     #home_page #partners .partner, #home_page #orgnices .organce { width: 40%; display: inline-block; margin: 10px 0}
-    #home_page figure img { width: 100%; }
+    #home_page figure img { width: 80%; }
 
 }
 
@@ -456,7 +472,7 @@ footer ul li a:hover > i  {color: #fff}
    ========================================================================== */
 #montevideo_page .title { width: 100%; display: inline-block; margin: 60px 0}
 #montevideo_page .title h2 {color: #231F20;font-size: 18px;font-weight: bold;float: left;}
-#montevideo_page .title p {color: #231F20;font-size: 15px; width: 30%; margin-left: 30px;padding-top: 20px; float: left;}
+#montevideo_page .title p {color: #231F20;font-size: 15px; margin-left: 30px;padding-top: 20px; float: left;}
 #montevideo_page .travel { width: 100%; display: inline-block;text-align: center;}
 #montevideo_page .travel .cta { width: 33%; display: inline-block;text-align:center;
                               }
@@ -518,8 +534,9 @@ footer ul li a:hover > i  {color: #fff}
    Sedes Page styles
    ========================================================================== */
 #sedes_page {
-    position: relative;
     margin-left: 187px;
+    margin-bottom: 60px;
+    background-color: transparent;
 }
 
 #sedes_page .map_info_sidebar {
@@ -563,7 +580,7 @@ footer ul li a:hover > i  {color: #fff}
    Evento  styles
    ========================================================================== */
 
-#evento_page {padding-top: 100px;padding-right: 80px}
+#evento_page {padding-right: 80px}
 #evento_page h3 {color: #5DBFDD;font-size: 18px;margin: 0 0 30px 0}
 #evento_page h3:before { content: ''; height: 5px; background:#5DBFDD; width: 20%;position: absolute;top: -15px;}
 
@@ -596,7 +613,6 @@ footer ul li a:hover > i  {color: #fff}
 /* ==========================================================================
    Contact Form  styles
    ========================================================================== */
-#contact_page { padding-top: 100px;}
 #contact_page .title { width: 100%; display: inline-block;}
 #contact_page .title h2 {float: left;font-size: 18px; color: #5DBFDD; text-transform: uppercase;line-height: 80px;}
 #contact_page .title h2:before {content: ''; width: 60%;height: 6px; background: #5DBFDD;display: block;}
@@ -633,11 +649,6 @@ form .input-container {
     border-bottom: 2px solid #23527c;
 }
 
-form .textarea-container {
-    position: relative;
-    width: 100%;
-    float: left;
-}
 form .textarea-container label { position: relative; margin-bottom: 32px;}
 form .textarea-container:before {
 }
@@ -698,7 +709,7 @@ form .input-container label {
     -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
     animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
-form .input-container input:focus + label, form .input-container input:valid + label {
+form .input-container input:focus + label, form .input-container input.empty + label {
                                                -webkit-animation-name: labelOut;
                                                animation-name: labelOut;
                                                -webkit-animation-duration: 0.35s;
@@ -931,7 +942,6 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
     color: #fff;
 }
 
-#form {padding-top: 120px;}
 #form h3 {
 
     color: #5DBFDD;
@@ -1057,3 +1067,45 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
         max-width: 270px;
     }
 }
+.lbl{
+    font-weight: normal;
+    color: #23527c;
+    padding-bottom: 11px;
+    margin-top: 20px;
+    letter-spacing: 0.012em;
+}
+.radio-inline, .checkbox{
+    margin-left: 10px !important;
+}
+
+#thematic{
+    margin-bottom: 50px;
+    text-align: left;
+}
+#colaborator_area{
+    text-align: left;    
+}
+
+.message{
+    font-weight: bold;   
+    font-size: 20px;
+    margin-top: 20%;
+    margin-bottom: 30px;
+}
+
+#success{
+    margin-top: 20%;
+    margin-bottom: 30px;
+}
+
+.inscription{    
+    margin-bottom: 50px;
+    text-align: left;
+    margin-top: 10px;
+    border: 2px solid #5ebfdd;
+    padding: 15px;
+}
+.inscription h1{  
+    color: #5DBFDD;
+    margin: 0 0 30px 0;
+} 

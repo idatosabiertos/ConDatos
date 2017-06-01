@@ -28,7 +28,7 @@ var countDown = function(theSelector, time){
   document.querySelector(theSelector).innerHTML = output;
 };
 
-var Time = "5/31/2016 18:25:00";
+var Time = "8/23/2017 18:25:00";
 setInterval(function(){
   countDown(".jcountTimer", Time);
 }, 1000);

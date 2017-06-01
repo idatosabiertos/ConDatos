@@ -1,15 +1,13 @@
 layout:
-  title: Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto
-  description: Llamado a ponentes, temas de interés y becas del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto en Montevideo.
-  title1: ENCUENTRO REGIONAL
-  title2: DE LAS AMÉRICAS DE
-  title3: LA ALIANZA PARA EL
-  title4: GOBIERNO ABIERTO
-  date1: 31.05 al 02.06
-  date2: DE 2016
-  date3: MONTEVIDEO
-  date4: URUGUAY
-  language: English
+  title: Conferencia Regional de Datos Abiertos 
+  description: Llamado a ponentes, temas de interés y becas de Abrelatam-Condatos
+  title1: CONFERENCIA REGIONAL
+  title2: DE DATOS ABIERTOS
+  title3: CONDATOS
+  date1: 23.08 al 25.08
+  date2: DE 2017
+  date3: SAN JOSE DE COSTA RICA
+  date4: COSTA RICA
   language2: Español
   register: Inscripción
   goback: Volver al inicio
@@ -18,45 +16,97 @@ layout:
 
 index:
   title: Llamado a ponentes, temas de interés y solicitud de becas
-  content1: El Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016 se llevará a cabo en la ciudad de Montevideo y se esperan alrededor de 500 participantes de gobierno, sociedad civil, medios y empresas.
-  content2: En esta edición y en línea con los principios de cooperación y participación que impulsan a la AGA, buscamos de los participantes del evento aportes para el armado de una agenda temática que refleje los intereses y prioridades de la comunidad de Gobierno Abierto regional. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano.
-  content3: Para ésto, en lugar de un llamado a ponencias tradicional, invitamos a todos los interesados en asistir a completar el siguiente formulario, seleccionar sus temas de interés y/o agregar los que les resulten relevantes, así como postularse explicitando sus posibles aportes en hasta tres temas.
-  content4: Buscamos crear una agenda más dinámica y colaborativa, experimentando con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicita posibles aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
-  content5: El registro para el evento se abrirá posteriormente, por lo que invitamos a todos a participar de este llamado, aún si no tienen certeza absoluta de su asistencia y con la tranquilidad de que no es obligatorio para el registro posterior.
-  fellows: Becarios
+  content1: "<p>AbreLatam y ConDatos son los eventos en los cuales la comunidad de sociedad civil, gobierno, academia, tecnologías, empresas o que por iniciativa individual, trabajan por los datos abiertos en América Latina y el Caribe, se encuentran para entablar un diálogo sobre el estado e impacto de los procesos en el campo, en la región.
+			</p><p>ConDatos es una conferencia que reúne a los expertos de instituciones públicas, sector privado y de la sociedad civil para presentar, debatir, discutir y proponer sobre aspectos claves en materia de políticas de datos abiertos, gobierno abierto, innovación cívica, retos públicos, privacidad y nuevas formas de trabajo con datos abiertos.</p>"
+  content2: "En esta edición ponemos especial énfasis en los siguientes temas:"
+  content3: " <ul><li>Capacidades para la captura, transformación, liberación y uso de datos.</li>
+    					<li>Impacto local y regional a través del uso de datos abiertos relevantes.</li>
+    					<li>Sensibilización a los actores del ecosistema sobre datos abiertos.</li>
+    					<li>Datos abiertos para la prevención y lucha contra la corrupción.</li>
+    					<li>Emprendimiento con datos abiertos y su sostenibilidad.</li>
+    					<li>Objetivos de desarrollo sostenible y datos abiertos.</li>
+    					<li>Datos abiertos para salvaguardar los derechos humanos.</li>
+    					<li>Infraestructura para la promoción de los datos abiertos.</li>
+    					<li>Seguridad, privacidad y datos abiertos.</li>
+    					<li>Datos abiertos en gobernanza de asuntos fiscales y extractivas.</li>
+    					<li>Datos, algoritmos y tecnología.</li>
+    					<li>Periodismo de datos para reportar y monitorear.</li>
+    					<li>Tecnología cívica y su impacto social.</li>
+    					<li>Uso de datos y tecnología cívica para apoyar la igualdad de género</li></ul>"
   errors: Errores
-  organizers: Organizadores
+  organizers: Organizan
+  co_organizers: Co-Organizan
   interest: Declarado de interés
   transmission: Mira la transmisión del evento en vivo
-
-speakers:
-  title: Conocé a los expositores
 
 sponsors:
   support: Apoyan
   colaborate: Colaboran
+  sponsor: Patrocinan
 
 form:
-  data: Tus datos
+  inscription: Inscripción
+  process_title: "La participación en <strong>Abrelatam-Condatos</strong> requiere de un proceso de inscripción. Se solicita la colaboración de todas las personas que deseen asistir, cumpliendo lo siguiente:"
+  process: "<ol><li>Llenar el formulario de pre-inscripción que encontrará a continuación.</li><li>Esperar respuesta de aceptación e instrucciones para la confirmación de asistencia.</li><li>Confirmación de participación, por la vía que les será debidamente comunicada.</li></ol><p>El evento es gratuito y cubrirá los almuerzos de los tres días. Las personas participantes deben asumir los costos de transporte y hospedaje y otros tiempos de alimentación, hasta y en la ciudad de San José. Se dispone de fondos limitados para apoyar a algunas personas en estos dos rubros, por lo que si usted lo requiere, deberá indicarlo en las opciones indicadas. La solicitud de beca, no garantiza su otorgamiento.</p>"
+  process_dates: "<u>Fechas importantes:</u> <ul><li><strong>Pre-inscripción: </strong>29 de Mayo al 29 de Junio de 2017.</li><li><strong>Selección de personas becadas: </strong>30 de Junio al 10 de Julio.</li><li><strong>Comunicación de resultados de becas: </strong> 11 al 15 de Julio.</li><li><strong>Confirmación de participación: </strong>16 de Julio al 16 de Agosto.</li></ul>"
+  data: Datos Personales
   name: Nombre
+  surname: Apellidos
+  gender: Género
+  gender_female: Femenino
+  gender_male: Masculino
+  gender_other: Otro
+  gender_none: Prefiero no indicarlo
   organization: Organización
+  organization_type: Tipo de organización  
+  organization_role: ¿Cuál es su rol en la organización?
   email: Correo Electrónico
   sector: Sector
-  government: Gobierno
-  society: Sociedad Civil
-  police_academy: Academia
-  foundation: Fundación/Donante
-  think_tank: Think Tank
-  multilateral: Multilateral
-  private: Sector Privado
+  particpated_before: ¿Ha participado en otras ediciones de AbreLatam / ConDatos?
+  scholarship_before: ¿Ha recibido beca para asistir a otras ediciones?
+  scholarship_more_than_once: ¿Ha recibido beca en más de una vez? 
+  parcipate_in: Participará en
+  participates_in_representation: ¿Participa en representación de alguna organización/institución?
+  yep: "Si"
+  nop: "No"
+  financial_support: Requiere apoyo financiero para
+  plain_ticket: Tiquetes aéreos 
+  lodgment: Hospedaje
+  financial_support_note: "NOTA: Acepto que en caso de obtener una beca es posible que deba compartir habitación. Tiquetes aéreos + hospedaje"
+  thematic: Seleccione, de las siguientes temáticas, las tres que más le interesaría que se aborden en el evento
+  thematic_1: Capacidades para la captura, transformación, liberación y uso de datos
+  thematic_2: Impacto local y regional a través del uso de datos abiertos relevantes
+  thematic_3: Sensibilización a los actores del ecosistema sobre datos abiertos
+  thematic_4: Datos abiertos para la prevención y lucha contra la corrupción
+  thematic_5: Emprendimiento con datos abiertos y su sostenibilidad
+  thematic_6: Objetivos de desarrollo sostenible y datos abiertos
+  thematic_7: Datos abiertos para salvaguardar los derechos humanos
+  thematic_8: Infraestructura para la promoción de los datos abiertos
+  thematic_9: Seguridad, privacidad y datos abiertos
+  thematic_10: Datos abiertos en gobernanza de asuntos fiscales, extractivas, etc.
+  thematic_11: Datos, algoritmos y tecnología que constituyen riesgos para la habilidad de organización de la sociedad civil y la privacidad 
+  thematic_12: Periodismo de datos para reportar y monitorear
+  open_data_problem: ¿Qué problemática enfrenta su país/región/comunidad/organización, a la cual quisiera encontrar una solución que involucre el uso de datos abiertos? 
+  public_institution: Institución pública
+  civil_society_org: Organización de sociedad civil
+  cooperation_org: Organismo de cooperación
+  company: Empresa
+  media: Medio de comunicación
+  academic_institution: Institución académica
+  other_type: Otro
   country: País
+  country_origin: Nacionalidad
+  country_residence: País de Residencia
+  job: ¿A qué se dedica?
+  open_data_usage: ¿Utiliza datos abiertos para trabajo, investigación o activismo?
+  open_data_usage_tooltip: "Favor comentar acerca de su relación con el tema de  datos abiertos: el uso que hace, en qué proyectos, cuál es su especialidad, etc. (máximo 250 palabras)"
   mandatory: "* Campos obligatorios"
-  unconference: Día de la Sociedad Civil
-  unconference_info: El <b>31/5 de 8:30 a 18:00</b> en <a href="http://ogpmontevideo.uy/sedes">Casona Mauá</a> se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles.
+  unconference: Abrelatam
+  unconference_info: El <b>23/8 de 8:30 a 18:00</b> en <a href="http://ogpmontevideo.uy/sedes">Casona Mauá</a> AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más Puedes conocer mas sobre Abrelatam en <a href="http://www.abrelatam.org</a>
   join_unconference: Deseo participar de la desconferencia en el Día de la Sociedad Civil
   give_unconference: "¿Qué te gustaría aportar a la desconferencia? <span>(300 palabras)</span>"
-  encounter_third_kind: Encuentro Regional de las Américas
-  encounter_third_kind_info: Los días 1 y 2/6 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.
+  encounter_third_kind: Condatos
+  encounter_third_kind_info: Los días 24 y 25/8 se llevará a cabo la conferencia, con un programa basado en las temáticas que se propongan en éste proceso de inscripción y con las personas que se ofrezcan a través del presente llamado.
   join_encounter: Deseo participar de la conferencia del Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto para 2016
   stuff_interested: Temas de mi interés** <span>(seleccionar hasta 3)</span>
   fellows_title: Solicitud de Becas
@@ -68,183 +118,91 @@ form:
   vote_me: Deseo postularme como ponente o facilitador para sesiones sobre temas de mi interés***
   linkedin: "Enlace a perfil de LinkedIn o CV:"
   link_here: Enlace aquí
-  topics: "** Los temas propuestos serán compartidos para que otros asistentes puedan elegirlos, agradecemos no generar duplicados u opciones muy similares. Como hilo conductor, desarrollaremos la idea trabajada en la Cumbre Global de México de los Objetivos de Desarrollo Sostenible post-2015, enfocándonos en cómo el Gobierno Abierto puede aportar a su impulso en la región, desde la óptica particular del desarrollo humano."
-  books_are_good: "*** Recomendamos leer la sección de este sitio especificando el proceso y criterios de selección antes de postularse. Experiencia, proyectos vinculados, historias, experiencias y aprendizajes valiosos para compartir serán tomados en cuenta."
-  termos: Términos y condiciones
-  termos_content: La organización no compartirá los datos proporcionados con nadie, ni enviará mensajes de correo no relacionados a la organización del evento. El evento contará con un registro fotográfico y de video que puede ser utilizado en posteriores materiales promocionales y los nombres de los ponentes y facilitadores, así como su imagen estarán disponibles públicamente en la web del evento.
-  email_organization: "Acepto recibir correos de la organización relacionados con el evento*"
-  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento****"
-  shy: "**** Si no está de acuerdo con ésta condición, por favor contacte a la organización."
   finish_her: Finalizar
   unconference_limit: Por tratarse de un evento con cupos limitados, los usuarios recibirán una confirmación de su inscripción a la desconferencia.
   closed: Las inscripciones online están cerradas, pero es posible registrarse personalmente en la sede de la conferencia.
-
-criteria:
-  title: Criterios de selección
-  title2: Ponentes y facilitadores
-  content1: "En el formulario de llamado a ponentes, temas de interés y solicitud de becas invitamos a que cada asistente cuente al comité académico cuál podría ser su aporte en hasta tres temas que podrían abordarse en el evento. Una vez que se cuente con la lista de temas que más interesan a los asistentes del evento, se seleccionarán a grupos de personas de entre los propuestos u otros invitados que el comité académico considere pertinentes en base a:<ul><li>Vínculo con e involucramiento en proyectos de los temas seleccionados, historias, experiencias y aprendizajes valiosos para compartir.</li><li>Diversidad de visiones, posturas y perspectivas sobre el tema.</li><li>Diversidad de países y regiones representados en la sesión.</li><li>Diversidad de sectores, actores y grupos sociales representados en la sesión.</li><li>Diversidad de género.</li></ul>"
-  content2: Los roles de facilitación se ofrecerán a personas que se hayan ofrecido a asumir tal responsabilidad, condición que también será tenida en cuenta al momento de la selección. Cualquiera de los grupos formados por sesión puede optar por compartir el rol o cambiar a al persona designada como facilitador mediante consenso.
-
-fellows:
-  title: Funding of civil society actors
-  content1: "The Articles of Governance say the following about Civil Society Participation in the Regional Meeting: The Support Unit is to fund the travel of a certain number of local civil society representatives from OGP participating countries, contingent on available resources. All steps of the process to select local civil society representatives from OGP participating countries will be made public on the OGP website."
-  content2: Civil society participation in the OGP Regional Meeting and all other outreach events is based on the principle of open invitation. Governments do not determine which civil society organizations attend from their countries, and they have no veto power. Regarding funded civil society participants at the Regional Meeting, the OGP Support Unit works with the civil society chairs to establish a transparent process to identify the most appropriate participation for each country. In addition to the OGP-funded civil society participants attending the Regional Meeting, other civil society organizations are invited using pre-defined criteria, pending availability of space as determined by the civil society chair in consultation with the other chairs.
-  title2: Criteria for determining participation and funding for civil society actors
-  content3: Civil society participation in the OGP Regional Meeting and all other outreach events is based on the principle of open invitation. If space is limited, the below criteria will be used to prioritize civil society participation. Please note IRM researchers applying for funding will be referred to the IRM team.
-  content4: The OGP budget includes funding for civil society participation. While registering, civil society actors will be asked if they need funding to attend the summit. For those indicating this need the OGP Support Unit will use the same criteria to prioritize participants. It will also reach out to other funders to see if they could facilitate participation of some of the requesters. Funded participants will be asked to play an active role at the event (i.e. organize or take part in a session). The OGP Support Unit will additionally strive to strike a geographical and gender balance and fund actors working on a diversity of open government topics.
-  content5: The Civil Society Engagement team is process lead for the below.
-  content6: "The following criteria are to be used to prioritize civil-society funding recipients:"
-  content7: "<b>Priority 1:</b> Civil society from an OGP member country belonging to the national OGP Steering Committee/core team."
-  content8: "<li>If more than one CS fits this criteria, CSE team will ask core team to decide among themselves.</li>"
-  content9: "<b>Priority 2:</b> Civil society actors active at regional/international level including those from multi-stakeholder initiatives and issue-based coalitions/networks currently working on OGP."
-  content10: "<li>The Support Unit will decide based on the relevant OGP activities such actors have employed to date (e.g. support of local processes; participation in working groups; pledges, etc.)</li>"
-  content11: "<b>Priority 3:</b> Civil society from an OGP member country that has been involved in national OGP process. The Support Unit will prioritize:"
-  content12: "<li>CSOs supporting implementation or monitoring of specific commitments</li><li>CSOs monitoring the overall OGP process</li><li>CSOs working closely with the core team and/or lined-up to join core team</li>"
-  content13: "<b>Priority 4:</b> Civil society from OGP eligible – non-member countries that are pushing for membership. The Support Unit will prioritize:"
-  content14: "<li>CSOs leading OGP membership advocacy efforts</li>"
-  content15: "<b>Priority 5:</b> Civil society from non-eligible OGP countries that are pushing for eligibility."
-  content16: "<li>CSOs leading the eligibility advocacy efforts</li>"
-  content17: "<b>Priority 6:</b> Civil society from an OGP member country that have interest in engaging with the national OGP process. The Support Unit will prioritize:"
-  content18: "<li>CSOs with a solid track record on open government / topics intersecting with open government</li><li>CSOs national core team / government would like to bring into the process</li>"
-
-selection_process:
-  title: Proceso de Selección
-  content1: Está en manos del Comité Organizador, conformado por representantes del gobierno de Uruguay (AGESIC), de la sociedad civil (Red de Gobierno Abierto) y la Unidad de Apoyo de AGA, que contará con un Comité Académico conformado especialmente para la ocasión, con apoyo de la academia.
-  content2: "Las fechas clave a tener en cuenta son:\n<ul><li>Martes 1 de marzo - <strong>Llamado a ponentes, temas de interés y solicitud de becas</strong></li>\n<li>Viernes 31 de marzo - <strong>Cierre del llamado a ponentes, temas de interés y solicitud de becas</strong></li>\n<li>Viernes, 1º de abril - <strong>Apertura de inscripciones</strong>\n<li>1º al 21 de abril - <strong>Deliberación del Comité Académico y armado de la agenda general</strong></li>\n<li>Viernes 22 de abril - <strong>Fecha límite de contacto con ponentes y becarios seleccionados</strong></li>\n<li>22 de abril al 20 de mayo - <strong>Co-creación de sesiones por ponentes</strong></li>\n<li>31 de mayo - <strong>Día de la Sociedad Civil</strong></li>\n<li>1 y 2 de junio - <strong>Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto</strong></li>\n</ul>"
-  content3: "Cerrado llamado a ponentes, temas de interés y solicitud de becas, el Comité académico se abocará a la tarea del armado de sesiones en la agenda <strong>de acuerdo a los temas más propuestos y los temas prioritarios para OGP</strong>, así como los <strong>grupos de ponentes, liderados cada uno por un facilitador que desarrollarán esas sesiones</strong>."
-  content4: "Los ponentes y facilitadores seleccionados serán contactados por correo electrónico antes del 22 de abril y contarán con tres días hábiles para confirmar su participación, incluyendo aquellos que requiriesen asistencia para transporte y hospedaje. Quienes acepten recibirán detalles adicionales sobre el armado de sesiones, incluyendo puntos de contacto para asuntos de contenido y logística. El resultado de la selección será publicado en el sitio (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) una vez confirmada la totalidad de los ponentes y facilitadores. A través de ésta, el público podrá hacer llegar sugerencias sobre el tema o la sesión al facilitador, ampliando al máximo la posibilidad de participación de los asistentes en la agenda."
-  content5: El facilitador de cada sesión responde por el armado de la misma ante el comité académico y tiene la responsabilidad de hacer llegar una propuesta co-creada con el resto de los ponentes al comité antes del 20 de mayo. El comité académico sugerirá a los facilitadores una serie de formatos posibles para las sesiones, sin perjuicio de que éstos propongan otras. Se insistirá especialmente en que las sesiones fomenten el diálogo más que la exposición, el intercambio de ideas entre ponentes y con el público, así como la participación externa por medio de preguntas, formatos interactivos o uso de herramientas en línea.
+  website: Sitio web
+  facebook: Facebook
+  twitter: Twitter
+  instagram: Instagram
+  github: Github
+  extra: Extra
+  proposals_volunteering: Propuestas y Voluntariado
+  participate_as_colaborator: ¿Tiene interés en realizar trabajo voluntario durante el evento?
+  colaborator_area: ¿En qué área de trabajo podría apoyar como voluntario/a?
+  colaborator_area_1: Logística y organización
+  colaborator_area_2: Moderación
+  colaborator_area_3: Facilitación de espacios de discusión
+  colaborator_area_4: Acompañamiento a participantes que asisten por primera vez
+  colaborator_area_5: Otra
+  has_proposition: ¿Tiene alguna experiencia o propuesta temática que le gustaría compartir durante las actividades de contenido?
+  title: Título
+  summary: Resumen de la propuesta.
+  why_include: ¿Por qué debería de estar esta propuesta en el evento?
+  others_needed: ¿Requiere de la participación de otras personas?
+  others_needed_tooltip: Indique el nombre, organización de cada una de las personas sugeridas y sus referencias en redes sociales
+  require_one: Seleccione al menos una opción
+  require_three: Seleccione 3 opciones
+  disclaimer_title: Protección de datos
+  disclaimer: "Los datos que nos proporcione en este formulario no serán vendidos, ni compartidos nunca con terceros. En aras de su confidencialidad, solamente podrán ser consultados por la persona a cuyos datos se refiere. Se recolectan con el fin de conocer a las personas y organizaciones relacionadas con el evento Abrelatam-Condatos y comunicarnos con ellas. La negativa a suministrarlos nos impedirá comunicarnos adecuadamente. Al llenar este formulario consiente en suministrar estos datos solicitados. En Costa Rica, le asisten los derechos de la ley 8968, Ley de Protección de la Persona frente al tratamiento de sus datos personales. Responsable de la base: Comisión organizadora Abrelatam-Condatos <a href=\"mailto:abrelatamcondatos@gmail.com\" target=\"_top\">abrelatamcondatos@gmail.com</a>"
 
 thanks:
   title: Muchas gracias por completar el formulario
-  content: "Los datos fueron enviados correctamente. Las novedades del evento estarán disponibles en este sitio web (<a href=\"http://ogpmontevideo.uy\">ogpmontevideo.uy</a>) e informaremos de fechas clave a través de correo electrónico."
-  goodbye: "¡Nos vemos en Montevideo!"
-
-interests:
-  innovation: Innovación en el sector público
-  cooperation: Cooperación gobierno-sociedad civil
-  technology: Tecnología para la gobernanza
-  open_parliament: Parlamentos Abiertos
-  open_justice: Justicia Abierta
-  mark_zuckerberg: Privacidad y vigilancia
-  public_policy: Política pública
-  docs: Documentación y archivo
-  public_designations: Designaciones públicas
-  public_purchases: Compras públicas
-  public_contracts: Contrataciones Públicas
-  subnational_governments: Gobiernos subnacionales
-  aga_experience: Experiencias en AGA
-  national_plans: Planes de acción nacionales
-  dialog_mechas: Mecanismos de diálogo permanente
-  opendata_development: Datos abiertos para el desarrollo
-  opendata_cities: Datos abiertos para ciudades
-  opendata_environment: Datos abiertos para el medio ambiente y el cambio climático
-  opendata_corruption: Datos abiertos contra la corrupción
-  natural_resources: Gobernanza de recursos naturales
-  energy: Energía
-  extractive_industries: Industrias extractivas
-  poverty: Reducción de la pobreza
-  food: Seguridad alimenticia
-  productivity: Democratización de la productividad
-  public_health: Salud pública
-  decent_job: Empleo digno
-  quality_education: Educación de calidad
-  equality: Igualdad
-  decent_housing: Vivienda digna
-  gender_equality: Igualdad de género
-  urban_development: Desarrollo urbano
-  rural_development: Desarrollo rural
-  sustainable_transport: Transporte sostenible
-  social_inclusion: Inclusión social
-  public_safety: Seguridad pública y acceso a la justicia
-  citizen_participation: Participación ciudadana
-  integrity: Integridad y anti-corrupción
-  transparent_elections: Elecciones transparentes
-  innovation_labs: Laboratorios de innovación
-  public_information: Acceso a la Información pública
-  economic_development: Desarrollo económico
-  civic_tech: Tecnología cívica y tecnología para el desarrollo
-
-survey:
-  name: Nombre
-  organization: Organización
-  email: Correo electrónico
-  sector: Sector
-  country: País
-  empty: No puede ser vacío
-  checked: Debe estar chequeado
-  email_organization: "Acepto recibir correos de la organización relacionados con el evento"
-  register_image: "Acepto que mi imagen aparezca en el registro fotográfico y de video del evento"
-  conference_comments: ¿Qué te gustaría aportar a la conferencia?
-  unconference_comments: ¿Qué te gustaría aportar a la desconferencia?
-  max_words: Máximo 300 palabras
+  content: "Los datos fueron enviados correctamente."
+  goodbye: "¡Nos vemos en San José de Costa Rica!"
 
 agenda:
   title: Agenda
   soon: Muy pronto
 
 hqs:
-  title: Sedes
-  content1: Seleccione una de las locaciones para mayor información
+  title: Sede
+  content1: Seleccione el pin para mayor información
   address: Dirección
   activities: Actividades y fechas a realizarse
 
-maua:
-  title: Casona Mauá
-  address: Juan Carlos Gómez 1530, Montevideo, Uruguay
-  description1: Sede de la desconferencia del Día de la Sociedad Civil y el cierre del evento. Es una antigua casona de diseño ecléctico construida en la década de 1870 y residencia del Barón de Mauá (reconocido empresario e industrial brasilero).
-  description2: "Fue restaurada recientemente, recuperando buena parte de sus revestimientos, carpintería y herrería original, de factura artesanal. Se enmarca en la zona conocida como “El Bajo de Ciudad Vieja” que nuclea propuestas artísticas y culturales."
-  date0: 30 de mayo - 09:00 a 17:00hs
-  event0: Datacamp
-  date1: 31 de mayo - 08:30 a 18:00hs
-  event1: Día de la Sociedad Civil
-  date2: 2 de junio - 20:00hs
-  close: Cierre
-  apps_info: "Ver en<a href=\"http://www.openstreetmap.org/node/945602666\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Casona+Mau%C3%A1/@-34.9038895,-56.2063727,17z/data=!3m1!4b1!4m2!3m1!1s0x959f7f87432a0d69:0x9e657eb77a382898?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/casona-mau%C3%A1/51ace2a4498eb63043257ba5\" target=\"_blank\">Foursquare</a>"
-
 radisson:
-  title: Radisson Victoria Plaza
-  address: Plaza Independencia 759,Montevideo, Uruguay
-  description1: Sede central del evento, es un hotel y centro de conferencias construido originalmente en la década del 40 y con sucesivas reformas.
-  description2: Está ubicado sobre la Plaza Independencia, donde también se encuentran la Puerta de la Ciudadela, Torre Ejecutiva, Palacio Salvo y monumento y mausoleo a Artigas. De ésta plaza al este nace la Avenida 18 de Julio, principal de la ciudad de Montevideo. Hacia el oeste comienza la Ciudad Vieja con la Peatonal Sarandí, llegando hasta la escollera y el puerto de Montevideo.
-  date1: 31 de mayo
-  event1: Reunión de Puntos Focales (no abierta al público)
-  date2: 1º y 2 de junio - 08:30 a 18:40hs
-  event2: Encuentro Regional de las Américas de la Alianza para el Gobierno Abierto
-  apps_info: "Ver en<a href=\"http://www.openstreetmap.org/node/1167139189\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com.uy/maps/place/Radisson+Montevideo+Victoria+Plaza+Hotel,+Montevideo+11000/@-34.9052736,-56.2021887,17z/data=!3m1!4b1!4m2!3m1!1s0x959f802bba8814d1:0x629e593130096426?hl=es-419\" target=\"_blank\">Google Maps</a>/<a href=\"https://foursquare.com/v/radisson-victoria-plaza/4bbc71ce51b89c742a62872a\" target=\"_blank\">Foursquare</a>"
+  title: Centro Nacional de la Cultura (CENAC)
+  address: Se ubica en la antigua Fábrica Nacional de Licores (FANAL), Ave. 3 y 7, calles 11 y 15, al costado este del Parque España, San José.
+  description1: Constituye el mayor complejo cultural del país y está ubicado en lo que fueron las instalaciones de la Fábrica Nacional de Licores. Se trata de una de las edificaciones más antiguas de la capital.
+  description2: "<p>El funcionamiento de la fábrica se mantuvo en el mismo sitio hasta el año 1981, en que se habilitó un espacio más adecuado y seguro en el cantón de Grecia, provincia de Alajuela.</p><p>El Centro se abrió para promover el arte y la cultura en todas sus manifestaciones y la creación de espacios para el desarrollo</p>"
+  date1: AbreLatam
+  event1: 23 de Agosto
+  date2: ConDatos
+  event2: 24 y 25 de Agosto 
+  apps_info: "Ver en<a href=\"https://www.openstreetmap.org/#map=19/9.93576/-84.07249\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com/maps/place/Centro+Nacional+de+la+Cultura/@9.9357459,-84.0747564,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0e363abf205c7:0xb88620bc0cf731e3!8m2!3d9.9357459!4d-84.0725677\" target=\"_blank\">Google Maps</a>"
 
 event:
   title: Evento
-  title_0: Acerca del Datacamp
-  content0: "El 30 de mayo, previo al comienzo oficial de las actividades del evento, contaremos con este espacio de experimentación y aprendizaje. Los participantes aprenden cómo encontrar, extraer y analizar datos públicos, usando herramientas forenses para contar mejores historias periodísticas. Brinda a los periodistas, activistas cívicos y desarrolladores un curso con las técnicas más importantes y herramientas necesarias para analizar datos públicos. También trabajan en equipos para construir nuevas aplicaciones de noticias y sitios de participación cívica que ayudan a mejorar el valor de los reportajes tradicionales. <a href=\"http://bit.ly/DatacampUY2016\" target=\"_blank\">Más información e inscripciones</a>."
-  title_1: Acerca del Día de la Sociedad Civil
-  content1: "El <strong>31 de mayo  de 8:30 a 18:00</strong> se realizará una desconferencia organizada por sociedad civil, para tratar los temas que involucran a éste sector. Una desconferencia implica una agenda abierta co-creada por los participantes en el momento y sesiones de intercambio de conocimiento entre pares, lideradas por facilitadores. Aunque no es un evento exclusivo para representantes de sociedad civil, éstos tendrán preferencia en la selección de los 150 cupos disponibles."
+  title_1: Acerca de Abrelatam
+  content1: "El <strong>23 de Agosto</strong> se realizará Abrelatam. <p>AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más.</p>" 
   content2: "En una desconferencia, se invierte la dinámica de un orador y muchos oyentes, para hacer de todos los participantes a su vez oradores y oyentes, de forma simultánea. En múltiples sesiones simultáneas con un número limitado de personas, se fomenta un diálogo según los temas recogidos de la agenda común.<br><br>Las sesiones cuentan con un facilitador que asegura que el las personas tengan iguales oportunidades de escuchar y ser escuchadas y con una persona voluntaria para tomar notas que serán compartidas con el resto de los participantes y cualquier persona"
-  content3: "interesada en la web. En las sesiones no se utilizan diapositivas, ni aparatos electrónicos, incluyendo celulares y laptops (con la excepción de la persona que toma las notas).<br><br>El objetivo de la desconferencia es compartir conocimiento entre pares, y las dinámicas así lo fomentan. Facilitadores guiarán a los participantes a lo largo del día, pero en última instancia son los propios asistentes quienes hacen al evento y su contenido.
-El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes."
-  title2: Acerca del Encuentro Regional de las Américas
-  description1: Los días 1 y 2 de junio se llevará a cabo la conferencia, con un programa basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
+  content3: "En las sesiones no se utilizan diapositivas, ni aparatos electrónicos, incluyendo celulares y laptops (con la excepción de la persona que toma las notas).<br><br>El objetivo de la desconferencia es compartir conocimiento entre pares, y las dinámicas así lo fomentan. Facilitadores guiarán a los participantes a lo largo del día, pero en última instancia son los propios asistentes quienes hacen al evento y su contenido.
+             El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes. Puedes conocer más sobre Abrelatam en www.abrelatam.org"
+  title2: Acerca de Condatos
+  description1: Los días 24 y 25 de agosto se llevará a cabo la conferencia, con un programa basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
   description2: La agenda, en búsqueda de ser más dinámica y colaborativa, experimenta con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicitó en el llamado aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
-  description3: "El evento contará con tres carriles de contenido:"
-  title3: Presentaciones y sesiones en el salón principal
-  description4: Las mismas contarán con traducción simultánea y buscarán formatos que fomenten el diálogo entre los participantes y con el público presente.
-  title4: Charlas relámpago en el área de livings
-  description5: Presentaciones breves de todos los países miembros de AGA de la región, mediante sus representantes de Gobierno, Sociedad Civil y el Mecanismo de Revisión Independiente en cada país. También se contará con una serie de presentaciones breves de iniciativas y proyectos regionales.
-  title5: Talleres en el aula
-  description6: Con más de dos horas de duración y expertos de primer nivel, éstos talleres buscan fomentar el aprendizaje en profundidad y aplicación práctica de conceptos para distintos tipos de público de niveles bajo, medio y alto de experiencia en el tema.
-  description7: En términos más generales, este encuentro quiere también reconocer el valor de los intercambios interpersonales y las “charlas de pasillo”, por lo que da espacios entre sesiones para interacción, facilitará materiales para el intercambio de ideas en las áreas comunes (rotafolios, marcadores, etc.) e invita a usar el área de livings para encuentros y reuniones durante el evento.
-  coffee: El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes.
-  title6: "Acerca de la Reunión<br>de Puntos Focales<br>(no abierta al público)"
-  description8: El 31 de mayo en seguimiento a experiencias exitosas en México, Georgia y Tanzania se realizará una conferencia para puntos de contacto de gobierno de los países de la región que participan en la Alianza para el Gobierno Abierto.
-  title7: "Esta conferencia buscará los siguientes objetivos:"
-  description9: A través de discusiones facilitadas y sesiones participativas y dinámicas, los participantes tendrán la oportunidad de expresar reflexiones y aprender sobre prácticas innovadoras en temas relacionados con los procesos de OGP.
-  title8: Impulsar mejores prácticas.
-  description10: A lo largo del día los puntos de contacto tendrán la oportunidad de comparar sus procesos con otros países en la región y así identificar buenas prácticas y soluciones a problemas comunes.
-  title9: Oportunidad de generar redes de colaboración.
-  description11: Lo cual permitirá a los reformadores establecer relaciones de trabajo sólidas e identificar oportunidades nuevas de colaboración y alianzas para temas clave.
+  description3: "Por este motivo te sugerimos que al presentar tu idea consideres algunos de estos formatos o nos propongas uno nuevo:"
+  title3: Speed Story Telling
+  description4: Presentación de experiencias donde el principal objetivo es narrar la historia de una solución, el moderador realizará la presentación e introducción a cada uno de los panelistas de la sesión en diez minutos; cada uno de los panelistas contará con un tiempo de diez minutos para narrar la historia de su experiencia. Al finalizar las presentaciones, el moderador coordinará un espacio de discusión con la audiencia de diez minutos y finalizará la sesión con el planteamiento del reto de esta sesión cinco minutos.
+  title4: Como se hace en 10 pasos
+  description5: En este espacio, el moderador presentará en diez minutos el objetivo de la sesión y la metodología a utilizar, dándole inicio a cada uno de los panelistas, quienes en diez minutos contarán sus recomendaciones de calidad, señalando las 10 lecciones aprendidas que pueden ser replicadas por los asistentes. Al finalizar la intervención de los panelistas, el moderador recogerá las 10 buenas prácticas comunes entre los panelistas y abrirá sesión de discusión con la audiencia.
+  title5: Talleres
+  description6: Sesiones en pequeños grupos con resultados de construcción colectiva.
+  title_6: Speed Networking
+  description_6: Colocar unas 5 estaciones por las cuales grupos de hasta 5 personas vayan pasando por cada una para conocer sobre un proyecto o el trabajo de una organización en específico. Debe ser un evento bien controlado.
+  title_7: Elevator pitch sesión
+  description_7: Espacio para elevator pitch de 3-5 minutos para personas que deseen encontrar colaboración para resolver un problema.
+  title_8: Área de exposición
+  description_8: Puestos permanentes de exposición de servicios y productos.
+  title_9: Laboratorios
+  description_9: Espacios para la construcción colectiva de soluciones a problemas específicos, utilizando datos abiertos para su desarrollo.
+  title_10: Café charlado o conversatorio
+  description_10: Es un espacio informal en el que los expertos seleccionados y un moderado se reúnen a compartir sus puntos de vista sobre un tema específico, y disfrutan de una taza de café, durante la charla con la audiencia. En este espacio, el moderador abre la charla contando en diez minutos los panelistas de la sesión, el objetivo de la misma y la metodología a utilizar. Durante cuarenta minutos se realizarán sesiones de preguntas orientadas al rol de las instituciones en la construcción y dinamización de la iniciativa de datos abiertos en la región.
+
 
 montevideo:
-  title: Montevideo
+  title: San José de Costa Rica
   subtitle: Aqui podrás encontrar toda la información necesaria para tu estadía
   travel: Viaje
   earth: Tierra
@@ -253,9 +211,9 @@ montevideo:
   visas: "Información sobre <a href=\"#\" id=\"visa\">VISAS</a>"
   transport: Transporte
   bus: Ómnibus
-  taxi: Taxi
+  taxi: Taxi / Uber
   bike: Bici
-  accessibility: "Información sobre <a href=\"#\" id=\"accessibility\">ACCESIBILIDAD</a>"
+  vaccines: "<a href=\"#\" id=\"vaccines\">VACUNAS</a>"
   airport: Desde el aeropuerto
   other: Otros
   activity: Actividades
@@ -268,83 +226,27 @@ montevideo:
   change: Cambio
   security: Seguridad
   tip: Propina
-  electricity: Corriente y enchufes
-  change_info: "La cotización oficial está disponible en la web del <a href=\"http://bcu.gub.uy/\">Banco Central</a> pero se trata de un precio promedio, no el que se consigue en las casas de cambio. Una buena guía del mejor cambio disponible en el mercado es la cotización del <a href=\"http://www.brou.com.uy/\">Banco República</a>. El cambio en Uruguay es libre y hay muchas casas de cambio, además de que se puede cambiar en redes de pagos y otros lugares. No es necesario mostrar documentos ni firmar papeles para cambiar montos pequeños de dinero. La cotización está publicada en el exterior de cada local y se puede pedir una mejora, especialmente si se cambian cantidades de más de U$S100. Existe una casa de cambio en el aeropuerto que no tiene la mejor cotización del mercado."
-  security_info: Montevideo es una ciudad segura pero igualmente no conviene descuidarse. Las precauciones básicas de no dejar pertenencias sin atender o exhibir innecesariamente objetos de valor deberían ser más que suficientes. La zona del evento cuenta con especial vigilancia incluyendo videovigilancia. Ante cualquier emergencia se puede llamar al teléfono 911 y existe un cuerpo especializado de Policía Turística que actúa en la zona de Ciudad Vieja y se identifica con camperas de color amarillo.
-  tip_info: "La propina en Uruguay es costumbre en bares, restoranes, deliveries de comida y taxis, pero opcional. La cantidad de propina refleja la satisfacción con el servicio, no superando por lo general el 10% de lo gastado."
-  electricity_info: "Uruguay tiene 220v de corriente y usa enchufes del tipo 'tres en línea' o Tipo L. Sin embargo, también se pueden encontrar en ocasiones los del tipo 'Schuko' Europeo (Tipo E) o enchufes multi-conexión."
-
+  change_info: "El tipo de cambio oscila en algunos colones más o menos diariamente, pero está cerca del promedio de 590 colones por dólar estadounidense. Puede consultarlo diariamente <a href=\"http://indicadoreseconomicos.bccr.fi.cr/indicadoreseconomicos/cuadros/frmvercatcuadro.aspx?CodCuadro=400\">aquí</a>.<p>En el aeropuerto encontrará algunos puestos de cambio y oficinas bancarias. También en los hoteles prestan este servicio. Sin embargo, si cuenta con el tiempo suficiente, le recomendamos utilizar una agencia bancaria, las cuales tienen horarios en diferentes puntos de la ciudad durante todos los días de la semana  y nunca aceptar ofertas de canje en la calle.</p>"
+  security_info: "Al igual que en cualquier lugar del mundo, les recomendamos usar el sentido común con el cuido de sus pertenencias y la circulación por la calle. Procure andar en grupo y si tiene que desplazarse en la ciudad a horas avanzadas de la noche, tome un taxi. Preferiblemente, no exhiba su cámara u objetos electrónicos en la vía pública." 
+  tip_info: "En Costa Rica, la propina está incluida en todos los precios, junto con el impuesto de servicio. No se acostumbra dar montos adicionales por servicio en restaurantes, transporte u otros."
+  
 montevideo_modals:
-  earth: "La terminal <a href='http://www.trescruces.com.uy/'>Tres Cruces</a> es la principal terminal de ómnibus del país. Desde dicha terminal se contacta con destinos del Uruguay así como de Argentina, Brasil, Paraguay y Bolivia. Las frecuencias internacionales que llegan a Montevideo pueden ser consultadas en el sitio web de la terminal o en la aplicación <a href='http://www.viajeros.com/'>Viajeros!</a>, hecha en base a datos abiertos, así que muy especialmente apropiada en éste caso :)"
-  sea: "Numerosas frecuencias de buques y ferrys unen a Buenos Aires con Colonia, Carmelo y Montevideo e incluyen la posibilidad de traslado de automóviles. Las empresas <a href=\"https://www.buquebus.com\">Buquebus</a> y <a href=\"https://coloniaexpress.com/\">Colonia Express</a> llegan al puerto de Colonia y ofrecen paquetes con traslado en bus hasta Montevideo. La primera también llega a Montevideo en forma directa. La empresa <a href=\"http://www.cacciolaviajes.com/\">Cacciola hace</a> el trayecto entre Tigre y Carmelo, con paquetes que completan el tramo Buenos Aires-Montevideo por tierra."
-  air: "Al <a href=\"http://www.aeropuertodecarrasco.com.uy\">Aeropuerto Internacional de Carrasco</a> llegan las principales líneas aéreas del mundo, con vuelos regionales desde Buenos Aires, Porto Alegre, San Pablo, Río de Janeiro, Asunción, Panamá, Santiago de Chile y Lima. Además arriban vuelos internacionales de Estados Unidos y Europa. El nuevo Aeropuerto Internacional de Carrasco fue inaugurado en 2009 y es considerado uno de los más modernos y atractivos del mundo. Desde allí se tiene acceso al centro Montevideo con <a href=\"http://www.copsa.com.uy/horarios.htm\">buses (planilla de horarios)</a>, es posible contratar un <a href=\"http://www.taxisaeropuerto.com/transfer.html\">transfer</a>, tomar un <a href=\"http://www.taxisaeropuerto.com/\">taxi</a> o alquilar un auto en algunas de las rentadoras localizadas en el aeropuerto."
-  visas: "A los ciudadanos de ninguno de los países miembros de AGA en la región se les exige visado para ingresar al país, ni a la mayoría de los países de América Latina y el Caribe. La lista actualizada de los países y sus distintas exigencias, puede ser consultada en el <a href=\"https://migracion.minterior.gub.uy/index.php?option=com_content&view=article&id=1280\">sitio web de la Dirección Nacional de Migraciones</a>.<br><br>La autorización de la visa es otorgada por la Dirección Nacional de Migraciones y <b>suele tomar al menos 20 días hábiles</b> desde el momento de la solicitud de la misma. Una vez que el Consulado recibe por escrito dicha autorización está en condiciones de expedir la visa, estampándola en el pasaporte de la persona titular.<br><br>Los Consulados de la República en el exterior son los encargados de recepcionar las solicitudes de visa e informan de los requisitos para poder solicitarla. El listado de todas las oficinas consulares puede en la <a href=\"http://www.mrree.gub.uy/frontend/page?1,inicio,oficinas-consulares,O,es,0,\">web del Ministerio de Relaciones Exteriores</a>.<br><br><b>Requisitos:</b><br><li>Formulario completo y firmado</li><li>Carta invitación o reserva de hotel</li><li>Pasaporte vigente por al menos 6 meses posteriores al arribo al Uruguay</li><li>Una foto tamaño pasaporte</li><li>Reserva de viaje</li><br><br><b>Costo: US$42</b> (se cobra únicamente si la visa es otorgada)<br><br>Si usted <b>viaja con documentación de un país al que se le exige visa</b> y reside en un país <b>CON representación consular uruguaya</b>, puede ponerse en contacto con la organización para obtener una nota de invitación personalizada y dirigida a la misión en el país de residencia.<br><br>Si usted <b>viaja con documentación de un país al que se le exige visa</b> y reside en un país <b>SIN representación consular uruguaya</b>, debe ponerse en contacto con la organización, para habilitar un visado especial.<br><br>En ambos casos, al momento de contactarse con la organización incluir los siguientes datos y copias de documentación probatoria:<br><br><li>Nombre</li><li>Pasaporte</li><li>Nacionalidad</li><li>Lugar de residencia</li><li>Itinerario previsto</li>"
-  airport: "Desde el aeropuerto se tiene acceso al centro Montevideo con <a href=\"http://www.copsa.com.uy/horarios.htm\">buses (planilla de horarios)</a>, es posible contratar un <a href=\"http://www.taxisaeropuerto.com/transfer.html\">transfer</a>, tomar un <a href=\"http://www.taxisaeropuerto.com/\">taxi</a> o alquilar un auto en algunas de las rentadoras localizadas en el aeropuerto."
-  bus: "Llegar a cualquier parte de Montevideo en ómnibus es sencillo y un boleto cuesta $28 (menos de un dólar), sólo recomendamos buscar de antemano la línea o líneas que llevan al destino deseado, porque no todas las paradas cuentan con información de rutas y destinos.
-Los buses sólo se detienen a pedido, ésto es haciendo una señal levantando el brazo en la parada o presionando un botón junto a la puerta al bajarse.<br>
-<h4>Aplicaciones web</h4>
-<ul><li>
-<a href=\"http://www.montevideo.gub.uy/aplicacion/como-ir\" target='_blank'>Cómo Ir</a>  - Búsqueda de rutas y horarios</li>
-<li><a href='http://www.montevideo.gub.uy/aquehorapasa/aquehorapasa.html' target='_blank'>A qué hora pasa</a> - Consulta de horarios en una parada</li>
-<li><a href='http://www.montevideo.gub.uy/horariosSTM/' target='_blank'>Consulta de horarios de ómnibus</a> - Tabla con horarios</li></ul>
-<h4>Aplicaciones móviles:</h4>
-<ul><li>
-Cómo Ir (iOS, <a href='https://play.google.com/store/apps/details?id=uy.gub.imm.stm.mobile.comoir' target='_blank'>Android</a>)</li>
-<li><a href='http://moovitapp.com/es/' target='_blank'>Moovit</a> (iOS, Andorid, Windows Phone)</li>
-<li>STM Montevideo (<a href='https://itunes.apple.com/app/id938009980' target='_blank'>iOS</a>, <a href='https://play.google.com/store/apps/details?id=com.matungos.stm' target='_blank'>Android</a>, <a href='https://www.microsoft.com/es-es/store/apps/stm-montevideo-beta/9wzdncrdx163' target='_blank'>Windows Phone</a>)</li>
-<li><a href='https://play.google.com/store/apps/details?id=com.skyquake.nextbusmvd' target='_blank'>NextBus</a> (Android)</li>
-<li>Cutcsa (<a href='https://itunes.apple.com/uy/app/cutcsa/id973079317?mt=8' target='_blank'>iOS</a>, <a href='https://play.google.com/store/apps/details?id=com.goova.android.cutcsa' target='_blank'>Android</a>, solo una empresa)</li>
-<li><a href='https://play.google.com/store/apps/details?id=com.pisco.solobus' target='_blank'>Solo Bus</a> (Android)</li>"
-  taxi: "Los taxis en Montevideo son oficiales y seguros, se identifican con los colores blanco y amarillo o negro y amarillo. Los viajes se cobran mediante el uso de un taxímetro con una única tarifa oficial. El taxímetro puede medir en “fichas” o directamente convertir al precio. En cualquiera de los casos el taxi dispone de una tabla con los precios oficiales por cantidad de fichas disponible para el pasajero.
-<h4>Aplicaciones móviles:</h4>
-<ul>
-<li>EasyTaxi (<a href='https://app.adjust.io/5owkla?campaign=ALL_ALL_ORG_iOS&adgroup=ALL_ALL_ORG_iOS_Website&creative=Website_ALL_AUG_2015main' target='_blank'>iOS</a>, <a href='https://app.adjust.io/dogrfl?campaign=ALL_ALL_ORG_AND&adgroup=ALL_ALL_ORG_AND_Website&creative=Website_ALL_AUG_2015main' target='_blank'>Android</a>, <a href='https://app.adjust.io/f9bqhx?campaign=ALL_ALL_ORG_WP&adgroup=ALL_ALL_ORG_WP_Website&creative=Website_ALL_AUG_2015main' target='_blank'>Windows Phone</a>)</li>
-<li>VoyEnTaxi (<a href='https://itunes.apple.com/us/app/voy-en-taxi/id939470696?l=es&ls=1&mt=8' target='_blank'>iOS</a>, <a href='http://voyentaxi.com/descargar.html' target='_blank'>Android</a>)</li>
-</ul>"
-  bike: "Montevideo cuenta con ciclovías y calles de velocidad limitada para bicicletas en parte de la ciudad y un sistema de bicicletas públicas en la zona de Ciudad Vieja (donde se desarrolla el evento). Para hacer uso del mismo, es necesario inscribirse en <a href='http://movete.montevideo.gub.uy/' target='_blank'>la oficina de Movete</a>, a pocas cuadras de las sedes del evento.
-<h4>Aplicaciones móviles</h4>
-<ul>
-<li><a href='https://itunes.apple.com/es/app/mvd-bike-montevideo-by-bike/id1067920390' target='_blank'>MVD BIKE</a> (iOS)</li>
-</ul>
-<h4>Aplicaciones web</h4>
-<ul>
-<li><a href='http://montevideobicis.com' target='_blank'>MontevideoBicis.com</a></li>
-<li><a href='http://bicimap.uy' target='_blank'>Bicimap.uy</a></li>
-<li><a href='http://www.montevideo.gub.uy/mapa-montevideo-en-bici' target='_blank'>Montevideo en Bici</a></li><ul>"
-  accessibility: "La accesibilidad de la ciudad es despareja, contando con rampas en muchas esquinas pero no llegando a ser universal. La zona del evento se encuentra en pleno proceso de recambio de veredas que las hacen más accesibles pero a su vez las obras pueden implicar un obstáculo en sí mismo. Todos los espacios del evento cuentan con accesibilidad plena. Recomendamos la aplicación <a href=\"http://www.rampita.com.uy\">Rampita</a> para contar con más información sobre accesibilidad de distintos lugares de la ciudad.<br><br>Existe un servicio de Taxi Accesible para el que se debe llamar de lunes a viernes, de 8 a 18 horas a los teléfonos 095 685532 o 2203 1354. La reserva debe realizarse con 24 horas de anticipación. Buena parte de la flota de buses de Montevideo es accesible, pero no en su totalidad."
-  lodging: "<h4>Hoteles</h4>
-Hay una gran cantidad de hoteles en la zona cercana a las sedes del evento, con gran variedad de calidades y precios. La sede de la conferencia será el Hotel Radisson Victoria Plaza y muchos de los participantes estarán alojados en el Hotel Esplendor Montevideo.
-<h4>Hosteles</h4>
-Existen múltiples hosteles en la zona de Ciudad Vieja cercana a las sedes del evento, con habitaciones compartidas y privadas, con precios económicos (especialmente por estar fuera de temporada).
-<h4>Barrios</h4>
-Si se opta por un apartamento o casa, puede que prefieran ubicarse por la zona de Cordón, Centro o Ciudad Vieja cerca de las sedes del evento. Especialmente en Centro y Ciudad Vieja vale la pena saber que son barrios más activos durante el horario laboral. Otros barrios cercanos y usualmente elegidos por los visitantes son Pocitos, Parque Rodó y Punta Carretas. Éstos son residenciales, cuentan con más opciones para todo el día y amplia variedad de servicios."
-  activity: "Para encontrar información de actividades, salidas y espectáculos, recomendamos visitar el sitio <a href='http://www.descubrimontevideo.uy/es/' target='_blank'>Descubrí Montevideo</a> o descargar la aplicación <a href='http://www.guitur.net/' target='_blank'>Guitur</a>. También puede ser de interés el sitio web del <a href='http://www.turismo.gub.uy/' target='_blank'>Ministerio de Turismo</a>."
-  weather: Uruguay es un país de clima templado… ¡pero estamos en pleno invierno! Se esperan mínimas de alrededor de 10º C y máximas de menos de 20º C. La ciudad está junto al mar por lo que la humedad no colabora con la sensación térmica. Con un poco de suerte no tendremos lluvias y en el país no nieva.
+  earth: "Existen compañías de bus que ofrecen transporte terrestre desde Guatemala, El Salvador, Honduras, Nicaragua y Panamá. Puede encontrar más información visitando las páginas web de <a href=\"https://www.ticabus.com/Route/routes_maps\">TICABUS</a> y <a href=\"http://transnica.com/new/horarios-para-su-conveniencia/\">TRANSNICA</a>, que son las principales empresas que prestan este servicio."
+  air: "Al <a href=\"http://fly2sanjose.com/es/\">Aeropuerto Internacional Juan Santamaría (SJO)</a> llegan las principales líneas aéreas del mundo, con vuelos regionales desde todos los paises de Latinoamerica. El aeropuerto queda a 30 minutos del centro de San José, y  es posible tomar un <a href=\"http://www.taxisaeropuerto.com/\">taxi</a> o alquilar un auto en algunas de las rentadoras localizadas en el aeropuerto.  En San Jose tambien contamos con servicio de Uber"
+  visas: "<p>Dependiendo de la nacionalidad, usted puede o no necesitar visa para entrar al país. La lista detallada  de nacionalidades que requieren visa para ingresar a Costa Rica se encuentra en el siguiente <a href=\"http://www.visitcostarica.com/ict/paginas/Directrices_visas-Noviembre2009.pdf\">enlace</a></p><p>Además de la visa, para visitar Costa Rica las personas deberán cumplir con los siguientes requisitos: <ul><li>Tiquete de continuidad de viaje o retorno al país de procedencia</li><li>Demostración de solvencia económica,  que corresponde a US$100 por cada mes de turismo</li><li>Pasaporte con vigencia mínima de 6 meses</li></ul></p>"
+  airport: "<p>El Aeropuerto Internacional Juan Santamaría, no se encuentra en San José, aunque así lo diga su boleto. Pero no se preocupe, que “Chepe Centro”, nuestra capital está cerca (en realidad, todo está cerca en nuestro país). La forma más segura de desplazarse a su hotel es tomando un taxi que le costará aproximadamente $30 e incluso puede <a href=\"http://www.taxiaeropuerto.com/\">reservar con anticipación, en línea.</a></p><p>No acepte ningún servicio a la salida del aeropuerto, que no esté debidamente identificado. La compañía de taxis autorizada es la indicada arriba y sus unidades son de color anaranjado, con logo blanco que dice “Taxi Aeropuerto”. Sin embargo, puede ser que se encuentre disponible alguna unidad de los taxis oficiales en el resto del territorio nacional, que son de color rojo, con un triángulo amarillo en sus puertas y placa de circulación que inicia con la letra T.</p><p>En San Jose tambien contamos con servicio de Uber, que al igual es seguro y una alternativa más económica al taxi.</p>"
+  taxi: "El transporte público no es lo más recomendable cuando se cuenta con poco tiempo, por lo que recomendamos utilizar el servicio de taxi (recuerden: rojo con un triángulo amarillo en las puertas y placa que inicia con letra T) o Uber."
+  vaccines: "Costa Rica en el Decreto Ejecutivo N° 33934-S-SP-RE (publicado en La Gaceta 165 del 29 de agosto del 2007), declaró obligatoria la vacunación contra la fiebre amarilla antes de su ingreso al territorio nacional, en personas provenientes de áreas geográficas consideradas de riesgo. Por lo anterior, al ingreso a Costa Rica las <strong>personas provenientes de Brasil, Bolivia, Colombia, Ecuador, Perú y Venezuela, deberán presentar su “Certificado Internacional de Vacunación contra la Fiebre Amarilla”</strong> el cual es válido a partir de 10 días después de la vacunación."
+  lodging: "<p>Como la sede del Encuentro está ubicada en el centro de la ciudad, recomendamos buscar hospedaje en hoteles cercanos que le permitan desplazarse a pie. Algunas sugerencias son:</p><ul><li><a href=\"http://www.aurolahotels.com/\">Holiday Inn Aurola</a></li><li><a href=\"http://www.sleepinnsanjose.com/\">Sleep Inn San Jose</a></li><li><a href=\"https://www.radisson.com/san-jose-hotel-cr-494-1007/crsanjos\">Radisson San Jose</a></li><li><a href=\"http://www.hotel-presidente.com/default-en.html\">Hotel Presidente</a></li><li><a href=\"http://www.balmoral.co.cr/default-en.html\">Hotel Balmoral</a></li></ul><p>El centro de San José, es totalmente “caminable”. La mayoría de hoteles sugeridos están muy cerca de la sede y en los alrededores podrá encontrar restaurantes de comida variada, bares, tiendas, farmacias, supermercados, bancos y demás servicios.</p>"
+  activity: "San José es una ciudad rica en actividades y cultura. Para encontrar información de actividades, salidas y espectáculos, recomendamos visitar el sitio <a href=\"http://gamcultural.com/\">GAM cultural</a>. También puede ser de interés el sitio web de <a href=\"http://www.visitcostarica.com/ict/paginas/home.asp?ididioma=2/\">Essential Costa Rica</a>"
+  weather: "La temperatura en San José, suele oscilar entre 17° y 25° C, con un margen de un par de grados hacia arriba al mediodía. Durante el mes de agosto el país se encuentra en invierno y es común que llueva en las tardes, por lo que recomendamos traer sombrilla. 
+  En todo caso, <strong>recuerde que el código de vestimenta del evento, es informal</strong>. Así que se valen las improvisaciones con la moda."
 
 contact:
   title: Contacto
   message: Dejanos tu mensaje
   submit: Enviar
   sent: El mensaje fue enviado
-
-new_form:
-  visa: Visados
-  visa_content: "A los ciudadanos de ninguno de los países miembros de AGA en la región se les exige visado para ingresar al país, ni a la mayoría de los países de América Latina y el Caribe. Antes de marcar la siguiente casilla por favor lea con atención <a href=\"#\">la sección Visas del sitio</a>."
-  visa_help: Requiero asistencia para obtener visa
-  food: Comida
-  food_content: Se brindarán opciones veganas y para celíacos en las comidas del evento, solicitamos esta información para prever las necesidades de los asistentes según su dieta.
-  food_heroes: Vegana
-  food_celiac: Celíaca
-  food_diabetic: Diabética
-  accessibility: Accesibilidad
-  accessibility_content: Seleccione según sus necesidades. Las instalaciones de los eventos son accesibles, solicitamos esta información para brindar seguimiento y/o apoyo adicional de ser necesario.
-  accessibility_movility: Accesibilidad para movilidad reducida
-  accessibility_sign: "Traducción a lengua de señas**"
-  language: Idiomas
-  language_content: El track principal del evento cuenta con traducción. Solicitamos indique qué idiomas domina para prever las necesidades del evento.
-  spaniolo: Español
-  english: Inglés
-  accessibility_disclaimer: "** Se hará el máximo esfuerzo para facilitar la accesibilidad en la sala principal del evento y las sesiones que sea posible, pero no se puede garantizar para el 100% de las actividades"
 
 more_info:
   title: Más información

@@ -1,5 +1,4 @@
 <section class="main_container" id="contact_page">
-  <a id="ogp_logo_mobile" href="#">Open Goverment Partnership</a>
   <!--Form Contact -->
   <div class="title">
     <h2><%= t.contact.title %></h2>
@@ -34,9 +33,9 @@
 
       <div class="col-md-6">
         <div class="input-container">
-          <select name="country" id="country">
-            <option><%= t.form.country %>*</option>
-            <option>--------</option>
+          <select name="country" id="country" required="">
+            <option value=""><%= t.form.country %>*</option>
+            <option value="">--------</option>
             <% FormData.countries.each do |country| %>
               <option value='<%= country %>' name='country' >
                 <%= country %>
@@ -47,7 +46,7 @@
       </div>
       <div class="col-md-6">
         <div class="textarea-container">
-          <textarea placeholder="<%= t.contact.message %>" name="message" id="message"></textarea>
+          <textarea placeholder="<%= t.contact.message %>*" name="message" id="message" required></textarea>
         </div>
       </div>
       <div class="col-md-6">
@@ -57,6 +56,5 @@
     </div>
   </form>
 </section>
-<script src='/js/smoothscroll.min.js'></script>
 <script src='/js/validate.min.js'></script>
 <script src="/js/contact.js"></script>
