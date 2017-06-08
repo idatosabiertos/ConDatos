@@ -95,48 +95,16 @@ post '/contactar' do
   erb :contactar
 end
 
-get '/mode_info' do
-  erb :more_info
-end
-
-# get '/proceso' do
-#   erb :proceso
-# end
-
-# get '/criterios' do
-#   erb :criterios
-# end
-
-# get '/becarios' do
-#   erb :becarios
-# end
-
-get '/resultados' do
-  protected!
-  Sequel::Plugins::CsvSerializer.configure(
-    Survey,
-    col_sep: ';',
-    encoding: 'UTF-8'
-  )
-  content_type 'application/csv'
-  attachment 'resultados_ogp.csv'
-  csv = "Nombre;Organización;Sector;País;Email;Inscripción Desconferencia;Aportar a desconferencia;Inscripción encuentro Regional;Aportar conferencia temas;Temas de interés;Postulante facilitador;Enlace CV o Linkedin;Necesita transporte;Necesita alojamiento\n"
-  Survey.each do |survey|
-    csv << survey.to_csv(except: :id)
-  end
-  csv
-end
-
-get '/inscripciones' do
+get '/export_inscriptions' do
   protected!
   Sequel::Plugins::CsvSerializer.configure(
     Inscription,
-    col_sep: ';',
+    col_sep: ',',
     encoding: 'UTF-8'
   )
   content_type 'application/csv'
-  attachment 'inscripciones_ogp.csv'
-  csv = "Nombre;Organización;Sector;País;Email;Inscripción Desconferencia;Inscripción encuentro Regional;Requiere ayuda Visa;Comida;Accesibilidad;Idiomas\n"
+  attachment 'inscripciones.csv'
+  csv = "name,surname,gender,email,country_origin,country_residence,job,open_data_usage,particpated_before,scholarship_before,scholarship_more_than_once,participates_in_representation,event,financial_support,thematic,open_data_problem,organization,organization_type,website,facebook,twitter,instagram,participate_as_colaborator,colaborator_area,has_proposition,proposition_title,proposition_summary,proposition_why_include,proposition_others_needed,organization_role,github\n"
   Inscription.each do |inscription|
     csv << inscription.to_csv(except: :id)
   end
@@ -195,7 +163,7 @@ helpers do
 
   def authorized?
     @auth ||= Rack::Auth::Basic::Request.new(request.env)
-    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [ENV['RESULTADOS_USER'], ENV['PASSWORD']]
+    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [ENV['CONTACT_EMAIL'], ENV['E_PWD']]
   end
 
   def home_url
