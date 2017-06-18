@@ -1,0 +1,25 @@
+
+sudo: required
+dist: trusty
+
+language: ruby
+rvm:
+  - 2.3.1
+
+services:
+  - postgresql
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get -y install libpq-dev
+  - psql -c "CREATE DATABASE ogp;" -U postgres
+  - psql -c "CREATE USER admin WITH PASSWORD 'admin';" -U postgres
+  - export PG_DB_URL=postgres://localhost:5432/ogp
+  - export PG_USER=admin
+  - export PG_PWD=admin
+
+install:
+  - bundle install
+
+script:
+  - rake db:create_inscriptions
