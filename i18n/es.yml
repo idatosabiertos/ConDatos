@@ -13,6 +13,7 @@ layout:
   goback: Volver al inicio
   home: Inicio
   close: Cerrar
+  publicInterest: Declarado de interés público
 
 index:
   title: Llamado a ponentes, temas de interés y solicitud de becas
@@ -87,6 +88,7 @@ form:
   thematic_11: Datos, algoritmos y tecnología que constituyen riesgos para la habilidad de organización de la sociedad civil y la privacidad 
   thematic_12: Periodismo de datos para reportar y monitorear
   open_data_problem: ¿Qué problemática enfrenta su país/región/comunidad/organización, a la cual quisiera encontrar una solución que involucre el uso de datos abiertos? 
+  open_data_problem_tooltip: máximo 500 caracteres
   public_institution: Institución pública
   civil_society_org: Organización de sociedad civil
   cooperation_org: Organismo de cooperación
@@ -99,7 +101,7 @@ form:
   country_residence: País de Residencia
   job: ¿A qué se dedica?
   open_data_usage: ¿Utiliza datos abiertos para trabajo, investigación o activismo?
-  open_data_usage_tooltip: "Favor comentar acerca de su relación con el tema de  datos abiertos: el uso que hace, en qué proyectos, cuál es su especialidad, etc. (máximo 250 palabras)"
+  open_data_usage_tooltip: "Favor comentar acerca de su relación con el tema de  datos abiertos: el uso que hace, en qué proyectos, cuál es su especialidad, etc. (máximo 500 caracteres)"
   mandatory: "* Campos obligatorios"
   unconference: Abrelatam
   unconference_info: El <b>23/8 de 8:30 a 18:00</b> en <a href="http://ogpmontevideo.uy/sedes">Casona Mauá</a> AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más Puedes conocer mas sobre Abrelatam en <a href="http://www.abrelatam.org</a>
