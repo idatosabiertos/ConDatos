@@ -1,4 +1,4 @@
-# ConDatos
+# ConDatos [![Build Status](https://travis-ci.org/idatosabiertos/ConDatos.svg?branch=develop)](https://travis-ci.org/idatosabiertos/ConDatos)
 
 ## PREQUISITES
 - Postgres
@@ -85,8 +85,7 @@
     export SENDGRID_APIKEY='yourApiKey'
 
     sudo apt-get -y install postgresql postgresql-contrib
-    echo 'CREATE DATABASE ogp;' > db_create.sql
-    psql -U postgres postgres -f ./db_create.sql
+    psql -c "CREATE DATABASE ogp;" -U postgres
     rake db:create_inscriptions
 
     echo 'all set, rock on!'
