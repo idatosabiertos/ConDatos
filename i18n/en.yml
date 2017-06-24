@@ -4,12 +4,12 @@ layout:
   title1: CONFERENCIA REGIONAL
   title2: DE DATOS ABIERTOS
   title3: CONDATOS
-  date1: 23.08 al 25.08
-  date2: DE 2017
+  date1: 23 AL 25 DE AGOSTO
+  date2: DEL 2017
   date3: SAN JOSE DE COSTA RICA
   date4: COSTA RICA
   language2: Español
-  register: Inscripción
+  register: Pre-inscripción
   goback: Volver al inicio
   home: Inicio
   close: Cerrar
@@ -46,7 +46,7 @@ sponsors:
   sponsor: Patrocinan
 
 form:
-  inscription: Inscripción
+  inscription: Pre-inscripción
   process_title: "La participación en <strong>Abrelatam-Condatos</strong> requiere de un proceso de inscripción. Se solicita la colaboración de todas las personas que deseen asistir, cumpliendo lo siguiente:"
   process: "<ol><li>Llenar el formulario de pre-inscripción que encontrará a continuación.</li><li>Esperar respuesta de aceptación e instrucciones para la confirmación de asistencia.</li><li>Confirmación de participación, por la vía que les será debidamente comunicada.</li></ol><p>El evento es gratuito y cubrirá los almuerzos de los tres días. Las personas participantes deben asumir los costos de transporte y hospedaje y otros tiempos de alimentación, hasta y en la ciudad de San José. Se dispone de fondos limitados para apoyar a algunas personas en estos dos rubros, por lo que si usted lo requiere, deberá indicarlo en las opciones indicadas. La solicitud de beca, no garantiza su otorgamiento.</p>"
   process_dates: "<u>Fechas importantes:</u> <ul><li><strong>Pre-inscripción: </strong>29 de Mayo al 29 de Junio de 2017.</li><li><strong>Selección de personas becadas: </strong>30 de Junio al 10 de Julio.</li><li><strong>Comunicación de resultados de becas: </strong> 11 al 15 de Julio.</li><li><strong>Confirmación de participación: </strong>16 de Julio al 16 de Agosto.</li></ul>"
@@ -175,14 +175,16 @@ radisson:
   apps_info: "Ver en<a href=\"https://www.openstreetmap.org/#map=19/9.93576/-84.07249\" target=\"_blank\">OpenStreetMap</a>/<a href=\"https://www.google.com/maps/place/Centro+Nacional+de+la+Cultura/@9.9357459,-84.0747564,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0e363abf205c7:0xb88620bc0cf731e3!8m2!3d9.9357459!4d-84.0725677\" target=\"_blank\">Google Maps</a>"
 
 event:
-  title: Evento
+  date: 23 de Agosto
+  date2: 24 y 25 de Agosto
+  title: Eventos
   title_1: Acerca de Abrelatam
-  content1: "El <strong>23 de Agosto</strong> se realizará Abrelatam. <p>AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más.</p>" 
+  content1: "<p>AbreLatam es una desconferencia en la que actores de diferentes sectores participan en su calidad personal construyendo debates claves sobre temáticas vinculadas a los datos abiertos en diversos campos tales como gobierno abierto, servicios públicos, privacidad, derechos humanos, aspectos técnicos, participación ciudadana y muchos más.</p>" 
   content2: "En una desconferencia, se invierte la dinámica de un orador y muchos oyentes, para hacer de todos los participantes a su vez oradores y oyentes, de forma simultánea. En múltiples sesiones simultáneas con un número limitado de personas, se fomenta un diálogo según los temas recogidos de la agenda común.<br><br>Las sesiones cuentan con un facilitador que asegura que el las personas tengan iguales oportunidades de escuchar y ser escuchadas y con una persona voluntaria para tomar notas que serán compartidas con el resto de los participantes y cualquier persona"
   content3: "En las sesiones no se utilizan diapositivas, ni aparatos electrónicos, incluyendo celulares y laptops (con la excepción de la persona que toma las notas).<br><br>El objetivo de la desconferencia es compartir conocimiento entre pares, y las dinámicas así lo fomentan. Facilitadores guiarán a los participantes a lo largo del día, pero en última instancia son los propios asistentes quienes hacen al evento y su contenido.
              El evento incluye café en la mañana y la tarde y almuerzo para todos los asistentes. Puedes conocer más sobre Abrelatam en www.abrelatam.org"
   title2: Acerca de Condatos
-  description1: Los días 24 y 25 de agosto se llevará a cabo la conferencia, con un programa basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
+  description1: El programa estará basado en las temáticas que se propusieron en el proceso de inscripción y con las personas que se ofrecieron a través del llamado, así como invitados que el Comité Académico consideró pertinentes.
   description2: La agenda, en búsqueda de ser más dinámica y colaborativa, experimenta con sesiones más participativas y de intercambio, en lugar del modelo expositivo tradicional. Por este motivo en lugar de ponencias tradicionales el Comité Académico del evento solicitó en el llamado aportes a la temática, para luego invitar a los ponentes a co-crear sesiones interactivas y de intercambio.
   description3: "Por este motivo te sugerimos que al presentar tu idea consideres algunos de estos formatos o nos propongas uno nuevo:"
   title3: Speed Story Telling
