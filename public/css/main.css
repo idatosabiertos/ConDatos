@@ -1109,3 +1109,8 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
     color: #5DBFDD;
     margin: 0 0 30px 0;
 } 
+
+.free{
+  height: 60px;
+  margin-left: 10px;
+}
