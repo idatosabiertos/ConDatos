@@ -411,7 +411,8 @@ footer ul li a:hover > i  {color: #fff}
 #home_page #intro_txt .mt p,  #home_page #intro_txt .mt li {font-size: 15px;}
 
 @media (min-width: 768px) {
-    #home_page #partners .partner, #home_page #orgnices .organce  { width: 13%;display: inline-block;margin-right:150px;}
+    #home_page #partners .partner, #home_page #orgnices .organce  { width: 16%;display: inline-block;margin-right:100px;
+    margin-top: 20px;}
     #orgnices .organce figure img { width: 100%;}
 }
 
@@ -1113,4 +1114,13 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 .free{
   height: 60px;
   margin-left: 10px;
+}
+.partner-img{
+    max-width: 120% !important;
+    width: 120% !important;
+}
+.organce-img{    
+    max-width: 140% !important;
+    width: 140% !important;
+}
 }
