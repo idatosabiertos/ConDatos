@@ -19,14 +19,16 @@
   <div class="lines"></div>
   <div class="triangle-topleft"></div>
 
-  <div class="inscription">
+  <div class="inscription" style="margin-top: 100px !important;">
     <h1><%= t.form.inscription %></h1>
     <p><%= t.form.process_title %></p>
     <p><%= t.form.process %></p>
     <p><%= t.form.process_dates %></p>
+  <h2 style="color:red!important; margin: 60px;" class="text-center">Periodo de pre-inscripción <strong>FINALIZADO</strong></h2>
   </div>
 
-  <form action='/enviar' method='post' name='form' id="form">
+
+  <!--form action='/enviar' method='post' name='form' id="form">
    
     <div class="block">
       <h3><%= t.form.data %></h3>
@@ -385,6 +387,6 @@
     <button type="submit" class="btn pull-right"><%= t.form.finish_her %></button>
 
   </form>
-  <script src='/js/form.js'></script>
+  <script src='/js/form.js'></script-->
   <script src='/js/smoothscroll.min.js'></script>
 </section>

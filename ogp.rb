@@ -32,13 +32,13 @@ get '/inscription' do
   erb :form, locals: { inscription: inscription }
 end
 
-post '/enviar' do
-  inscription = create_inscription(params)
-  return erb :form, locals: { inscription: inscription } unless inscription.errors.empty?
+#post '/enviar' do
+#  inscription = create_inscription(params)
+#  return erb :form, locals: { inscription: inscription } unless inscription.errors.empty?
 
-  inscription.save
-  erb :thanks
-end
+#  inscription.save
+#  erb :thanks
+#end
 
 get '/thanks' do
   erb :thanks
