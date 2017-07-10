@@ -24,11 +24,11 @@
     <p><%= t.form.process_title %></p>
     <p><%= t.form.process %></p>
     <p><%= t.form.process_dates %></p>
-  <h2 style="color:red!important; margin: 60px;" class="text-center">Periodo de pre-inscripción <strong>FINALIZADO</strong></h2>
+    <!--h2 style="color:red!important; margin: 60px;" class="text-center">Periodo de pre-inscripción <strong>FINALIZADO</strong></h2-->
   </div>
 
 
-  <!--form action='/enviar' method='post' name='form' id="form">
+  <form action='/enviar' method='post' name='form' id="form">
    
     <div class="block">
       <h3><%= t.form.data %></h3>
@@ -53,7 +53,7 @@
             <label class="radio-inline"><input type="radio" name="gender" value="<%= t.form.gender_male %>" ><%= t.form.gender_male %></label>
             <label class="radio-inline"><input type="radio" name="gender" value="<%= t.form.gender_female %>" ><%= t.form.gender_female %></label>
             <label class="radio-inline"><input type="radio" name="gender" value="<%= t.form.gender_other %>" ><%= t.form.gender_other %></label>
-            <label class="radio-inline"><input type="radio" name="gender"value="<%= t.form.gender_none %>" checked><%= t.form.gender_none %></label>
+            <label class="radio-inline"><input type="radio" name="gender" value="<%= t.form.gender_none %>" checked><%= t.form.gender_none %></label>
            </div>
         </div>
 
@@ -113,29 +113,38 @@
           <small><%= t.form.open_data_usage_tooltip %></small>
         </div>
 
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='text' name='personal_facebook' id='personal_facebook'>
+              <label for="facebook"><%= t.form.facebook %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='text' name='personal_twitter' id='personal_twitter'>
+              <label for="twitter"><%= t.form.twitter %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='text' name='personal_instagram' id='personal_instagram'>
+              <label for="instagram"><%= t.form.instagram %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='url' name='personal_github' id='personal_github'>
+              <label for="github"><%= t.form.github %></label>
+            </div>
+        </div>
 
         <div class="col-md-6">
           <label class="lbl" for="particpated_before"><%= t.form.particpated_before %></label>
            <div id="particpated_before">
-            <label class="radio-inline"><input type="radio" name="particpated_before"><%= t.form.yep %></label>
-            <label class="radio-inline"><input type="radio" name="particpated_before" checked><%= t.form.nop %></label>
+            <label class="radio-inline"><input type="radio" name="particpated_before" value="<%= t.form.yep %>"><%= t.form.yep %></label>
+            <label class="radio-inline"><input type="radio" name="particpated_before" value="<%= t.form.nop %>" checked><%= t.form.nop %></label>
            </div>
         </div> 
-
-        <div class="col-md-6">
-          <label class="lbl" for="scholarship_before"><%= t.form.scholarship_before %></label>
-           <div id="scholarship_before">
-            <label class="radio-inline"><input type="radio" name="scholarship_before"><%= t.form.yep %></label>
-            <label class="radio-inline"><input type="radio" name="scholarship_before" checked><%= t.form.nop %></label>
-           </div>
-          <div id="scholarship_more_than_once_group">
-            <label class="lbl" for="scholarship_more_than_once"><%= t.form.scholarship_more_than_once %></label>
-             <div id="scholarship_more_than_once">
-              <label class="radio-inline"><input type="radio" name="scholarship_more_than_once" ><%= t.form.yep %></label>
-              <label class="radio-inline"><input type="radio" name="scholarship_more_than_once" checked><%= t.form.nop %></label>
-             </div>
-          </div>
-        </div>
 
         <div class="col-md-6">
           <label class="lbl" for="parcipate_in"><%= t.form.parcipate_in %>:*</label>
@@ -150,24 +159,12 @@
           <p id="parcipate_in_error" class="error"><%= t.form.require_one %></p>
         </div>
 
-        <div class="col-md-6">
-          <label class="lbl" for="financial_support"><%= t.form.financial_support %>:</label>
-           <div id="financial_support">
-             <div class="checkbox">
-                <label><input type="checkbox" name="financial_support[]" value="<%= t.form.plain_ticket %>"><%= t.form.plain_ticket %></label>
-              </div>
-              <div class="checkbox">
-               <label><input type="checkbox" name="financial_support[]" value="<%= t.form.lodgment %>"><%= t.form.lodgment %></label>
-              </div>
-           </div>
-          <small style="margin-bottom: 15px;"><%= t.form.financial_support_note %></small>
-        </div>
 
         <div class="col-md-6">
           <label class="lbl" for="participates_in_representation"><%= t.form.participates_in_representation %></label>
            <div id="participates_in_representation">
-            <label class="radio-inline"><input type="radio" id="participates" name="participates_in_representation"><%= t.form.yep %></label>
-            <label class="radio-inline"><input type="radio" id="noparticipates" name="participates_in_representation" checked><%= t.form.nop %></label>
+            <label class="radio-inline"><input type="radio" id="participates" name="participates_in_representation" value="<%= t.form.yep %>"><%= t.form.yep %></label>
+            <label class="radio-inline"><input type="radio" id="noparticipates" name="participates_in_representation" value="<%= t.form.nop %>" checked><%= t.form.nop %></label>
            </div>
         </div>
 
@@ -246,58 +243,7 @@
 
     <div class="block">
       <h3><%= t.event.title %></h3>
-      <div class="row"> 
-          
-        <div class="col-md-12">
-          <label class="lbl" for="thematic"><%= t.form.thematic %>:*</label>
-           <div id="thematic">
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_1 %>"><%= t.form.thematic_1 %></label>
-              </div>
-              <div class="checkbox">
-               <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_2 %>"><%= t.form.thematic_2 %></label>
-              </div>
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_3 %>"><%= t.form.thematic_3 %></label>
-              </div>
-
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_4 %>"><%= t.form.thematic_4 %></label>
-              </div>
-
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_5 %>"><%= t.form.thematic_5 %></label>
-              </div>
-
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_6 %>"><%= t.form.thematic_6 %></label>
-              </div>
-
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_7 %>"><%= t.form.thematic_7 %></label>
-              </div>
-
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_8 %>"><%= t.form.thematic_8 %></label>
-              </div>
-
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_9 %>"><%= t.form.thematic_9 %></label>
-              </div>
-
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_10 %>"><%= t.form.thematic_10 %></label>
-              </div>
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_11 %>"><%= t.form.thematic_11 %></label>
-              </div>
-
-             <div class="checkbox">
-                <label><input type="checkbox" class="require-three" name="thematic[]" value="<%= t.form.thematic_12 %>"><%= t.form.thematic_12 %></label>
-              </div>
-           </div>
-          <p id="thematic_error" class="error"><%= t.form.require_three %></p>
-        </div>
+      <div class="row">        
 
         <div class="col-md-12">
           <div class="textarea-container">
@@ -306,77 +252,50 @@
           </div>      
         </div>
 
+        <div class="col-md-12">
+          <label class="lbl" for="parcipate_in"><%= t.form.food_title %>:*</label>
+           <div id="lunch">
+             <div class="checkbox">
+                <label><input type="radio" id="lunch_confirmed" name="lunch_confirmation" value="<%= t.form.lunch_confirmed %>"><%= t.form.lunch_confirmed %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="radio" id="lunch_out" name="lunch_confirmation" value="<%= t.form.lunch_out %>" checked><%= t.form.lunch_out %></label>
+              </div>
+           </div>
+        </div>
+
+       <div id="food_preference_tab">
+        <div class="col-md-6">
+          <label class="lbl" for="food_preference"><%= t.form.food_preference %></label>
+           <div id="food_preference"> 
+             <div class="checkbox">
+                <label><input type="checkbox" name="food_preference[]"  value="<%= t.form.vegetarian %>"><%= t.form.vegetarian %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="food_preference[]" value="<%= t.form.vegan %>"><%= t.form.vegan %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="food_preference[]" value="<%= t.form.celiac %>"><%= t.form.celiac %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="food_preference[]" value="<%= t.form.diabetic %>"><%= t.form.diabetic %></label>
+              </div>   
+            </div>              
+            <div class="input-container">
+              <input type='text' name='allergy' id='allergy'>
+              <label for="allergy"><%= t.form.allergy %>:</label>
+            </div>     
+        </div>
       </div>
+        <div class="col-md-12">
+          <div class="textarea-container">
+            <textarea placeholder="<%= t.form.comments_suggestions %>*" name="comments_suggestions" id="comments_suggestions"></textarea>
+          </div>
+        </div> 
+      </div>  
     </div>
 
-    <div class="block">
-      <h3><%= t.form.proposals_volunteering %></h3>
-      <div class="row col-md-12">
-        <label class="checkbox_label lbl" for="participate_as_colaborator">
-          <%= t.form.participate_as_colaborator %>
-        </label>
-        <input type='checkbox' name='participate_as_colaborator' id='participate_as_colaborator' class="check">
-        <section class="checkbox">
-          <span class="highlight"></span>
-        </section>
-      </div>
-      <div id="colaborator_group" class="row">
-          <div class="col-md-6">
-            <label class="lbl" for="colaborator_area"><%= t.form.colaborator_area %>*</label>
-             <div id="colaborator_area">
-               <div class="checkbox">
-                  <label><input type="checkbox" class="require-one" name="colaborator_area[]" value="<%= t.form.colaborator_area_1 %>"><%= t.form.colaborator_area_1 %></label>
-                </div>
-                <div class="checkbox">
-                 <label><input type="checkbox" class="require-one" name="colaborator_area[]" value="<%= t.form.colaborator_area_2 %>"><%= t.form.colaborator_area_2 %></label>
-                </div>
-               <div class="checkbox">
-                  <label><input type="checkbox" class="require-one" name="colaborator_area[]" value="<%= t.form.colaborator_area_3 %>"><%= t.form.colaborator_area_3 %></label>
-                </div>
-               <div class="checkbox">
-                  <label><input type="checkbox" class="require-one" name="colaborator_area[]" value="<%= t.form.colaborator_area_4 %>"><%= t.form.colaborator_area_4 %></label>
-                </div>
-               <div class="checkbox">
-                  <label><input type="checkbox" class="require-one" name="colaborator_area[]" value="<%= t.form.colaborator_area_5 %>"><%= t.form.colaborator_area_5 %></label>
-                </div>
-             </div>
-             <p id="colaborator_group_error" class="error"><%= t.form.require_one %></p>
-          </div>
-      </div>
-      <div class="row col-md-12">
-        <label class="checkbox_label lbl" for="has_proposition">
-          <%= t.form.has_proposition %>
-        </label>
-        <input type='checkbox' name='has_proposition' id='has_proposition' class="check">
-        <section class="checkbox">
-          <span class="highlight"></span>
-        </section>
-      </div> 
-      <div class="row" id="proposition_group">
-        <div class="col-md-6">
-            <div class="input-container">
-              <input type='text' id='proposition_title' name="proposition_title">
-              <label for="proposition_title"><%= t.form.title %>*</label>
-            </div>
-        </div>
-        <div class="col-md-6">
-          <div class="textarea-container">
-            <textarea placeholder="<%= t.form.summary %>*" name="proposition_summary" id="proposition_summary"></textarea>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="textarea-container">
-            <textarea placeholder="<%= t.form.why_include %>*" name="proposition_why_include" id="proposition_why_include"></textarea>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="textarea-container">
-            <textarea placeholder="<%= t.form.others_needed %>" name="proposition_others_needed" id="proposition_others_needed"></textarea>
-          </div>
-          <small style="margin-bottom: 15px;"><%= t.form.others_needed_tooltip %></small>
-        </div>     
-      </div> 
-    </div>
+
 
     <div class="block">
       <h3><%= t.form.disclaimer_title %></h4>
@@ -387,6 +306,6 @@
     <button type="submit" class="btn pull-right"><%= t.form.finish_her %></button>
 
   </form>
-  <script src='/js/form.js'></script-->
+  <script src='/js/form.js'></script>
   <script src='/js/smoothscroll.min.js'></script>
 </section>

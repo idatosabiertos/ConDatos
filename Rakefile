@@ -15,6 +15,10 @@ namespace :db do
       String :country_origin
       String :country_residence
       String :job
+      String :personal_facebook
+      String :personal_twitter
+      String :personal_instagram
+      String :personal_github
       String :open_data_usage
       String :particpated_before
       String :scholarship_before
@@ -39,6 +43,11 @@ namespace :db do
       String :proposition_summary
       String :proposition_why_include
       String :proposition_others_needed
+      String :lunch_confirmation
+      String :food_preference
+      String :allergy
+      String :comments_suggestions
+      String :new_inscription_form
     end
   end
 end

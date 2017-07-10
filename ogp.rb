@@ -32,13 +32,13 @@ get '/inscription' do
   erb :form, locals: { inscription: inscription }
 end
 
-#post '/enviar' do
-#  inscription = create_inscription(params)
-#  return erb :form, locals: { inscription: inscription } unless inscription.errors.empty?
+post '/enviar' do
+  inscription = create_inscription(params)
+  return erb :form, locals: { inscription: inscription } unless inscription.errors.empty?
 
-#  inscription.save
-#  erb :thanks
-#end
+  inscription.save
+  erb :thanks
+end
 
 get '/thanks' do
   erb :thanks
@@ -104,7 +104,7 @@ get '/export_inscriptions' do
   )
   content_type 'application/csv'
   attachment 'inscripciones.csv'
-  csv = "name,surname,gender,email,country_origin,country_residence,job,open_data_usage,particpated_before,scholarship_before,scholarship_more_than_once,participates_in_representation,event,financial_support,thematic,open_data_problem,organization,organization_type,website,facebook,twitter,instagram,participate_as_colaborator,colaborator_area,has_proposition,proposition_title,proposition_summary,proposition_why_include,proposition_others_needed,organization_role,github\n"
+  csv = "name,surname,gender,email,country_origin,country_residence,job,open_data_usage,particpated_before,scholarship_before,scholarship_more_than_once,participates_in_representation,event,financial_support,thematic,open_data_problem,organization,organization_type,website,facebook,twitter,instagram,participate_as_colaborator,colaborator_area,has_proposition,proposition_title,proposition_summary,proposition_why_include,proposition_others_needed,organization_role,github,personal_facebook,personal_twitter,personal_instagram,personal_github,lunch_confirmation,food_preference,allergy,comments_suggestions,new_inscription_form\n"
   Inscription.each do |inscription|
     csv << inscription.to_csv(except: :id)
   end
@@ -120,11 +120,15 @@ def create_inscription(params)
     country_origin: params[:country_origin],
     country_residence: params[:country_residence],
     job: params[:job],
+    personal_facebook: params[:personal_facebook],
+    personal_twitter: params[:personal_twitter],
+    personal_instagram: params[:personal_instagram],
+    personal_github: params[:personal_github],
     open_data_usage: params[:open_data_usage],
-    particpated_before: params[:particpated_before] == 'on' ? 'Sí' : 'No',
-    scholarship_before: params[:scholarship_before] == 'on' ? 'Sí' : 'No',
-    scholarship_more_than_once: params[:scholarship_more_than_once] == 'on' ? 'Sí' : 'No',
-    participates_in_representation: params[:participates_in_representation] == 'on' ? 'Sí' : 'No',
+    particpated_before: params[:particpated_before],
+    scholarship_before: params[:scholarship_before],
+    scholarship_more_than_once: params[:scholarship_more_than_once],
+    participates_in_representation: params[:participates_in_representation],
     event: params[:event] ? params[:event].join(', ') : '',
     financial_support: params[:financial_support] ? params[:financial_support].join(', ') : '',
     thematic: params[:thematic] ? params[:thematic].join(', ') : '',
@@ -137,13 +141,18 @@ def create_inscription(params)
     twitter: params[:twitter],
     instagram: params[:instagram],
     github: params[:github],
-    participate_as_colaborator: params[:participate_as_colaborator] == 'on' ? 'Sí' : 'No',
+    participate_as_colaborator: params[:participate_as_colaborator],
     colaborator_area: params[:colaborator_area] ? params[:colaborator_area].join(', ') : '',
-    has_proposition: params[:has_proposition] == 'on' ? 'Sí' : 'No',
+    has_proposition: params[:has_proposition],
     proposition_title: params[:proposition_title],
     proposition_summary: params[:proposition_summary],
     proposition_why_include: params[:proposition_why_include],
-    proposition_others_needed: params[:proposition_others_needed])
+    proposition_others_needed: params[:proposition_others_needed],
+    lunch_confirmation: params[:lunch_confirmation],
+    food_preference:  params[:food_preference] ? params[:food_preference].join(', ') : '',
+    allergy: params[:allergy],
+    comments_suggestions: params[:comments_suggestions],
+    new_inscription_form: 'Sí' )
   # Check for errors, so we can add custom ones on the next line
   # inscription.valid?
 
