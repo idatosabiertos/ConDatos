@@ -10,29 +10,35 @@
 
 
 <section class="main_container" id="home_page">
-  <div id="intro_txt">
-    <figure>
-      <img src="img/calendar.png">
-    </figure>
+  <div id="intro_txt" class="container">
 
-    <div class="mt">
-      <p>
+    <div class="row">
+        <img src="img/calendar.png" class="abrelatam-condatos img-responsive">
+    </div>
+
+    <div class="row">
+      <p class="text-center">
         <b>
           <%= t.index.content1 %>
         </b>
       </p>
-      <p>
-        <%= t.index.content2 %>
-      </p>
+    </div>
+
+    <div class="row">
+      <h4 class="list-title text-center text-uppercase">
+        <strong><%= t.index.content2 %></strong>        
+      </h4>
       <p>
         <%= t.index.content3 %>
       </p>
     </div>
-  </div>
 
-  <%= erb :organizers %>
-  <%= erb :sponsors %>
-  
+    <div class="row">
+        <%= erb :organizers %>
+        <%= erb :sponsors %>
+    </div>
+
+  </div>
 </section>
 <script src="js/countdown.js"></script>
 <script src="js/smoothscroll.min.js"></script>

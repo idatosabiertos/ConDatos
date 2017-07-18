@@ -17,23 +17,28 @@ layout:
 
 index:
   title: Llamado a ponentes, temas de interés y solicitud de becas
-  content1: "<p>AbreLatam y ConDatos son los eventos en los cuales la comunidad de sociedad civil, gobierno, academia, tecnologías, empresas o que por iniciativa individual, trabajan por los datos abiertos en América Latina y el Caribe, se encuentran para entablar un diálogo sobre el estado e impacto de los procesos en el campo, en la región.
-			</p><p>ConDatos es una conferencia que reúne a los expertos de instituciones públicas, sector privado y de la sociedad civil para presentar, debatir, discutir y proponer sobre aspectos claves en materia de políticas de datos abiertos, gobierno abierto, innovación cívica, retos públicos, privacidad y nuevas formas de trabajo con datos abiertos.</p>"
+  content1: "<div class=\"col-md-8 col-md-offset-2\">
+              <h3>AbreLatam y ConDatos son los eventos en los cuales la comunidad de sociedad civil, gobierno, academia, tecnologías, empresas o que por iniciativa individual, trabajan por los datos abiertos en América Latina y el Caribe, se encuentran para entablar un diálogo sobre el estado e impacto de los procesos en el campo, en la región.</h3>
+              <h3>ConDatos es una conferencia que reúne a los expertos de instituciones públicas, sector privado y de la sociedad civil para presentar, debatir, discutir y proponer sobre aspectos claves en materia de políticas de datos abiertos, gobierno abierto, innovación cívica, retos públicos, privacidad y nuevas formas de trabajo con datos abiertos.</h3>
+              </div>"
   content2: "En esta edición ponemos especial énfasis en los siguientes temas:"
-  content3: " <ul><li>Capacidades para la captura, transformación, liberación y uso de datos.</li>
-    					<li>Impacto local y regional a través del uso de datos abiertos relevantes.</li>
-    					<li>Sensibilización a los actores del ecosistema sobre datos abiertos.</li>
-    					<li>Datos abiertos para la prevención y lucha contra la corrupción.</li>
-    					<li>Emprendimiento con datos abiertos y su sostenibilidad.</li>
-    					<li>Objetivos de desarrollo sostenible y datos abiertos.</li>
-    					<li>Datos abiertos para salvaguardar los derechos humanos.</li>
-    					<li>Infraestructura para la promoción de los datos abiertos.</li>
-    					<li>Seguridad, privacidad y datos abiertos.</li>
-    					<li>Datos abiertos en gobernanza de asuntos fiscales y extractivas.</li>
-    					<li>Datos, algoritmos y tecnología.</li>
-    					<li>Periodismo de datos para reportar y monitorear.</li>
-    					<li>Tecnología cívica y su impacto social.</li>
-    					<li>Uso de datos y tecnología cívica para apoyar la igualdad de género</li></ul>"
+  content3: "
+  <div class=\"list-type1\">
+    <ol>
+      <li><a>Capacidades para la captura, transformación, liberación y uso de datos.</a></li>
+      <li><a>Impacto local y regional a través del uso de datos abiertos relevantes.</a></li>
+      <li><a>Sensibilización a los actores del ecosistema sobre datos abiertos.</a></li>
+      <li><a>Emprendimiento con datos abiertos y su sostenibilidad.</a></li>
+      <li><a>Datos abiertos para salvaguardar los derechos humanos.</a></li>
+      <li><a>Sensibilización a los actores del ecosistema sobre datos abiertos.</a></li>
+      <li><a>Infraestructura para la promoción de los datos abiertos.</a></li>
+      <li><a>Seguridad, privacidad y datos abiertos.</a></li>
+      <li><a>Datos abiertos en gobernanza de asuntos fiscales y extractivas.</a></li>
+      <li><a>Periodismo de datos para reportar y monitorear.</a></li>
+      <li><a>Tecnología cívica y su impacto social.</a></li>
+      <li><a>Uso de datos y tecnología cívica para apoyar la igualdad de género</a></li>
+    </ol>
+  </div>"
   errors: Errores
   organizers: Organizan
   co_organizers: Co-Organizan
