@@ -22,10 +22,22 @@
   <div class="inscription" style="margin-top: 100px !important;">
     <h1><%= t.form.inscription %></h1>
     <p><%= t.form.process_title %></p>
-    <p><%= t.form.process %></p>
+    <p><%= t.form.process %></p>   
+    <div class="discount">
+      <div class="discount-label blue"> <span><strong><big>-15%</big></strong></span> <strong class="discount-code">#C7556</strong> <img src="img/copaair-icon.png"></div>
+        <p class="discount-desc">          
+          <%= t.montevideo_modals.air_discount %>
+        </p>  
+        <p class="text-center discount-info">
+          <small>
+           <%= t.montevideo_modals.air_discount_info %>          
+          </small>
+        </p>
+    </div>
     <p><%= t.form.process_dates %></p>
     <!--h2 style="color:red!important; margin: 60px;" class="text-center">Periodo de pre-inscripción <strong>FINALIZADO</strong></h2-->
   </div>
+
 
 
   <form action='/enviar' method='post' name='form' id="form">
