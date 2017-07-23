@@ -1,6 +1,7 @@
 $(document).ready(function() {  
 
     $("#food_preference_tab").hide();   
+    $("#recaptcha-err").hide();
 
     $("#lunch_confirmed").on("change", function() {
         $("#food_preference_tab").show();
@@ -19,5 +20,17 @@ $(document).ready(function() {
                 $(this).removeClass("empty");
             }
         });
+
+
+    $("#form").on("submit",function(e){
+        var response = grecaptcha.getResponse();
+        if(response.length == 0){
+            $("#recaptcha-err").show();
+            e.preventDefault();
+        }
+        else{
+            $("#recaptcha-err").hide();
+        }
+    });
 
 });

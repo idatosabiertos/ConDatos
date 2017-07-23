@@ -1,15 +1,4 @@
-<% if inscription.errors && !inscription.errors.empty? %>
-  <section id="errors" class="container content-section">
-    <div class="alert alert-danger" role="alert">
-      <h2><%= t.index.errors %></h2>
-      <ul>
-        <% inscription.errors.each do |e,v| %>
-          <li><%= eval('t.inscription.' + e.to_s) %> - <%= eval('t.inscription.' + v[0].to_s) %></li>
-        <% end %>
-      </ul>
-    </div>
-  </section>
-<% end %>
+<script src='https://www.google.com/recaptcha/api.js'></script>
   <section class="main_container">
     <!--p><%= t.form.closed %></p-->
   <div class="triangle-topright"></div>
@@ -301,13 +290,18 @@
       </div>
         <div class="col-md-12">
           <div class="textarea-container">
-            <textarea placeholder="<%= t.form.comments_suggestions %>*" name="comments_suggestions" id="comments_suggestions"></textarea>
+            <textarea placeholder="<%= t.form.comments_suggestions %>" name="comments_suggestions" id="comments_suggestions"></textarea>
           </div>
         </div> 
       </div>  
     </div>
 
-
+    <div class="block">
+      <div class="row col-md-12">
+        <div class="g-recaptcha" data-sitekey="6LciFioUAAAAAGWqp--gxYB3_wanVti5EJZV-9uG"></div>
+          <p id="recaptcha-err" class="error"><%= t.form.recaptcha %></p>
+      </div>
+    </div>
 
     <div class="block">
       <h3><%= t.form.disclaimer_title %></h4>

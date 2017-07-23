@@ -3,6 +3,7 @@ $(document).ready(function() {
     $("#parcipate_in_error").hide();
     $("#organization_tab").hide();
     $("#food_preference_tab").hide();   
+    $("#recaptcha-err").hide();
 
     var errorPrefix="_error";
 
@@ -29,7 +30,16 @@ $(document).ready(function() {
     }
 
     $("#form").on("submit",function(e){
-         checkRequired(e,"#parcipate_in",".require-one",1);
+        checkRequired(e,"#parcipate_in",".require-one",1);
+
+        var response = grecaptcha.getResponse();
+        if(response.length == 0){
+            $("#recaptcha-err").show();
+            e.preventDefault();
+        }
+        else{
+            $("#recaptcha-err").hide();
+        }
     });
 
 

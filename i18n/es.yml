@@ -157,6 +157,7 @@ form:
   vegan: Vegana
   celiac: Celíaca
   diabetic: Diabética
+  recaptcha: Validación requerida
   allergy: ¿Alergia a algún alimento?, Especifique cuál
   comments_suggestions: ¿Desea agregar algún comentario o sugerencia?
   require_one: Seleccione al menos una opción
