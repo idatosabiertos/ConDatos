@@ -34,9 +34,34 @@ end
 
 post '/enviar' do
   inscription = create_inscription(params)
-  return erb :form, locals: { inscription: inscription } unless inscription.errors.empty?
-
   inscription.save
+  erb :thanks
+end
+
+get '/complete-inscription' do
+  inscription = Inscription.new
+  erb :complete_form, locals: { inscription: inscription }
+end
+
+post '/complete' do
+  inscription = Inscription.where('email = ?',params[:email])
+  if inscription.count == 0
+    inscription = Inscription.new
+    inscription.valid?
+    inscription.errors.add(:email, "El email "+params[:email]+" no esta asociado con ninguna inscricpión, porfavor use el mismo email que uso para registrarse anteriormente.")
+    return erb :complete_form, locals: { inscription: inscription }
+  end  
+  inscription.update( 
+    :personal_facebook => params[:personal_facebook],
+    :personal_twitter => params[:personal_twitter],
+    :personal_instagram => params[:personal_instagram],
+    :personal_github => params[:personal_github],
+    :lunch_confirmation => params[:lunch_confirmation],
+    :food_preference =>  params[:food_preference] ? params[:food_preference].join(', ') : '',
+    :allergy => params[:allergy],
+    :comments_suggestions => params[:comments_suggestions],
+    :new_inscription_form => 'No' )
+
   erb :thanks
 end
 
@@ -153,12 +178,6 @@ def create_inscription(params)
     allergy: params[:allergy],
     comments_suggestions: params[:comments_suggestions],
     new_inscription_form: 'Sí' )
-  # Check for errors, so we can add custom ones on the next line
-  # inscription.valid?
-
-  # Add error if the mandatory fields are not checked
-  #inscription.errors.add(:email_organization, :checked) unless params[:email_organization]
-  #inscription.errors.add(:register_image, :checked) unless params[:register_image]
 
   inscription
 end
