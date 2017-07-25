@@ -44,23 +44,37 @@ get '/complete-inscription' do
 end
 
 post '/complete' do
-  inscription = Inscription.where('email = ?',params[:email])
+  inscription = Inscription.where('lower(email) = ?', params[:email].downcase)
   if inscription.count == 0
     inscription = Inscription.new
     inscription.valid?
     inscription.errors.add(:email, "El email "+params[:email]+" no esta asociado con ninguna inscricpión, porfavor use el mismo email que uso para registrarse anteriormente.")
     return erb :complete_form, locals: { inscription: inscription }
   end  
-  inscription.update( 
-    :personal_facebook => params[:personal_facebook],
-    :personal_twitter => params[:personal_twitter],
-    :personal_instagram => params[:personal_instagram],
-    :personal_github => params[:personal_github],
-    :lunch_confirmation => params[:lunch_confirmation],
-    :food_preference =>  params[:food_preference] ? params[:food_preference].join(', ') : '',
-    :allergy => params[:allergy],
-    :comments_suggestions => params[:comments_suggestions],
-    :new_inscription_form => 'No' )
+  if params[:event] 
+    inscription.update( 
+      :event => params[:event].join(', '),
+      :personal_facebook => params[:personal_facebook],
+      :personal_twitter => params[:personal_twitter],
+      :personal_instagram => params[:personal_instagram],
+      :personal_github => params[:personal_github],
+      :lunch_confirmation => params[:lunch_confirmation],
+      :food_preference =>  params[:food_preference] ? params[:food_preference].join(', ') : '',
+      :allergy => params[:allergy],
+      :comments_suggestions => params[:comments_suggestions],
+      :new_inscription_form => 'No' )
+  else 
+    inscription.update( 
+      :personal_facebook => params[:personal_facebook],
+      :personal_twitter => params[:personal_twitter],
+      :personal_instagram => params[:personal_instagram],
+      :personal_github => params[:personal_github],
+      :lunch_confirmation => params[:lunch_confirmation],
+      :food_preference =>  params[:food_preference] ? params[:food_preference].join(', ') : '',
+      :allergy => params[:allergy],
+      :comments_suggestions => params[:comments_suggestions],
+      :new_inscription_form => 'No' )
+  end
 
   erb :thanks
 end

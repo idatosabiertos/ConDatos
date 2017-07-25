@@ -55,7 +55,10 @@ form:
   process_title: "La participación en <strong>Abrelatam-Condatos</strong> es gratuita, con <strong>cupo limitado</strong> y requiere de un proceso de inscripción. Le agradecemos atender las siguientes instrucciones, de lo contrario, no podemos garantizar su espacio:"
   process: "<ol><li>Si usted llenó el formulario de pre-inscripción y recibió <cite>correo de confirmación</cite>*, <strong>NO debe llenar de nuevo este formulario.</strong> En los próximos días, recibirá un nuevo correo con instrucciones.</li><li>Si usted no llenó el formulario de pre-inscripción, debe conpletar el formulario que encontrará a continuación. Recibirá un <cite>correo de confirmación</cite>*. Este correo puede no generarse en forma inmediata, por lo que agradeceremos no llenar el formulario varias veces.</li></ol><p><u>El evento es <strong>gratuito</strong> y cubrirá los almuerzos de los tres días</u>. Las personas participantes deben asumir los costos de transporte y hospedaje y otros tiempos de alimentación, hasta y en la ciudad de San José.</p>"
   process_dates: "</p><strong class=\"text-uppercase\">El período de inscripción cierra el 11 de agosto.</strong></p><p><small>*<cite>El correo</cite> se emite de la dirección abrelatamcondatos@gmail.com. Si no lo encontrara en su bandeja de \"Recibidos\", favor revisar sus bandejas de \"Promociones\" y \"Spam\".</small></p>"
-  inscription_complete_process: "Para completar su inscripción en <strong>AbreLatam-Condatos</strong> debe completar el formulario a continuación, <u>utilizando la casilla de correo con la cual se registro anteriormente.</u>"
+  inscription_complete_process: "
+    <p>Gracias por su interés en ser parte de <strong>Abrelatam y Condatos 2017</strong>. Para terminar el proceso de inscripción debe completar el formulario a continuación, <u>utilizando la dirección de correo con la cual realizó el pre-registro.</u></p>
+    <p>Este es un requisito indispensable y solamente las personas que completen el proceso de inscripción tendrán un espacio asegurado en el evento. <strong>El cupo es limitado.</strong></p>
+    <p>Si tiene alguna consulta adicional, recuerde que puede escribir a <a href=\"mailto:abrelatamcondatos@gmail.com\" target=\"_top\">abrelatamcondatos@gmail.com</a></p>"
   data: Datos Personales
   name: Nombre
   surname: Apellidos

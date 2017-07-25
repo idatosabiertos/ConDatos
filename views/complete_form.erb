@@ -68,7 +68,20 @@
 
     <div class="block">
       <h3><%= t.event.title %></h3>
-      <div class="row">        
+      <div class="row">      
+
+        <div class="col-md-6">
+          <label class="lbl" for="parcipate_in"><%= t.form.parcipate_in %>:</label>
+           <div id="parcipate_in">
+             <div class="checkbox">
+                <label><input type="checkbox" name="event[]" class="require-one" value="<%= t.form.unconference %>"><%= t.form.unconference %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="event[]" class="require-one" value="<%= t.form.encounter_third_kind %>"><%= t.form.encounter_third_kind %></label>
+              </div>
+           </div>
+        </div>
+
         <div class="col-md-12">
           <label class="lbl" for="parcipate_in"><%= t.form.food_title %>:*</label>
            <div id="lunch">

@@ -7,7 +7,6 @@ $(document).ready(function() {
         $("#food_preference_tab").show();
     });
 
-
     $("#lunch_out").on("change", function() {
         $("#food_preference_tab").hide();   
     });  
@@ -20,7 +19,6 @@ $(document).ready(function() {
                 $(this).removeClass("empty");
             }
         });
-
 
     $("#form").on("submit",function(e){
         var response = grecaptcha.getResponse();
