@@ -55,6 +55,9 @@
             <li <%= "class=\"active\"" if '/evento' == request.path_info %>>
               <a href="/evento"><%= t.event.title %></a>
             </li>
+            <li>
+              <a href="http://abrelatam.org">AbreLatam</a>
+            </li>
             <li <%= "class=\"active\"" if '/montevideo' == request.path_info %>>
               <a href="/ciudad"><%= t.montevideo.title %></a>
             </li>
@@ -68,10 +71,10 @@
       <a href="/inscription" class="btn"><%= t.layout.register %></a>
 
       <div class="date_info">
-        <h3><%= t.layout.date1 %>
-          <br><%= t.layout.date2 %>
-          <br><%= t.layout.date3 %>
-          <br><%= t.layout.date4 %>
+        <h3>
+          <span><i class="fa fa-calendar" aria-hidden="true"></i>  <%= t.layout.date1 %></span>
+          <br><span> <%= t.layout.date2 %></span><br>
+          <br><span><i class="fa fa-map-marker" aria-hidden="true"></i>  <%= t.layout.date3 %></span>
         </h3>
       </div>
 

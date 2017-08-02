@@ -9,7 +9,7 @@ layout:
   date3: SAN JOSE DE COSTA RICA
   date4: COSTA RICA
   language2: Español
-  register: Pre-inscripción
+  register: Inscripción
   goback: Volver al inicio
   home: Inicio
   close: Cerrar
@@ -17,23 +17,28 @@ layout:
 
 index:
   title: Llamado a ponentes, temas de interés y solicitud de becas
-  content1: "<p>AbreLatam y ConDatos son los eventos en los cuales la comunidad de sociedad civil, gobierno, academia, tecnologías, empresas o que por iniciativa individual, trabajan por los datos abiertos en América Latina y el Caribe, se encuentran para entablar un diálogo sobre el estado e impacto de los procesos en el campo, en la región.
-      </p><p>ConDatos es una conferencia que reúne a los expertos de instituciones públicas, sector privado y de la sociedad civil para presentar, debatir, discutir y proponer sobre aspectos claves en materia de políticas de datos abiertos, gobierno abierto, innovación cívica, retos públicos, privacidad y nuevas formas de trabajo con datos abiertos.</p>"
+  content1: "<div class=\"col-md-8 col-md-offset-2\">
+              <h3>AbreLatam y ConDatos son los eventos en los cuales la comunidad de sociedad civil, gobierno, academia, tecnologías, empresas o que por iniciativa individual, trabajan por los datos abiertos en América Latina y el Caribe, se encuentran para entablar un diálogo sobre el estado e impacto de los procesos en el campo, en la región.</h3>
+              <h3>ConDatos es una conferencia que reúne a los expertos de instituciones públicas, sector privado y de la sociedad civil para presentar, debatir, discutir y proponer sobre aspectos claves en materia de políticas de datos abiertos, gobierno abierto, innovación cívica, retos públicos, privacidad y nuevas formas de trabajo con datos abiertos.</h3>
+              </div>"
   content2: "En esta edición ponemos especial énfasis en los siguientes temas:"
-  content3: " <ul><li>Capacidades para la captura, transformación, liberación y uso de datos.</li>
-              <li>Impacto local y regional a través del uso de datos abiertos relevantes.</li>
-              <li>Sensibilización a los actores del ecosistema sobre datos abiertos.</li>
-              <li>Datos abiertos para la prevención y lucha contra la corrupción.</li>
-              <li>Emprendimiento con datos abiertos y su sostenibilidad.</li>
-              <li>Objetivos de desarrollo sostenible y datos abiertos.</li>
-              <li>Datos abiertos para salvaguardar los derechos humanos.</li>
-              <li>Infraestructura para la promoción de los datos abiertos.</li>
-              <li>Seguridad, privacidad y datos abiertos.</li>
-              <li>Datos abiertos en gobernanza de asuntos fiscales y extractivas.</li>
-              <li>Datos, algoritmos y tecnología.</li>
-              <li>Periodismo de datos para reportar y monitorear.</li>
-              <li>Tecnología cívica y su impacto social.</li>
-              <li>Uso de datos y tecnología cívica para apoyar la igualdad de género</li></ul>"
+  content3: "
+  <div class=\"list-type1\">
+    <ol>
+      <li><a>Capacidades para la captura, transformación, liberación y uso de datos.</a></li>
+      <li><a>Impacto local y regional a través del uso de datos abiertos relevantes.</a></li>
+      <li><a>Sensibilización a los actores del ecosistema sobre datos abiertos.</a></li>
+      <li><a>Emprendimiento con datos abiertos y su sostenibilidad.</a></li>
+      <li><a>Datos abiertos para salvaguardar los derechos humanos.</a></li>
+      <li><a>Sensibilización a los actores del ecosistema sobre datos abiertos.</a></li>
+      <li><a>Infraestructura para la promoción de los datos abiertos.</a></li>
+      <li><a>Seguridad, privacidad y datos abiertos.</a></li>
+      <li><a>Datos abiertos en gobernanza de asuntos fiscales y extractivas.</a></li>
+      <li><a>Periodismo de datos para reportar y monitorear.</a></li>
+      <li><a>Tecnología cívica y su impacto social.</a></li>
+      <li><a>Uso de datos y tecnología cívica para apoyar la igualdad de género</a></li>
+    </ol>
+  </div>"
   errors: Errores
   organizers: Organizan
   co_organizers: Co-Organizan
@@ -46,10 +51,14 @@ sponsors:
   sponsor: Patrocinan
 
 form:
-  inscription: Pre-inscripción
-  process_title: "La participación en <strong>Abrelatam-Condatos</strong> requiere de un proceso de inscripción. Se solicita la colaboración de todas las personas que deseen asistir, cumpliendo lo siguiente:"
-  process: "<ol><li>Llenar el formulario de pre-inscripción que encontrará a continuación.</li><li>Esperar respuesta de aceptación e instrucciones para la confirmación de asistencia.</li><li>Confirmación de participación, por la vía que les será debidamente comunicada.</li></ol><p>El evento es gratuito y cubrirá los almuerzos de los tres días. Las personas participantes deben asumir los costos de transporte y hospedaje y otros tiempos de alimentación, hasta y en la ciudad de San José. Se dispone de fondos limitados para apoyar a algunas personas en estos dos rubros, por lo que si usted lo requiere, deberá indicarlo en las opciones indicadas. La solicitud de beca, no garantiza su otorgamiento.</p>"
-  process_dates: "<u>Fechas importantes:</u> <ul><li><strong>Pre-inscripción: </strong>29 de Mayo al 29 de Junio de 2017.</li><li><strong>Selección de personas becadas: </strong>30 de Junio al 10 de Julio.</li><li><strong>Comunicación de resultados de becas: </strong> 11 al 15 de Julio.</li><li><strong>Confirmación de participación: </strong>16 de Julio al 16 de Agosto.</li></ul>"
+  inscription: Inscripción
+  process_title: "La participación en <strong>Abrelatam-Condatos</strong> es gratuita, con <strong>cupo limitado</strong> y requiere de un proceso de inscripción. Le agradecemos atender las siguientes instrucciones, de lo contrario, no podemos garantizar su espacio:"
+  process: "<ol><li>Si usted llenó el formulario de pre-inscripción y recibió <cite>correo de confirmación</cite>*, <strong>NO debe llenar de nuevo este formulario.</strong> En los próximos días, recibirá un nuevo correo con instrucciones.</li><li>Si usted no llenó el formulario de pre-inscripción, debe conpletar el formulario que encontrará a continuación. Recibirá un <cite>correo de confirmación</cite>*. Este correo puede no generarse en forma inmediata, por lo que agradeceremos no llenar el formulario varias veces.</li></ol><p><u>El evento es <strong>gratuito</strong> y cubrirá los almuerzos de los tres días</u>. Las personas participantes deben asumir los costos de transporte y hospedaje y otros tiempos de alimentación, hasta y en la ciudad de San José.</p>"
+  process_dates: "</p><strong class=\"text-uppercase\">El período de inscripción cierra el 11 de agosto.</strong></p><p><small>*<cite>El correo</cite> se emite de la dirección abrelatamcondatos@gmail.com. Si no lo encontrara en su bandeja de \"Recibidos\", favor revisar sus bandejas de \"Promociones\" y \"Spam\".</small></p>"
+  inscription_complete_process: "
+    <p>Gracias por su interés en ser parte de <strong>Abrelatam y Condatos 2017</strong>. Para terminar el proceso de inscripción debe completar el formulario a continuación, <u>utilizando la dirección de correo con la cual realizó el pre-registro.</u></p>
+    <p>Este es un requisito indispensable y solamente las personas que completen el proceso de inscripción tendrán un espacio asegurado en el evento. <strong>El cupo es limitado.</strong></p>
+    <p>Si tiene alguna consulta adicional, recuerde que puede escribir a <a href=\"mailto:abrelatamcondatos@gmail.com\" target=\"_top\">abrelatamcondatos@gmail.com</a></p>"
   data: Datos Personales
   name: Nombre
   surname: Apellidos
@@ -129,7 +138,7 @@ form:
   instagram: Instagram
   github: Github
   extra: Extra
-  proposals_volunteering: Propuestas y Voluntariado
+  proposals_volunteering: Voluntariado
   participate_as_colaborator: ¿Tiene interés en realizar trabajo voluntario durante el evento?
   colaborator_area: ¿En qué área de trabajo podría apoyar como voluntario/a?
   colaborator_area_1: Logística y organización
@@ -143,10 +152,21 @@ form:
   why_include: ¿Por qué debería de estar esta propuesta en el evento?
   others_needed: ¿Requiere de la participación de otras personas?
   others_needed_tooltip: Indique el nombre, organización de cada una de las personas sugeridas y sus referencias en redes sociales
+  food_title: "La organización del evento ha previsto brindar la alimentación al almuerzo a  las personas participantes. Con la finalidad de disminuir el desperdicio de comida, le rogamos indicar a continuación si tomará usted esa opción"
+  lunch_confirmed: Sí, almorzaré en el evento
+  lunch_out: No, almorzaré fuera del evento
+  food_preference: ¿Tiene usted alguna de las siguientes restricciones alimentarias?
+  vegetarian: Vegetariana 
+  vegan: Vegana
+  celiac: Celíaca
+  diabetic: Diabética
+  recaptcha: Validación requerida
+  allergy: ¿Alergia a algún alimento?, Especifique cuál
+  comments_suggestions: ¿Desea agregar algún comentario o sugerencia?
   require_one: Seleccione al menos una opción
   require_three: Seleccione 3 opciones
   disclaimer_title: Protección de datos
-  disclaimer: "Los datos que nos proporcione en este formulario no serán vendidos, ni compartidos nunca con terceros. En aras de su confidencialidad, solamente podrán ser consultados por la persona a cuyos datos se refiere. Se recolectan con el fin de conocer a las personas y organizaciones relacionadas con el evento Abrelatam-Condatos y comunicarnos con ellas. La negativa a suministrarlos nos impedirá comunicarnos adecuadamente. Al llenar este formulario consiente en suministrar estos datos solicitados. En Costa Rica, le asisten los derechos de la ley 8968, Ley de Protección de la Persona frente al tratamiento de sus datos personales. Responsable de la base: Comisión organizadora Abrelatam-Condatos <a href=\"mailto:abrelatamcondatos@gmail.com\" target=\"_top\">abrelatamcondatos@gmail.com</a>"
+  disclaimer: "Los datos que nos proporcione en este formulario no serán vendidos, ni compartidos nunca con terceros. En aras de su confidencialidad, solamente podrán ser consultados por la persona a cuyos datos se refiere. Se recolectan con el fin de conocer a las personas y organizaciones relacionadas con el evento Abrelatam-Condatos y comunicarnos con ellas. La negativa a suministrarlos nos impedirá comunicarnos adecuadamente. Al llenar este formulario consiente en suministrar estos datos solicitados. Al llenar este formulario consiente en suministrar los datos requeridos y permitir que su imagen sea usada en publicidad y difusión de Abrelatam y Condatos, sin exigir compensación alguna. En Costa Rica, le asisten los derechos de la ley 8968, Ley de Protección de la Persona frente al tratamiento de sus datos personales. Responsable de la base: Comisión organizadora Abrelatam-Condatos <a href=\"mailto:abrelatamcondatos@gmail.com\" target=\"_top\">abrelatamcondatos@gmail.com</a>"
 
 thanks:
   title: Muchas gracias por completar el formulario
@@ -236,8 +256,10 @@ montevideo:
   
 montevideo_modals:
   earth: "Existen compañías de bus que ofrecen transporte terrestre desde Guatemala, El Salvador, Honduras, Nicaragua y Panamá. Puede encontrar más información visitando las páginas web de <a href=\"https://www.ticabus.com/Route/routes_maps\">TICABUS</a> y <a href=\"http://transnica.com/new/horarios-para-su-conveniencia/\">TRANSNICA</a>, que son las principales empresas que prestan este servicio."
-  air: "Al <a href=\"http://fly2sanjose.com/es/\">Aeropuerto Internacional Juan Santamaría (SJO)</a> llegan las principales líneas aéreas del mundo, con vuelos regionales desde todos los paises de Latinoamerica. El aeropuerto queda a 30 minutos del centro de San José, y  es posible tomar un <a href=\"http://www.taxisaeropuerto.com/\">taxi</a> o alquilar un auto en algunas de las rentadoras localizadas en el aeropuerto.  En San Jose tambien contamos con servicio de Uber"
-  visas: "<p>Dependiendo de la nacionalidad, usted puede o no necesitar visa para entrar al país. La lista detallada  de nacionalidades que requieren visa para ingresar a Costa Rica se encuentra en el siguiente <a href=\"http://www.visitcostarica.com/ict/paginas/Directrices_visas-Noviembre2009.pdf\">enlace</a></p><p>Además de la visa, para visitar Costa Rica las personas deberán cumplir con los siguientes requisitos: <ul><li>Tiquete de continuidad de viaje o retorno al país de procedencia</li><li>Demostración de solvencia económica,  que corresponde a US$100 por cada mes de turismo</li><li>Pasaporte con vigencia mínima de 6 meses</li></ul></p>"
+  air: "Al <a href=\"http://fly2sanjose.com/es/\">Aeropuerto Internacional Juan Santamaría (SJO)</a> llegan las principales líneas aéreas del mundo, con vuelos regionales desde todos los paises de Latinoamerica. El aeropuerto queda a 30 minutos del centro de San José, y  es posible tomar un <a href=\"http://www.taxisaeropuerto.com/\">taxi</a> o alquilar un auto en algunas de las rentadoras localizadas en el aeropuerto.  En San Jose tambien contamos con servicio de Uber."
+  air_discount: "Descuento especial para quienes asistan al evento. Para disfrutarlo, solo debe dirigirse al centro de reservaciones en su país, facilitar el código e indicar que participarán en <strong>Abrelatam y ConDatos 2017</strong>. Con el mismo podrán comprar su boleto a través del call center y despúes del 5 de agosto, a través del <a href=\"https://www.copaair.com\">sitio web</a> de la aerolínea."
+  air_discount_info: "Para mayor información, pueden escribir a: -Karla Chaves: <a href=\"mailto:kchaves@copaair.com\" target=\"_top\">kchaves@copaair.com</a> -Denia Vargas: <a href=\"mailto:dvargasm@copaair.com\" target=\"_top\">dvargasm@copaair.com</a>"
+  visas: "<p>Dependiendo de la nacionalidad, usted puede o no necesitar visa para entrar al país. La lista detallada  de nacionalidades que requieren visa para ingresar a Costa Rica se encuentra en el siguiente <a href=\"/doc/visa.pdf\">enlace</a></p><p>Además de la visa, para visitar Costa Rica las personas deberán cumplir con los siguientes requisitos: <ul><li>Tiquete de continuidad de viaje o retorno al país de procedencia</li><li>Demostración de solvencia económica,  que corresponde a US$100 por cada mes de turismo</li><li>Pasaporte con vigencia mínima de 6 meses</li></ul></p>"
   airport: "<p>El Aeropuerto Internacional Juan Santamaría, no se encuentra en San José, aunque así lo diga su boleto. Pero no se preocupe, que “Chepe Centro”, nuestra capital está cerca (en realidad, todo está cerca en nuestro país). La forma más segura de desplazarse a su hotel es tomando un taxi que le costará aproximadamente $30 e incluso puede <a href=\"http://www.taxiaeropuerto.com/\">reservar con anticipación, en línea.</a></p><p>No acepte ningún servicio a la salida del aeropuerto, que no esté debidamente identificado. La compañía de taxis autorizada es la indicada arriba y sus unidades son de color anaranjado, con logo blanco que dice “Taxi Aeropuerto”. Sin embargo, puede ser que se encuentre disponible alguna unidad de los taxis oficiales en el resto del territorio nacional, que son de color rojo, con un triángulo amarillo en sus puertas y placa de circulación que inicia con la letra T.</p><p>En San Jose tambien contamos con servicio de Uber, que al igual es seguro y una alternativa más económica al taxi.</p>"
   taxi: "El transporte público no es lo más recomendable cuando se cuenta con poco tiempo, por lo que recomendamos utilizar el servicio de taxi (recuerden: rojo con un triángulo amarillo en las puertas y placa que inicia con letra T) o Uber."
   vaccines: "Costa Rica en el Decreto Ejecutivo N° 33934-S-SP-RE (publicado en La Gaceta 165 del 29 de agosto del 2007), declaró obligatoria la vacunación contra la fiebre amarilla antes de su ingreso al territorio nacional, en personas provenientes de áreas geográficas consideradas de riesgo. Por lo anterior, al ingreso a Costa Rica las <strong>personas provenientes de Brasil, Bolivia, Colombia, Ecuador, Perú y Venezuela, deberán presentar su “Certificado Internacional de Vacunación contra la Fiebre Amarilla”</strong> el cual es válido a partir de 10 días después de la vacunación."

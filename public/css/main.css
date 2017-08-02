@@ -3,28 +3,211 @@
    ========================================================================== */
 body {
     overflow-x:hidden;font-family: 'Montserrat', sans-serif;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a3990+0,2c3c91+12,2a4194+20,2e4a98+35,31559d+51,32589f+54,335aa0+58,3564a5+69,356dab+80,3f7eb5+98 */
-    background: rgb(3,118,147); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%);  /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(112, 165, 199) 20%,rgb(54, 171, 196) 35%,rgb(110, 166, 199) 51%,rgb(11, 165, 193) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%);  /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgb(17, 163, 195) 0%,rgb(73, 178, 206) 12%,rgb(31, 167, 197) 20%,rgb(54, 171, 196) 35%,rgb(91, 186, 212) 51%,rgb(94, 185, 208) 54%,rgb(91, 186, 213) 58%,rgb(93, 190, 209) 69%,rgb(96, 181, 208) 80%,rgb(162, 213, 223) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a3990', endColorstr='#3f7eb5',GradientType=0 ); /* IE6-9 */
+    background-color: white; 
 }
+
+.discount-label {
+    padding:8px; 
+    position:relative;
+    float:left;
+    margin-top:5px;
+    margin-left:25px;
+    margin-right:10px;
+    width:286px;
+    -webkit-border-radius:0 4px 0 4px;
+    -moz-border-radius:0 4px 0 4px;
+    border-radius:0 4px 4px 0;
+
+}
+
+.discount{
+    border-radius: 15px;
+    border: 4px solid #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.discount img{
+    max-height: 30px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+
+.discount-desc{
+    color: #2b4064;
+    margin: 10px;
+}
+
+.discount-info{
+    color: #818181;
+    margin: 15px;
+}
+
+.discount-code{
+    padding-left: 13px;
+    font-size: 23px;
+    color: #f2e018;
+}
+
+.discount-label:after { 
+    right: 100%; 
+    border: solid transparent; content: " "; 
+    height: 0; 
+    width: 0; 
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);     
+    border-width: 20px; 
+    top: 50%; 
+    margin-top: -20px;
+} 
+
+.discount-label:before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    top: 42%;
+    right: 100%;
+    width: 7px;
+    height: 7px;
+    opacity: .95;
+    background: #ffffff;
+    border-radius: 7px;
+    -webkit-box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.discount-label span {
+    color:#ffffff;
+    font-size:20px;
+    text-align:center;
+    font-family:"Raleway",Helvetica;
+
+}
+
+.blue{ 
+background-color:#4066A9; 
+}
+.blue:after{ 
+border-right-color: #4066A9; 
+}
+
+.list-title{
+    margin-top: 30px;
+    color: #f486ba;
+}
+
+.list-type1{
+width:630px;
+margin:0 auto;
+margin-top: 10px;
+}
+
+.list-type1 ol{
+counter-reset: li;
+list-style: none;
+*list-style: decimal;
+font-size: 15px;
+font-family: 'Raleway', sans-serif;
+padding: 0;
+margin-bottom: 4em;
+}
+.list-type1 ol ol{
+margin: 0 0 0 2em;
+}
+
+.list-type1 a{
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+*padding: .4em;
+margin: .5em 0;
+background: #6CBFDD;
+color: white;
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+-moz-border-radius: .3em;
+-webkit-border-radius: .3em;
+border-radius: 10em;
+transition: all .2s ease-in-out;
+}
+
+.list-type1 a:hover{
+background: #Ef59A0;
+text-decoration:none;
+transform: scale(1.1);
+}
+
+.list-type1 a:before{
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background:#09A5C4;
+font-size: 22px;
+height: 2em;
+width: 2em;
+border: .3em solid #fff;
+text-align: center;
+font-weight: bold;
+-moz-border-radius: 2em;
+-webkit-border-radius: 2em;
+border-radius: 2em;
+color:#FFF;
+}
+
+
+.abrelatam-condatos{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+ }
+
+#intro_txt b{
+    color: #0f7a96;
+    font-weight: bold;
+}
+#intro_txt h3{
+    font-weight: bold;
+}
+
+#orgnices img{
+    padding-top: 20px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+ #partners img{
+    padding-top: 20px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
 
 #goup_btn {background: #252626;height: 125px; width: 64px;position: fixed;line-height:123px;top: 50px;text-align:center;right: 120px;display: none;}
 #goup_btn img { width: 50%;}
 .sub_title {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 700;
     color: #5DBFDD;
     text-transform: uppercase;
     margin: 50px 0;
 }
 
-@media (min-width: 768px) {
-}
-
 @media (max-width: 1024px) {
     #goup_btn { width:32px; height: 63px; right: 0; line-height: 60px;}
+    .list-type1{
+        width:400px !important;
+    }
+    .jcountTimer span {
+        width:10% !important;font-size: 1.8em !important; margin:0 4% 0 4% !important; padding:0 30px !important;}
+    .intro{
+        width: 100% !important;
+    }
 }
 @media (max-width: 640px) {
     #ogp_logo_mobile { display: block;}
@@ -159,8 +342,8 @@ body {
     font-size: 12px;
 }
 .jcountTimer  {font-weight: normal;display: inline-block;}
-.jcountTimer span { width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:1px solid #efa4c7; padding:0 40px;}
-.jcountTimer span small { display:block;font-size: 0.3em; text-transform: none;color:#fff;font-weight: normal;text-align:left;font-family:"Arial"}
+.jcountTimer span {color:#09a5c4; width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:4px solid #efa4c7; padding:0 40px;}
+.jcountTimer span small { display:block;font-size: 0.3em; text-transform: none;color:#f486ba;font-weight: bold;text-align:left;font-family:"Arial"}
 .jcountTimer span:first-child { border: none; margin-left:0}
 /* ==========================================================================
    Main container styles
@@ -171,16 +354,12 @@ body {
     float: left;
     width:75%;
     margin-left:272px;
-    margin-top: 80px;
     margin-right:80px;
     min-height: 100vh;
     overflow: hidden;
     padding-right: 20px;
     padding-left: 85px;
     padding-bottom: 85px;
-}
-
-@media (min-width: 768px) {
 }
 
 @media (min-width: 1024px) {
@@ -198,6 +377,7 @@ body {
    ========================================================================== */
 
 .main_menu {
+    border-right: 5px solid #f486ba;
     position: fixed;
     display: block;
     background-color: #014454;
@@ -208,7 +388,7 @@ body {
 }
 @media (min-width: 768px) {
     .main_menu {width: 272px;}
-    .main_menu .date_info h3 {font-size: 17px;}
+    .main_menu .date_info h3 {font-size: 10px;}
 }
 
 @media (min-width: 1024px) {
@@ -223,7 +403,7 @@ body {
 
     .main_menu nav#main_nav ul{ padding: 20px 0 0 10px !important;}
     .main_menu nav#main_nav ul li { margin: 10px 0}
-    .main_menu .date_info h3  { font-size:14px }
+    .main_menu .date_info h3  { font-size:12px }
     .main_menu .btn { width: 93%;}
     .main_menu .language_nav { text-align: center;}
     .main_menu .language_nav a {font-size: 18px !important}
@@ -255,7 +435,7 @@ body {
 }
 
 a#ogp_logo {
-    background: url(../img/ogp_logo.png) no-repeat;   
+    background: url(../img/ogp_logo_white.png) no-repeat;   
     height: 120px;
     width: 180px;
     background-size: 180px 120px;
@@ -267,7 +447,7 @@ a#ogp_logo {
 }
 
 a#ogp_logo_mobile {
-    background: url(../img/ogp_logo.png) no-repeat;
+    background: url(../img/ogp_logo_white.png) no-repeat;
     height: 142px;
     width: 142px;
     margin: auto;
@@ -319,7 +499,7 @@ a#ogp_logo_mobile {
 .main_menu .language_nav a:hover, .main_menu .language_nav a.active { color:#5DBFDD;border-bottom: 2px solid #5DBFDD;text-decoration: none;}
 
 .main_menu .date_info { margin-bottom: 20px; margin-right: 20px;}
-.main_menu .date_info h3 {color: #ef59a1; font-weight: 700;}
+.main_menu .date_info h3 {color: white; font-weight: bold; font-size: 14px;}
 
 .main_menu nav#main_nav ul .submenu {padding:10px 0 0 0px; margin-bottom: 0px; display: none;}
 .main_menu nav#main_nav ul .show_submenu {display: block;}
@@ -347,7 +527,7 @@ footer {
     float: left;
     background:#efa4c7;
     padding-top: 10px;
-    width:75%;
+    width:100%;
     margin-left:272px;
     margin-right:80px;
     margin-top: -4%;
@@ -360,7 +540,8 @@ footer ul li a:hover { border-bottom: 2px solid #fff;text-decoration: none; colo
 footer ul li a {font-family: 'Roboto', sans-serif;font-size: 14px;color: #707070; padding-left: 5px }
 footer ul li a:hover > i  {color: #fff}
 
-.twitter_feed { float: right; width: 45%; margin-right: 5%;}
+.twitter_feed { float: right; width: 51%; margin-top: -4%;}
+.twitter_feed iframe{width: 600px !important; height: 300px !important;}
 
 .twitter_feed .tweet { width: 100%; display: inline-block;margin: 10px 0}
 .twitter_feed h3 { color: white;font-weight: normal; margin: 0px 0 15px 0;font-size: 20px;}
@@ -399,19 +580,19 @@ footer ul li a:hover > i  {color: #fff}
 /* ==========================================================================
    Home Page  styles
    ========================================================================== */
-#home_page #intro_txt, #speakers, #partners { width: 100%; display: inline-block; margin:0 0 55px 0}
+#home_page #intro_txt, #speakers, #partners { width: 100%; display: inline-block; margin:0 0 5px 0}
 #home_page #intro_txt figure { float: left;}
 #home_page #intro_txt figure img {    
     max-width: 700px;
-    margin-top: 5%;
-    margin: 5%;
+    margin: 2%;
 }
 #home_page #intro_txt .mt { font-family: 'Roboto', sans-serif; margin-right: 25px; float: left;}
 #home_page #intro_txt .mt b {font-size: 18px;}
 #home_page #intro_txt .mt p,  #home_page #intro_txt .mt li {font-size: 15px;}
 
 @media (min-width: 768px) {
-    #home_page #partners .partner, #home_page #orgnices .organce  { width: 13%;display: inline-block;margin-right:150px;}
+    #home_page #partners .partner, #home_page #orgnices .organce  { width: 16%;display: inline-block;margin-right:100px;
+    margin-top: 20px;}
     #orgnices .organce figure img { width: 100%;}
 }
 
@@ -1113,4 +1294,13 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 .free{
   height: 60px;
   margin-left: 10px;
+}
+.partner-img{
+    max-width: 120% !important;
+    width: 120% !important;
+}
+.organce-img{    
+    max-width: 140% !important;
+    width: 140% !important;
+}
 }

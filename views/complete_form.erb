@@ -1,0 +1,147 @@
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <section class="main_container">
+  <div class="triangle-topright"></div>
+  <div class="triangle-topleft" style="left:-120px;top:500px"></div>
+
+  <div class="cilinder"></div>
+  <div class="lines"></div>
+  <div class="triangle-topleft"></div>
+
+ <div class="inscription" style="margin-top: 100px !important;">
+    <h1><%= t.form.inscription %></h1>
+    <p><%= t.form.inscription_complete_process %></p>
+  </div>
+
+  <% if inscription.errors && !inscription.errors.empty? %>
+    <section id="errors" class="container content-section">
+      <div class="alert alert-danger" role="alert">
+        <h2><%= t.index.errors %></h2>
+        <ul>
+          <% inscription.errors.each do |e,v| %>
+            <li><%= v[0].to_s %></li>
+          <% end %>
+        </ul>
+      </div>
+    </section>
+  <% end %>
+
+  <form action='/complete' method='post' name='form' id="form">
+   
+    <div class="block">
+      <h3><%= t.form.data %></h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="input-container">
+            <input type='email' name='email' id='email' required>
+            <label for="email"><%= t.form.email %>*</label>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='text' name='personal_facebook' id='personal_facebook'>
+              <label for="facebook"><%= t.form.facebook %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='text' name='personal_twitter' id='personal_twitter'>
+              <label for="twitter"><%= t.form.twitter %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='text' name='personal_instagram' id='personal_instagram'>
+              <label for="instagram"><%= t.form.instagram %></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-container">
+              <input type='url' name='personal_github' id='personal_github'>
+              <label for="github"><%= t.form.github %></label>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="block">
+      <h3><%= t.event.title %></h3>
+      <div class="row">      
+
+        <div class="col-md-6">
+          <label class="lbl" for="parcipate_in"><%= t.form.parcipate_in %>:</label>
+           <div id="parcipate_in">
+             <div class="checkbox">
+                <label><input type="checkbox" name="event[]" class="require-one" value="<%= t.form.unconference %>"><%= t.form.unconference %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="event[]" class="require-one" value="<%= t.form.encounter_third_kind %>"><%= t.form.encounter_third_kind %></label>
+              </div>
+           </div>
+        </div>
+
+        <div class="col-md-12">
+          <label class="lbl" for="parcipate_in"><%= t.form.food_title %>:*</label>
+           <div id="lunch">
+             <div class="checkbox">
+                <label><input type="radio" id="lunch_confirmed" name="lunch_confirmation" value="<%= t.form.lunch_confirmed %>"><%= t.form.lunch_confirmed %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="radio" id="lunch_out" name="lunch_confirmation" value="<%= t.form.lunch_out %>" checked><%= t.form.lunch_out %></label>
+              </div>
+           </div>
+        </div>
+
+       <div id="food_preference_tab">
+        <div class="col-md-6">
+          <label class="lbl" for="food_preference"><%= t.form.food_preference %></label>
+           <div id="food_preference"> 
+             <div class="checkbox">
+                <label><input type="checkbox" name="food_preference[]"  value="<%= t.form.vegetarian %>"><%= t.form.vegetarian %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="food_preference[]" value="<%= t.form.vegan %>"><%= t.form.vegan %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="food_preference[]" value="<%= t.form.celiac %>"><%= t.form.celiac %></label>
+              </div>
+              <div class="checkbox">
+               <label><input type="checkbox" name="food_preference[]" value="<%= t.form.diabetic %>"><%= t.form.diabetic %></label>
+              </div>   
+            </div>              
+            <div class="input-container">
+              <input type='text' name='allergy' id='allergy'>
+              <label for="allergy"><%= t.form.allergy %>:</label>
+            </div>     
+        </div>
+      </div>
+        <div class="col-md-12">
+          <div class="textarea-container">
+            <textarea placeholder="<%= t.form.comments_suggestions %>" name="comments_suggestions" id="comments_suggestions"></textarea>
+          </div>
+        </div> 
+      </div>  
+    </div>
+
+
+    <div class="block">
+      <div class="row col-md-12">
+        <div class="g-recaptcha" data-sitekey="6LciFioUAAAAAGWqp--gxYB3_wanVti5EJZV-9uG"></div>
+          <p id="recaptcha-err" class="error"><%= t.form.recaptcha %></p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3><%= t.form.disclaimer_title %></h4>
+      <p><%= t.form.disclaimer %></p>
+    </div>
+
+    <small style="float:right !important; text-align:right !important;"><%= t.form.mandatory %></small>
+    <button type="submit" class="btn pull-right"><%= t.form.finish_her %></button>
+
+  </form>
+  <script src='/js/complete_form.js'></script>
+  <script src='/js/smoothscroll.min.js'></script>
+</section>
