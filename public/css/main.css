@@ -2,10 +2,13 @@
    General site styles
    ========================================================================== */
 body {
-    overflow-x:hidden;font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden;
+    font-family: 'Roboto', sans-serif;
     background-color: white; 
 }
-
+.public-interest{
+    color: #d5d7d7;
+}
 .discount-label {
     padding:8px; 
     position:relative;
@@ -93,7 +96,7 @@ border-right-color: #4066A9;
 
 .list-title{
     margin-top: 30px;
-    color: #f486ba;
+    color: #ff4fa7;
 }
 
 .list-type1{
@@ -121,7 +124,7 @@ display: block;
 padding: .4em .4em .4em 2em;
 *padding: .4em;
 margin: .5em 0;
-background: #6CBFDD;
+background: #00bab7;
 color: white;
 font-size: 14px;
 font-weight: bold;
@@ -145,7 +148,7 @@ position: absolute;
 left: -1.3em;
 top: 50%;
 margin-top: -1.3em;
-background:#09A5C4;
+background:#00bab7;
 font-size: 22px;
 height: 2em;
 width: 2em;
@@ -166,11 +169,13 @@ color:#FFF;
  }
 
 #intro_txt b{
-    color: #0f7a96;
+    color: #00bab7;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 #intro_txt h3{
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 #orgnices img{
@@ -193,7 +198,7 @@ color:#FFF;
 .sub_title {
     font-size: 30px;
     font-weight: 700;
-    color: #5DBFDD;
+    color: #00bab7;
     text-transform: uppercase;
     margin: 50px 0;
 }
@@ -217,7 +222,7 @@ color:#FFF;
     width: 100% !important;
     background-size: 150px 100px !important;
     background-position-x: 25px !important;
-    background-color: #157e99 !important;
+    background-color: #00bab7 !important;
     }
     #home_page #intro_txt figure img {
     max-width: 350px !important;
@@ -342,8 +347,8 @@ color:#FFF;
     font-size: 12px;
 }
 .jcountTimer  {font-weight: normal;display: inline-block;}
-.jcountTimer span {color:#09a5c4; width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:4px solid #efa4c7; padding:0 40px;}
-.jcountTimer span small { display:block;font-size: 0.3em; text-transform: none;color:#f486ba;font-weight: bold;text-align:left;font-family:"Arial"}
+.jcountTimer span {color:#00bab7; width:15%;float:left;font-size: 2em; margin:0 5% 0 5%;font-weight: 400;font-family:"Montserrat";border-left:4px solid #efa4c7; padding:0 40px;}
+.jcountTimer span small { display:block;font-size: 0.3em; text-transform: none;color:#efa4c7;font-weight: bold;text-align:left;font-family:"Arial"}
 .jcountTimer span:first-child { border: none; margin-left:0}
 /* ==========================================================================
    Main container styles
@@ -377,10 +382,10 @@ color:#FFF;
    ========================================================================== */
 
 .main_menu {
-    border-right: 5px solid #f486ba;
+    border-right: 5px solid #ff4fa7;
     position: fixed;
     display: block;
-    background-color: #014454;
+    background-color: #00bab7;
     padding-left:50px;
     height: 100vh;
     vertical-align: middle;
@@ -461,10 +466,10 @@ a#ogp_logo_mobile {
 .main_menu nav#main_nav { border-left: 1px solid #fff;}
 .main_menu nav#main_nav ul {padding:80px 0 0 10px; margin-bottom: 50px}
 .main_menu nav#main_nav ul li {list-style-type: none;position: relative;}
-.main_menu nav#main_nav ul li a {font-family: 'Roboto', sans-serif; color: #fff; font-size: 14px;letter-spacing: 1px;f}
+.main_menu nav#main_nav ul li a {font-family: 'Roboto', sans-serif; color: #fff; font-size: 18px;letter-spacing: 1px; font-weight: bold;}
 
 .main_menu nav#main_nav ul li:before {
-    background: #333;
+    background: white;
     content: '';
     height: 13px;
     display: block;
@@ -477,7 +482,7 @@ a#ogp_logo_mobile {
 }
 .main_menu nav#main_nav ul li:after {}
 .main_menu nav#main_nav ul li.active:after, .main_menu nav ul li a:hover:after {
-                                                background: #5DBFDD;
+                                                background: #00bab7;
                                                 content: '';
                                                 height: 7px;
                                                 display: block;
@@ -489,14 +494,14 @@ a#ogp_logo_mobile {
                                             }
 
 .main_menu nav#main_nav ul .active {}
-.main_menu nav#main_nav ul .active a, .main_menu nav ul li a:hover  {text-decoration: none; color:#5DBFDD;padding-bottom: 5px;border-bottom:2px solid #5DBFDD;}
+.main_menu nav#main_nav ul .active a, .main_menu nav ul li a:hover  {text-decoration: none; color:#666666;padding-bottom: 5px;border-bottom:2px solid white;}
 
-.main_menu .btn { font-family: 'Roboto', sans-serif;text-align: center; border-radius: 0;border-color: #5DBFDD; font-size: 15px;color: #5DBFDD;}
-.main_menu .btn:hover {border-color: #fff;color: #fff}
+.main_menu .btn { font-family: 'Roboto', sans-serif;text-align: center; border-radius: 0;border-color: white; font-size: 18px;color: white; font-weight: : bold;}
+.main_menu .btn:hover {border-color: black ;color: black}
 
 .main_menu .language_nav { }
 .main_menu .language_nav a {font-family: 'Roboto', sans-serif;text-transform: uppercase;font-size: 13px;color: #707070;margin-right: 5px}
-.main_menu .language_nav a:hover, .main_menu .language_nav a.active { color:#5DBFDD;border-bottom: 2px solid #5DBFDD;text-decoration: none;}
+.main_menu .language_nav a:hover, .main_menu .language_nav a.active { color:#00bab7;border-bottom: 2px solid #00bab7;text-decoration: none;}
 
 .main_menu .date_info { margin-bottom: 20px; margin-right: 20px;}
 .main_menu .date_info h3 {color: white; font-weight: bold; font-size: 14px;}
@@ -512,12 +517,12 @@ a#ogp_logo_mobile {
     position: absolute;
     top: 20px;
     right: 20px;
-    border: 1px solid #5dbfdd;
+    border: 1px solid white;
     padding: 10px 20px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 13px;
-    color: #5dbfdd;
+    color: white;
     display: none;
 }
 /* ==========================================================================
@@ -623,11 +628,11 @@ footer ul li a:hover > i  {color: #fff}
 #speakers .speaker .mt {float: left;margin-left: 20px;}
 #speakers .speaker .mt h3 {font-family: 'Roboto', sans-serif;font-size: 20px;margin: 0}
 #speakers .speaker .mt p {font-family: 'Roboto', sans-serif;font-size: 12px;font-weight: bold;margin: 0}
-#speakers .speaker .mt a {font-family: 'Roboto', sans-serif;font-size: 11px;color: #5DBFDD}
+#speakers .speaker .mt a {font-family: 'Roboto', sans-serif;font-size: 11px;color: #00bab7}
 #speakers .speaker .mt nav { margin: 10px 0}
 #speakers .speaker .mt nav a i {
     font-size: 13px;
-    background: #5DBFDD;
+    background: #00bab7;
     border-radius: 24px;
     padding: 7px 10px;
     color: #fff;
@@ -639,13 +644,13 @@ footer ul li a:hover > i  {color: #fff}
    ========================================================================== */
 
 #agenda h1 { padding: 120px 0 0 0; font-size: 15px;font-family: 'Roboto', sans-serif; }
-#agenda h1:before { content: ''; height: 5px; background:#5DBFDD; width: 20%;position: absolute;top: -15px;}
+#agenda h1:before { content: ''; height: 5px; background:#00bab7; width: 20%;position: absolute;top: -15px;}
 #agenda p {
-    border: 2px solid #5DBFDD;
+    border: 2px solid #00bab7;
     float: left;
     padding: 10px 30px;
     margin: 20px 0;
-    color: #5DBFDD;
+    color: #00bab7;
 }
 
 /* ==========================================================================
@@ -657,33 +662,33 @@ footer ul li a:hover > i  {color: #fff}
 #montevideo_page .travel { width: 100%; display: inline-block;text-align: center;}
 #montevideo_page .travel .cta { width: 33%; display: inline-block;text-align:center;
                               }
-#montevideo_page .travel h3 {font-size: 18px; color: #5DBFDD; text-align: left;}
+#montevideo_page .travel h3 {font-size: 18px; color: #00bab7; text-align: left;}
 #montevideo_page .travel .cta img { width: 65%}
 #montevideo_page .travel .cta p { font-size: 15px; font-weight: bold;font-family: 'Roboto', sans-serif; }
-#montevideo_page .travel .info { width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #5DBFDD; border-top: 1px solid #5DBFDD;padding: 20px 0;margin: 20px 0}
+#montevideo_page .travel .info { width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #00bab7; border-top: 1px solid #00bab7;padding: 20px 0;margin: 20px 0}
 #montevideo_page .travel .info p { margin: 0}
-#montevideo_page .travel .info p a {font-weight:500;font-size: 15px;color: #5DBFDD;font-family: 'Roboto', sans-serif;border-bottom: 2px solid #5DBFDD}
+#montevideo_page .travel .info p a {font-weight:500;font-size: 15px;color: #00bab7;font-family: 'Roboto', sans-serif;border-bottom: 2px solid #00bab7}
 #montevideo_page .travel .info p a:hover {text-decoration: none;}
 
 #montevideo_page .transport { width: 100%; display: inline-block;text-align: center;}
-#montevideo_page .transport h3 {font-size: 18px; color: #5DBFDD; text-align: left;}
+#montevideo_page .transport h3 {font-size: 18px; color: #00bab7; text-align: left;}
 
 #montevideo_page .transport .cta { width: 22%; display: inline-block;text-align:center;}
 #montevideo_page .transport .cta img { width: 100%}
 #montevideo_page .transport .cta p { font-size: 15px; font-weight: bold;font-family: 'Roboto', sans-serif; }
 #montevideo_page .transport .info p { margin: 0}
-#montevideo_page .transport .info { width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #5DBFDD; border-top: 1px solid #5DBFDD;padding: 20px 0;margin: 20px 0}
-#montevideo_page .transport .info p a {font-weight:500;font-size: 15px;color: #5DBFDD;font-family: 'Roboto', sans-serif;border-bottom: 2px solid #5DBFDD}
+#montevideo_page .transport .info { width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #00bab7; border-top: 1px solid #00bab7;padding: 20px 0;margin: 20px 0}
+#montevideo_page .transport .info p a {font-weight:500;font-size: 15px;color: #00bab7;font-family: 'Roboto', sans-serif;border-bottom: 2px solid #00bab7}
 
 
 #montevideo_page .other { width: 100%; display: inline-block;text-align: center;}
-#montevideo_page .other h3 {font-size: 18px; color: #5DBFDD; text-align: left;}
+#montevideo_page .other h3 {font-size: 18px; color: #00bab7; text-align: left;}
 
 #montevideo_page .other .cta { width: 22%; display: inline-block;text-align:center;}
 #montevideo_page .other .cta img { width: 100%}
 #montevideo_page .other .cta p { font-size: 15px; font-weight: bold;font-family: 'Roboto', sans-serif; }
 #montevideo_page .other .info h3 { margin: 0}
-#montevideo_page .other .info { width: 100%; display: inline-block;text-align: left;border-bottom:1px solid #5DBFDD; border-top: 1px solid #5DBFDD;padding: 20px 0;margin: 20px 0}
+#montevideo_page .other .info { width: 100%; display: inline-block;text-align: left;border-bottom:1px solid #00bab7; border-top: 1px solid #00bab7;padding: 20px 0;margin: 20px 0}
 #montevideo_page .other .info p { margin: 30px 0; font-size: 14px; font-family: 'Roboto', sans-serif; }
 
 #montevideo_page .cta a {color: #555;}
@@ -741,17 +746,17 @@ footer ul li a:hover > i  {color: #fff}
 }
 
 #sedes_page .map_info_sidebar .inner { padding: 30px}
-#sedes_page .map_info_sidebar .inner .close { color: #5DBFDD;font-size: 13px;}
-#sedes_page .map_info_sidebar .inner .direction { border: 2px solid #5DBFDD; padding: 10px;margin: 20px 0}
-#sedes_page .map_info_sidebar .inner .direction h4 {font-size: 16px;font-family: 'Roboto', sans-serif;font-weight: bold;color: #5DBFDD;margin:0 0px 5px 0}
+#sedes_page .map_info_sidebar .inner .close { color: #00bab7;font-size: 13px;}
+#sedes_page .map_info_sidebar .inner .direction { border: 2px solid #00bab7; padding: 10px;margin: 20px 0}
+#sedes_page .map_info_sidebar .inner .direction h4 {font-size: 16px;font-family: 'Roboto', sans-serif;font-weight: bold;color: #00bab7;margin:0 0px 5px 0}
 #sedes_page .map_info_sidebar .inner .direction p {font-size: 14px;font-family: 'Roboto', sans-serif;}
 #sedes_page .map_info_sidebar .inner .general_info { font-size: 14px;font-family: 'Roboto', sans-serif;}
-#sedes_page .map_info_sidebar .inner .general_info h4 { font-size: 15px; color: #5DBFDD; margin: 20px 0}
+#sedes_page .map_info_sidebar .inner .general_info h4 { font-size: 15px; color: #00bab7; margin: 20px 0}
 #sedes_page .map_info_sidebar .inner .title_activity i {font-size: 22px;}
 #sedes_page .map_info_sidebar .inner .general_info .activity { margin:10px 0;width: 100%; display: inline-block;}
 #sedes_page .map_info_sidebar .inner .general_info .activity p {line-height: 20px; font-size: 14px;font-family: 'Roboto', sans-serif;font-weight: bold;margin: 0}
 #sedes_page .map_info_sidebar .inner .general_info .activity small {font-size: 14px;font-family: 'Roboto', sans-serif;}
-#sedes_page .map_info_sidebar  .apps_info { width: 100%; display:block;background: #5DBFDD;padding: 20px 0;text-align: center;}
+#sedes_page .map_info_sidebar  .apps_info { width: 100%; display:block;background: #00bab7;padding: 20px 0;text-align: center;}
 #sedes_page .map_info_sidebar  .apps_info p {color: #231F20;font-size: 14px;font-family: 'Roboto', sans-serif;}
 #sedes_page .map_info_sidebar  .apps_info a {color: #fff;font-size: 14px;font-family: 'Roboto', sans-serif; margin:0 5px}
 
@@ -762,21 +767,21 @@ footer ul li a:hover > i  {color: #fff}
    ========================================================================== */
 
 #evento_page {padding-right: 80px}
-#evento_page h3 {color: #5DBFDD;font-size: 18px;margin: 0 0 30px 0}
-#evento_page h3:before { content: ''; height: 5px; background:#5DBFDD; width: 20%;position: absolute;top: -15px;}
+#evento_page h3 {color: #00bab7;font-size: 18px;margin: 0 0 30px 0}
+#evento_page h3:before { content: ''; height: 5px; background:#00bab7; width: 20%;position: absolute;top: -15px;}
 
 #evento_page h4 {color: #333;font-size: 15px;margin: 0 0 30px 0}
-#evento_page h4:before { content: ''; height: 5px; background:#5DBFDD; width: 10%;position: absolute;top: -15px;}
+#evento_page h4:before { content: ''; height: 5px; background:#00bab7; width: 10%;position: absolute;top: -15px;}
 
 #evento_page p {font-size: 14px;font-family: 'Roboto', sans-serif;}
 #evento_page .row { margin: 50px 0}
-#evento_page .coffee_module {border: 2px solid #5DBFDD; padding: 15px 10px;margin:0}
-#evento_page .coffee_module p {font-size: 14px;font-family: 'Roboto', sans-serif;color:#5DBFDD;font-weight: 500;}
+#evento_page .coffee_module {border: 2px solid #00bab7; padding: 15px 10px;margin:0}
+#evento_page .coffee_module p {font-size: 14px;font-family: 'Roboto', sans-serif;color:#00bab7;font-weight: 500;}
 #evento_page .coffee_module i {font-size: 40px; float: left; width: 30%}
 #evento_page .coffee_module small {display: inline-block; width: 60%}
-#evento_page .steps h2 {color: #5DBFDD;font-size: 91px;margin: 0 0 0px 0;font-weight: bold;}
-#evento_page #event_panel_icon { font-size: 80px; color: #5DBFDD}
-#evento_page .icon-commenticon {font-size: 80px;float: left;color: #5DBFDD; border-left: 4px  solid #5DBFDD}
+#evento_page .steps h2 {color: #00bab7;font-size: 91px;margin: 0 0 0px 0;font-weight: bold;}
+#evento_page #event_panel_icon { font-size: 80px; color: #00bab7}
+#evento_page .icon-commenticon {font-size: 80px;float: left;color: #00bab7; border-left: 4px  solid #00bab7}
 #evento_page .comment_info { float: left; width: 70%; font-weight: normal;}
 
 @media (max-width: 640px) {
@@ -795,12 +800,12 @@ footer ul li a:hover > i  {color: #fff}
    Contact Form  styles
    ========================================================================== */
 #contact_page .title { width: 100%; display: inline-block;}
-#contact_page .title h2 {float: left;font-size: 18px; color: #5DBFDD; text-transform: uppercase;line-height: 80px;}
-#contact_page .title h2:before {content: ''; width: 60%;height: 6px; background: #5DBFDD;display: block;}
+#contact_page .title h2 {float: left;font-size: 18px; color: #00bab7; text-transform: uppercase;line-height: 80px;}
+#contact_page .title h2:before {content: ''; width: 60%;height: 6px; background: #00bab7;display: block;}
 #contact_page .title figure {float: left;}
-#contact_page .btn {background: #5DBFDD; color: #fff;border-radius: 0; padding:15px 60px;}
+#contact_page .btn {background: #00bab7; color: #fff;border-radius: 0; padding:15px 60px;}
 #contact_page small { display: block; line-height: 30px;}
-#contact_page .sent { font-size: 20px; font-weight: bold; color: #5DBFDD; display: none;}
+#contact_page .sent { font-size: 20px; font-weight: bold; color: #00bab7; display: none;}
 
 @media (max-width: 640px) {
 
@@ -827,7 +832,7 @@ form .input-container {
     position: relative;
     height: 60px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #23527c;
+    border-bottom: 2px solid #333;
 }
 
 form .textarea-container label { position: relative; margin-bottom: 32px;}
@@ -845,7 +850,7 @@ form .input-container input {
     width: 100%;
     border: 0;
     top:27px;
-    color: #23527c;
+    color: #333;
     background: none;
     z-index: 1;
     padding: 5px 0;
@@ -860,7 +865,7 @@ form .input-container select {
     width: 100%;
     border: 0;
     top:27px;
-    color: #23527c;
+    color: #333;
     background: none;
     z-index: 1;
     padding: 5px 0;
@@ -877,7 +882,7 @@ form .input-container label {
     margin-top: 2px;
     padding: 1px
                  letter-spacing: 0.012em;
-    color: #23527c;
+    color: #333;
     font-size: 10px;
     -webkit-animation-name: labelIn;
     animation-name: labelIn;
@@ -954,7 +959,7 @@ form .input-container input:focus + label, form .input-container input.empty + l
         left: 1em;
         opacity: 1;
         top: 0.2em;
-        color: #23527c;
+        color: #00bab7;
         font-weight: 400;
     }
     100% {
@@ -962,7 +967,7 @@ form .input-container input:focus + label, form .input-container input.empty + l
         opacity: 1;
         left: 1px;
         top: 0.2em;
-        color: #23527c;
+        color: #00bab7;
         font-weight: 400;
     }
 }
@@ -986,7 +991,7 @@ form .input-container input:focus + label, form .input-container input.empty + l
         left: 1em;
         opacity: 0;
         top: 0.2em;
-        color: #23527c;
+        color: #00bab7;
         font-weight: 400;
     }
     100% {
@@ -994,7 +999,7 @@ form .input-container input:focus + label, form .input-container input.empty + l
         opacity: 1;
         left: 1px;
         top: 0.2em;
-        color: #23527c;
+        color: #00bab7;
         font-weight: 400;
     }
 }
@@ -1018,7 +1023,7 @@ form .input-container input:focus + label, form .input-container input.empty + l
         left: 1em;
         opacity: 0;
         top: 0.2em;
-        color: #23527c;
+        color: #00bab7;
         font-weight: 400;
     }
     100% {
@@ -1026,7 +1031,7 @@ form .input-container input:focus + label, form .input-container input.empty + l
         opacity: 1;
         left: 1px;
         top: 0.2em;
-        color: #23527c;
+        color: #00bab7;
         font-weight: 400;
     }
 }
@@ -1057,12 +1062,12 @@ form *:focus {
     width: 100%;
     font-size: 13px;
     font-style: italic;
-    color: #23527c;
+    color: #333;
 }
 #form .form-group  { text-align: left;font-family: "Roboto"}
 #form .form-group p { font-size: 16px; font-family: "Roboto"}
 #form .form-group a { color: #fff}
-#form .form-group label {float: left !important;margin:0 0 0 30px;font-size: 16px;font-weight: normal; color: #23527c}
+#form .form-group label {float: left !important;margin:0 0 0 30px;font-size: 16px;font-weight: normal; color: #00bab7}
 .error { border:2px solid red;}
 .select-style {
     padding: 0;
@@ -1104,7 +1109,7 @@ form *:focus {
 }
 
 
-form .textarea-container textarea { height:150px; border:2px solid #23527c; width: 100%; color:#23527c;padding: 20px}
+form .textarea-container textarea { height:150px; border:2px solid #333; width: 100%; color:#333;padding: 20px}
 
 #map{
     width: 100%;
@@ -1114,7 +1119,7 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 }
 
 #sedes_content{
-    background: rgba(117, 198, 225, 0.9);
+    background: #00bab7;
     z-index: 100;
     position: absolute;
     margin-top: 40px;
@@ -1125,7 +1130,7 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 
 #form h3 {
 
-    color: #5DBFDD;
+    color: #00bab7;
     font-size: 18px;
     margin: 0 0 30px 0;
     position: relative;
@@ -1133,7 +1138,7 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 #form h3:before {
     content: '';
     height: 5px;
-    background: #5DBFDD;
+    background: #00bab7;
     width: 20%;
     position: absolute;
     top: -15px;
@@ -1147,10 +1152,10 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
     font-family: 'Roboto', sans-serif;
     text-align: center;
     border-radius: 0;
-    border-color: #5DBFDD;
+    border-color: #00bab7;
     font-size: 15px;
     margin: 20px 0;
-    color: #5DBFDD;
+    color: #00bab7;
     background: none;
 }
 #form .block {width: 100%; display: inline-block;margin: 20px 0;}
@@ -1250,7 +1255,7 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
 }
 .lbl{
     font-weight: normal;
-    color: #23527c;
+    color: #333;
     padding-bottom: 11px;
     margin-top: 20px;
     letter-spacing: 0.012em;
@@ -1283,11 +1288,11 @@ form .textarea-container textarea { height:150px; border:2px solid #23527c; widt
     margin-bottom: 50px;
     text-align: left;
     margin-top: 10px;
-    border: 2px solid #5ebfdd;
+    border: 4px solid #00bab7;
     padding: 15px;
 }
 .inscription h1{  
-    color: #5DBFDD;
+    color: #00bab7;
     margin: 0 0 30px 0;
 } 
 
