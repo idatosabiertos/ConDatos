@@ -83,9 +83,9 @@ get '/thanks' do
   erb :thanks
 end
 
-#get '/agenda' do
-#  erb :agenda
-#end
+get '/agenda' do
+  erb :agenda
+end
 
 get '/sedes' do
   erb :sedes
