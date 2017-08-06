@@ -1309,3 +1309,174 @@ form .textarea-container textarea { height:150px; border:2px solid #333; width: 
     width: 140% !important;
 }
 }
+
+.schedule {
+    margin: 0 auto 50px;
+    max-width: 960px;
+    text-align: left;
+    background-color: #ffffff;
+}
+.schedule .tab-content {
+    padding: 0;
+    border-style: solid;
+    border-width: 2px 2px 2px;
+    border-color: #e9e9e9 #e9e9e9 #e9e9e9;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+.schedule .tab-content-schedule {
+    position: relative;
+    border: none;
+    padding: 90px 100px 80px 80px;
+}
+.schedule .tab-content-schedule:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 104px;
+    width: 0;
+    display: block;
+    content: "";
+    border-right: 2px solid #666666;
+}
+.schedule .tab-content-schedule .panel-group {
+    margin-bottom: 0;
+}
+.schedule .tab-content-schedule .schedule-item {
+    position: relative;
+    margin-bottom: 22px;
+    min-height: 65px;
+    padding: 0 0 0 104px;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.schedule .schedule-item .lecture-icon-wrapper {
+    position: absolute;
+    vertical-align: middle;
+    top: 5px;
+    left: 11px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #8bdddb;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.schedule .schedule-item .schedule-item-toggle .title {
+    position: relative;
+    margin: 0;
+    padding: 0 35px 11px 0;
+    border-bottom: 1px solid #eff1f5;
+    font-size: 18px;
+}
+.schedule .schedule-item .schedule-item-toggle {
+    margin-bottom: 0;
+    display: block;
+    text-decoration: none;
+    color: #333333;
+}
+.schedule .schedule-item .schedule-item-toggle .time {
+    color: #ff4fa7;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.schedule .schedule-item .schedule-item-toggle .time .icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #babfcc;
+}
+.schedule .schedule-item .schedule-item-toggle .title .icon {
+    position: absolute;
+    right: 10px;
+    bottom: 11px;
+    font-size: 30px;
+    color: #ff4fa7;
+    -webkit-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.schedule .featured-time{
+    border-bottom: 5px solid #efa4c7;
+}
+.schedule .schedule-item .schedule-item-body .description{
+    font-size: 16px;
+}
+.schedule .schedule-info{
+    margin: 10px;
+}
+.heading-block {
+    padding: 10px 0;
+}
+.hero-heading-top {
+    margin: 0 0 10px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 0.85em;
+    color: #ff4fa7;
+}
+.hero-heading-main {
+    margin: 10px 0 15px;
+    font-family: "PT Sans Caption", Roboto;
+    font-size: 73px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+.hero-heading-bottom {
+    margin: 0 0 10px;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+.hero-heading-description{
+    color: #929191;
+    font-size: 18px !important;
+    margin-top: 22px;
+}
+ .venu_info {
+    margin: 0 auto;
+    min-height: 330px;
+    padding: 50px 30px;
+    text-align: center;
+    border-width: 2px 2px 2px;
+    border-color: #e9e9e9 #e9e9e9 #e9e9e9;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.venu_icon {
+    background: 0 0;
+    color: #111;
+    box-shadow: none;
+    font-size: 60px;
+    height: auto;
+    left: 0;
+    line-height: inherit;
+    position: relative;
+    top: 0;
+    transform: inherit;
+    -moz-transform: inherit;
+    -o-transform: inherit;
+    -webkit-transform: inherit;
+    -ms-transform: inherit;
+    width: auto;
+}
+.venu_info>h4 {
+    font-weight: 400;
+}
+.venu_map {
+    border-width: 2px 2px 2px;
+    border-color: #e9e9e9 #e9e9e9 #e9e9e9;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);    
+}
+.venu_map iframe {
+    width: 100%;
+    height: 325px;
+}

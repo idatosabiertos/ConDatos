@@ -87,6 +87,10 @@ get '/agenda' do
   erb :agenda
 end
 
+get '/gobcamp' do
+  erb :gobcamp
+end
+
 get '/sedes' do
   erb :sedes
 end
