@@ -91,6 +91,14 @@ get '/gobcamp' do
   erb :gobcamp
 end
 
+get '/taller-datos-abiertos' do
+  erb :taller_datos_abiertos
+end
+
+get '/data-bootcamp' do
+  erb :data_bootcamp
+end
+
 get '/sedes' do
   erb :sedes
 end

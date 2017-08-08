@@ -179,14 +179,14 @@ color:#FFF;
 }
 
 #orgnices img{
-    padding-top: 20px;
+    padding-top: 42px;
     height: 150px;
     object-fit: contain;
     margin: 0 auto;
 }
 
  #partners img{
-    padding-top: 20px;
+    padding-top: 42px;
     height: 120px;
     object-fit: contain;
     margin: 0 auto;
@@ -229,6 +229,10 @@ color:#FFF;
     margin-left: 5% !important;
     }
     .jcountTimer span { width:8% !important;}
+    
+    .list-type1{
+        width:400px !important;
+    }
 }
 
 #main_section { position: relative;}
@@ -1479,4 +1483,11 @@ form .textarea-container textarea { height:150px; border:2px solid #333; width: 
 .venu_map iframe {
     width: 100%;
     height: 325px;
+}
+.register_btn{
+    border-color: #de302f;
+}
+.register_btn:hover{
+    color: #de302f;
+    fill: #de302f;
 }
