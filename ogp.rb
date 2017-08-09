@@ -99,6 +99,10 @@ get '/data-bootcamp' do
   erb :data_bootcamp
 end
 
+get '/taller-tecnico-regional' do
+  erb :taller_tecnico_regional
+end
+
 get '/sedes' do
   erb :sedes
 end

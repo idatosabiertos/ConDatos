@@ -44,7 +44,10 @@ export CONTACT_EMAIL='destiny@mail.com'
 export SENDGRID_APIKEY='yourApiKey'
 
 sudo apt-get -y install postgresql postgresql-contrib
-psql -c "CREATE DATABASE ogp;" -U postgres
+sudo -u postgres bash -c "psql -c \"CREATE ROLE root WITH SUPERUSER;\""
+sudo -u postgres bash -c "psql -c \"ALTER ROLE root WITH LOGIN;\""
+sudo -u postgres bash -c "psql -c \"CREATE DATABASE ogp;\""
 rake db:create_inscriptions
 
+shotgun --host=0.0.0.0
 echo 'Navegar a / Navigate to `http://localhost:9393` en la maquina host / on host machine.'
