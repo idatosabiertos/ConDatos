@@ -223,7 +223,11 @@ event:
   description_9: Espacios para la construcción colectiva de soluciones a problemas específicos, utilizando datos abiertos para su desarrollo.
   title_10: Café charlado o conversatorio
   description_10: Es un espacio informal en el que los expertos seleccionados y un moderado se reúnen a compartir sus puntos de vista sobre un tema específico, y disfrutan de una taza de café, durante la charla con la audiencia. En este espacio, el moderador abre la charla contando en diez minutos los panelistas de la sesión, el objetivo de la misma y la metodología a utilizar. Durante cuarenta minutos se realizarán sesiones de preguntas orientadas al rol de las instituciones en la construcción y dinamización de la iniciativa de datos abiertos en la región.
-
+  taller_datos_abiertos: Datos abiertos para la docencia universitaria
+  gobcamp: GOBCAMP DE DATOS ABIERTOS
+  data_bootcamp: DATA BOOTCAMP
+  abrelatam_condatos: AbreLatam & ConDatos
+  taller_tecnico_regional: Taller Técnico Regional Contrataciones Abiertas & OCDS
 
 montevideo:
   title: San José de Costa Rica
