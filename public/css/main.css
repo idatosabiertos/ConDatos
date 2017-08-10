@@ -179,14 +179,14 @@ color:#FFF;
 }
 
 #orgnices img{
-    padding-top: 20px;
+    padding-top: 42px;
     height: 150px;
     object-fit: contain;
     margin: 0 auto;
 }
 
  #partners img{
-    padding-top: 20px;
+    padding-top: 42px;
     height: 120px;
     object-fit: contain;
     margin: 0 auto;
@@ -211,10 +211,23 @@ color:#FFF;
     .jcountTimer span {
         width:10% !important;font-size: 1.8em !important; margin:0 4% 0 4% !important; padding:0 30px !important;}
     .intro{
-        width: 100% !important;
+        width: 75% !important;
+    }
+
+    #video_stream{
+        width: 600px;
+    }
+    
+    #contact_page, #montevideo_page{
+        width: 65%;
+    }
+    .twitter_feed {
+        width: 40%;
+        margin-top: 0;
+        margin-right: 34% !important;
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 780px) {
     #ogp_logo_mobile { display: block;}
     a#ogp_logo_mobile {
     background: url(../img/ogp_logo_white.png) no-repeat !important;   
@@ -229,6 +242,24 @@ color:#FFF;
     margin-left: 5% !important;
     }
     .jcountTimer span { width:8% !important;}
+    
+    .list-type1{
+        width:400px !important;
+    }    
+    .twitter_feed {
+        margin-right: 1% !important;
+    }
+    #contact_page, #montevideo_page{
+        width: 100% !important;
+    }
+    #orgnices img{
+        max-width: 300px !important;
+    }
+    .discount-label {
+        width: 225px !important;
+    }
+}
+    
 }
 
 #main_section { position: relative;}
@@ -368,11 +399,14 @@ color:#FFF;
 }
 
 @media (min-width: 1024px) {
-    .main_container { background:#fff}
+    .main_container { 
+        background:#fff; 
+        width: 67%;
+    }
     a#ogp_logo_mobile { display: none;}
 
 }
-@media (max-width: 640px) {
+@media (max-width: 780px) {
     .main_container {  width: 100%; margin: 0;padding: 20px; text-align: center;}
 }
 
@@ -400,7 +434,7 @@ color:#FFF;
     .main_menu {width: 272px;}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 780px) {
     .main_menu {
         width: 96%; padding-left: 22px;
         display: none;
@@ -467,6 +501,9 @@ a#ogp_logo_mobile {
 .main_menu nav#main_nav ul {padding:80px 0 0 10px; margin-bottom: 50px}
 .main_menu nav#main_nav ul li {list-style-type: none;position: relative;}
 .main_menu nav#main_nav ul li a {font-family: 'Roboto', sans-serif; color: #fff; font-size: 18px;letter-spacing: 1px; font-weight: bold;}
+
+.main_menu nav#main_nav ul li ul {padding:0; margin: 2px 25px 2px 25px;}
+.main_menu nav#main_nav ul li ul li a {font-family: 'Roboto', sans-serif; color: #fff; font-size: 15px;letter-spacing: 1px; font-weight: bold;}
 
 .main_menu nav#main_nav ul li:before {
     background: white;
@@ -545,7 +582,7 @@ footer ul li a:hover { border-bottom: 2px solid #fff;text-decoration: none; colo
 footer ul li a {font-family: 'Roboto', sans-serif;font-size: 14px;color: #707070; padding-left: 5px }
 footer ul li a:hover > i  {color: #fff}
 
-.twitter_feed { float: right; width: 51%; margin-top: -4%;}
+.twitter_feed { float: right; width: 51%; margin-top: -1%; margin-right: 1%;}
 .twitter_feed iframe{width: 600px !important; height: 300px !important;}
 
 .twitter_feed .tweet { width: 100%; display: inline-block;margin: 10px 0}
@@ -555,7 +592,7 @@ footer ul li a:hover > i  {color: #fff}
 .twitter_feed a { color: white;font-size: 11px;}
 .twitter_feed small {font-size: 10px;color:#707070}
 
-@media (max-width: 640px) {
+@media (max-width: 780px) {
     footer {
         float: none;
         width: 100%;
@@ -601,9 +638,7 @@ footer ul li a:hover > i  {color: #fff}
     #orgnices .organce figure img { width: 100%;}
 }
 
-@media (min-width: 1024px) {
-}
-@media (max-width: 640px) {
+@media (max-width: 780px) {
 
     #home_page {padding-top: 0}
 
@@ -657,45 +692,45 @@ footer ul li a:hover > i  {color: #fff}
    Montevideo Page styles
    ========================================================================== */
 #montevideo_page .title { width: 100%; display: inline-block; margin: 60px 0}
-#montevideo_page .title h2 {color: #231F20;font-size: 18px;font-weight: bold;float: left;}
-#montevideo_page .title p {color: #231F20;font-size: 15px; margin-left: 30px;padding-top: 20px; float: left;}
+#montevideo_page .title h2 {color: #231F20;font-size: 35px;font-weight: bold;float: left;}
+#montevideo_page .title p {color: #231F20;font-size: 25px; margin-left: 30px;padding-top: 23px; float: left;}
 #montevideo_page .travel { width: 100%; display: inline-block;text-align: center;}
 #montevideo_page .travel .cta { width: 33%; display: inline-block;text-align:center;
                               }
-#montevideo_page .travel h3 {font-size: 18px; color: #00bab7; text-align: left;}
+#montevideo_page .travel h3 {font-size: 30px; color: #00bab7; text-align: left;}
 #montevideo_page .travel .cta img { width: 65%}
-#montevideo_page .travel .cta p { font-size: 15px; font-weight: bold;font-family: 'Roboto', sans-serif; }
-#montevideo_page .travel .info { width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #00bab7; border-top: 1px solid #00bab7;padding: 20px 0;margin: 20px 0}
+#montevideo_page .travel .cta p { font-size: 18px; font-weight: bold;font-family: 'Roboto', sans-serif; }
+#montevideo_page .travel .info { font-size: 18px; width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #00bab7; border-top: 1px solid #00bab7;padding: 20px 0;margin: 20px 0}
 #montevideo_page .travel .info p { margin: 0}
 #montevideo_page .travel .info p a {font-weight:500;font-size: 15px;color: #00bab7;font-family: 'Roboto', sans-serif;border-bottom: 2px solid #00bab7}
 #montevideo_page .travel .info p a:hover {text-decoration: none;}
 
 #montevideo_page .transport { width: 100%; display: inline-block;text-align: center;}
-#montevideo_page .transport h3 {font-size: 18px; color: #00bab7; text-align: left;}
+#montevideo_page .transport h3 {font-size: 30px; color: #00bab7; text-align: left;}
 
 #montevideo_page .transport .cta { width: 22%; display: inline-block;text-align:center;}
 #montevideo_page .transport .cta img { width: 100%}
-#montevideo_page .transport .cta p { font-size: 15px; font-weight: bold;font-family: 'Roboto', sans-serif; }
+#montevideo_page .transport .cta p { font-size: 18px; font-weight: bold;font-family: 'Roboto', sans-serif; }
 #montevideo_page .transport .info p { margin: 0}
 #montevideo_page .transport .info { width: 100%; display: inline-block;text-align: center;border-bottom:1px solid #00bab7; border-top: 1px solid #00bab7;padding: 20px 0;margin: 20px 0}
 #montevideo_page .transport .info p a {font-weight:500;font-size: 15px;color: #00bab7;font-family: 'Roboto', sans-serif;border-bottom: 2px solid #00bab7}
 
 
 #montevideo_page .other { width: 100%; display: inline-block;text-align: center;}
-#montevideo_page .other h3 {font-size: 18px; color: #00bab7; text-align: left;}
+#montevideo_page .other h3 {font-size: 30px; color: #00bab7; text-align: left;}
 
 #montevideo_page .other .cta { width: 22%; display: inline-block;text-align:center;}
 #montevideo_page .other .cta img { width: 100%}
-#montevideo_page .other .cta p { font-size: 15px; font-weight: bold;font-family: 'Roboto', sans-serif; }
+#montevideo_page .other .cta p { font-size: 18px; font-weight: bold;font-family: 'Roboto', sans-serif; }
 #montevideo_page .other .info h3 { margin: 0}
 #montevideo_page .other .info { width: 100%; display: inline-block;text-align: left;border-bottom:1px solid #00bab7; border-top: 1px solid #00bab7;padding: 20px 0;margin: 20px 0}
-#montevideo_page .other .info p { margin: 30px 0; font-size: 14px; font-family: 'Roboto', sans-serif; }
+#montevideo_page .other .info p { margin: 30px 0; font-size: 18px; font-family: 'Roboto', sans-serif; }
 
 #montevideo_page .cta a {color: #555;}
 #montevideo_page .cta:hover > img { transform:scale(1.2);}
 
 
-@media (max-width: 640px) {
+@media (max-width: 780px) {
     #montevideo_page .title { margin: 0}
     #montevideo_page .title h2 { float: none;text-align: left;}
     #montevideo_page .title p {
@@ -767,13 +802,13 @@ footer ul li a:hover > i  {color: #fff}
    ========================================================================== */
 
 #evento_page {padding-right: 80px}
-#evento_page h3 {color: #00bab7;font-size: 18px;margin: 0 0 30px 0}
+#evento_page h3 {color: #00bab7;font-weight: 700; font-size: 45px;margin: 0 0 30px 0;}
 #evento_page h3:before { content: ''; height: 5px; background:#00bab7; width: 20%;position: absolute;top: -15px;}
 
-#evento_page h4 {color: #333;font-size: 15px;margin: 0 0 30px 0}
+#evento_page h4 {color: #333;font-size: 25px;margin: 0 0 30px 0}
 #evento_page h4:before { content: ''; height: 5px; background:#00bab7; width: 10%;position: absolute;top: -15px;}
 
-#evento_page p {font-size: 14px;font-family: 'Roboto', sans-serif;}
+#evento_page p {font-size: 17px;font-family: 'Roboto', sans-serif;}
 #evento_page .row { margin: 50px 0}
 #evento_page .coffee_module {border: 2px solid #00bab7; padding: 15px 10px;margin:0}
 #evento_page .coffee_module p {font-size: 14px;font-family: 'Roboto', sans-serif;color:#00bab7;font-weight: 500;}
@@ -784,7 +819,7 @@ footer ul li a:hover > i  {color: #fff}
 #evento_page .icon-commenticon {font-size: 80px;float: left;color: #00bab7; border-left: 4px  solid #00bab7}
 #evento_page .comment_info { float: left; width: 70%; font-weight: normal;}
 
-@media (max-width: 640px) {
+@media (max-width: 780px) {
 
     #evento_page { padding: 20px;}
     #evento_page .row { display: inline-block;}
@@ -800,16 +835,34 @@ footer ul li a:hover > i  {color: #fff}
    Contact Form  styles
    ========================================================================== */
 #contact_page .title { width: 100%; display: inline-block;}
-#contact_page .title h2 {float: left;font-size: 18px; color: #00bab7; text-transform: uppercase;line-height: 80px;}
+#contact_page .title h2 {float: left;font-size: 35px; font-weight: 700; color: #00bab7; text-transform: uppercase;line-height: 80px;}
 #contact_page .title h2:before {content: ''; width: 60%;height: 6px; background: #00bab7;display: block;}
 #contact_page .title figure {float: left;}
 #contact_page .btn {background: #00bab7; color: #fff;border-radius: 0; padding:15px 60px;}
 #contact_page small { display: block; line-height: 30px;}
 #contact_page .sent { font-size: 20px; font-weight: bold; color: #00bab7; display: none;}
 
-@media (max-width: 640px) {
+@media (max-width: 780px) {
 
     #contact_page { padding-top: 0}
+    .schedule .tab-content-schedule{
+        padding: 0 !important;
+    }
+   .schedule .tab-content-schedule:before{
+        left: 25px !important;
+   }
+   .schedule .tab-content-schedule .schedule-item{
+        padding: 0px 0 0 50px !important;
+   }
+   .schedule .schedule-item-body article{
+        margin-right: 10px;
+   }
+   .event2 #menu2 {
+        margin: 20px !important;
+    }
+    .event2 .row{
+        display: inherit !important;
+    }
 
 }
 
@@ -854,7 +907,7 @@ form .input-container input {
     background: none;
     z-index: 1;
     padding: 5px 0;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.012em;
 }
 form .input-container select {
@@ -869,7 +922,7 @@ form .input-container select {
     background: none;
     z-index: 1;
     padding: 5px 0;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.012em;
     left: -7px;
 }
@@ -1225,7 +1278,7 @@ form .textarea-container textarea { height:150px; border:2px solid #333; width: 
 .icon-calendaricon:before { content: '\e803'; } /* '' */
 .icon-createicon:before { content: '\e804'; } /* '' */
 
-@media (max-width: 640px) {
+@media (max-width: 780px) {
     #sedes_page .map_info_sidebar { width: 100%; box-shadow: none; text-align: left;}
     #sedes_page {
         margin: 0;
@@ -1309,3 +1362,244 @@ form .textarea-container textarea { height:150px; border:2px solid #333; width: 
     width: 140% !important;
 }
 }
+
+.schedule {
+    margin: 0 auto 50px;
+    max-width: 960px;
+    text-align: left;
+    background-color: #ffffff;
+}
+.schedule .tab-content {
+    padding: 0;
+    border-style: solid;
+    border-width: 2px 2px 2px;
+    border-color: #e9e9e9 #e9e9e9 #e9e9e9;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+.schedule .tab-content-schedule {
+    position: relative;
+    border: none;
+    padding: 90px 100px 80px 80px;
+}
+.schedule .tab-content-schedule:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 104px;
+    width: 0;
+    display: block;
+    content: "";
+    border-right: 2px solid #666666;
+}
+.schedule .tab-content-schedule .panel-group {
+    margin-bottom: 0;
+}
+.schedule .tab-content-schedule .schedule-item {
+    position: relative;
+    margin-bottom: 22px;
+    min-height: 65px;
+    padding: 0 0 0 104px;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.schedule .schedule-item .lecture-icon-wrapper {
+    position: absolute;
+    vertical-align: middle;
+    top: 5px;
+    left: 11px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #8bdddb;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.schedule .schedule-item .schedule-item-toggle .title {
+    position: relative;
+    margin: 0;
+    padding: 0 35px 11px 0;
+    border-bottom: 1px solid #eff1f5;
+    font-size: 18px;
+}
+.schedule .schedule-item .schedule-item-toggle {
+    margin-bottom: 0;
+    display: block;
+    text-decoration: none;
+    color: #333333;
+}
+.schedule .schedule-item .schedule-item-toggle .time {
+    color: #ff4fa7;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.schedule .schedule-item .schedule-item-toggle .time .icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #babfcc;
+}
+.schedule .schedule-item .schedule-item-toggle .title .icon {
+    position: absolute;
+    right: 10px;
+    bottom: 11px;
+    font-size: 30px;
+    color: #ff4fa7;
+    -webkit-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.schedule .featured-time{
+    border-bottom: 5px solid #efa4c7;
+}
+.schedule .schedule-item .schedule-item-body .description{
+    font-size: 16px;
+}
+.schedule .schedule-info{
+    margin: 10px;
+}
+.heading-block {
+    padding: 10px 0;
+}
+.hero-heading-top {
+    margin: 0 0 10px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 0.35em;
+    color: #ff4fa7;
+}
+.hero-heading-main {
+    margin: 10px 0 15px;
+    font-family: "PT Sans Caption", Roboto;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+.hero-heading-bottom {
+    margin: 0 0 10px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+.hero-heading-description{
+    color: #929191;
+    font-size: 16px !important;
+    margin-top: 22px;
+}
+ .venu_info {
+    margin: 0 auto;
+    min-height: 330px;
+    margin-left: 30px;
+    padding: 50px 30px;
+    text-align: center;
+    border-width: 2px 2px 2px;
+    border-color: #e9e9e9 #e9e9e9 #e9e9e9;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.venu_icon {
+    background: 0 0;
+    color: #111;
+    box-shadow: none;
+    font-size: 60px;
+    height: auto;
+    left: 0;
+    line-height: inherit;
+    position: relative;
+    top: 0;
+    transform: inherit;
+    -moz-transform: inherit;
+    -o-transform: inherit;
+    -webkit-transform: inherit;
+    -ms-transform: inherit;
+    width: auto;
+}
+.venu_info>h4 {
+    font-weight: 400;
+}
+.venu_map {
+    border-width: 2px 2px 2px;
+    border-color: #e9e9e9 #e9e9e9 #e9e9e9;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);    
+}
+.venu_map iframe {
+    width: 100%;
+    height: 325px;
+}
+.register_btn{
+    color: #00aff0;
+    font-size: 25px;
+    border-color: #00aff0;
+}
+
+@media (min-width: 1025px) and (max-width: 1730px){    
+    .twitter_feed {
+        width: 40%;
+        margin-top: 0;
+        margin-right: 27%;
+    }
+}
+
+
+.event5 .schedule .schedule-item .schedule-item-toggle .time{
+    color: #6f7071 !important; 
+}
+ .event5 .hero-heading-top{
+    color: #9dad01 !important; 
+}
+.event5 .schedule .schedule-item .lecture-icon-wrapper{
+    background-color: #d8df20 !important; 
+}
+
+.event4 #partners img{
+    height: 165px !important;
+}
+.event4 .schedule .schedule-item .schedule-item-toggle .time{    
+    color: #333333 !important;
+}
+.event4 .schedule .schedule-item .lecture-icon-wrapper{
+    background-color: #ff4fa7 !important;
+}
+.event4 .hero-heading-main{
+    color: #00aff6 !important;
+}
+.event4 .venu_map iframe  {
+    height: 359px !important;
+}
+
+.event3 .hero-heading-top{
+ color: #58acdb;
+}
+.event3 .schedule .schedule-item .schedule-item-toggle .time{    
+    color: #58acdb !important;
+}
+.event3 .schedule .schedule-item .lecture-icon-wrapper{
+    background-color: #58acdb !important;
+}
+.event3 .hero-heading-main{
+    color: #00aff6 !important;
+}
+.event3 .venu_map iframe {
+    height: 393px !important;
+}
+.event2 #menu2{
+    margin: 50px;
+}
+.event2 #evento_page h4{
+    font-weight: 700;
+}
+.event2 h5{
+    color: #ff4fa7;
+    font-size: 20px;
+    margin: 0 0 30px 0;
+}
+.event2 h4:before { height: 0px !important;}
+
