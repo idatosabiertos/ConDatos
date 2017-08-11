@@ -468,21 +468,21 @@ color:#FFF;
 
 }
 @media screen and ( min-height: 751px ){
-    .main_menu nav#main_nav ul li { margin: 30px 0 0 0}
+    .main_menu nav#main_nav ul li { margin: 10px 0 0 0}
 
 
 }
 
 a#ogp_logo {
-    background: url(../img/ogp_logo_white.png) no-repeat;   
+    background: url(../img/ogp_logo_white.png) no-repeat;
     height: 120px;
-    width: 180px;
-    background-size: 180px 120px;
+    width: 100%;
+    background-size: 191px auto;
     margin-top: 30px;
     display: block;
     font-size: 0;
     position: absolute;
-    left: 70px;
+    left: 50px;
 }
 
 a#ogp_logo_mobile {
@@ -497,7 +497,7 @@ a#ogp_logo_mobile {
     display: none;
 }
 
-.main_menu nav#main_nav { border-left: 1px solid #fff;}
+.main_menu nav#main_nav { /*border-left: 1px solid #fff;*/}
 .main_menu nav#main_nav ul {padding:80px 0 0 10px; margin-bottom: 50px}
 .main_menu nav#main_nav ul li {list-style-type: none;position: relative;}
 .main_menu nav#main_nav ul li a {font-family: 'Roboto', sans-serif; color: #fff; font-size: 18px;letter-spacing: 1px; font-weight: bold;}
@@ -506,32 +506,32 @@ a#ogp_logo_mobile {
 .main_menu nav#main_nav ul li ul li a {font-family: 'Roboto', sans-serif; color: #fff; font-size: 15px;letter-spacing: 1px; font-weight: bold;}
 
 .main_menu nav#main_nav ul li:before {
-    background: white;
+    background: #7ddcda;
     content: '';
-    height: 13px;
+    height: 12px;
     display: block;
-    width: 13px;
-    border-radius: 43px;
-    border: 1px solid #fff;
+    width: 12px;
+    border-radius: 20px;
     position: absolute;
-    left: -27px;
-    top: 3px;
+    left: -21px;
+    top: 5px;
 }
 .main_menu nav#main_nav ul li:after {}
 .main_menu nav#main_nav ul li.active:after, .main_menu nav ul li a:hover:after {
-                                                background: #00bab7;
-                                                content: '';
-                                                height: 7px;
-                                                display: block;
-                                                width: 7px;
-                                                border-radius: 43px;
-                                                position: absolute;
-                                                left: -24px;
-                                                top: 6px;
+                                                background: #ffffff;
+    content: '';
+    height: 8px;
+    display: block;
+    width: 8px;
+    border-radius: 43px;
+    position: absolute;
+    left: -19px;
+    top: 7px;
                                             }
 
 .main_menu nav#main_nav ul .active {}
-.main_menu nav#main_nav ul .active a, .main_menu nav ul li a:hover  {text-decoration: none; color:#666666;padding-bottom: 5px;border-bottom:2px solid white;}
+.main_menu nav#main_nav ul .active a, .main_menu nav ul li a:hover  {    text-decoration: none;
+    border-bottom: 2px solid white;}
 
 .main_menu .btn { font-family: 'Roboto', sans-serif;text-align: center; border-radius: 0;border-color: white; font-size: 18px;color: white; font-weight: : bold;}
 .main_menu .btn:hover {border-color: black ;color: black}
@@ -566,12 +566,12 @@ a#ogp_logo_mobile {
    Main Menu styles
    ========================================================================== */
 footer {
-    float: left;
-    background:#efa4c7;
+float: left;
+    background: #a9a9a9;
     padding-top: 10px;
-    width:100%;
-    margin-left:272px;
-    margin-right:80px;
+    width: 100%;
+    margin-left: 272px;
+    margin-right: 80px;
     margin-top: -4%;
     overflow: hidden;
 }
