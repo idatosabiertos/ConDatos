@@ -53,12 +53,12 @@
             <li <%= "class=\"active\"" if '/sedes' == request.path_info %>>
               <a href="/sedes"><%= t.hqs.title %></a>
             </li>
+            <li <%= "class=\"active\"" if '/evento' == request.path_info %>>   
+              <a href="/evento"><%= t.event.abrelatam_condatos %></a>
+            </li>
             <li>
-              <a  data-toggle="collapse" href="#event_sub_menu"><%= t.event.title %></a>
-              <ul class="collapse <%= 'in' if '/evento' == request.path_info || '/gobcamp' == request.path_info || '/taller-datos-abiertos' == request.path_info || '/data-bootcamp' == request.path_info || '/taller-tecnico-regional' == request.path_info %>" id="event_sub_menu">
-                <li <%= "class=\"active\"" if '/evento' == request.path_info %>>   
-                  <a href="/evento"><%= t.event.abrelatam_condatos %></a>
-                </li>
+              <a  data-toggle="collapse" href="#event_sub_menu"><%= t.event.parallel_events %></a>
+              <ul class="collapse <%= 'in' if '/gobcamp' == request.path_info || '/taller-datos-abiertos' == request.path_info || '/data-bootcamp' == request.path_info || '/taller-tecnico-regional' == request.path_info %>" id="event_sub_menu">
                 <li <%= "class=\"active\"" if '/gobcamp' == request.path_info %>>   
                   <a href="/gobcamp"><%= t.event.gobcamp %></a>
                 </li>
@@ -72,9 +72,6 @@
                   <a href="/taller-tecnico-regional"><%= t.event.taller_tecnico_regional %></a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a href="http://abrelatam.org">AbreLatam</a>
             </li>
             <li <%= "class=\"active\"" if '/montevideo' == request.path_info %>>
               <a href="/ciudad"><%= t.montevideo.title %></a>
