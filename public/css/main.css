@@ -802,11 +802,14 @@ footer ul li a:hover > i  {color: #fff}
    ========================================================================== */
 
 #evento_page {padding-right: 80px}
-#evento_page h3 {color: #00bab7;font-weight: 700; font-size: 45px;margin: 0 0 30px 0;}
+#evento_page h3 {color: #00bab7;font-weight: 700; font-size: 45px;margin: 0px 0 30px 0;}
 #evento_page h3:before { content: ''; height: 5px; background:#00bab7; width: 20%;position: absolute;top: -15px;}
 
 #evento_page h4 {color: #333;font-size: 25px;margin: 0 0 30px 0}
 #evento_page h4:before { content: ''; height: 5px; background:#00bab7; width: 10%;position: absolute;top: -15px;}
+
+
+#agenda h3 {color: #00bab7;font-weight: 700; font-size: 45px;margin: 30 0 30px 0;}
 
 #evento_page p {font-size: 17px;font-family: 'Roboto', sans-serif;}
 #evento_page .row { margin: 50px 0}
@@ -1468,7 +1471,7 @@ form .textarea-container textarea { height:150px; border:2px solid #333; width: 
 .hero-heading-top {
     margin: 0 0 10px;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 1.7;
     letter-spacing: 0.35em;
@@ -1498,7 +1501,6 @@ form .textarea-container textarea { height:150px; border:2px solid #333; width: 
  .venu_info {
     margin: 0 auto;
     min-height: 330px;
-    margin-left: 30px;
     padding: 50px 30px;
     text-align: center;
     border-width: 2px 2px 2px;
