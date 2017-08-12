@@ -38,10 +38,10 @@ post '/enviar' do
   erb :thanks
 end
 
-get '/complete-inscription' do
-  inscription = Inscription.new
-  erb :complete_form, locals: { inscription: inscription }
-end
+#get '/complete-inscription' do
+#  inscription = Inscription.new
+#  erb :complete_form, locals: { inscription: inscription }
+#end
 
 post '/complete' do
   inscription = Inscription.where('lower(email) = ?', params[:email].downcase)

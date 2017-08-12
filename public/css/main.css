@@ -403,6 +403,10 @@ color:#FFF;
         background:#fff; 
         width: 67%;
     }
+
+    #agenda { 
+        width: 100% !important;
+    }
     a#ogp_logo_mobile { display: none;}
 
 }
