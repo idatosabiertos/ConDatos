@@ -1609,3 +1609,32 @@ form .textarea-container textarea { height:150px; border:2px solid #333; width: 
 }
 .event2 h4:before { height: 0px !important;}
 
+
+.event6 #partners img{
+    height: 165px !important;
+}
+.event6 .schedule .schedule-item .schedule-item-toggle .time{    
+    color: #333333 !important;
+}
+.event6 .schedule .schedule-item .lecture-icon-wrapper{
+    background-color: #ff4fa7 !important;
+}
+.event6 .hero-art{
+    color: #ff81cc;
+}
+.event6 .venu_map iframe  {
+    height: 324px !important;
+}
+.event6 .register_btn{
+  color: #ff81cc;
+  border-color: #ff81cc;
+}
+.event6 .schedule-info h2{
+  color: #00bab7;
+}
+.event6 .schedule .tab-content p{
+    padding: 10px;
+}
+.event6 .hero-heading-top{
+  color: #00bab7 !important;
+}

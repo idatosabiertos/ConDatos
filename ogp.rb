@@ -103,6 +103,10 @@ get '/taller-tecnico-regional' do
   erb :taller_tecnico_regional
 end
 
+get '/data-art' do
+  erb :data_art
+end
+
 get '/sedes' do
   erb :sedes
 end
