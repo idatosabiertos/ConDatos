@@ -107,6 +107,10 @@ get '/data-art' do
   erb :data_art
 end
 
+get '/siguiendo-el-dinero' do
+  erb :siguiendo_el_dinero
+end
+
 get '/sedes' do
   erb :sedes
 end

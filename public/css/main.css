@@ -1638,3 +1638,17 @@ form .textarea-container textarea { height:150px; border:2px solid #333; width: 
 .event6 .hero-heading-top{
   color: #00bab7 !important;
 }
+
+
+.event7 #partners img{
+    height: 165px !important;
+}
+.event7 .hero-art{
+    color: #00bab7;
+}
+.event7 .venu_map iframe  {
+    height: 324px !important;
+}
+.event6 .hero-heading-top{
+  color: #ff81cc !important;
+}
