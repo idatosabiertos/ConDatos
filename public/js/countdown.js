@@ -12,23 +12,27 @@ var countDown = function(theSelector, time){
     return number;
   }
 
-  x = difference / 1000;
-  seconds = addZero(parseInt(x % 60));
-  x /= 60;
-  minutes = addZero(parseInt(x % 60));
-  x /= 60;
-  hours = addZero(parseInt(x % 24));
-  x /= 24;
-  days = addZero(parseInt(x));
+  if(difference > 0){
+    x = difference / 1000;
+    seconds = addZero(parseInt(x % 60));
+    x /= 60;
+    minutes = addZero(parseInt(x % 60));
+    x /= 60;
+    hours = addZero(parseInt(x % 24));
+    x /= 24;
+    days = addZero(parseInt(x));
 
-  output += "<span class='days'>" + days + "<small>Días</small></span>";
-  output += "<span class='hours'>" + hours + "<small>Horas</small></span>";
-  output += "<span class='minutes'>" + minutes + "<small>Minutos</small></span>";
-  output += "<span class='seconds'>" + seconds + "<small>Segundos</small></span>";
+    output += "<span class='days'>" + days + "<small>Días</small></span>";
+    output += "<span class='hours'>" + hours + "<small>Horas</small></span>";
+    output += "<span class='minutes'>" + minutes + "<small>Minutos</small></span>";
+    output += "<span class='seconds'>" + seconds + "<small>Segundos</small></span>";
+  }
   document.querySelector(theSelector).innerHTML = output;
+
+
 };
 
-var Time = "8/23/2017 18:25:00";
+var Time = "8/24/2017 8:30:00";
 setInterval(function(){
   countDown(".jcountTimer", Time);
 }, 1000);

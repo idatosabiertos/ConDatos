@@ -111,6 +111,10 @@ get '/siguiendo-el-dinero' do
   erb :siguiendo_el_dinero
 end
 
+get '/datos-y-chiliguaros' do
+  erb :datos_y_chiliguaros
+end
+
 get '/sedes' do
   erb :sedes
 end
